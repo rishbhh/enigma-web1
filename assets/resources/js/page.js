@@ -528,6 +528,27 @@ function ChangeColor() {
     });
 }
 ChangeColor()
+
+// works
+function Works() {
+    let work = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.works__inner',
+            start: 'top top',
+            scroller: ".smooth-scroll",
+            toggleActions: 'restart reverse restart reverse ',
+
+        },
+    });
+
+    work.from(".works__hero__line", 1, {
+        opacity: 0,
+        duration: 0.3,
+        ease: "power1.In",
+    }, "-=0.2")
+
+}
+        Works();
     });
 
     
