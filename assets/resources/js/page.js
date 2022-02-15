@@ -511,7 +511,7 @@ function ChangeColor() {
         ScrollTrigger.create({
             trigger: colorSection,
             scroller: ".smooth-scroll",
-            start: "top 30%",
+            start: "top center",
             onEnter: () =>
                 gsap.to("body", {
                     backgroundColor: colorSection.dataset.bgcolor,
@@ -534,14 +534,15 @@ function Works() {
     let work = gsap.timeline({
         scrollTrigger: {
             trigger: '.works__inner',
-            start: 'top top',
+            start: '-500 top',
+            end:'950 ccenter',
             scroller: ".smooth-scroll",
             toggleActions: 'restart reverse restart reverse ',
 
         },
     });
 
-    work.from(".works__hero__line", 1, {
+    work.from(".works__hero__line", 2, {
         opacity: 0,
         duration: 0.3,
         ease: "power1.In",
