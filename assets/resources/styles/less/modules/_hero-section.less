@@ -1522,28 +1522,39 @@
     .lapi-d {
         width: 100vw;
         height: 100vh;
+        position: relative;
+
+        video {
+            position: absolute;
+            object-fit: cover;
+            z-index: -1;
+        }
 
         .lapi-content {
-            width: inherit;
-            height: inherit;
+            z-index: 13;
             position: relative;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 2.6em;
+            overflow: hidden;
 
-            video {
-                position: absolute;
-                object-fit: cover;
-                z-index: -1;
+
+
+            .wor {
+                padding-right: 5px;
+                display: inline-block;
+                letter-spacing: 2px;
+                font-family: 'NeueHaasDisplay-me';
             }
 
             p {
-                position: relative;
-                top: 50% !important;
-                -webkit-transform: translateY(-50%) !important;
-                transform: translateY(-50%) !important;
-                width: 100%;
                 text-align: center;
-                font-family: 'NeueHaasDisplay-roman';
                 letter-spacing: 3px;
-                font-size: 3.3em;
+                font-size: 1.3em;
                 font-weight: 600;
                 color: #fff;
             }

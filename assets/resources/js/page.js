@@ -510,7 +510,7 @@ function ChangeColor() {
         ScrollTrigger.create({
             trigger: colorSection,
             scroller: ".smooth-scroll",
-            start: "top 60%",
+            start: "100% top",
             onEnter: () =>
                 gsap.to("body", {
                     backgroundColor: colorSection.dataset.bgcolor,
@@ -541,20 +541,38 @@ function Works() {
         },
     });
 
-    work.from(".works__hero__line", 1, {
+    work.from(".works__hero__line", 2, {
         opacity: 0,
-        duration: 0.3,
+        duration: 3,
         ease: "power1.In",
-    }, "-=0.5")
+    }, "-=0.1")
 
 }
 Works()
     });
 
-    
+// video bg 
+    function vide() {
+        let vdo = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.lapi-d',
+                start: '-100 top',
+                scroller: '.smooth-scroll',
+            }
+        });
+        vdo.from('.lapi-d video', 1, {opacity: 0, ease: "power1.In", duration:0.3 }, "-=0.5")
+        vdo.from(".lapi-content p ", 2, { y: -50, opacity: 0, duration: 0.5, ease: Power2.easeInOut, stagger: 0.03 }, "-=0.5");
+        
+       
+    }
+    vide()
 }
 
 if (desktop_size.matches) {
+
+    ScrollTrigger.config({
+        autoRefreshEvents: 'visibilitychange,DOMContentLoaded,load',
+    }); 
 // Hero Section
 function HeroSection() {
 
