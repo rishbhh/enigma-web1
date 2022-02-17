@@ -321,7 +321,6 @@ $(document).ready(function() {
     ChangeColor();
     Horizontal();
     Opaci();
-    Works();
     TitleChange();
     Plrax();
     About2();
@@ -511,7 +510,7 @@ function ChangeColor() {
         ScrollTrigger.create({
             trigger: colorSection,
             scroller: ".smooth-scroll",
-            start: "top center",
+            start: "top 60%",
             onEnter: () =>
                 gsap.to("body", {
                     backgroundColor: colorSection.dataset.bgcolor,
@@ -534,22 +533,22 @@ function Works() {
     let work = gsap.timeline({
         scrollTrigger: {
             trigger: '.works__inner',
-            start: '-500 top',
-            end:'950 ccenter',
+            start: '-300 top',
+            end: '500 top',
             scroller: ".smooth-scroll",
             toggleActions: 'restart reverse restart reverse ',
 
         },
     });
 
-    work.from(".works__hero__line", 2, {
+    work.from(".works__hero__line", 1, {
         opacity: 0,
         duration: 0.3,
         ease: "power1.In",
-    }, "-=0.2")
+    }, "-=0.5")
 
 }
-        Works();
+Works()
     });
 
     
@@ -697,7 +696,28 @@ function HeroSection() {
         ease: 'power1.inOut',
     }, 90);
 }
-HeroSection();
+    HeroSection();
+    
+    function Works() {
+        let work = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.works__inner',
+                start: '-300 top',
+                end: '500 top',
+                scroller: ".smooth-scroll",
+                toggleActions: 'restart reverse restart reverse ',
+    
+            },
+        });
+    
+        work.from(".works__hero__line", 1, {
+            opacity: 0,
+            duration: 0.3,
+            ease: "power1.In",
+        }, "-=0.5")
+    
+    }
+    Works()
  }
 
 
@@ -995,25 +1015,7 @@ function Horizontal() {
     }, "-=4")
 }
 
-function Works() {
-    let work = gsap.timeline({
-        scrollTrigger: {
-            trigger: '.works__inner',
-            start: '-300 top',
-            end: '500 top',
-            scroller: ".smooth-scroll",
-            toggleActions: 'restart reverse restart reverse ',
 
-        },
-    });
-
-    work.from(".works__hero__line", 1, {
-        opacity: 0,
-        duration: 0.3,
-        ease: "power1.In",
-    }, "-=0.5")
-
-}
 
 
 // title change
