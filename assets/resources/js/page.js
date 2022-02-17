@@ -318,7 +318,7 @@ $(document).ready(function() {
     "use strict";
     // scr();
   
-    ChangeColor();
+    // ChangeColor();
     Horizontal();
     Opaci();
     TitleChange();
@@ -402,6 +402,34 @@ if (mobile_size.matches) {
         autoRefreshEvents: 'visibilitychange,DOMContentLoaded,load',
     });
     $(document).ready(() => {
+
+        function ChangeColor() {
+            const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
+            scrollColorElems.forEach((colorSection, i) => {
+                const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.bgcolor;
+                const prevText = i === 0 ? "" : scrollColorElems[i - 1].dataset.textcolor;
+        
+                ScrollTrigger.create({
+                    trigger: colorSection,
+                    scroller: ".smooth-scroll",
+                    start: "100% top",
+                    onEnter: () =>
+                        gsap.to("body", {
+                            backgroundColor: colorSection.dataset.bgcolor,
+                            color: colorSection.dataset.textcolor,
+                            overwrite: "auto"
+                        }),
+                    onLeaveBack: () =>
+                        gsap.to("body", {
+                            backgroundColor: prevBg,
+                            color: prevText,
+                            overwrite: "auto"
+                        })
+                });
+            });
+        }
+        ChangeColor()
+        
         // Hero Section
         function HeroSection() {
 
@@ -501,32 +529,6 @@ if (mobile_size.matches) {
         aa();
 
         // Change Color
-function ChangeColor() {
-    const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
-    scrollColorElems.forEach((colorSection, i) => {
-        const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.bgcolor;
-        const prevText = i === 0 ? "" : scrollColorElems[i - 1].dataset.textcolor;
-
-        ScrollTrigger.create({
-            trigger: colorSection,
-            scroller: ".smooth-scroll",
-            start: "100% top",
-            onEnter: () =>
-                gsap.to("body", {
-                    backgroundColor: colorSection.dataset.bgcolor,
-                    color: colorSection.dataset.textcolor,
-                    overwrite: "auto"
-                }),
-            onLeaveBack: () =>
-                gsap.to("body", {
-                    backgroundColor: prevBg,
-                    color: prevText,
-                    overwrite: "auto"
-                })
-        });
-    });
-}
-ChangeColor()
 
 // works
 function Works() {
@@ -573,6 +575,34 @@ if (desktop_size.matches) {
     ScrollTrigger.config({
         autoRefreshEvents: 'visibilitychange,DOMContentLoaded,load',
     }); 
+     // Change Color
+function ChangeColor() {
+    const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
+    scrollColorElems.forEach((colorSection, i) => {
+        const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.bgcolor;
+        const prevText = i === 0 ? "" : scrollColorElems[i - 1].dataset.textcolor;
+
+        ScrollTrigger.create({
+            trigger: colorSection,
+            scroller: ".smooth-scroll",
+            start: "top 60%",
+            onEnter: () =>
+                gsap.to("body", {
+                    backgroundColor: colorSection.dataset.bgcolor,
+                    color: colorSection.dataset.textcolor,
+                    overwrite: "auto"
+                }),
+            onLeaveBack: () =>
+                gsap.to("body", {
+                    backgroundColor: prevBg,
+                    color: prevText,
+                    overwrite: "auto"
+                })
+        });
+    });
+
+}
+ChangeColor()
 // Hero Section
 function HeroSection() {
 
@@ -736,6 +766,8 @@ function HeroSection() {
     
     }
     Works()
+   
+    
  }
 
 
@@ -791,33 +823,7 @@ window.addEventListener("load", function() {
 
 
 
-// Change Color
-function ChangeColor() {
-    const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
-    scrollColorElems.forEach((colorSection, i) => {
-        const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.bgcolor;
-        const prevText = i === 0 ? "" : scrollColorElems[i - 1].dataset.textcolor;
 
-        ScrollTrigger.create({
-            trigger: colorSection,
-            scroller: ".smooth-scroll",
-            start: "top 60%",
-            onEnter: () =>
-                gsap.to("body", {
-                    backgroundColor: colorSection.dataset.bgcolor,
-                    color: colorSection.dataset.textcolor,
-                    overwrite: "auto"
-                }),
-            onLeaveBack: () =>
-                gsap.to("body", {
-                    backgroundColor: prevBg,
-                    color: prevText,
-                    overwrite: "auto"
-                })
-        });
-    });
-
-}
 
 /* Recent Works Carousel */
 
