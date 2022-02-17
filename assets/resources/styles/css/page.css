@@ -3886,6 +3886,8 @@ header {
     -o-object-fit: cover;
        object-fit: cover;
     z-index: -1;
+    width: 100%;
+    height: 100%;
   }
   .lapi-d .lapi-content {
     z-index: 13;
