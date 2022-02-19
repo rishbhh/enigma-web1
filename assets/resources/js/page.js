@@ -317,10 +317,11 @@ $(document).ready(function() {
 
     "use strict";
     // scr();
-  
-    // ChangeColor();
+    HeroSection();
+    ChangeColor();
     Horizontal();
     Opaci();
+    Works();
     TitleChange();
     Plrax();
     About2();
@@ -387,222 +388,142 @@ ScrollTrigger.config({
 
 
 // Moobile Js
-window.addEventListener('orientationchange', () => {
-    window.location.reload();
-  });
-  
- 
-  const desktop_size = window.matchMedia('(min-width: 1150px)');
-  
-  const mobile_size = window.matchMedia('(max-width: 1150px)');
-  
+const mobile_size = window.matchMedia('(max-width: 1150px)');
 if (mobile_size.matches) {
 
     ScrollTrigger.config({
         autoRefreshEvents: 'visibilitychange,DOMContentLoaded,load',
     });
-    $(document).ready(() => {
 
-        function ChangeColor() {
-            const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
-            scrollColorElems.forEach((colorSection, i) => {
-                const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.bgcolor;
-                const prevText = i === 0 ? "" : scrollColorElems[i - 1].dataset.textcolor;
-        
-                ScrollTrigger.create({
-                    trigger: colorSection,
-                    scroller: ".smooth-scroll",
-                    start: "100% top",
-                    onEnter: () =>
-                        gsap.to("body", {
-                            backgroundColor: colorSection.dataset.bgcolor,
-                            color: colorSection.dataset.textcolor,
-                            overwrite: "auto"
-                        }),
-                    onLeaveBack: () =>
-                        gsap.to("body", {
-                            backgroundColor: prevBg,
-                            color: prevText,
-                            overwrite: "auto"
-                        })
-                });
-            });
-        }
-        ChangeColor()
-        
-        // Hero Section
-        function HeroSection() {
+    // Hero Section
+function HeroSection() {
 
 
-            Splitting();
-            document.querySelector('meta[name=viewport][content*="shrink-to-fit=no"]') ? 'shrink-to-fit=no' : 'Default; shrink-to-fit not specified'
+    Splitting();
+    document.querySelector('meta[name=viewport][content*="shrink-to-fit=no"]') ? 'shrink-to-fit=no' : 'Default; shrink-to-fit not specified'
 
-            let fixed_scrol = gsap.timeline({
-                id: 'start_1',
-                scrollTrigger: {
-                    trigger: '.hero-section',
-                    start: 'top top',
-                    end: '1000 center',
-                    scroller: ".smooth-scroll",
-                    markers: false,
-                    pin: true,
-                    pinReparent: true,
-                    scrub: 2,
-                },
-            });
-
-            fixed_scrol.to("#e", 2, {
-                transform: ('scale(1)'),
-                duration: 5,
-                ease: 'power1.inOut',
-            }, "", ),
-            fixed_scrol.to("#n", 2, {
-                transform: ('scale(1)'),
-                duration: 5,
-                ease: 'power1.inOut',
-                stagger: 0.3
-            }, "-=2")
-        fixed_scrol.to(" #i", 2, {
-            transform: ('scale(1)'),
-            duration: 5,
-            ease: 'power1.inOut',
-            stagger: 0.3
-        }, "-=1.2")
-        fixed_scrol.to("#g", 2, {
-            transform: ('scale(1)'),
-            duration: 5,
-            ease: 'power1.inOut',
-            stagger: 0.3
-        }, "-=1.4")
-        fixed_scrol.to("#m", 2, {
-            transform: ('scale(1)'),
-            duration: 5,
-            ease: 'power1.inOut',
-            stagger: 0.3
-        }, "-=1.8")
-        fixed_scrol.to("#a", 2, {
-            transform: ('scale(1)'),
-            duration: 5,
-            ease: 'power1.inOut',
-            stagger: 0.3
-        }, "-=1.2")
-            fixed_scrol.to(".small_heading", {
-                opacity: 1,
-                y: 20,
-                duration: 3,
-                ease: "power1.In"
-            }, "4")
-            // fixed_scrol.to('.container_hero', { display: ('none') }, 2);
-            fixed_scrol.to(".logo", 7, {
-                opacity: 1,
-                duration: 10,
-                ease: "power2.inOut",
-                zIndex: 2,
-        
-            }, 15)
-
-    
-   
-        }
-        HeroSection();
-    
-
-        function aa() {
-                
-        const digital_devices = gsap.timeline({
-            
-            scrollTrigger: {
-              trigger: '.mobl',
-                start: '-500 top',
-                scroller: ".smooth-scroll",
-            },
-          });
-        //   digital_devices.to('.mobli-cont_content p', {
-        //     opacity: 1,
-        //     y: 0,
-        //     duration:0.5,
-        //     ease: "power1.In"
-        //   }, '-=1')
-          digital_devices.from(".mobli-cont_content p .char", 2, { y: -50, opacity: 0, duration: 0.5, ease: Power2.easeInOut, stagger: 0.03 }, "-=2");
-          
-        }
-        aa();
-
-        // Change Color
-
-// works
-function Works() {
-    let work = gsap.timeline({
+    let fixed_scrol = gsap.timeline({
+        id: 'start_1',
         scrollTrigger: {
-            trigger: '.works__inner',
-            start: '-300 top',
-            end: '500 top',
+            trigger: '.hero-section',
+            start: 'top top',
+            end: '4500 center',
             scroller: ".smooth-scroll",
-            toggleActions: 'restart reverse restart reverse ',
-
+            markers: false,
+            pin: true,
+            pinReparent: true,
+            scrub: 2,
         },
     });
 
-    work.from(".works__hero__line", 2, {
+    fixed_scrol.to("#e", 2, {
+            transform: ('scale(1)'),
+            duration: 5,
+            ease: 'power1.inOut',
+        }, "", ),
+        fixed_scrol.to("#n", 2, {
+            transform: ('scale(1)'),
+            duration: 5,
+            ease: 'power1.inOut',
+            stagger: 0.3
+        }, "-=2")
+    fixed_scrol.to(" #i", 2, {
+        transform: ('scale(1)'),
+        duration: 5,
+        ease: 'power1.inOut',
+        stagger: 0.3
+    }, "-=1.2")
+    fixed_scrol.to("#g", 2, {
+        transform: ('scale(1)'),
+        duration: 5,
+        ease: 'power1.inOut',
+        stagger: 0.3
+    }, "-=1.4")
+    fixed_scrol.to("#m", 2, {
+        transform: ('scale(1)'),
+        duration: 5,
+        ease: 'power1.inOut',
+        stagger: 0.3
+    }, "-=1.8")
+    fixed_scrol.to("#a", 2, {
+        transform: ('scale(1)'),
+        duration: 5,
+        ease: 'power1.inOut',
+        stagger: 0.3
+    }, "-=1.2")
+    fixed_scrol.from(".small_heading", {
         opacity: 0,
+        y: 20,
         duration: 3,
-        ease: "power1.In",
-    }, "-=0.1")
+        ease: "power1.In"
+    }, "3.8")
 
+    fixed_scrol.to(".logo", 7, {
+        opacity: 1,
+        duration: 10,
+        ease: "power2.inOut",
+        zIndex: 2,
+
+    }, 15)
+
+   
 }
-Works()
-    });
-
-// video bg 
-    function vide() {
-        let vdo = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.lapi-d',
-                start: '-100 top',
-                scroller: '.smooth-scroll',
-            }
-        });
-        vdo.from('.lapi-d video', 1, {opacity: 0, ease: "power1.In", duration:0.3 }, "-=0.5")
-        vdo.from(".lapi-content p ", 2, { y: -50, opacity: 0, duration: 0.5, ease: Power2.easeInOut, stagger: 0.03 }, "-=0.5");
-        
-       
-    }
-    vide()
+    
+    
 }
 
-if (desktop_size.matches) {
 
-    ScrollTrigger.config({
-        autoRefreshEvents: 'visibilitychange,DOMContentLoaded,load',
-    }); 
-     // Change Color
-function ChangeColor() {
-    const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
-    scrollColorElems.forEach((colorSection, i) => {
-        const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.bgcolor;
-        const prevText = i === 0 ? "" : scrollColorElems[i - 1].dataset.textcolor;
 
-        ScrollTrigger.create({
-            trigger: colorSection,
-            scroller: ".smooth-scroll",
-            start: "top 60%",
-            onEnter: () =>
-                gsap.to("body", {
-                    backgroundColor: colorSection.dataset.bgcolor,
-                    color: colorSection.dataset.textcolor,
-                    overwrite: "auto"
-                }),
-            onLeaveBack: () =>
-                gsap.to("body", {
-                    backgroundColor: prevBg,
-                    color: prevText,
-                    overwrite: "auto"
-                })
-        });
-    });
+gsap.to(".navItemLinkInner", { attr: { x: 0 }, duration: 1, repeat: -1, yoyo: true });
+// humburger menu
+var t1 = new TimelineMax({ paused: true });
 
-}
-ChangeColor()
+t1.to(".nav-container", 1, {
+    left: -1,
+    ease: Expo.easeInOut,
+    duration: 1,
+}, "-=0.8");
+
+t1.staggerFrom(
+    ".Menu-nav > div, .nav-second > div",
+    0.8, { y: 100, opacity: 0, ease: Expo.easeOut },
+    "0.1",
+    "-=0.2"
+);
+
+t1.reverse();
+$(document).on("click", ".menu-open", function() {
+    t1.reversed(!t1.reversed());
+});
+$(document).on("click", ".menu-close", function() {
+    t1.reversed(!t1.reversed());
+});
+$(document).on("click", ".nav-num a", function() {
+    t1.reversed(!t1.reversed());
+});
+
+//
+window.addEventListener("load", function() {
+    const hov = document.querySelectorAll('.hov')
+
+    hov.forEach((el) => {
+            const image = el.querySelector('img')
+
+            el.addEventListener('mouseenter', (e) => {
+                gsap.to(image, { autoAlpha: 1, width: 400, })
+            })
+
+            el.addEventListener('mouseleave', (e) => {
+                gsap.to(image, { autoAlpha: 0, width: 0, })
+            })
+
+            el.addEventListener('mousemove', (e) => {
+                gsap.set(image, { x: e.offsetX - 200 })
+            })
+        })
+        // 
+});
+
 // Hero Section
 function HeroSection() {
 
@@ -744,86 +665,35 @@ function HeroSection() {
         ease: 'power1.inOut',
     }, 90);
 }
-    HeroSection();
-    
-    function Works() {
-        let work = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.works__inner',
-                start: '-300 top',
-                end: '500 top',
-                scroller: ".smooth-scroll",
-                toggleActions: 'restart reverse restart reverse ',
-    
-            },
+
+
+// Change Color
+function ChangeColor() {
+    const scrollColorElems = document.querySelectorAll("[data-bgcolor]");
+    scrollColorElems.forEach((colorSection, i) => {
+        const prevBg = i === 0 ? "" : scrollColorElems[i - 1].dataset.bgcolor;
+        const prevText = i === 0 ? "" : scrollColorElems[i - 1].dataset.textcolor;
+
+        ScrollTrigger.create({
+            trigger: colorSection,
+            scroller: ".smooth-scroll",
+            start: "top 60%",
+            onEnter: () =>
+                gsap.to("body", {
+                    backgroundColor: colorSection.dataset.bgcolor,
+                    color: colorSection.dataset.textcolor,
+                    overwrite: "auto"
+                }),
+            onLeaveBack: () =>
+                gsap.to("body", {
+                    backgroundColor: prevBg,
+                    color: prevText,
+                    overwrite: "auto"
+                })
         });
-    
-        work.from(".works__hero__line", 1, {
-            opacity: 0,
-            duration: 0.3,
-            ease: "power1.In",
-        }, "-=0.5")
-    
-    }
-    Works()
-   
-    
- }
+    });
 
-
-gsap.to(".navItemLinkInner", { attr: { x: 0 }, duration: 1, repeat: -1, yoyo: true });
-// humburger menu
-var t1 = new TimelineMax({ paused: true });
-
-t1.to(".nav-container", 1, {
-    left: -1,
-    ease: Expo.easeInOut,
-    duration: 1,
-}, "-=0.8");
-
-t1.staggerFrom(
-    ".Menu-nav > div, .nav-second > div",
-    0.8, { y: 100, opacity: 0, ease: Expo.easeOut },
-    "0.1",
-    "-=0.2"
-);
-
-t1.reverse();
-$(document).on("click", ".menu-open", function() {
-    t1.reversed(!t1.reversed());
-});
-$(document).on("click", ".menu-close", function() {
-    t1.reversed(!t1.reversed());
-});
-$(document).on("click", ".nav-num a", function() {
-    t1.reversed(!t1.reversed());
-});
-
-//
-window.addEventListener("load", function() {
-    const hov = document.querySelectorAll('.hov')
-
-    hov.forEach((el) => {
-            const image = el.querySelector('img')
-
-            el.addEventListener('mouseenter', (e) => {
-                gsap.to(image, { autoAlpha: 1, width: 400, })
-            })
-
-            el.addEventListener('mouseleave', (e) => {
-                gsap.to(image, { autoAlpha: 0, width: 0, })
-            })
-
-            el.addEventListener('mousemove', (e) => {
-                gsap.set(image, { x: e.offsetX - 200 })
-            })
-        })
-        // 
-});
-
-
-
-
+}
 
 /* Recent Works Carousel */
 
@@ -1039,7 +909,25 @@ function Horizontal() {
     }, "-=4")
 }
 
+function Works() {
+    let work = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.works__inner',
+            start: '-300 top',
+            end: '500 top',
+            scroller: ".smooth-scroll",
+            toggleActions: 'restart reverse restart reverse ',
 
+        },
+    });
+
+    work.from(".works__hero__line", 1, {
+        opacity: 0,
+        duration: 0.3,
+        ease: "power1.In",
+    }, "-=0.5")
+
+}
 
 
 // title change

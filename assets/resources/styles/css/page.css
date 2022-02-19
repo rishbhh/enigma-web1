@@ -432,6 +432,42 @@ ul {
   font-family: 'Freight-Display-Pro-Semibold';
   src: url('/fonts/FreightDispProLight-Regular.woff');
 }
+@font-face {
+  font-family: 'Qartella-Bold';
+  src: url('/fonts/Qartella-Bold.woff');
+}
+@font-face {
+  font-family: 'Qartella-Bold-I';
+  src: url('/fonts/Qartella-BoldItalic.woff');
+}
+@font-face {
+  font-family: 'Qartella-exBold';
+  src: url('/fonts/Qartella-ExtraBold.woff');
+}
+@font-face {
+  font-family: 'Qartella-ExtraBoldItalic';
+  src: url('/fonts/Qartella-ExtraBoldItalic.woff');
+}
+@font-face {
+  font-family: 'Qartella-Regular';
+  src: url('/fonts/Qartella-Regular.woff');
+}
+@font-face {
+  font-family: 'Qartella-Light';
+  src: url('/fonts/Qartella-Light.woff');
+}
+@font-face {
+  font-family: 'FocusGrotesk-ragu';
+  src: url('/fonts/FocusGrotesk-Regular.woff');
+}
+@font-face {
+  font-family: 'FocusGrotesk-thin';
+  src: url('/fonts/FocusGrotesk-Thin.woff');
+}
+@font-face {
+  font-family: 'Rogie';
+  src: url('/fonts/Rogie.woff');
+}
 .float_r {
   float: right;
 }
@@ -3844,6 +3880,9 @@ header {
 .mobl {
   display: none;
 }
+.w-hde {
+  display: none;
+}
 @media screen and (max-width: 767px) {
   .mobl {
     display: block;
@@ -4258,9 +4297,9 @@ header {
           align-items: center;
 }
 #about2 .about-p {
-  padding-left: 6%;
+  padding-left: 3%;
   width: 31%;
-  font-size: 1.1em;
+  font-size: 1.3em;
   letter-spacing: 2px;
   overflow: hidden;
 }
@@ -4276,11 +4315,12 @@ header {
 #about2 .big-h h1 {
   margin: auto;
   position: relative;
-  font-family: 'NeueHaasDisplay-me';
-  right: -54px;
+  font-family: rogie;
+  right: 7px;
+  letter-spacing: 6px;
   line-height: 1;
   font-size: 9em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 #about2 .big-h2 {
   overflow: hidden;
@@ -4288,12 +4328,12 @@ header {
 #about2 .big-h2 h1 {
   margin: 0;
   position: relative;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: 'Rogie';
   left: -12px;
   top: 0;
   line-height: 1.4;
   font-size: 9.3em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 #about2 .big-h3 {
   overflow: hidden;
@@ -4464,7 +4504,7 @@ header {
   font-synthesis: none;
   letter-spacing: 0.1em;
   /* text-transform: uppercase; */
-  font-family: 'NeueHaasDisplay-light';
+  font-family: 'Qartella-Regular';
 }
 .c-hm-us_title {
   max-width: 38vw;
@@ -4474,8 +4514,8 @@ header {
 .t-d3-fluid {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: 'NeueHaasDisplay-me';
-  font-size: 2.5vw;
+  font-family: 'Rogie';
+  font-size: 2.6vw;
   line-height: 0.9;
   letter-spacing: 0.05em;
   text-transform: capitalize;
@@ -6746,10 +6786,11 @@ header {
 }
 @media screen and (max-width: 1920px) {
   #about2 .big-h h1 {
-    font-size: 9.9em;
+    font-size: 12.92em;
   }
   #about2 .big-h2 h1 {
-    font-size: 10.1em;
+    left: 26px;
+    letter-spacing: 2px;
   }
   #about2 .about-p p {
     font-size: 1em;
@@ -6778,11 +6819,12 @@ header {
 }
 @media screen and (max-width: 1440px) {
   #about2 .big-h h1 {
-    font-size: 9.4em;
+    font-size: 12.92em;
   }
   #about2 .big-h2 h1 {
-    font-size: 9.52em;
-    left: -4px;
+    font-size: 12.92em;
+    left: 26px;
+    letter-spacing: 2px;
   }
   #about2 .about-p p {
     font-size: 1em;
@@ -7313,11 +7355,11 @@ header {
 .accordion-title h2 {
   font-size: 70px;
   /* font-weight: 800; */
-  font-family: 'NeueHaasDisplay-me';
+  font-family: 'rogie';
   letter-spacing: 6px;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: #ffffff;
-  -webkit-text-stroke: 1px;
+  -webkit-text-stroke: 0.4px;
   padding-left: 52px;
   stroke: #ffffff;
   color: #fff;
@@ -7356,8 +7398,8 @@ header {
   overflow: hidden;
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-  font-family: 'NeueHaasDisplay-Roman';
-  font-size: 1em;
+  font-family: 'Qartella-Regular';
+  font-size: 1.2em;
   padding-right: 17%;
   letter-spacing: 2px;
   margin-bottom: 30px;
