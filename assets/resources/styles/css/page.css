@@ -6853,10 +6853,10 @@ header {
 }
 @media screen and (max-width: 1367px) {
   #about2 .big-h h1 {
-    font-size: 8.8em;
+    font-size: 11.3em;
   }
   #about2 .big-h2 h1 {
-    font-size: 9em;
+    font-size: 11.3em;
   }
   #about2 .about-p p {
     font-size: 1em;
@@ -6879,10 +6879,10 @@ header {
 }
 @media screen and (max-width: 1280px) {
   #about2 .big-h h1 {
-    font-size: 8em;
+    font-size: 11.3em;
   }
   #about2 .big-h2 h1 {
-    font-size: 8.3em;
+    font-size: 11.3em;
   }
   #about2 .about-p p {
     font-size: 0.9em;
