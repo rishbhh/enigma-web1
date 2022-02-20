@@ -468,6 +468,26 @@ ul {
   font-family: 'Rogie';
   src: url('/fonts/Rogie.woff');
 }
+@font-face {
+  font-family: 'Origin-Regular';
+  src: url('/fonts/Origin-Regular.woff');
+}
+@font-face {
+  font-family: 'Origin-Light';
+  src: url('/fonts/Origin-Light.woff');
+}
+@font-face {
+  font-family: 'Origin-Bold';
+  src: url('/fonts/Origin-Bold.woff');
+}
+@font-face {
+  font-family: 'Origin-Heavy';
+  src: url('/fonts/Origin-Heavy.woff');
+}
+@font-face {
+  font-family: 'Ageo';
+  src: url('/fonts/Ageo.woff');
+}
 .float_r {
   float: right;
 }
@@ -625,7 +645,7 @@ button:hover .button-text {
   visibility: hidden;
 }
 p {
-  font-family: 'NeueHaasDisplay-Roman';
+  font-family: 'Ageo';
 }
 body,
 html {
@@ -4304,7 +4324,7 @@ header {
   overflow: hidden;
 }
 #about2 .about-p p {
-  font-family: 'NeueHaasDisplay-me';
+  font-family: 'Ageo';
   font-size: 1.1em;
 }
 #about2 .big-h {
@@ -4315,7 +4335,7 @@ header {
 #about2 .big-h h1 {
   margin: auto;
   position: relative;
-  font-family: rogie;
+  font-family: 'Origin-Bold';
   right: 7px;
   letter-spacing: 6px;
   line-height: 1;
@@ -4328,7 +4348,7 @@ header {
 #about2 .big-h2 h1 {
   margin: 0;
   position: relative;
-  font-family: 'Rogie';
+  font-family: 'Origin-Bold';
   left: -12px;
   top: 0;
   line-height: 1.4;
@@ -4341,7 +4361,7 @@ header {
 #about2 .big-h3 h1 {
   margin: 0;
   position: relative;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: 'Origin-Regular';
   right: -100px;
   top: 0;
   line-height: 1.1;
@@ -4377,7 +4397,7 @@ header {
 }
 #about2 .overlap .right-content p {
   letter-spacing: 1px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: 'Ageo';
   font-size: 2em;
 }
 #about2 .overlap .right-content .en-form-submit {
@@ -4680,6 +4700,7 @@ header {
   line-height: 95px;
   text-transform: uppercase;
   margin-bottom: 0px;
+  font-family: 'Origin-Regular';
 }
 .opacity-0 {
   opacity: 0;
@@ -4700,6 +4721,7 @@ header {
   padding: 10% 13%;
   font-size: 2.5em;
   line-height: 1.2;
+  font-family: 'Ageo';
 }
 .top-p .word {
   overflow: hidden;
@@ -4731,7 +4753,7 @@ header {
 }
 .about-page .container .flex .left-con h4 {
   font-size: 1.6em;
-  font-family: 'NeueHaasDisplay-bol';
+  font-family: 'Origin-Bold';
 }
 .about-page .container .flex .right-con {
   width: 61%;
@@ -4739,7 +4761,7 @@ header {
 .about-page .container .flex .right-con h3 {
   font-size: 1.6em;
   margin-bottom: 20px;
-  font-family: 'NeueHaasDisplay-bol';
+  font-family: 'Origin-Bold';
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -4760,7 +4782,7 @@ header {
   color: #fff;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'NeueHaasDisplay-bol';
+  font-family: 'Origin-Bold';
 }
 .client-section .grid-logo {
   display: -webkit-box;
@@ -4796,7 +4818,7 @@ header {
   color: #fff;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'NeueHaasDisplay-bol';
+  font-family: 'Origin-Bold';
 }
 .team-section .top-div p {
   color: #fff;
@@ -5066,6 +5088,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  font-family: 'Origin-Bold';
 }
 .team-s {
   margin-top: 10%;
@@ -5081,7 +5104,7 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: left;
-  font-family: 'NeueHaasDisplay-bol';
+  font-family: 'Origin-Bold';
   overflow: hidden;
 }
 .team-s .container .he span {
@@ -6879,10 +6902,10 @@ header {
 }
 @media screen and (max-width: 1280px) {
   #about2 .big-h h1 {
-    font-size: 11.3em;
+    font-size: 8.3em;
   }
   #about2 .big-h2 h1 {
-    font-size: 11.3em;
+    font-size: 8.2em;
   }
   #about2 .about-p p {
     font-size: 0.9em;
