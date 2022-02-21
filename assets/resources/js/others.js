@@ -121,8 +121,8 @@ Ser_.forEach((container) => {
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: container,
-            start: '-300 top',
-            end: '400 center',
+            start: '-500 top',
+            end: '500 center',
             scroller: ".smooth-scroll",
             // toggleActions: "restart none none reset"
             toggleActions: 'play reverse play reverse ',

@@ -4799,6 +4799,7 @@ header {
 }
 .client-section .grid-logo .logo-item {
   width: 21%;
+  padding: 0px 4.2%;
 }
 .client-section .grid-logo .logo-item img {
   width: 100%;
@@ -7802,6 +7803,19 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+@media screen and (max-width: 1680px) {
+  .services-s .video {
+    width: 46%;
+    /* height: 940px; */
+  }
+  .services-s .content-p {
+    padding-right: 0%;
+  }
+  .services-s .flex-con .fle h3 {
+    font-size: 4em;
+    opacity: 0;
+  }
 }
 @media screen and (max-width: 1440px) {
   .works__hero__line {
