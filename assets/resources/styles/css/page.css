@@ -6833,7 +6833,7 @@ header {
 }
 @media screen and (max-width: 1920px) {
   #about2 .big-h h1 {
-    font-size: 12.92em;
+    font-size: 9.42em;
   }
   #about2 .big-h2 h1 {
     left: 26px;
@@ -6876,10 +6876,10 @@ header {
 }
 @media screen and (max-width: 1440px) {
   #about2 .big-h h1 {
-    font-size: 12.92em;
+    font-size: 9.42em;
   }
   #about2 .big-h2 h1 {
-    font-size: 12.92em;
+    font-size: 9.25em;
     left: 26px;
     letter-spacing: 2px;
   }
