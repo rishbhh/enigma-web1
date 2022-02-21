@@ -2227,14 +2227,12 @@ header {
     bottom: 13vh;
   }
 }
-@media (min-width: 1024px) {
-  .nav-second {
-    position: absolute;
-    text-align: right;
-    bottom: 0;
-    right: -4rem;
-    bottom: 13vh;
-  }
+.nav-second {
+  position: absolute;
+  text-align: right;
+  bottom: 0;
+  right: -4rem;
+  bottom: 13vh;
 }
 .quick-clickItem {
   text-transform: uppercase;
@@ -2489,6 +2487,18 @@ header {
   transition: -webkit-transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@media only screen and (max-width: 1680px) {
+  .nav-second {
+    right: -3rem;
+    bottom: 1vh;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .nav-second {
+    right: -1rem;
+    bottom: 4vh;
+  }
 }
 @media screen and (max-width: 1280px) {
   .Nav-wrapper {
