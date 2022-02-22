@@ -924,6 +924,7 @@ let Team = document.querySelectorAll(".team-s");
 Team.forEach((container) => {
     let he = container.querySelector(".he span");
     let pr = container.querySelector(".parh");
+
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: container,
@@ -951,6 +952,7 @@ Team.forEach((container) => {
         ease: Power2.out,
         opacity: 0
     }, "-=0.9")
+  
 
 });
 

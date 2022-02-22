@@ -3921,13 +3921,22 @@ header {
     display: none;
   }
   .mobli-cont {
+    display: none;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 100vw;
     height: 100vh;
+    position: absolute;
     z-index: 12 !important;
     background: #fff;
     overflow: hidden;
   }
   .mobli-cont .mobli-cont_content {
+    -webkit-backdrop-filter: blur(15px) !important;
+            backdrop-filter: blur(15px) !important;
     opacity: 1;
     z-index: 13;
     position: relative;
@@ -3937,14 +3946,14 @@ header {
     bottom: 0;
     width: 100%;
     text-align: center;
-    font-size: 2.6em;
-    overflow: hidden;
+    font-size: 1.6vw;
   }
   .mobli-cont .mobli-cont_content .wep {
     padding-right: 5px;
     display: inline-block;
     letter-spacing: 2px;
     font-family: 'NeueHaasDisplay-me';
+    opacity: 0;
   }
   .lapi-d {
     width: 100vw;
@@ -4345,7 +4354,7 @@ header {
 #about2 .big-h h1 {
   margin: auto;
   position: relative;
-  font-family: 'Origin-Bold';
+  font-family: 'NeueHaasDisplay-me';
   right: 7px;
   letter-spacing: 6px;
   line-height: 1;
@@ -4358,7 +4367,7 @@ header {
 #about2 .big-h2 h1 {
   margin: 0;
   position: relative;
-  font-family: 'Origin-Bold';
+  font-family: 'NeueHaasDisplay-me';
   left: -12px;
   top: 0;
   line-height: 1.4;
@@ -4763,7 +4772,7 @@ header {
 }
 .about-page .container .flex .left-con h4 {
   font-size: 1.6em;
-  font-family: 'Origin-Bold';
+  font-family: 'NeueHaasDisplay-me';
 }
 .about-page .container .flex .right-con {
   width: 61%;
@@ -4771,7 +4780,7 @@ header {
 .about-page .container .flex .right-con h3 {
   font-size: 1.6em;
   margin-bottom: 20px;
-  font-family: 'Origin-Bold';
+  font-family: 'NeueHaasDisplay-me';
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -4792,7 +4801,7 @@ header {
   color: #fff;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'Origin-Bold';
+  font-family: 'NeueHaasDisplay-me';
 }
 .client-section .grid-logo {
   display: -webkit-box;
@@ -4830,7 +4839,7 @@ header {
   color: #fff;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'Origin-Bold';
+  font-family: 'NeueHaasDisplay-me';
 }
 .team-section .top-div p {
   color: #fff;
@@ -5122,7 +5131,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  font-family: 'Origin-Bold';
+  font-family: 'NeueHaasDisplay-me';
 }
 .team-s {
   margin-top: 10%;
@@ -5138,7 +5147,7 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: left;
-  font-family: 'Origin-Bold';
+  font-family: 'NeueHaasDisplay-me';
   overflow: hidden;
 }
 .team-s .container .he span {
