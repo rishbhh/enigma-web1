@@ -3983,6 +3983,31 @@ header {
   .mobli-cont .mobli-cont_content .wep .word {
     opacity: 0;
   }
+  .mobli-cont .lapi-content {
+    opacity: 1;
+    z-index: 13;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2.3em;
+  }
+  .mobli-cont .lapi-content .wor {
+    padding-right: 5px;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-family: 'NeueHaasDisplay-me';
+  }
+  .mobli-cont .lapi-content p {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #fff;
+  }
   .lapi-d {
     width: 100vw;
     height: 100vh;
@@ -3995,31 +4020,6 @@ header {
     z-index: -1;
     width: 100%;
     height: 100%;
-  }
-  .lapi-d .lapi-content {
-    z-index: 13;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 2.6em;
-    overflow: hidden;
-  }
-  .lapi-d .lapi-content .wor {
-    padding-right: 5px;
-    display: inline-block;
-    letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-me';
-  }
-  .lapi-d .lapi-content p {
-    text-align: center;
-    letter-spacing: 3px;
-    font-size: 1.3em;
-    font-weight: 600;
-    color: #fff;
   }
 }
 #about {
