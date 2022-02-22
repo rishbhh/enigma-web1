@@ -470,13 +470,20 @@ function HeroSection() {
     //     opacity: 0, duration: 2, ease: 'power1.inOut',stagger: 0.3
     // }, 2);
     
-    // fixed_scrol.from('.mobli-cont_content p ', {
-    //     opacity: 1, duration: 2, ease: 'power1.inOut',
-    //   }, 3);
+    fixed_scrol.from('.en-cicle ', {
+        opacity: 1, duration: 2, ease: 'power1.inOut',
+      }, 3);
 
-      fixed_scrol.to('.mobli-cont', { opacity: 1, duration: 5, ease: 'power1.inOut' }, 15);
-      fixed_scrol.to('.mobli-cont', { display: ('block'), ease: 'power1.inOut' }, 15);
-      fixed_scrol.to('.mobli-cont_content p', { opacity: 1, duration: 2, ease: 'power1.inOut' }, 19);
+      fixed_scrol.to('.mobli-cont', { opacity: 1, duration: 5, ease: 'power1.inOut' }, 5);
+    fixed_scrol.to('.mobli-cont', { display: ('block'), ease: 'power1.inOut' }, 5);
+    fixed_scrol.from('.en-cicle ', {
+        opacity: 1, duration: 2, ease: 'power1.inOut',
+    }, 9);
+    fixed_scrol.to('.en-bg ',{ duration: 2, ease: 'power1.inOut',scale:0.7,opacity:1
+    }, 10);
+    fixed_scrol.to('.en-bg ', { duration: 2, ease: 'power1.inOut',scale:1.2
+}, 11);
+      fixed_scrol.to('.mobli-cont_content p', { opacity: 1, duration: 2, ease: 'power1.inOut' }, 15);
    
 }
     // function abt() {
