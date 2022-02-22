@@ -482,7 +482,7 @@ function HeroSection() {
     fixed_scrol.to('.en-bg ',{ duration: 2, ease: 'power1.inOut',scale:0.7,opacity:1
     }, 10);
     fixed_scrol.to('.en-bg ', { duration: 2, ease: 'power1.inOut',scale:1.2
-}, 11);
+}, 12);
       fixed_scrol.to('.mobli-cont_content p', { opacity: 1, duration: 2, ease: 'power1.inOut' }, 15);
    
 }
