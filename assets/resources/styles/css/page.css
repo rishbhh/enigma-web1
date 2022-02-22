@@ -3978,6 +3978,9 @@ header {
     display: inline-block;
     letter-spacing: 2px;
     font-family: 'NeueHaasDisplay-me';
+    color: #fff;
+  }
+  .mobli-cont .mobli-cont_content .wep .word {
     opacity: 0;
   }
   .lapi-d {
