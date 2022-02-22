@@ -388,7 +388,7 @@ ScrollTrigger.config({
 
 
 // Moobile Js
-const mobile_size = window.matchMedia('(max-width: 1150px)');
+const mobile_size = window.matchMedia('(max-width: 900px)');
 if (mobile_size.matches) {
 
     ScrollTrigger.config({
@@ -407,7 +407,7 @@ function HeroSection() {
         scrollTrigger: {
             trigger: '.hero-section',
             start: 'top top',
-            end: '4500 center',
+            end: '4000 center',
             scroller: ".smooth-scroll",
             markers: false,
             pin: true,
@@ -450,24 +450,58 @@ function HeroSection() {
         duration: 5,
         ease: 'power1.inOut',
         stagger: 0.3
-    }, "-=1.2")
-    fixed_scrol.from(".small_heading", {
-        opacity: 0,
+    }, "-=1.6")
+    fixed_scrol.to(".small_heading", {
+        opacity: 1,
         y: 20,
         duration: 3,
         ease: "power1.In"
-    }, "3.8")
+    }, "3.3")
 
     fixed_scrol.to(".logo", 7, {
         opacity: 1,
-        duration: 10,
+        duration: 1,
         ease: "power2.inOut",
         zIndex: 2,
 
-    }, 15)
+    }, 1)
 
+    // fixed_scrol.from('.mobli-cont_content p ', {
+    //     opacity: 0, duration: 2, ease: 'power1.inOut',stagger: 0.3
+    // }, 2);
+    
+    fixed_scrol.from('.en-cicle ', {
+        opacity: 1, duration: 2, ease: 'power1.inOut',
+      }, 3);
+
+      fixed_scrol.to('.mobli-cont', { opacity: 1, duration: 5, ease: 'power1.inOut' }, 5);
+    fixed_scrol.to('.mobli-cont', { display: ('block'), ease: 'power1.inOut' }, 5);
+    fixed_scrol.from('.en-cicle ', {
+        opacity: 1, duration: 2, ease: 'power1.inOut',
+    }, 9);
+    fixed_scrol.to('.en-bg ',{ duration: 2, ease: 'power1.inOut',scale:0.7,opacity:1
+    }, 10);
+    fixed_scrol.to('.en-bg ', { duration: 2, ease: 'power1.inOut',scale:1.2
+}, 12);
+      fixed_scrol.to('.mobli-cont_content p', { opacity: 1, duration: 2, ease: 'power1.inOut' }, 15);
    
 }
+    // function abt() {
+    //     let abt_scrol = gsap.timeline({
+    //         scrollTrigger: {
+    //             trigger: '.mobli-cont',
+    //             start: 'top top',
+    //             end: '100 center',
+    //             scroller: ".smooth-scroll",
+    //             markers: false,
+    //             pin: true,
+    //             // pinReparent: true,
+    //             scrub: 10,
+    //         },
+    //     });
+        
+    // }
+    // abt()
     
     
 }
@@ -1207,6 +1241,7 @@ function Scrol() {
         x: -horizontalScrollLength,
         ease: "none",
         //   stagger: 0.8,
+        
     });
 
 }

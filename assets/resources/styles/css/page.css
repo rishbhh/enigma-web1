@@ -2227,14 +2227,12 @@ header {
     bottom: 13vh;
   }
 }
-@media (min-width: 1024px) {
-  .nav-second {
-    position: absolute;
-    text-align: right;
-    bottom: 0;
-    right: -4rem;
-    bottom: 13vh;
-  }
+.nav-second {
+  position: absolute;
+  text-align: right;
+  bottom: 0;
+  right: -4rem;
+  bottom: 13vh;
 }
 .quick-clickItem {
   text-transform: uppercase;
@@ -2489,6 +2487,18 @@ header {
   transition: -webkit-transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@media only screen and (max-width: 1680px) {
+  .nav-second {
+    right: -3rem;
+    bottom: 1vh;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .nav-second {
+    right: -1rem;
+    bottom: 4vh;
+  }
 }
 @media screen and (max-width: 1280px) {
   .Nav-wrapper {
@@ -3911,11 +3921,45 @@ header {
     display: none;
   }
   .mobli-cont {
+    display: none;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 100vw;
     height: 100vh;
+    position: absolute;
     z-index: 12 !important;
-    background: #fff;
+    background: #000000;
     overflow: hidden;
+  }
+  .mobli-cont .en-cicle {
+    background-image: url('/assets/resources/img/motion-circle.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    position: absolute;
+    height: 100vh;
+    inset: 0px;
+    will-change: transform, opacity;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .mobli-cont .en-bg {
+    background-image: url('/assets/resources/img/lights-metabolic-5a922075f466090495b1878b25861050.png.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    height: 100vh;
+    width: 468px;
+    inset: 0px;
+    will-change: transform, opacity;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   .mobli-cont .mobli-cont_content {
     opacity: 1;
@@ -3927,14 +3971,14 @@ header {
     bottom: 0;
     width: 100%;
     text-align: center;
-    font-size: 2.6em;
-    overflow: hidden;
+    font-size: 2.3em;
   }
   .mobli-cont .mobli-cont_content .wep {
     padding-right: 5px;
     display: inline-block;
     letter-spacing: 2px;
     font-family: 'NeueHaasDisplay-me';
+    opacity: 0;
   }
   .lapi-d {
     width: 100vw;
@@ -4335,7 +4379,7 @@ header {
 #about2 .big-h h1 {
   margin: auto;
   position: relative;
-  font-family: 'Origin-Bold';
+  font-family: 'NeueHaasDisplay-me';
   right: 7px;
   letter-spacing: 6px;
   line-height: 1;
@@ -4348,7 +4392,7 @@ header {
 #about2 .big-h2 h1 {
   margin: 0;
   position: relative;
-  font-family: 'Origin-Bold';
+  font-family: 'NeueHaasDisplay-me';
   left: -12px;
   top: 0;
   line-height: 1.4;
@@ -4753,7 +4797,7 @@ header {
 }
 .about-page .container .flex .left-con h4 {
   font-size: 1.6em;
-  font-family: 'Origin-Bold';
+  font-family: 'NeueHaasDisplay-me';
 }
 .about-page .container .flex .right-con {
   width: 61%;
@@ -4761,7 +4805,7 @@ header {
 .about-page .container .flex .right-con h3 {
   font-size: 1.6em;
   margin-bottom: 20px;
-  font-family: 'Origin-Bold';
+  font-family: 'NeueHaasDisplay-me';
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -4782,7 +4826,7 @@ header {
   color: #fff;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'Origin-Bold';
+  font-family: 'NeueHaasDisplay-me';
 }
 .client-section .grid-logo {
   display: -webkit-box;
@@ -4820,7 +4864,7 @@ header {
   color: #fff;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'Origin-Bold';
+  font-family: 'NeueHaasDisplay-me';
 }
 .team-section .top-div p {
   color: #fff;
@@ -5112,7 +5156,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  font-family: 'Origin-Bold';
+  font-family: 'NeueHaasDisplay-me';
 }
 .team-s {
   margin-top: 10%;
@@ -5128,7 +5172,7 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: left;
-  font-family: 'Origin-Bold';
+  font-family: 'NeueHaasDisplay-me';
   overflow: hidden;
 }
 .team-s .container .he span {
@@ -6833,7 +6877,7 @@ header {
 }
 @media screen and (max-width: 1920px) {
   #about2 .big-h h1 {
-    font-size: 12.92em;
+    font-size: 9.42em;
   }
   #about2 .big-h2 h1 {
     left: 26px;
@@ -6876,10 +6920,10 @@ header {
 }
 @media screen and (max-width: 1440px) {
   #about2 .big-h h1 {
-    font-size: 12.92em;
+    font-size: 9.42em;
   }
   #about2 .big-h2 h1 {
-    font-size: 12.92em;
+    font-size: 9.25em;
     left: 26px;
     letter-spacing: 2px;
   }
