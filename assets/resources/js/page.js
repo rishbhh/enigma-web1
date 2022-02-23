@@ -483,7 +483,11 @@ function HeroSection() {
     }, 10);
     fixed_scrol.to('.en-bg ', { duration: 2, ease: 'power1.inOut',scale:1.2
 }, 12);
-      fixed_scrol.to('.mobli-cont_content p .word', { opacity: 1, duration: 2, ease: 'power1.inOut',stagger:0.3,y:10 }, 15);
+    fixed_scrol.to('.mobli-cont_content p .word', { opacity: 1, duration: 2, ease: 'power1.inOut', stagger: 0.3, y: 10 }, 15);
+    fixed_scrol.to('.mobli-cont_content p .word', { opacity: 0, duration: 2, ease: 'power1.inOut', }, 17);
+
+    fixed_scrol.to('.lapi-content p ', { opacity: 1, duration: 2, ease: 'power1.inOut', stagger: 0.3, y: 10 }, 19);
+    fixed_scrol.to('.lapi-content p ', { opacity: 0, duration: 2, ease: 'power1.inOut', }, 21);
    
 }
     // function abt() {
