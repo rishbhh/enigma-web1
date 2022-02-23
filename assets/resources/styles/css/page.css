@@ -3986,10 +3986,8 @@ header {
   .mobli-cont .lapi-content {
     opacity: 1;
     z-index: 13;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    position: absolute;
+    top: 43%;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -4003,10 +4001,6 @@ header {
     opacity: 0;
   }
   .mobli-cont .lapi-content p {
-    text-align: center;
-    letter-spacing: 3px;
-    font-size: 1.3em;
-    font-weight: 600;
     color: #fff;
   }
   .lapi-d {
@@ -7460,7 +7454,7 @@ header {
 .accordion-title h2 {
   font-size: 70px;
   /* font-weight: 800; */
-  font-family: 'rogie';
+  font-family: 'NeueHaasDisplay-me';
   letter-spacing: 6px;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: #ffffff;
@@ -7917,11 +7911,21 @@ header {
   #services {
     padding: 5rem 1rem;
   }
+  #services .accordion-title {
+    padding: 40px 0;
+    cursor: pointer;
+  }
   #services .accordion-title h2 {
-    font-size: 38px;
+    font-size: 30px;
     letter-spacing: 3px;
     padding-left: 34px;
     line-height: 1.1;
+    -webkit-text-fill-color: #fff;
+    font-family: 'NeueHaasDisplay-roman';
+    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-stroke: 0.4px;
+    stroke: #ffffff;
+    color: #fff;
   }
   #services .arrow-icon-large svg {
     fill: none;
