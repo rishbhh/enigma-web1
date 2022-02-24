@@ -1,78 +1,81 @@
-
 .init-load {
-    opacity: 1;
-    z-index: 20;
-    background-color: #000000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
+  opacity: 1;
+  z-index: 20;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  .inner {
+    position: absolute;
+    bottom: 15vw;
+    left: 3.125vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .counter {
+    height: 50vh;
     overflow: hidden;
-    .inner {
-        position: absolute;
-        bottom: 3.125vw;
-        left: 3.125vw;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-    .counter {
-        height: 50vh;
-        overflow: hidden;
-        span {
-          background-image: linear-gradient(
-            91deg
-            ,#2d4de0 0,#9f71f0 30%,#fc6277 58%,#f8ef6f 95%);
-            -webkit-text-fill-color: transparent;
--text-fill-color: transparent;
--webkit-background-clip: text;
-background-clip: text;
-background-size: 100% 500%;
-            // font-family: 'Bebas Neue', cursive;
-            font-size: 50vh;
-            display: block;
-            line-height: 1;
-            animation: gradient 1s ease infinite;
-            animation-direction: alternate;
-            font-family: 'Bebas Neue';
-                  
-                  @keyframes gradient {
-                    0% {
-                        background-position: 0 0
-                    }
-                    100% {
-                        background-position: 0 100%
-                    }
-                }
+
+    span {
+      background-image: linear-gradient(91deg, #2d4de0 0, #9f71f0 30%, #fc6277 58%, #f8ef6f 95%);
+      -webkit-text-fill-color: transparent;
+      -text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 100% 500%;
+      // font-family: 'Bebas Neue', cursive;
+      font-size: 50vh;
+      display: block;
+      line-height: 1;
+      animation: gradient 1s ease infinite;
+      animation-direction: alternate;
+      font-family: 'Bebas Neue';
+
+      @keyframes gradient {
+        0% {
+          background-position: 0 0
         }
+
+        100% {
+          background-position: 0 100%
+        }
+      }
     }
-    .percentage {
-      font-family: 'Bebas Neue', cursive;
-        font-size: 100px;
-        line-height: 1.1;
-        font-weight: 600;
-        position: absolute;
-        bottom: 9px;
-        right: -72px;
-        color: #efefef;
-    }
+  }
+
+  .percentage {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 100px;
+    line-height: 1.1;
+    font-weight: 600;
+    position: absolute;
+    bottom: 9px;
+    right: -72px;
+    color: #efefef;
+  }
 }
 
 #noise {
-    -webkit-animation: grain 6s steps(10) infinite;
-    animation: grain 6s steps(10) infinite;
-    background-image: url(https://www.weareenigma.com/enigma-new/assets/resources/img/noise-full.png);
-    background-repeat: repeat;
-    height: 300%;
-    left: -50%;
-    opacity: 0.05;
-    position: fixed;
-    top: -100%;
-    width: 300%;
-    z-index: 0;
-    pointer-events: none;
+  -webkit-animation: grain 6s steps(10) infinite;
+  animation: grain 6s steps(10) infinite;
+  background-image: url(https://www.weareenigma.com/enigma-new/assets/resources/img/noise-full.png);
+  background-repeat: repeat;
+  height: 300%;
+  left: -50%;
+  opacity: 0.05;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+  z-index: 0;
+  pointer-events: none;
 }
+
 #noise2 {
   -webkit-animation: grain 6s steps(10) infinite;
   animation: grain 6s steps(10) infinite;
@@ -87,114 +90,136 @@ background-size: 100% 500%;
   z-index: 0;
   pointer-events: none;
 }
+
 @-webkit-keyframes grain {
-    0%,
-    100% {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
-    }
-    10% {
-      -webkit-transform: translate(-5%, -10%);
-              transform: translate(-5%, -10%);
-    }
-    20% {
-      -webkit-transform: translate(-15%, 5%);
-              transform: translate(-15%, 5%);
-    }
-    30% {
-      -webkit-transform: translate(7%, -25%);
-              transform: translate(7%, -25%);
-    }
-    40% {
-      -webkit-transform: translate(-5%, 25%);
-              transform: translate(-5%, 25%);
-    }
-    50% {
-      -webkit-transform: translate(-15%, 10%);
-              transform: translate(-15%, 10%);
-    }
-    60% {
-      -webkit-transform: translate(15%, 0%);
-              transform: translate(15%, 0%);
-    }
-    70% {
-      -webkit-transform: translate(0%, 15%);
-              transform: translate(0%, 15%);
-    }
-    80% {
-      -webkit-transform: translate(3%, 35%);
-              transform: translate(3%, 35%);
-    }
-    90% {
-      -webkit-transform: translate(-10%, 10%);
-              transform: translate(-10%, 10%);
-    }
+
+  0%,
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
   }
-  @keyframes grain {
-    0%,
-    100% {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
+
+  10% {
+    -webkit-transform: translate(-5%, -10%);
+    transform: translate(-5%, -10%);
+  }
+
+  20% {
+    -webkit-transform: translate(-15%, 5%);
+    transform: translate(-15%, 5%);
+  }
+
+  30% {
+    -webkit-transform: translate(7%, -25%);
+    transform: translate(7%, -25%);
+  }
+
+  40% {
+    -webkit-transform: translate(-5%, 25%);
+    transform: translate(-5%, 25%);
+  }
+
+  50% {
+    -webkit-transform: translate(-15%, 10%);
+    transform: translate(-15%, 10%);
+  }
+
+  60% {
+    -webkit-transform: translate(15%, 0%);
+    transform: translate(15%, 0%);
+  }
+
+  70% {
+    -webkit-transform: translate(0%, 15%);
+    transform: translate(0%, 15%);
+  }
+
+  80% {
+    -webkit-transform: translate(3%, 35%);
+    transform: translate(3%, 35%);
+  }
+
+  90% {
+    -webkit-transform: translate(-10%, 10%);
+    transform: translate(-10%, 10%);
+  }
+}
+
+@keyframes grain {
+
+  0%,
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  10% {
+    -webkit-transform: translate(-5%, -10%);
+    transform: translate(-5%, -10%);
+  }
+
+  20% {
+    -webkit-transform: translate(-15%, 5%);
+    transform: translate(-15%, 5%);
+  }
+
+  30% {
+    -webkit-transform: translate(7%, -25%);
+    transform: translate(7%, -25%);
+  }
+
+  40% {
+    -webkit-transform: translate(-5%, 25%);
+    transform: translate(-5%, 25%);
+  }
+
+  50% {
+    -webkit-transform: translate(-15%, 10%);
+    transform: translate(-15%, 10%);
+  }
+
+  60% {
+    -webkit-transform: translate(15%, 0%);
+    transform: translate(15%, 0%);
+  }
+
+  70% {
+    -webkit-transform: translate(0%, 15%);
+    transform: translate(0%, 15%);
+  }
+
+  80% {
+    -webkit-transform: translate(3%, 35%);
+    transform: translate(3%, 35%);
+  }
+
+  90% {
+    -webkit-transform: translate(-10%, 10%);
+    transform: translate(-10%, 10%);
+  }
+}
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+  .init-load {
+    .inner {
+      left: 1vw;
     }
-    10% {
-      -webkit-transform: translate(-5%, -10%);
-              transform: translate(-5%, -10%);
+
+    .counter {
+      height: 27vh;
+
+      span {
+        font-size: 30vh;
+      }
     }
-    20% {
-      -webkit-transform: translate(-15%, 5%);
-              transform: translate(-15%, 5%);
-    }
-    30% {
-      -webkit-transform: translate(7%, -25%);
-              transform: translate(7%, -25%);
-    }
-    40% {
-      -webkit-transform: translate(-5%, 25%);
-              transform: translate(-5%, 25%);
-    }
-    50% {
-      -webkit-transform: translate(-15%, 10%);
-              transform: translate(-15%, 10%);
-    }
-    60% {
-      -webkit-transform: translate(15%, 0%);
-              transform: translate(15%, 0%);
-    }
-    70% {
-      -webkit-transform: translate(0%, 15%);
-              transform: translate(0%, 15%);
-    }
-    80% {
-      -webkit-transform: translate(3%, 35%);
-              transform: translate(3%, 35%);
-    }
-    90% {
-      -webkit-transform: translate(-10%, 10%);
-              transform: translate(-10%, 10%);
+
+    .percentage {
+      font-size: 50px;
+      right: -32px;
     }
   }
 
 
-  
-  @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 812px) 
-  {
-    .init-load {
-      .inner {
-          left: 1vw;
-      }
-      .counter {
-          height: 27vh;
-          span {
-              font-size: 30vh;
-          }
-      }
-      .percentage {
-          font-size: 50px;
-          right: -32px;
-      }
-  }
-  
-
-  }
+}

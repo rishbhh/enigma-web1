@@ -490,24 +490,87 @@ function HeroSection() {
     // fixed_scrol.to('.lapi-content p ', { opacity: 0, duration: 2, ease: 'power1.inOut', }, 21);
    
 }
-    // function abt() {
-    //     let abt_scrol = gsap.timeline({
-    //         scrollTrigger: {
-    //             trigger: '.mobli-cont',
-    //             start: 'top top',
-    //             end: '100 center',
-    //             scroller: ".smooth-scroll",
-    //             markers: false,
-    //             pin: true,
-    //             // pinReparent: true,
-    //             scrub: 10,
-    //         },
-    //     });
-        
-    // }
-    // abt()
-    
-    
+     
+
+    function port() {
+        (function () {
+            document.addEventListener("DOMContentLoaded", function () {
+              "use strict";
+          
+              Slider.init();
+              conf.InfoBox();
+            });
+          })();
+          
+          const Slider = {
+            init: () => {
+              Slider.initialize();
+            },
+          
+            //  Click Handler Button
+            // - - - - - - - - - - - - - - - - - - - - - - - - - -
+          
+            initialize: () => {
+              var mySwiper = new Swiper(".swiper-container", {
+                direction: "horizontal",
+                loop: false,
+                grabCursor: true,
+                slidesPerView: .9,
+                centeredSlides: true,
+                spaceBetween: 0,
+                roundLengths: true,
+                pagination: {
+                  el: ".swiper-pagination" } });
+          
+          
+          
+              mySwiper.on("slideChange", function () {
+                if (mySwiper.activeIndex === 1) {
+                  let mobileContainer = conf.qS(".mobile-container");
+                  mobileContainer.className = "";
+                  mobileContainer.classList.add("mobile-container");
+                  mobileContainer.classList.add("image-2");
+                } else if (mySwiper.activeIndex === 2) {
+                  let mobileContainer = conf.qS(".mobile-container");
+                  mobileContainer.className = "";
+                  mobileContainer.classList.add("mobile-container");
+                  mobileContainer.classList.add("image-3");
+                } else if (mySwiper.activeIndex === 0) {
+                  let mobileContainer = conf.qS(".mobile-container");
+                  mobileContainer.className = "";
+                  mobileContainer.classList.add("mobile-container");
+                  mobileContainer.classList.add("image-1");
+                }
+              });
+            } };
+          
+          
+          //  Config Functions
+          // - - - - - - - - - - - - - - - - - - - - - - - - - -
+          
+          const conf = {
+            qS: selector => {
+              return document.querySelector(selector);
+            },
+            qSA: selector => {
+              return document.querySelectorAll(selector);
+            },
+            CqS: (container, selector) => {
+              return container.querySelector(selector);
+            },
+            InfoBox: () => {
+              let toggle = conf.qS(".infobox-container .infobox-toggle"),
+              detail = conf.qS(".infobox-container .infobox-detail-container");
+          
+              if (toggle) {
+                toggle.onclick = e => {
+                  e.preventDefault();
+                  detail.classList.toggle("active");
+                };
+              }
+            } };
+}
+port()
 }
 
 

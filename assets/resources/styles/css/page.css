@@ -831,6 +831,7 @@ audio:not([controls]) {
  */
 img {
   border-style: none;
+  width: 100%;
 }
 /**
  * Hide the overflow in IE.
@@ -1451,7 +1452,7 @@ template {
 }
 .init-load .inner {
   position: absolute;
-  bottom: 3.125vw;
+  bottom: 15vw;
   left: 3.125vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2524,7 +2525,7 @@ header {
 @media screen and (max-width: 767px) {
   .Nav-wrapper {
     width: 29.16667rem;
-    padding: 16rem 0 0;
+    padding: 8rem 0 0;
     margin-left: auto;
     margin-right: auto;
     height: 100vh;
@@ -2534,14 +2535,40 @@ header {
             align-items: center;
     position: relative;
   }
+  .nav-num {
+    margin-right: 0.2rem;
+    margin-left: -3rem;
+    top: -1.6rem;
+  }
   .navItemLink {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .Menu-subnav {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-evenly;
+    margin-top: -0.5rem;
+    margin-bottom: 1.8rem;
+  }
+  .Menu-subnav {
+    margin-left: 1.6rem;
+  }
+  .sub-nav {
+    margin-right: 3rem;
   }
   .nav-container {
     height: calc(var(--vh)*100);
     width: 100vw;
-    overflow-y: scroll;
     overflow-x: hidden;
+  }
+  .NavBtn[data-v-2cdfcd8e] {
+    color: #fff;
+    width: 4rem;
+    height: 4rem;
+    z-index: 99;
   }
 }
 .hero-section {
@@ -2779,7 +2806,7 @@ header {
     display: block;
     width: 12%;
     cursor: pointer;
-    bottom: 30px;
+    bottom: 50px;
     right: 20px;
   }
   .hero-section .container_hero_content .chapt-icon .scroll-circle {
@@ -7319,7 +7346,6 @@ header {
   html {
     width: 100%;
     height: 100%;
-    font-family: 'Source Sans Pro', sans-serif;
   }
   body {
     position: relative;
@@ -7430,14 +7456,210 @@ header {
     margin-top: 0px;
     margin-bottom: 0px;
     font-family: 'NeueHaasDisplay-me';
-    font-size: 2.6vw;
+    font-size: 1.6em;
     line-height: 0.9;
     letter-spacing: 0.05em;
     text-transform: capitalize;
   }
+  .mob-port .mobile-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 375px;
+    height: 100%;
+    border-radius: 0;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 20px 30px -30px #202637;
+    box-shadow: 0px 20px 30px -30px #202637;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+  .mob-port .top-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50px 40px 0;
+    position: relative;
+    z-index: 2;
+  }
+  .mob-port .top-row .menu {
+    cursor: pointer;
+  }
+  .mob-port .top-row .menu span,
+  .mob-port .top-row .menu span::before,
+  .mob-port .top-row .menu span::after {
+    content: '';
+    width: 20px;
+    height: 2px;
+    border-radius: 6px;
+    display: block;
+    background-color: #FFF;
+  }
+  .mob-port .top-row .menu span {
+    position: relative;
+    margin: 5px 0;
+  }
+  .mob-port .top-row .menu span::before {
+    position: absolute;
+    left: 0;
+    width: 14px;
+    top: -8px;
+  }
+  .mob-port .top-row .menu span::after {
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+  }
+  .mob-port .slider-element-container {
+    position: relative;
+    z-index: 2;
+    height: calc(100%);
+    padding-bottom: 25px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mob-port .slider-element-container .swiper-container {
+    width: 100%;
+    padding: 0 20px 40px;
+  }
+  .mob-port .slider-element-container .swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .mob-port .slider-element-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #F02B67;
+  }
+  .mob-port .slider-element-container .swiper-slide {
+    width: 100%;
+    padding: 0px;
+    background-color: transparent;
+    border-radius: 0px;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    opacity: 0.3;
+    height: 100%;
+    -webkit-transform: scale(0.55);
+    transform: scale(0.55);
+  }
+  .mob-port .slider-element-container .swiper-slide .content {
+    position: relative;
+    padding: 0px 30px;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    opacity: 0;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .mob-port .slider-element-container .swiper-slide .content .port {
+    position: relative;
+  }
+  .mob-port .slider-element-container .swiper-slide .content .port h2 {
+    position: absolute;
+    bottom: 17px;
+    font-size: 46px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    font-family: 'NeueHaasDisplay-me';
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    line-height: 1;
+    left: -11px;
+    letter-spacing: 2px;
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  .mob-port .slider-element-container .swiper-slide .content .port h2 span {
+    width: 100%;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    font-family: 'NeueHaasDisplay-me';
+  }
+  .mob-port .slider-element-container .swiper-slide.swiper-slide-active {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  .mob-port .slider-element-container .swiper-slide.swiper-slide-active .content {
+    opacity: 1;
+  }
+  .mob-port .slider-element-container .swiper-slide.swiper-slide-active .content .port h2 {
+    opacity: 1;
+    -webkit-transition: opacity 0.67s ease-in-out 0s;
+    transition: opacity 0.67s ease-in-out 0s;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  .mob-port .infobox-container {
+    display: none;
+  }
+  .mob-port * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .mob-port html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  .mob-port body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .mob-port .main-content {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .mob-port .swiper-wrapper {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+  }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and screen and (max-height: 670px) {
   .mobile-container {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and screen and (max-height: 670px) {
+  .mob-port .mobile-container {
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
   }
