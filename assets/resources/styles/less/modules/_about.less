@@ -658,7 +658,7 @@
 .t-d3-fluid {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-family: 'Rogie';
+    font-family: 'NeueHaasDisplay-me';
     font-size: 2.6vw;
     line-height: 0.9;
     letter-spacing: 0.05em;
@@ -3403,6 +3403,11 @@
                 font-size: 1.5em;
                 letter-spacing: 2px;
                 overflow: hidden;
+                display: block;
+            }
+
+            .m-hide {
+                display: none;
             }
 
             .big-h {
@@ -4012,6 +4017,23 @@
 
     // mobile port
     .mob-port {
+        .en-form-submit {
+            margin: 0 0 0;
+            /* overflow: hidden; */
+            /* height: 100%; */
+            text-align: center;
+            margin-bottom: 20%;
+            margin-top: 40px;
+            margin-right: 10px;
+
+            .en-btn_send {
+                color: #fff;
+                font-family: 'NeueHaasDisplay-roman';
+                text-transform: uppercase;
+                font-size: 1.4em;
+            }
+        }
+
         .mobile-container {
             overflow: hidden;
             width: 100%;
@@ -4108,9 +4130,11 @@
 
             .swiper-pagination-bullet {
                 background-color: fade(@base__color-2, 90%);
+                width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 16px));
+                height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 3px));
 
                 &.swiper-pagination-bullet-active {
-                    background-color: @base__color-3;
+                    background-color: #b71414;
                 }
             }
 
@@ -4202,24 +4226,7 @@
 
         @media screen and (min-width: 1024px) {}
 
-        // Generals
-        // -----------------------
 
-        * {
-            box-sizing: border-box;
-        }
-
-        html {
-            width: 100%;
-            height: 100%;
-            font-family: 'Source Sans Pro', sans-serif;
-        }
-
-        body {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
 
         .main-content {
             max-width: @layout__max-width;
