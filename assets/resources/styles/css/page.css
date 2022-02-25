@@ -8197,9 +8197,10 @@ header {
     line-height: 1.4;
   }
   .works__inner .works__hero__line {
-    font-size: 3.2em;
+    font-size: 4.8em;
     line-height: 1.1;
     width: 100%;
+    font-family: 'Bebas Neue';
   }
   .works__hero {
     width: 100%;
@@ -10524,6 +10525,13 @@ header {
   }
 }
 @media screen and (max-width: 767px) {
+  .head-ser {
+    padding-top: 15%;
+    position: relative;
+    margin-bottom: 10%;
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+  }
   #blogs-sction .pr-list {
     width: 100%;
   }
