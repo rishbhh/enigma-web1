@@ -10524,13 +10524,6 @@ header {
   }
 }
 @media screen and (max-width: 767px) {
-  .head-ser {
-    padding-top: 15%;
-    position: relative;
-    margin-bottom: 10%;
-    /* overflow-x: hidden; */
-    /* overflow-y: hidden; */
-  }
   #blogs-sction .pr-list {
     width: 100%;
   }
