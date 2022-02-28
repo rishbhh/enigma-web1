@@ -1452,7 +1452,7 @@ template {
 }
 .init-load .inner {
   position: absolute;
-  bottom: 15vw;
+  bottom: 2vw;
   left: 3.125vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5242,7 +5242,7 @@ header {
 .dmtca .hro-img {
   display: inherit;
   position: absolute;
-  top: 50%;
+  top: -360px;
   margin: auto;
   left: 0;
   width: auto;
@@ -5330,7 +5330,7 @@ header {
 .patra .hro-img {
   display: inherit;
   position: absolute;
-  top: 50%;
+  top: -360px;
   margin: auto;
   left: 0;
   width: auto;
@@ -5494,7 +5494,7 @@ header {
 .bespin .hro-img {
   display: inherit;
   position: absolute;
-  top: 50%;
+  top: -360px;
   margin: auto;
   left: 0;
   width: auto;
@@ -5582,7 +5582,7 @@ header {
 .qu .hro-img {
   display: inherit;
   position: absolute;
-  top: 50%;
+  top: -360px;
   margin: auto;
   left: 0;
   width: auto;
@@ -6555,6 +6555,7 @@ header {
   font-size: 15px;
   margin-bottom: 10px;
   letter-spacing: 1px;
+  overflow: hidden;
 }
 .cer .flex-con .listi ul li p {
   font-size: 14px;
