@@ -1048,4 +1048,6 @@ $("#clint")
           detail.classList.toggle("active");
         };
       }
-    } };
+      }
+  };
+    
