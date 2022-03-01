@@ -258,11 +258,8 @@ if (!isMobile) {
         }, "-=0.6")
 
         countTimeline.from(".about-us-image img", 1, {
-            y: "200",
             duration: 1,
             opacity: 0,
-            transformOrigin: "bottom",
-            ease: "power4.inOut"
         }, "-=1.2")
         countTimeline.to(".tris_titles span", 2, {
             y: "0",
@@ -1085,10 +1082,11 @@ function About() {
         transformOrigin: "bottom",
         ease: "power4.inOut"
     }, "-=1.9")
-    about.from(".top-p ", { opacity: 0, duration: 0.4, ease: "Power2.easeInOut", }, "-=1.8");
-    about.from(".about-p p", { y: 50, opacity: 0, duration: 0.4, ease: "Power2.easeInOut" }, "-=1.3");
+
+    about.from(".about-p p", { y: -50, opacity: 0, duration: 0.4, ease: "Power2.easeInOut" }, "-=1.8");
     about.from(".res", 2, { y: -100, opacity: 0, duration: 0.3, ease: "Power2.easeInOut" }, "-=2");
     about.from(".re .char", 2, { y: -210, opacity: 0, duration: 0.3, ease: "Power2.easeInOut", stagger: 0.03 }, "-=1.9");
+    about.from(".ani", 2, { y: -100, opacity: 0, duration: 0.3, ease: "Power2.easeInOut", stagger: 0.03 }, "-=1.9");
 }
 
 function About2() {
@@ -1307,13 +1305,13 @@ function Scrol() {
             trigger: "#sectionPin",
             pin: true,
             scroller: ".smooth-scroll",
-            // anticipatePin: 1,
+            anticipatePin: 1,
             start: "top top",
             end: "+=4000"
         },
         x: -horizontalScrollLength,
         ease: "none",
-        //   stagger: 0.8,
+          stagger: 0.8,
         
     });
 

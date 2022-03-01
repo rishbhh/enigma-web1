@@ -802,26 +802,26 @@ function setCSSVars(slider) {
     });
 }
 
-let why = document.querySelectorAll(".flex");
+// let why = document.querySelectorAll(".flex");
 
-why.forEach((container) => {
-    let tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: container,
-            start: "-100 center",
-            scroller: ".smooth-scroll",
-        }
-    });
+// why.forEach((container) => {
+//     let tl = gsap.timeline({
+//         scrollTrigger: {
+//             trigger: container,
+//             start: "-100 center",
+//             scroller: ".smooth-scroll",
+//         }
+//     });
 
+   
+//     tl.from(container, 1, {
+//         y: 100,
+//         duration: 0.5,
+//         ease: Power2.out,
+//         opacity: 0
+//     }, "-=0.9")
 
-    tl.from(container, 1, {
-        y: 100,
-        duration: 0.5,
-        ease: Power2.out,
-        opacity: 0
-    }, "-=0.7")
-
-});
+// });
 
 // ScrollTrigger.create({
 //   trigger: videoElem,
@@ -831,6 +831,41 @@ why.forEach((container) => {
 //   onLeaveBack: () => videoElem.pause(),
 // });
 
+// Animate the properties individually
+gsap.utils.toArray(".about-us-image img").forEach(star => {
+    tweenProperty(star, "scale", 0.9, 1.1);
+    tweenProperty(star, "x", -100, 100);
+    tweenProperty(star, "y", -90, 90);
+  });
+  
+  
+  function tweenProperty(target, prop, min, max) {
+    
+    var randomDur = gsap.utils.random(2, 3, 0.2, true);
+    var randomDelay = gsap.utils.random(0.2, 1, 0.2, true);
+  
+    gsap.to(target,  {
+      [prop]: gsap.utils.random(min, max),
+      duration: randomDur(), 
+      delay: randomDelay(), 
+      ease: 'none',
+      onComplete: tweenProperty,
+      onCompleteParams: [target, prop, min, max]
+    });
+  
+  }
+  
+  function background(){
+    
+    var next = gsap.utils.random(3, 6, 0.5, true);
+    
+    gsap.to('.about-us-image img', { duration:1, ease:'none'});
+    
+    var delayedCall = gsap.delayedCall(next, background);
+    
+  }
+  
+  background();
 // works
 let Workss = document.querySelectorAll(".cnt-rvl");
 
