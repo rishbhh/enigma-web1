@@ -1439,6 +1439,10 @@ template {
   height: 0;
   width: 100px;
 }
+.flex-w {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 .init-load {
   opacity: 1;
   z-index: 20;
