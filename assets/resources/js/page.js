@@ -1073,7 +1073,7 @@ function About() {
             start: '-400 top',
             end: '900 top',
             scroller: ".smooth-scroll",
-            toggleActions: 'restart reverse restart reverse ',
+            // toggleActions: 'restart reverse restart reverse ',
         },
     });
     about.to(".about-us-image img", 1, {
@@ -1084,9 +1084,8 @@ function About() {
     }, "-=1.9")
 
     about.from(".about-p p", { y: -50, opacity: 0, duration: 0.4, ease: "Power2.easeInOut" }, "-=1.8");
-    about.from(".res", 2, { y: -100, opacity: 0, duration: 0.3, ease: "Power2.easeInOut" }, "-=2");
+    about.from(".about-f img", 2, { y: -100, opacity: 0, duration: 0.3, ease: "Power2.easeInOut" }, "-=2");
     about.from(".re .char", 2, { y: -210, opacity: 0, duration: 0.3, ease: "Power2.easeInOut", stagger: 0.03 }, "-=1.9");
-    about.from(".ani", 2, { y: -100, opacity: 0, duration: 0.3, ease: "Power2.easeInOut", stagger: 0.03 }, "-=1.9");
 }
 
 function About2() {

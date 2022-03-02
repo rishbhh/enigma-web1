@@ -833,9 +833,9 @@ function setCSSVars(slider) {
 
 // Animate the properties individually
 gsap.utils.toArray(".about-us-image img").forEach(star => {
-    tweenProperty(star, "scale", 0.9, 1.1);
-    tweenProperty(star, "x", -100, 100);
-    tweenProperty(star, "y", -90, 90);
+    tweenProperty(star, "scale", 0.98, 1);
+    tweenProperty(star, "x", -30, 30);
+    tweenProperty(star, "y", -40, 40);
   });
   
   
@@ -857,7 +857,7 @@ gsap.utils.toArray(".about-us-image img").forEach(star => {
   
   function background(){
     
-    var next = gsap.utils.random(3, 6, 0.5, true);
+    var next = gsap.utils.random(0.2, 0.2, 0.2, true);
     
     gsap.to('.about-us-image img', { duration:1, ease:'none'});
     
@@ -954,42 +954,42 @@ client.forEach((container) => {
 
 });
 
-let Team = document.querySelectorAll(".team-s");
+// let Team = document.querySelectorAll(".team-s");
 
-Team.forEach((container) => {
-    let he = container.querySelector(".he span");
-    let pr = container.querySelector(".parh");
+// Team.forEach((container) => {
+//     let he = container.querySelector(".he span");
+//     let pr = container.querySelector(".parh");
 
-    let tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: container,
-            start: "-300 top",
-            scroller: ".smooth-scroll",
-            toggleActions: 'restart reverse restart reverse ',
-        }
-    });
+//     let tl = gsap.timeline({
+//         scrollTrigger: {
+//             trigger: container,
+//             start: "-300 top",
+//             scroller: ".smooth-scroll",
+//             toggleActions: 'restart reverse restart reverse ',
+//         }
+//     });
 
 
-    tl.from(container, 1, {
-        duration: 0.5,
-        ease: Power2.out,
-        opacity: 0
-    }, "-=0.7")
-    tl.from(he, 1, {
-        y: 200,
-        duration: 0.5,
-        ease: Power2.out,
-        opacity: 0
-    }, "-=0.9")
-    tl.from(pr, 1, {
-        y: 200,
-        duration: 0.5,
-        ease: Power2.out,
-        opacity: 0
-    }, "-=0.9")
+//     tl.from(container, 1, {
+//         duration: 0.5,
+//         ease: Power2.out,
+//         opacity: 0
+//     }, "-=0.7")
+//     tl.from(he, 1, {
+//         y: 200,
+//         duration: 0.5,
+//         ease: Power2.out,
+//         opacity: 0
+//     }, "-=0.9")
+//     tl.from(pr, 1, {
+//         y: 200,
+//         duration: 0.5,
+//         ease: Power2.out,
+//         opacity: 0
+//     }, "-=0.9")
   
 
-});
+// });
 
 
 

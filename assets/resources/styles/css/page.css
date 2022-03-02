@@ -4025,7 +4025,7 @@ header {
 }
 #abt > div > div > div {
   padding-top: 0px;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   position: relative;
 }
 #abt.is-inview > div > div > div::before {
@@ -4034,6 +4034,19 @@ header {
   transition: width 1s ease-out;
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
+}
+.why {
+  position: relative;
+}
+.why img {
+  position: absolute;
+  top: 130px;
+  right: -130px;
+  width: 80%;
+  opacity: 0.7;
+}
+.grdient {
+  padding: 0.9% 0px;
 }
 #about {
   padding: 10% 70px;
@@ -4755,6 +4768,7 @@ header {
 }
 .about-us-section h1 {
   width: 100%;
+  color: #7e7e7e;
 }
 .about-us-section .small-h1 {
   font-size: 3em;
@@ -4833,6 +4847,10 @@ header {
 .client-section {
   padding-top: 10%;
   padding-bottom: 10%;
+  position: relative;
+}
+.client-section .container {
+  width: 80%;
 }
 .client-section .container h2 {
   padding: 20px 4%;
@@ -4842,22 +4860,27 @@ header {
   text-transform: uppercase;
   font-family: 'NeueHaasDisplay-me';
 }
+.client-section .container .parh {
+  font-size: 1.1em;
+  letter-spacing: 3px;
+  padding-right: 40%;
+  line-height: 2;
+  color: #fff;
+  margin-bottom: 2%;
+}
 .client-section .grid-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 0%;
   margin-top: 5%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 .client-section .grid-logo .logo-item {
   width: 21%;
-  padding: 0px 4.2%;
+  padding: 0px 8.2% 0px 0px;
 }
 .client-section .grid-logo .logo-item img {
   width: 100%;
@@ -4959,6 +4982,17 @@ header {
   -webkit-box-shadow: 0 0 100px 8px rgba(205, 43, 177, 0.25);
           box-shadow: 0 0 100px 8px rgba(205, 43, 177, 0.25);
 }
+.grdient .bg-team {
+  position: absolute;
+}
+.client-section .bg-team {
+  position: absolute;
+  right: -25.6%;
+  top: 0;
+  width: 70%;
+  -webkit-transform: rotate(-84deg);
+          transform: rotate(-84deg);
+}
 #sectionPin {
   min-height: 100vh;
   width: 100%;
@@ -4999,6 +5033,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 50px 10vw;
+  position: relative;
 }
 .pin-wrap > * {
   min-width: 42vw;
@@ -5158,7 +5193,7 @@ header {
 }
 .team-s .container .he {
   padding: 20px 0;
-  margin-bottom: 4%;
+  margin-bottom: 1%;
   font-size: 3em;
   color: #fff;
   letter-spacing: 1px;
@@ -6174,12 +6209,12 @@ header {
 .is-inview .text_anim span {
   -webkit-transform: translateY(0) skewY(0deg);
           transform: translateY(0) skewY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-out;
-  transition: -webkit-transform 1s ease-out;
-  transition: transform 1s ease-out;
-  transition: transform 1s ease-out, -webkit-transform 1s ease-out;
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
+  -webkit-transition: -webkit-transform 1.1s ease-out;
+  transition: -webkit-transform 1.1s ease-out;
+  transition: transform 1.1s ease-out;
+  transition: transform 1.1s ease-out, -webkit-transform 1.1s ease-out;
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
 }
 .is-inview .text_anim.spline_p div:nth-child(2) span {
   -webkit-transition-delay: 0.45s;
@@ -7010,6 +7045,7 @@ header {
   }
   #about2 .about-f {
     display: block;
+    overflow: hidden;
   }
   #about2 .about-f .about-p {
     width: 100%;
