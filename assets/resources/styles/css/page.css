@@ -4395,7 +4395,7 @@ header {
   padding-right: 0%;
   line-height: 2;
   color: #1a1a1a;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   margin-bottom: 13%;
 }
 #about2 .about-f {
@@ -4745,7 +4745,7 @@ header {
   top: -134px;
 }
 .about-us-image {
-  width: 628px;
+  width: 570px;
   margin-top: 68px;
 }
 .about-us-images {
@@ -4768,7 +4768,7 @@ header {
 }
 .about-us-section h1 {
   width: 100%;
-  color: #7e7e7e;
+  color: #2b2b2b;
 }
 .about-us-section .small-h1 {
   font-size: 3em;
@@ -4853,7 +4853,7 @@ header {
   width: 80%;
 }
 .client-section .container h2 {
-  padding: 20px 4%;
+  padding: 20px 0%;
   font-size: 3em;
   color: #fff;
   letter-spacing: 1px;
@@ -4862,8 +4862,8 @@ header {
 }
 .client-section .container .parh {
   font-size: 1.1em;
-  letter-spacing: 3px;
-  padding-right: 40%;
+  letter-spacing: 1px;
+  padding-right: 10%;
   line-height: 2;
   color: #fff;
   margin-bottom: 2%;
@@ -4873,19 +4873,20 @@ header {
   display: -ms-flexbox;
   display: flex;
   margin-left: 0%;
-  margin-top: 5%;
+  margin-top: 10%;
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 .client-section .grid-logo .logo-item {
-  width: 21%;
-  padding: 0px 8.2% 0px 0px;
+  width: 25%;
+  padding: 0px 3.2% 0px 0px;
 }
 .client-section .grid-logo .logo-item img {
-  width: 100%;
+  width: 60%;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
+  margin-bottom: 20%;
 }
 .team-section {
   padding-top: 10%;
@@ -5152,18 +5153,37 @@ header {
 .marquees__part {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  padding: 0 40px;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-smooth: always;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: #fff;
+}
+.marquees__part img {
+  width: 120px;
+  margin-left: 10px;
+  -webkit-animation: rotation 2s infinite linear;
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
 }
 .marquees {
   background: #000;
   color: #EEE;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 14em;
+  font-size: 10em;
   padding: 32px 0;
   position: relative;
   overflow: hidden;
@@ -5176,6 +5196,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
@@ -5207,7 +5230,7 @@ header {
 }
 .team-s .container .parh {
   font-size: 1.1em;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   padding-right: 40%;
   line-height: 2;
   color: #fff;
@@ -6971,10 +6994,7 @@ header {
     margin-top: 21%;
   }
   .about-us-image {
-    margin-top: 10%;
-  }
-  .about-us-images {
-    margin-top: 10%;
+    margin-top: 5%;
   }
   .c-hm-us_top {
     padding-top: 1.6em;
