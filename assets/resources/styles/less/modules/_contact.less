@@ -1,7 +1,48 @@
 /******************************************************************************/
 /************************ contact page css start  ************************/
 /******************************************************************************/
+.lets {
+    margin-top: 12%;
+    padding:
+        30px 50px;
+    overflow: hidden;
 
+    img {
+        position: absolute;
+        top: 7px;
+        right: -60px;
+        width: 80%;
+        opacity: 1;
+        z-index: -1;
+    }
+
+    .flex-row {
+        h1 {
+            font-family: 'NeueHaasDisplay-me';
+            font-size: 9em;
+        }
+
+        .sec-h1 {
+            text-align: right;
+
+            span {
+                font-family: 'NeueHaasDisplay-roman';
+            }
+        }
+
+        P {
+            text-align: right;
+            font-size: 2em;
+            text-transform: uppercase;
+            padding-left: 34%;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.black-strock .marquees__part {
+    -webkit-text-stroke-color: #000;
+}
 
 #contact-left-sticky {
     position: absolute;
@@ -51,7 +92,7 @@
 
 .contact-inner .contact-left-img {
     width: 37.4%;
-    margin-right: 11.4%;
+    // margin-right: 11.4%;
 }
 
 .contact-inner .contact-left-img img {
@@ -75,9 +116,11 @@
 
 .contact-right .welcome-heading h1 {
     text-transform: uppercase;
-    font-size: 100px;
+    font-size: 5em;
     line-height: 95px;
     margin-bottom: 52px;
+    font-family: 'NeueHaasDisplay-me';
+    color: #000;
 }
 
 @media only screen and (min-width: 1680px) {
@@ -106,11 +149,11 @@
 .contact-inner .gform_wrapper form .gform_body ul li .ginput_container textarea {
     width: 100%;
     border: none;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 1px solid #000;
     padding: 12px 0px 12px !important;
     font-size: 20px !important;
     line-height: 20px !important;
-    color: #fff;
+    // color: #fff;
     background-color: #1b1b1b00;
 }
 
@@ -175,13 +218,9 @@
 
 .contact-inner .gform_wrapper form .gform_footer input[type="submit"],
 .gform_wrapper form .gform_footer #gform_submit_button_2 {
-    width: 133px;
-    height: 133px;
-    border-radius: 100%;
-    background-color: #ffffff;
-    font-size: 13px;
+
+    font-size: 15px;
     color: #000;
-    text-transform: uppercase;
     border: none;
     transition: 0.4s;
     -webkit-transition: 0.4s;
@@ -191,13 +230,17 @@
     margin: 0px;
     font-family: inherit;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .contact-inner .gform_wrapper form .gform_footer input[type="submit"] span,
 .gform_wrapper form .gform_footer #gform_submit_button_2 span {
     position: relative;
     z-index: 9;
+
+    img {
+        width: 8px;
+    }
 }
 
 .contact-inner .gform_wrapper form .gform_footer input[type="submit"] em,
@@ -224,9 +267,8 @@
 }
 
 .contact-inner .gform_wrapper form .gform_footer input[type="submit"]:hover,
-.gform_wrapper form .gform_footer #gform_submit_button_2:hover {
-    background: transparent linear-gradient(41deg, #2D4DE0 0%, #9F71F0 38%, #E76592 82%, #F8EF6F 100%) 0% 0% no-repeat padding-box;
-    color: #ffffff;
+.gform_wrapper form .gform_footer #gform_submit_button_2:hover span img {
+    transform: rotate(-46deg);
 }
 
 .contact-inner .gform_wrapper form .gform_footer input[type="submit"]:hover em,
@@ -453,7 +495,7 @@
 .say-hello-left h5 {
     font-size: 150px;
     font-family: 700;
-    color: #ffffff;
+    // color: #ffffff;
     -webkit-text-stroke: 1px #ffffff;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
@@ -483,54 +525,58 @@
     }
 }
 
-.contact-details-block {
+.contact-left-img {
     // padding-bottom: 187px;
     position: relative;
     z-index: 1;
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-details-block {
+    .contact-left-img {
         padding-bottom: 1.161vw;
     }
 }
 
-.contact-details-block ul {
+.contact-left-img ul {
     list-style: none;
     padding: 0 0 0 0;
     margin: 0px;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 0 0;
     justify-content: space-evenly;
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-details-block ul {
+    .contact-left-img ul {
         // padding: 0 0 0 8.036vw;
         // margin: -28.57vw 0 0;
     }
 }
 
-.contact-details-block ul li {
+.contact-left-img ul li {
     position: relative;
     padding-left: 35px;
     margin: 0 0 79px;
+    display: flex;
+    align-items: center;
+    width: 100%;
     counter-increment: list;
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-details-block ul li {
+    .contact-left-img ul li {
         padding-left: 5.060vw;
         margin: 0 0 6.488vw;
     }
 }
 
-.contact-details-block ul li:last-child {
+.contact-left-img ul li:last-child {
     margin: 0px;
 }
 
 
-.contact-details-block ul li:before {
+.contact-left-img ul li:before {
     content: "0"counter(list)"";
     position: absolute;
     left: 0px;
@@ -540,45 +586,48 @@
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-details-block ul li:before {
+    .contact-left-img ul li:before {
         font-size: 0.95vw;
     }
 }
 
-.contact-details-block ul li h6 {
-    margin: 0px 0 45px;
+.contact-left-img ul li h6 {
+    margin: 0;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1em;
     line-height: 20px;
-    color: #ffffff;
     font-weight: bold;
+    color: #000;
+    font-family: 'Ageo-bold';
+    margin-right: 20%;
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-details-block ul li h6 {
+    .contact-left-img ul li h6 {
         font-size: 1.190vw;
         line-height: 1.190vw;
         margin: 0 0 2.679vw;
     }
 }
 
-.contact-details-block ul li p {
+.contact-left-img ul li p {
     margin: 0px;
-    font-size: 20px;
-    line-height: 26px;
-    color: #c6c6c6;
+    font-size: 1.45em;
+    line-height: 30px;
+    color: #1a1a1a;
+    font-family: 'Ageo-bold';
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-details-block ul li p {
+    .contact-left-img ul li p {
         margin: 0px;
         font-size: 1.19vw;
         line-height: 1.57vw;
     }
 }
 
-.contact-details-block ul li p a {
-    color: #c6c6c6;
+.contact-left-img ul li p a {
+    color: #1a1a1a;
     transition: 0.4s;
     -moz-transition: 0.4s;
     -webkit-transition: 0.4s;
@@ -586,8 +635,8 @@
     position: relative;
 }
 
-.contact-details-block ul li p a:before,
-.contact-details-block ul li p a:after {
+.contact-left-img ul li p a:before,
+.contact-left-img ul li p a:after {
     content: '';
     position: absolute;
     width: 0%;
@@ -597,31 +646,31 @@
     background: #fff;
 }
 
-.contact-details-block ul li p a:before {
+.contact-left-img ul li p a:before {
     left: 0px;
 }
 
-.contact-details-block ul li p a:after {
+.contact-left-img ul li p a:after {
     right: 0;
     background: #ffffff;
     transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.contact-details-block ul li p a:hover:before {
+.contact-left-img ul li p a:hover:before {
     background: #ffffff;
     width: 100%;
     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.contact-details-block ul li p a:hover:after {
+.contact-left-img ul li p a:hover:after {
     background: transparent;
     width: 100%;
     transition: 0s;
 }
 
 
-.mac .contact-details-block ul li p a:before,
-.mac .contact-details-block ul li p a:after {
+.mac .contact-left-img ul li p a:before,
+.mac .contact-left-img ul li p a:after {
     top: 46%;
 }
 
@@ -662,7 +711,7 @@
 
 .contact-right .gform_confirmation_wrapper h1 {
     text-transform: uppercase;
-    color: #ffffff;
+    // color: #ffffff;
     font-size: 100px;
     margin-bottom: 60px;
 }
@@ -679,7 +728,7 @@
 }
 
 .contact-right .gform_confirmation_wrapper p {
-    color: #ffffff;
+    // color: #ffffff;
     font-size: 24px;
     line-height: 34px;
     margin-bottom: 22px;
@@ -694,7 +743,7 @@
 }
 
 .contact-right .gform_confirmation_wrapper a {
-    color: #ffffff;
+    // color: #ffffff;
     font-size: 24px;
     line-height: 24px;
     position: relative;
@@ -724,7 +773,7 @@
 
 .tell-us-contact-form .gform_confirmation_wrapper h1 {
     text-transform: uppercase;
-    color: #ffffff;
+    // color: #ffffff;
     font-size: 100px;
     margin-bottom: 60px;
 }
@@ -889,6 +938,7 @@
         font-size: 77px;
         line-height: 75px;
         margin-bottom: 52px;
+        color: #000;
     }
 
     .contact-inner .gform_wrapper .gform_footer {
@@ -897,7 +947,7 @@
         text-align: center;
     }
 
-    .contact-details-block ul {
+    .contact-left-img ul {
         display: block;
     }
 
@@ -905,14 +955,14 @@
         font-size: 7em;
     }
 
-    .contact-details-block ul li {
+    .contact-left-img ul li {
         position: relative;
         padding-left: 35px;
         margin: 0 0 73px;
         counter-increment: list;
     }
 
-    .contact-details-block ul li h6 {
+    .contact-left-img ul li h6 {
         margin: 0px 0 15px;
         text-transform: uppercase;
         font-size: 20px;
@@ -921,7 +971,7 @@
         font-weight: bold;
     }
 
-    .contact-details-block {
+    .contact-left-img {
         position: relative;
         z-index: 1;
         padding: 0 21px;
