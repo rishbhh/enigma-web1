@@ -7984,8 +7984,8 @@ header {
   font-size: 4em;
   text-align: left;
   line-height: 1.2;
-  font-family: 'NeueHaasDisplay-bol';
-  cursor: pointer;
+  font-family: 'NeueHaasDisplay-me';
+  letter-spacing: 3px;
   opacity: 0;
 }
 .services-s .flex-con .gif-area {
@@ -8232,7 +8232,7 @@ header {
     font-size: 10.7em;
   }
   .services-s .image {
-    width: 30%;
+    width: 35%;
     /* height: 940px; */
   }
   .services-s .content-p {
@@ -8305,7 +8305,7 @@ header {
   position: relative;
 }
 .aproch .container .approach-lis .flex-con .ap-no h6 span {
-  font-size: 15px;
+  font-size: 18px;
   position: absolute;
   left: 10px;
   text-align: center;

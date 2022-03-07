@@ -866,6 +866,41 @@ gsap.utils.toArray(".about-us-image img").forEach(star => {
     
   }
   
+background();
+  
+gsap.utils.toArray(".image img").forEach(star => {
+    tweenProperty(star, "scale", 0.98, 1);
+    tweenProperty(star, "x", -30, 30);
+    tweenProperty(star, "y", -40, 40);
+  });
+  
+  
+  function tweenProperty(target, prop, min, max) {
+    
+    var randomDur = gsap.utils.random(2, 3, 0.2, true);
+    var randomDelay = gsap.utils.random(0.2, 1, 0.2, true);
+  
+    gsap.to(target,  {
+      [prop]: gsap.utils.random(min, max),
+      duration: randomDur(), 
+      delay: randomDelay(), 
+      ease: 'none',
+      onComplete: tweenProperty,
+      onCompleteParams: [target, prop, min, max]
+    });
+  
+  }
+  
+  function background(){
+    
+    var next = gsap.utils.random(0.2, 0.2, 0.2, true);
+    
+    gsap.to('.image img', { duration:1, ease:'none'});
+    
+    var delayedCall = gsap.delayedCall(next, background);
+    
+  }
+  
   background();
 // works
 let Workss = document.querySelectorAll(".cnt-rvl");
