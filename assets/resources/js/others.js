@@ -93,23 +93,23 @@ evry_gl.forEach(evry_gl => {
     })
 })
 
-const itemss = document.querySelectorAll('.hov-vid')
+// const itemss = document.querySelectorAll('.hov-vid')
 
-itemss.forEach((el) => {
-        const image = el.querySelector('video')
+// itemss.forEach((el) => {
+//         const image = el.querySelector('video')
 
-        el.addEventListener('mouseenter', (e) => {
-            gsap.to(image, { autoAlpha: 1, scale: 0.8, })
-        })
+//         el.addEventListener('mouseenter', (e) => {
+//             gsap.to(image, { autoAlpha: 1, scale: 0.8, })
+//         })
 
-        el.addEventListener('mouseleave', (e) => {
-            gsap.to(image, { autoAlpha: 0, scale: 0.0 })
-        })
+//         el.addEventListener('mouseleave', (e) => {
+//             gsap.to(image, { autoAlpha: 0, scale: 0.0 })
+//         })
 
-        // el.addEventListener('mousemove', (e) => {
-        //   gsap.set(image, { x: e.offsetX - 200 })
-        // })
-    })
+//         // el.addEventListener('mousemove', (e) => {
+//         //   gsap.set(image, { x: e.offsetX - 200 })
+//         // })
+//     })
     // blog
 let Ser_ = document.querySelectorAll(".fle");
 
@@ -117,23 +117,24 @@ let Ser_ = document.querySelectorAll(".fle");
 Ser_.forEach((container) => {
     let ser = container.querySelector("h3");
     let ser2 = container.querySelector("p");
-    let Ser = document.querySelectorAll(".hov-vid");
+    let Ser1 = document.querySelectorAll(".image");
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: container,
             start: '-500 top',
-            end: '500 center',
+            // end: '500 center',
             scroller: ".smooth-scroll",
             // toggleActions: "restart none none reset"
-            toggleActions: 'play reverse play reverse ',
+            // toggleActions: 'play reverse play reverse ',
         }
     });
 
-    tl.to(Ser, 1, {
+    tl.to(Ser1, 1, {
         duration: 0.5,
+        y: 0,
         ease: Power2.out,
         opacity: 1
-    }, "-=0.5")
+    }, "-=0.2")
     tl.to(ser, 1, {
         y: 0,
         duration: 0.5,

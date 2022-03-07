@@ -5168,7 +5168,7 @@ header {
 .marquees__part img {
   width: 120px;
   margin-left: 10px;
-  -webkit-animation: rotation 2s infinite linear;
+  -webkit-animation: rotation 7s infinite linear;
 }
 @-webkit-keyframes rotation {
   from {
@@ -7944,6 +7944,19 @@ header {
   padding: 0px 10%;
   margin-top: 20%;
 }
+.services-s .flex-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 20%;
+  position: relative;
+}
 .services-s .hed {
   font-size: 4em;
   text-align: center;
@@ -7959,7 +7972,13 @@ header {
 .services-s .flex-con .fle {
   width: 60%;
   position: relative;
-  color: #fff;
+  color: #2B2B2B;
+}
+.services-s .p-right {
+  padding-right: 10%;
+}
+.services-s .p-left {
+  padding-left: 10%;
 }
 .services-s .flex-con .fle h3 {
   font-size: 4em;
@@ -7979,21 +7998,20 @@ header {
 .services-s .content-p p {
   font-size: 18px;
   letter-spacing: 1px;
-  color: #a2a2a2;
+  color: #444444;
   font-weight: 400;
 }
-.services-s .video {
-  width: 45%;
+.services-s .image {
+  width: 40%;
   /* height: 940px; */
-  -webkit-transform: scale(0);
-          transform: scale(0);
   -webkit-transition: -webkit-transform 1s ease-in-out;
   transition: -webkit-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
   transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
   pointer-events: none;
+  opacity: 0;
 }
-.services-s .visible-video {
+.services-s .visible-image {
   z-index: -1;
   -webkit-transform: translateY(-50%) scale(1);
           transform: translateY(-50%) scale(1);
@@ -8087,8 +8105,9 @@ header {
 }
 .ser-c .flex-con {
   margin-top: 0px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -8186,7 +8205,7 @@ header {
   width: 100%;
 }
 @media screen and (max-width: 1680px) {
-  .services-s .video {
+  .services-s .image {
     width: 46%;
     /* height: 940px; */
   }
@@ -8212,8 +8231,8 @@ header {
   .works__hero__line {
     font-size: 10.7em;
   }
-  .services-s .video {
-    width: 38%;
+  .services-s .image {
+    width: 30%;
     /* height: 940px; */
   }
   .services-s .content-p {
@@ -8223,6 +8242,82 @@ header {
     font-size: 3em;
     opacity: 0;
   }
+}
+.aproch {
+  background: linear-gradient(1deg, #090e26, #031554);
+  padding: 10% 0;
+  position: relative;
+  padding-bottom: 0;
+}
+.aproch .top-bg {
+  position: absolute;
+  top: -137px;
+  width: 79%;
+  left: 30px;
+}
+.aproch .bottom-bg {
+  position: absolute;
+  bottom: 230px;
+  -webkit-transform: rotate(271deg);
+          transform: rotate(271deg);
+  width: 74%;
+  right: -370px;
+}
+.aproch .container {
+  width: 80%;
+}
+.aproch .container h2 {
+  padding: 20px 0%;
+  font-size: 3em;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'NeueHaasDisplay-me';
+}
+.aproch .container .approach-lis {
+  margin-top: 10%;
+}
+.aproch .container .approach-lis .flex-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0%;
+  position: relative;
+  margin-bottom: 10%;
+}
+.aproch .container .approach-lis .flex-con .ap-no {
+  position: relative;
+  margin-left: 3%;
+  width: 34%;
+}
+.aproch .container .approach-lis .flex-con .ap-no h6 {
+  font-size: 9em;
+  font-family: 'NeueHaasDisplay-me';
+  color: #ffffff52;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+}
+.aproch .container .approach-lis .flex-con .ap-no h6 span {
+  font-size: 15px;
+  position: absolute;
+  left: 10px;
+  text-align: center;
+  bottom: 0;
+  top: 42%;
+  color: #fff;
+}
+.aproch .container .approach-lis .flex-con .ap-prah {
+  padding-right: 10%;
+}
+.aproch .container .approach-lis .flex-con .ap-prah p {
+  color: #fff;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
   .works__inner {

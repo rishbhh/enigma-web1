@@ -1322,7 +1322,7 @@ function Marq() {
     let currentScroll = 0;
     let isScrollingDown = true;
 
-    let tween = gsap.to(".marquees__part", { xPercent: -100, repeat: -1, duration: 10, ease: "linear" }).totalProgress(0.5);
+    let tween = gsap.to(".marquees__part", { xPercent: -100, repeat: -1, duration: 7, ease: "linear" }).totalProgress(0.1);
 
     gsap.set(".marquees__inner", { xPercent: -50 });
 

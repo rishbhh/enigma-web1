@@ -279,6 +279,14 @@
   padding: 0px 10%;
   margin-top: 20%;
 
+  .flex-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20%;
+    position: relative;
+  }
+
   .hed {
     font-size: 4em;
     text-align: center;
@@ -294,7 +302,15 @@
   .flex-con .fle {
     width: 60%;
     position: relative;
-    color: #fff;
+    color: #2B2B2B;
+  }
+
+  .p-right {
+    padding-right: 10%;
+  }
+
+  .p-left {
+    padding-left: 10%;
   }
 
   .flex-con .fle h3 {
@@ -319,19 +335,20 @@
   .content-p p {
     font-size: 18px;
     letter-spacing: 1px;
-    color: rgb(162 162 162);
+    color: #444444;
     font-weight: 400;
   }
 
-  .video {
-    width: 45%;
+  .image {
+    width: 40%;
     /* height: 940px; */
-    transform: scale(0);
+    // transform: scale(0);
     transition: transform 1s ease-in-out;
     pointer-events: none;
+    opacity: 0;
   }
 
-  .visible-video {
+  .visible-image {
     z-index: -1;
     transform: translateY(-50%) scale(1);
   }
@@ -433,7 +450,7 @@
 
   .flex-con {
     margin-top: 0px;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 
     .left-d {
@@ -547,7 +564,7 @@
 }
 
 @media screen and (max-width:1680px) {
-  .services-s .video {
+  .services-s .image {
     width: 46%;
     /* height: 940px; */
   }
@@ -581,8 +598,8 @@
     font-size: 10.7em;
   }
 
-  .services-s .video {
-    width: 38%;
+  .services-s .image {
+    width: 30%;
     /* height: 940px; */
   }
 
@@ -596,6 +613,91 @@
   }
 }
 
+.aproch {
+  background: linear-gradient(1deg, #090e26, #031554);
+  padding: 10% 0;
+  position: relative;
+  padding-bottom: 0;
+
+  .top-bg {
+    position: absolute;
+    top: -137px;
+    width: 79%;
+    left: 30px;
+  }
+
+  .bottom-bg {
+    position: absolute;
+    bottom: 230px;
+    transform: rotate(271deg);
+    width: 74%;
+    right: -370px;
+  }
+
+  .container {
+    width: 80%;
+
+    h2 {
+      padding: 20px 0%;
+      font-size: 3em;
+      color: #fff;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-family: 'NeueHaasDisplay-me';
+    }
+
+    .approach-lis {
+      margin-top: 10%;
+
+      .flex-con {
+        display: flex;
+        justify-content: normal;
+        align-items: center;
+        margin: 0%;
+        position: relative;
+        margin-bottom: 10%;
+
+        .ap-no {
+          position: relative;
+          margin-left: 3%;
+          width: 34%;
+
+          h6 {
+            font-size: 9em;
+            font-family: 'NeueHaasDisplay-me';
+            color: #ffffff52;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            position: relative;
+
+            span {
+              font-size: 15px;
+              position: absolute;
+              left: 10px;
+              text-align: center;
+              bottom: 0;
+              top: 42%;
+              color: #fff;
+            }
+
+          }
+        }
+
+        .ap-prah {
+          padding-right: 10%;
+
+          p {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// Mobile Quries
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
   .works__inner {
     padding: 0px 10px;
