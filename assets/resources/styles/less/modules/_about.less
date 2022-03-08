@@ -868,7 +868,7 @@
 }
 
 .about-us-image {
-    width: 570px;
+    width: 600px;
     margin-top: 68px;
     // overflow: hidden;
 }
@@ -898,19 +898,23 @@
 }
 
 .about-us-section .small-h1 {
-    font-size: 3em;
-    line-height: 1.7;
+    font-size: 2.5em;
+    line-height: 1.73;
     text-transform: uppercase;
-    margin-bottom: 0px;
+    letter-spacing: 4px;
+    margin-bottom:
+        0px;
     font-family: 'NeueHaasDisplay-me';
 }
 
 .about-us-section .b-h1 {
-    font-size: 5em;
-    line-height: 95px;
+    font-size: 4em;
+    line-height: 1.28;
+    letter-spacing: 6px;
     text-transform: uppercase;
-    margin-bottom: 0px;
-    font-family: 'NeueHaasDisplay-me';
+    margin-bottom:
+        0px;
+    font-family: 'NeueHaasDisplay-me-it';
 }
 
 .opacity-0 {
@@ -1016,15 +1020,29 @@
         // justify-content: space-evenly;
         width: 100%;
         flex-wrap: wrap;
+        text-align: center;
 
         .logo-item {
             width: 25%;
-            padding: 0px 3.2% 0px 0px;
+            padding: 20px;
+            border-right: 1px solid rgba(255, 255, 255, 0.253);
+            position: relative;
 
             img {
                 width: 60%;
                 filter: grayscale(1);
-                margin-bottom: 20%;
+            }
+        }
+
+        .bottom-border {
+            &::after {
+                content: '';
+                position: absolute;
+                background: rgba(255, 255, 255, 0.253);
+                width: 100%;
+                height: 1px;
+                bottom: 0;
+                left: 0;
             }
         }
     }
@@ -3466,8 +3484,10 @@
     }
 
     .about-us-content {
-        margin-left: 20px;
-        margin-top: 12%;
+
+        margin-left: 110px;
+        margin-top: 7%;
+
     }
 
     .c-hm-us_top {

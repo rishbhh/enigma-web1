@@ -244,12 +244,20 @@ if (!isMobile) {
             y: 300,
             ease: "power4.inOut"
         }, "-=0.7")
+       
         countTimeline.from(".hro-img", 1.2, {
             opacity: 0,
             duration: 0.5,
             y: 300,
             ease: "power4.inOut"
         }, "-=0.7")
+        countTimeline.from(".he1 .l", 1.6,{
+            y: "150",
+            opacity: 0,
+            duration: 0.5, stagger: 0.3,
+            ease: "power4.inOut"
+        }, "-=0.8")
+        
         countTimeline.from(".module--header__bg", 1, {
             opacity: 0,
             duration: 0.5,
@@ -270,6 +278,7 @@ if (!isMobile) {
             y: "180",
             duration: 0.5,
         }, "-=2")
+        
         countTimeline.from(".element", 1, {
             scale: 0,
             duration: 0.5,
@@ -292,6 +301,8 @@ if (!isMobile) {
             duration: 0.5,
             ease: "power4.inOut"
         }, "-=2")
+        
+       
 
 
     }
@@ -1322,7 +1333,7 @@ function Marq() {
     let currentScroll = 0;
     let isScrollingDown = true;
 
-    let tween = gsap.to(".marquees__part", { xPercent: -100, repeat: -1, duration: 7, ease: "linear" }).totalProgress(0.1);
+    let tween = gsap.to(".marquees__part", { xPercent: -100, repeat: -1, duration: 14, ease: "linear" }).totalProgress(0.6);
 
     gsap.set(".marquees__inner", { xPercent: -50 });
 
