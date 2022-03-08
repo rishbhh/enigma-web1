@@ -1346,7 +1346,7 @@ function Marq() {
         }
 
         gsap.to(tween, {
-            timeScale: isScrollingDown ? 1 : -1
+            timeScale: isScrollingDown ? 1 : -4
         });
 
         currentScroll = window.pageYOffset

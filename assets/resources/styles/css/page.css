@@ -5177,9 +5177,10 @@ header {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: #fff;
+  letter-spacing: 9px;
 }
 .marquees__part img {
-  width: 120px;
+  width: 130px;
   margin-left: 10px;
   -webkit-animation: rotation 7s infinite linear;
 }
