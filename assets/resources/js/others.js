@@ -93,55 +93,34 @@ evry_gl.forEach(evry_gl => {
     })
 })
 
-// Scroll Content
-
-// $('section.horizontal').each(function (i, el) {	
-  
-//   var thisSection = $(this);
-
-//   var thisPinWrap = thisSection.find('.pin-wraps');
-
-//   var thisAnimWrap = thisPinWrap.find('.animation-wrap');
-
-//   var theseItems = thisAnimWrap.find('.item');
-//   var theseItemsWidth = theseItems.width();
-
-//   var scrollWidth = theseItemsWidth * theseItems.length;
-
-//   var windowWidth = $(window).innerWidth();
-
-
-//   if (thisAnimWrap.hasClass('to-right')) {
-//     var fromValue = 0;
-//     var toValue = -(scrollWidth - windowWidth + 1600); 
-
-//   }
-
-//   if (thisAnimWrap.hasClass('to-left')) {
-//     var fromValue = -(scrollWidth - windowWidth + 1600); 
-//     var toValue = 0;
-//   }
-
-
-//   var horizontalSectionTween = gsap.fromTo(thisAnimWrap, { x: fromValue }, { x: toValue, ease: "none" });
-
-//   ScrollTrigger.create({
-//     id: "horizontalSectionScrolling",				
-//     trigger: ".horizontal",					
-//     start: "top top",
-//     scroller:".smooth-scroll",
-//     end: "+=70%",
-//     animation: horizontalSectionTween,
-//     pin: true,
-//     anticipatePin: 1,
-//     scrub: 3,
-//   }); 	
-
-
-
-// });	
-
-
+// scale
+let fixed_scrols = gsap.timeline({
+    scrollTrigger: {
+        trigger: '.bol-prh',
+        start: '-800 top',
+        end: '500 center',
+        scroller: ".smooth-scroll",
+        markers: false,
+        // pin: true,
+        // pinReparent: true,
+        scrub: true,
+    },
+});
+fixed_scrols.fromTo('.p-s ', { y: 50, scale: 0.5 }, {
+    y: 0,
+    scale: 1,
+    duration: 8,
+    ease: 'power1.inOut',
+},);
+// gsap.to('.p-s', {
+//     scale: '1',
+//     scrollTrigger: {
+//         trigger: ".bol-prh",
+//         end: "+=100%",
+//         scroller: ".smooth-scroll",
+//         scrub: true
+//     }
+// })
 
 // img
 window.onload = function() {
