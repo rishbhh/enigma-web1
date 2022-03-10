@@ -93,69 +93,53 @@ evry_gl.forEach(evry_gl => {
     })
 })
 
-// const itemss = document.querySelectorAll('.hov-vid')
+// Scroll Content
 
-// itemss.forEach((el) => {
-//         const image = el.querySelector('video')
+// $('section.horizontal').each(function (i, el) {	
+  
+//   var thisSection = $(this);
 
-//         el.addEventListener('mouseenter', (e) => {
-//             gsap.to(image, { autoAlpha: 1, scale: 0.8, })
-//         })
+//   var thisPinWrap = thisSection.find('.pin-wraps');
 
-//         el.addEventListener('mouseleave', (e) => {
-//             gsap.to(image, { autoAlpha: 0, scale: 0.0 })
-//         })
+//   var thisAnimWrap = thisPinWrap.find('.animation-wrap');
 
-//         // el.addEventListener('mousemove', (e) => {
-//         //   gsap.set(image, { x: e.offsetX - 200 })
-//         // })
-//     })
-    // blog
-let Ser_ = document.querySelectorAll(".fle");
+//   var theseItems = thisAnimWrap.find('.item');
+//   var theseItemsWidth = theseItems.width();
+
+//   var scrollWidth = theseItemsWidth * theseItems.length;
+
+//   var windowWidth = $(window).innerWidth();
 
 
-Ser_.forEach((container) => {
-    let ser = container.querySelector("h3");
-    let ser2 = container.querySelector("p");
-    let Ser1 = document.querySelectorAll(".image");
-    let tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: container,
-            start: '-500 top',
-            // end: '500 center',
-            scroller: ".smooth-scroll",
-            // toggleActions: "restart none none reset"
-            // toggleActions: 'play reverse play reverse ',
-        }
-    });
+//   if (thisAnimWrap.hasClass('to-right')) {
+//     var fromValue = 0;
+//     var toValue = -(scrollWidth - windowWidth + 1600); 
 
-    tl.to(Ser1, 1, {
-        duration: 0.5,
-        y: 0,
-        ease: Power2.out,
-        opacity: 1
-    }, "-=0.2")
-    tl.to(ser, 1, {
-        y: 0,
-        duration: 0.5,
-        ease: Power2.out,
-        opacity: 1
-    }, "-=0.7")
-    tl.from(ser2, 1, {
-            y: 40,
-            duration: 0.5,
-            ease: Power2.out,
-            opacity: 0
-        }, "-=0.8")
-        // tl.to(Ser,1,{
-        //   y:40,
-        //   duration:0.5,
-        //   ease: Power2.out,opacity:1},"-=0.5")
+//   }
+
+//   if (thisAnimWrap.hasClass('to-left')) {
+//     var fromValue = -(scrollWidth - windowWidth + 1600); 
+//     var toValue = 0;
+//   }
+
+
+//   var horizontalSectionTween = gsap.fromTo(thisAnimWrap, { x: fromValue }, { x: toValue, ease: "none" });
+
+//   ScrollTrigger.create({
+//     id: "horizontalSectionScrolling",				
+//     trigger: ".horizontal",					
+//     start: "top top",
+//     scroller:".smooth-scroll",
+//     end: "+=70%",
+//     animation: horizontalSectionTween,
+//     pin: true,
+//     anticipatePin: 1,
+//     scrub: 3,
+//   }); 	
 
 
 
-});
-
+// });	
 
 
 
@@ -868,40 +852,7 @@ gsap.utils.toArray(".about-us-image img").forEach(star => {
   
 background();
   
-gsap.utils.toArray(".image img").forEach(star => {
-    tweenProperty(star, "scale", 0.98, 1);
-    tweenProperty(star, "x", -30, 30);
-    tweenProperty(star, "y", -40, 40);
-  });
-  
-  
-  function tweenProperty(target, prop, min, max) {
-    
-    var randomDur = gsap.utils.random(2, 3, 0.2, true);
-    var randomDelay = gsap.utils.random(0.2, 1, 0.2, true);
-  
-    gsap.to(target,  {
-      [prop]: gsap.utils.random(min, max),
-      duration: randomDur(), 
-      delay: randomDelay(), 
-      ease: 'none',
-      onComplete: tweenProperty,
-      onCompleteParams: [target, prop, min, max]
-    });
-  
-  }
-  
-  function background(){
-    
-    var next = gsap.utils.random(0.2, 0.2, 0.2, true);
-    
-    gsap.to('.image img', { duration:1, ease:'none'});
-    
-    var delayedCall = gsap.delayedCall(next, background);
-    
-  }
-  
-  background();
+
 // works
 let Workss = document.querySelectorAll(".cnt-rvl");
 

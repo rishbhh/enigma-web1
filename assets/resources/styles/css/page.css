@@ -448,6 +448,10 @@ ul {
   font-family: 'AgeoHeavy';
   src: url('/fonts/Ageo-Heavy.woff');
 }
+@font-face {
+  font-family: 'Ageo-SemiBold';
+  src: url('/fonts/Ageo-SemiBold.woff');
+}
 .float_r {
   float: right;
 }
@@ -8000,7 +8004,6 @@ header {
   line-height: 1.2;
   font-family: 'NeueHaasDisplay-me';
   letter-spacing: 3px;
-  opacity: 0;
 }
 .services-s .flex-con .gif-area {
   width: 40%;
@@ -8023,7 +8026,6 @@ header {
   transition: transform 1s ease-in-out;
   transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
   pointer-events: none;
-  opacity: 0;
 }
 .services-s .visible-image {
   z-index: -1;
@@ -8130,10 +8132,10 @@ header {
 }
 .ser-c .flex-con .left-d p {
   margin-bottom: 21%;
-  font-size: 1.1em;
+  font-size: 0.9em;
   line-height: 1.8;
   letter-spacing: 1px;
-  font-family: 'NeueHaasDisplay-light';
+  font-family: 'NeueHaasDisplay-me';
   text-transform: inherit;
 }
 .ser-c .flex-con .right {
@@ -8141,11 +8143,10 @@ header {
 }
 .ser-c .flex-con .right p {
   margin-bottom: 21%;
-  font-size: 1.1em;
-  line-height: 1.8;
+  font-size: 0.9em;
+  line-height: 2.2;
   letter-spacing: 1px;
-  font-family: 'NeueHaasDisplay-light';
-  text-transform: inherit;
+  font-family: 'Ageo';
 }
 .ser-c .flex-con .three-prah ul {
   list-style: none;
@@ -8218,6 +8219,161 @@ header {
      object-fit: cover;
   width: 100%;
 }
+.scroll-sec {
+  background: linear-gradient(1deg, #090e26, #031554);
+  padding: 10% 0;
+  position: relative;
+  padding-bottom: 0;
+}
+.scroll-sec .container {
+  width: 80%;
+}
+.scroll-sec .container h2 {
+  padding: 20px 0%;
+  font-size: 1.9em;
+  padding-right: 160px;
+  color: #fff;
+  line-height: 1.7;
+  margin-bottom: 3%;
+  letter-spacing: 4px;
+  font-family: 'NeueHaasDisplay-me';
+}
+.scroll-sec .container p {
+  font-size: 1.3em;
+  font-family: 'Ageo';
+  color: #fff;
+  line-height: 1.8;
+  letter-spacing: 2px;
+}
+.scroll-sec .top-bg {
+  position: absolute;
+  top: -177px;
+  width: 79%;
+  left: 280px;
+}
+.scroll-sec .bottom-bg {
+  position: absolute;
+  bottom: 230px;
+  -webkit-transform: rotate(271deg);
+          transform: rotate(271deg);
+  width: 74%;
+  right: -370px;
+}
+.sec-b {
+  background: #090e26;
+  padding: 10% 0;
+  padding-top: 0;
+  position: relative;
+  border: 1px solid #090e26;
+}
+.sec-b .container {
+  width: 80%;
+}
+.sec-b .container p {
+  font-size: 1.3em;
+  font-family: 'Ageo';
+  color: #fff;
+  line-height: 1.8;
+  letter-spacing: 2px;
+}
+section.horizontal .pin-wraps,
+section.horizontal .animation-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  height: 60vh;
+  margin-top: 50px;
+  margin-left: 9%;
+}
+.pin-wrap .item {
+  position: relative;
+  padding: 70px 90px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 500px;
+          flex: 0 0 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.7;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+  background-color: transparent;
+}
+.pin-wrap .item h4 {
+  font-size: 1.9em;
+  text-transform: uppercase;
+  font-family: 'NeueHaasDisplay-me';
+  color: #fff;
+  letter-spacing: 2.4px;
+}
+.pin-wrap .item p {
+  line-height: 1.4;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-top: 9px;
+}
+.pin-wrap .item:before {
+  font-family: 'NeueHaasDisplay-me';
+  position: absolute;
+  font-size: 10em;
+  opacity: 0.13;
+  z-index: -1;
+  -webkit-transform: translate(-38px, -83px);
+          transform: translate(-38px, -83px);
+  line-height: 1;
+  color: #fff;
+}
+.black-bg {
+  position: relative;
+}
+.black-bg img {
+  position: absolute;
+}
+section.horizontal .animation-wrap.to-right {
+  counter-reset: item;
+  float: left;
+}
+section.horizontal .animation-wrap.to-left {
+  counter-reset: item 11;
+  float: right;
+}
+.pin-wrap .item:before {
+  content: attr(data-text);
+}
+.pin-wrap .item:nth-child(2n+2) {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.pin-wrap .item:nth-child(4n+4) {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.pin-wraps {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 50px 10vw;
+  position: relative;
+}
+.pin-wraps > * {
+  min-width: 42vw;
+  padding: 0vw;
+  position: relative;
+}
 @media screen and (max-width: 1680px) {
   .services-s .image {
     width: 46%;
@@ -8228,7 +8384,6 @@ header {
   }
   .services-s .flex-con .fle h3 {
     font-size: 4em;
-    opacity: 0;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -8254,7 +8409,7 @@ header {
   }
   .services-s .content-p .en-form-submit {
     margin: 0 0 0;
-    /* overflow: hidden; */
+    overflow: hidden;
     /* height: 100%; */
     text-align: left;
     margin-bottom: 20%;
@@ -8277,7 +8432,6 @@ header {
   }
   .services-s .flex-con .fle h3 {
     font-size: 3em;
-    opacity: 0;
   }
 }
 .aproch {
@@ -8333,7 +8487,7 @@ header {
   margin-left: 3%;
   width: 34%;
 }
-.aproch .container .approach-lis .flex-con .ap-no h6 {
+.aproch .container .approach-lis .flex-con .ap-no h6 .numb {
   font-size: 9em;
   font-family: 'NeueHaasDisplay-me';
   color: #ffffff52;
@@ -8341,7 +8495,7 @@ header {
   text-transform: uppercase;
   position: relative;
 }
-.aproch .container .approach-lis .flex-con .ap-no h6 span {
+.aproch .container .approach-lis .flex-con .ap-no h6 .cons {
   font-size: 18px;
   position: absolute;
   left: 10px;
@@ -8424,6 +8578,17 @@ header {
   #services .accordion-container {
     margin: 0px 0px;
   }
+}
+.wid {
+  width: 88%;
+}
+.b-h1 .in-t {
+  font-size: 0.6em;
+  line-height: 1.73;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 0px;
+  font-family: 'NeueHaasDisplay-me';
 }
 .portfolio {
   padding-bottom: 15%;
@@ -10708,9 +10873,66 @@ header {
 .blog-hero {
   margin-top: 9%;
 }
+.recent-post {
+  margin-top: 17%;
+  margin-bottom: 8%;
+  padding: 0 3%;
+}
+.recent-post .pr-list {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  z-index: 0;
+}
+.recent-post .bl-main {
+  position: relative;
+  width: 58%;
+  padding: 0 0 60px;
+  overflow: hidden;
+}
+.recent-post .pr-thum a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  padding: 1px;
+  z-index: 3;
+}
+.recent-post .p-prj-caption {
+  width: 40%;
+  padding-left: 17px;
+  pointer-events: none;
+  -webkit-transform: translateZ(100px);
+  transform: translateZ(100px);
+  z-index: 4;
+  margin-top: 30px;
+}
+.recent-post .p-prj-caption-name {
+  font-size: 35px;
+  letter-spacing: 2.5px;
+  font-family: 'NeueHaasDisplay-me';
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 1%;
+}
+.recent-post .p-prj-caption-credit {
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 19px;
+  color: #737373;
+  margin-top: 0;
+  font-family: 'NeueHaasDisplay-me';
+}
 @media screen and (max-width: 1280px) {
   #blogs-sction {
-    padding: 0px 10%;
+    padding: 0px 3%;
   }
   .blog-details .container .content h1 {
     font-size: 5em;

@@ -1324,6 +1324,7 @@ function Scrol() {
           stagger: 0.8,
         
     });
+    
 
 }
 
