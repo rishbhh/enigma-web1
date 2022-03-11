@@ -13004,7 +13004,7 @@ body.dark .ar-work-title,
 }
 body.dark .ar-work-cat,
 .a-recent-works.dark .ar-work-cat {
-  color: hsla(0, 0%, 100%, 0.4);
+  color: #ffff0d;
 }
 .recent-works-bg-text {
   position: absolute;
