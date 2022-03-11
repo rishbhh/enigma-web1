@@ -843,7 +843,7 @@ function aliothRecentWorks() {
                     trigger: $this,
                     start: "top top",
                     end: "bottom top",
-                    scrub: 2,
+                    scrub: 3,
                     scroller: ".smooth-scroll",
                     pin: true,
                     snap: false,
@@ -857,7 +857,7 @@ function aliothRecentWorks() {
                 trigger: $this,
                 start: "top top",
                 end: "bottom top",
-                scrub: 2,
+                scrub: 3,
                 scroller: ".smooth-scroll",
                 pin: true,
                 snap: false,
@@ -876,7 +876,7 @@ function aliothRecentWorks() {
                     pin: false,
                     start: 'top bottom',
                     end: 'top top',
-                    scrub: 2,
+                    scrub: 3,
 
                 }
             })
@@ -888,7 +888,7 @@ function aliothRecentWorks() {
                 scrollTrigger: {
                     trigger: parentSec,
                     pin: false,
-                    scrub: 2,
+                    scrub: 3,
                     start: 'bottom bottom',
                     end: 'bottom top',
 
