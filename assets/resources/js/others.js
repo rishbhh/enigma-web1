@@ -112,15 +112,6 @@ fixed_scrols.fromTo('.p-s ', { y: 50, scale: 0.5 }, {
     duration: 8,
     ease: 'power1.inOut',
 },);
-// gsap.to('.p-s', {
-//     scale: '1',
-//     scrollTrigger: {
-//         trigger: ".bol-prh",
-//         end: "+=100%",
-//         scroller: ".smooth-scroll",
-//         scrub: true
-//     }
-// })
 
 // img
 window.onload = function() {
@@ -150,43 +141,7 @@ window.onload = function() {
 
     });
 }
-let revealContainers2 = document.querySelectorAll(".pr-main");
 
-revealContainers2.forEach((container) => {
-    let cont = container.querySelector("h2");
-    let cont2 = container.querySelector("p");
-    // let dtl = container.querySelector(".p-prj-caption-credit")
-    let shd = container.querySelector(".p-prj-thum-shadow")
-    let tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: container,
-            scroller: ".smooth-scroll",
-            // toggleActions: "restart none none reset"
-        }
-    });
-
-
-    tl.from(cont, 1, {
-        y: 40,
-        duration: 0.5,
-        ease: Power2.out,
-        opacity: 0
-    }, "-=0.7")
-    tl.from(cont2, 1, {
-            y: 40,
-            duration: 0.5,
-            ease: Power2.out,
-            opacity: 0
-        }, "-=0.5")
-        // tl.from(dtl,1,{ duration:0.5,
-        //   ease: Power2.out,opacity:0},"-=0.5")
-    tl.from(shd, 1, {
-        duration: 0.5,
-        ease: Power2.out,
-        opacity: 0
-    }, "-=0.5")
-
-});
 
 
 // pop Form

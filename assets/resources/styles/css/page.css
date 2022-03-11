@@ -4606,7 +4606,7 @@ header {
   font-synthesis: none;
   letter-spacing: 0.1em;
   /* text-transform: uppercase; */
-  font-family: 'Qartella-Regular';
+  font-family: 'Ageo';
 }
 .c-hm-us_title {
   max-width: 38vw;
@@ -7505,7 +7505,7 @@ header {
     font-synthesis: none;
     letter-spacing: 0.1em;
     /* text-transform: uppercase; */
-    font-family: 'Qartella-Regular';
+    font-family: 'Ageo';
   }
   .c-hm-us_title {
     max-width: 38vw vw;
@@ -7800,7 +7800,7 @@ header {
   fill: none;
   width: 35px;
   stroke-width: 6px;
-  stroke: #ffffff;
+  stroke: #2b2b2b;
 }
 /* services */
 #services {
@@ -7819,11 +7819,11 @@ header {
   font-family: 'NeueHaasDisplay-me';
   letter-spacing: 6px;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: #ffffff;
-  -webkit-text-stroke: 0.4px;
+  -webkit-text-stroke-color: #2b2b2b;
+  -webkit-text-stroke: 1px;
   padding-left: 52px;
-  stroke: #ffffff;
-  color: #fff;
+  stroke: #2B2B2B;
+  color: #2b2b2b;
 }
 .accordion-title h2 span {
   font-size: 0.4em;
@@ -7832,10 +7832,10 @@ header {
   left: 7px;
 }
 .accordion-list li {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #2b2b2b;
 }
 .top-border {
-  border-top: 2px solid #ffffff;
+  border-top: 2px solid #2b2b2b;
 }
 .accordion-title {
   display: -webkit-box;
@@ -7851,20 +7851,20 @@ header {
           align-items: center;
 }
 .accordion-title:hover h2 {
-  -webkit-text-fill-color: #ffffff;
-  -webkit-text-stroke-color: #ffffff;
+  -webkit-text-fill-color: #2b2b2b;
+  -webkit-text-stroke-color: #2b2b2b;
   -webkit-text-stroke: 0px;
 }
 .accordion-list p {
   overflow: hidden;
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-  font-family: 'Qartella-Regular';
+  font-family: 'Ageo';
   font-size: 1.2em;
   padding-right: 17%;
   letter-spacing: 2px;
   margin-bottom: 30px;
-  color: #fff;
+  color: #444;
 }
 .accordion-list .cont {
   max-height: 0;
@@ -7891,7 +7891,7 @@ header {
   height: auto;
   margin: 0;
   padding: 0;
-  color: #ffffff;
+  color: #2b2b2b;
   background: 0 0;
   border: 0;
   border-radius: 0;
@@ -7906,8 +7906,8 @@ header {
   text-decoration: none;
 }
 .accordion-list li.open h2 {
-  -webkit-text-fill-color: #ffffff;
-  -webkit-text-stroke-color: #ffffff;
+  -webkit-text-fill-color: #2b2b2b;
+  -webkit-text-stroke-color: #2b2b2b;
   -webkit-text-stroke: 0px;
 }
 .accordion-list li a {
@@ -7951,7 +7951,7 @@ header {
   width: 10rem;
   height: 5px;
   left: 0;
-  background: #ffffff;
+  background: #2b2b2b;
   -webkit-transition: -webkit-transform calc(var(--duration) * 3) var(--bezier2);
   transition: -webkit-transform calc(var(--duration) * 3) var(--bezier2);
   transition: transform calc(var(--duration) * 3) var(--bezier2);
