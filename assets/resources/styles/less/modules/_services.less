@@ -385,7 +385,24 @@
       // text-shadow: 1px 1px 10px rgba(248, 25, 25, 0.212);
       span {
         display: block;
+        color: transparent;
+        background-image: radial-gradient(farthest-corner at center 0px, grey 0%, black 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-size: 200% auto;
+        animation: gradient-animation 3s linear infinite;
+      }
 
+      @-webkit-keyframes gradient-animation {
+        to {
+          background-position: 200% center
+        }
+      }
+
+      @keyframes gradient-animation {
+        to {
+          background-position: 200% center
+        }
       }
     }
 
@@ -472,6 +489,15 @@
         font-family: 'NeueHaasDisplay-me';
         text-transform: inherit;
         text-align: justify;
+
+        span {
+          position: absolute;
+          left: -40px;
+
+          img {
+            width: 35px;
+          }
+        }
       }
     }
 
@@ -484,6 +510,8 @@
         line-height: 2.2;
         letter-spacing: 1px;
         font-family: 'Ageo';
+
+
       }
 
     }
@@ -578,13 +606,13 @@
         content: '';
         background: url(/assets/resources/img/Service-elements/phone-icon.svg);
         width: 50%;
-        height: 231px;
+        height: 246px;
         position: absolute;
         background-repeat: no-repeat;
         left: 0;
         margin: 0 auto;
         right: 0;
-        top: -100px;
+        top: -120px;
         background-size: cover;
       }
     }
@@ -628,8 +656,14 @@
       font-size: 1.9em;
       line-height: 1.4;
       letter-spacing: 2px;
+      padding-right: 31%;
       margin-bottom: 20px;
-      font-family: 'NeueHaasDisplay-me';
+      font-family: 'NeueHaasDisplay-roman';
+    }
+
+    p {
+      padding-right: 30%;
+      margin-bottom: 3%;
     }
 
     .point {
@@ -674,61 +708,341 @@
   }
 
   .el1 {
-    width: 50px;
-    height: 50px;
-    background-position: -22px;
+    width:
+      50px;
+    height:
+      55px;
+    background-position:
+      -31px;
     top: 18%;
     left: 7%;
+    -webkit-transform: scale(0.6);
     transform: scale(0.6);
   }
 
   .el2 {
-    width: 50px;
-    height: 50px;
-    background-position: -337px;
+    width:
+      50px;
+    height:
+      50px;
+    background-position:
+      -438px;
     left: 16%;
-    bottom: 30%;
+    bottom: 14%;
     top: unset;
-    transform: scale(.5);
+
   }
 
   .el3 {
-    width: 50px;
-    height: 50px;
-    background-position: -255px;
+    width:
+      50px;
+    height:
+      50px;
+    background-position:
+      -175px;
     left: 34%;
+    -webkit-transform: scale(0.5);
     transform: scale(0.5);
     bottom: 7%;
     top: 21%;
   }
 
   .el4 {
-    width: 50px;
-    height: 50px;
-    background-position: -643px;
+    width:
+      50px;
+    height:
+      50px;
+    background-position:
+      -304px;
     top: 18%;
+    -webkit-transform: scale(0.5);
     transform: scale(0.5);
     right: 11%;
   }
 
   .el5 {
-    width: 50px;
-    height: 50px;
-    background-position: -418px;
+    width:
+      50px;
+    height:
+      50px;
+    background-position:
+      -708px;
     bottom: 23%;
     right: 2%;
-    transform: scale(0.7);
+    /* -webkit-transform: scale(0.7); */
+    /* transform: scale(0.7); */
+  }
+
+  .el6 {
+    width:
+      90px;
+    height:
+      93px;
+    background-position:
+      -530px;
+    bottom: 1%;
+    right: 25%;
+  }
+
+}
+
+// Design
+.design {
+  position: relative;
+
+  .el-bg {
+    background-image: url(/assets/resources/img/Service-elements/design-icon.png);
+    position: absolute;
+    z-index: 4;
+    background-repeat: no-repeat;
+  }
+
+  .el1 {
+    width:
+      50px;
+    height:
+      55px;
+    background-position:
+      -41px;
+    top: 18%;
+    left: 7%;
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+
+  .el2 {
+    width:
+      60px;
+    height:
+      60px;
+    background-position:
+      -438px;
+    left: 16%;
+    bottom: 14%;
+    top: unset;
+
+  }
+
+  .el3 {
+    width:
+      60px;
+    height:
+      60px;
+    background-position:
+      -175px;
+    left: 34%;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    bottom: 7%;
+    top: 21%;
+  }
+
+  .el4 {
+    width:
+      50px;
+    height:
+      50px;
+    background-position:
+      -304px;
+    top: 18%;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    right: 11%;
+  }
+
+  .el5 {
+    width:
+      60px;
+    height:
+      60px;
+    background-position:
+      -698px;
+    bottom: 23%;
+    right: 2%;
+    /* -webkit-transform: scale(0.7); */
+    /* transform: scale(0.7); */
+  }
+
+  .el6 {
+    width:
+      90px;
+    height:
+      93px;
+    background-position:
+      -530px;
+    bottom: 1%;
+    right: 25%;
+  }
+
+}
+
+.digital {
+  position: relative;
+
+  .el-bg {
+    background-image: url(/assets/resources/img/Service-elements/marketing-icon.png);
+    position: absolute;
+    z-index: 4;
+    background-repeat: no-repeat;
+  }
+
+  .el1 {
+    width:
+      50px;
+    height:
+      55px;
+    background-position:
+      -41px;
+    top: 18%;
+    left: 7%;
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+
+  .el2 {
+    width:
+      60px;
+    height:
+      60px;
+    background-position:
+      -438px;
+    left: 13%;
+    bottom: 11%;
+    top: unset;
+
+  }
+
+  .el3 {
+    width:
+      60px;
+    height:
+      60px;
+    background-position:
+      -175px;
+    left: 46%;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    bottom: 8%;
+    top: 29%;
+  }
+
+  .el4 {
+    width: 50px;
+    height: 59px;
+    background-position: -310px;
+    top: 29%;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    right: 6%;
+  }
+
+  .el5 {
+    width:
+      60px;
+    height:
+      60px;
+    background-position:
+      -698px;
+    bottom: 23%;
+    right: 2%;
+    /* -webkit-transform: scale(0.7); */
+    /* transform: scale(0.7); */
   }
 
   .el6 {
     width: 90px;
     height: 93px;
-    background-position: -160px;
-    bottom: 13%;
+    background-position: -553px;
+    bottom: 1%;
     right: 25%;
   }
+
 }
 
+.develop {
+  position: relative;
+
+  .el-bg {
+    background-image: url(/assets/resources/img/Service-elements/development-icon.png);
+    position: absolute;
+    z-index: 4;
+    background-repeat: no-repeat;
+  }
+
+  .el1 {
+    width:
+      50px;
+    height:
+      55px;
+    background-position:
+      -57px;
+    top: 18%;
+    left: 7%;
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+
+  .el2 {
+    width:
+      60px;
+    height:
+      60px;
+    background-position:
+      -438px;
+    left: 13%;
+    bottom: 11%;
+    top: unset;
+
+  }
+
+  .el3 {
+    width:
+      60px;
+    height:
+      60px;
+    background-position:
+      -175px;
+    left: 46%;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    bottom: 8%;
+    top: 23%;
+  }
+
+  .el4 {
+    width: 50px;
+    height: 59px;
+    background-position: -310px;
+    top: 29%;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    right: 6%;
+  }
+
+  .el5 {
+    width:
+      60px;
+    height:
+      60px;
+    background-position:
+      -698px;
+    bottom: 23%;
+    right: 2%;
+    /* -webkit-transform: scale(0.7); */
+    /* transform: scale(0.7); */
+  }
+
+  .el6 {
+    width: 90px;
+    height: 93px;
+    background-position: -553px;
+    bottom: 1%;
+    right: 25%;
+  }
+
+}
+
+// s
 .image-sec {
   margin-bottom: 10%;
 
@@ -775,15 +1089,15 @@
 
   .back-text {
     position: absolute;
-    z-index: 1;
-    top: 74px;
+    top: -29px;
     right: 0;
     font-family: 'NeueHaasDisplay-bold';
-    z-index: -1;
+    z-index: 0;
 
     h1 {
-      font-size: 7.1em;
-      color: #fafafa;
+      font-size: 7.17em;
+      // color: #fafafa;
+      color: #7575750a;
     }
   }
 
@@ -866,7 +1180,7 @@
   position: relative;
   margin-top: -18%;
   margin-left: 36%;
-  margin-bottom: 23%;
+  margin-bottom: 7%;
 
 }
 
@@ -1001,6 +1315,99 @@ section.horizontal .animation-wrap {
   }
 }
 
+.ser-three {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 10vw;
+  position: relative;
+
+  .item {
+    position: relative;
+    padding: 70px 70px;
+    width: 30%;
+    align-items: center;
+    line-height: 1.7;
+    // border-right: 1px solid rgba(0, 0, 0, 0.06);
+    background-color: transparent;
+
+    &::before {
+      // counter-increment: item;
+      content: attr(data-text);
+      font-family: 'NeueHaasDisplay-me';
+      position: absolute;
+      font-size: 5em;
+      opacity: 0.11;
+      z-index: -1;
+      transform: translate(-45px, -26px);
+      line-height: 1;
+      color: rgb(0, 0, 0);
+    }
+
+
+    p {
+      line-height: 1.4;
+      letter-spacing: 1px;
+      margin-top: 9px;
+
+    }
+  }
+
+}
+
+.ser-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 10vw;
+  position: relative;
+
+  .mar-top {
+    margin-top: 20%;
+  }
+
+  .item {
+    position: relative;
+    padding: 60px 60px;
+    width: 40%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 1.7;
+    background-color: transparent;
+
+
+
+    &::before {
+      // counter-increment: item;
+      content: attr(data-text);
+      font-family: 'NeueHaasDisplay-me';
+      position: absolute;
+      font-size: 10em;
+      opacity: 0.11;
+      z-index: -1;
+      transform: translate(-80px, -26px);
+      line-height: 1;
+      color: rgb(0, 0, 0);
+    }
+
+    h2 {
+      font-size: 1.4em;
+      line-height: 1.2;
+      letter-spacing: 1.3px;
+    }
+
+    p {
+      line-height: 1.4;
+      letter-spacing: 1px;
+      margin-top: 9px;
+
+    }
+  }
+
+}
 
 section.horizontal .animation-wrap.to-right {
   counter-reset: item;

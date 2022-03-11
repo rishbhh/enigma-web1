@@ -796,7 +796,7 @@ function setCSSVars(slider) {
 // });
 
 // Animate the properties individually
-gsap.utils.toArray(".about-us-image img").forEach(star => {
+gsap.utils.toArray(".move img").forEach(star => {
     tweenProperty(star, "scale", 0.98, 1);
     tweenProperty(star, "x", -30, 30);
     tweenProperty(star, "y", -40, 40);

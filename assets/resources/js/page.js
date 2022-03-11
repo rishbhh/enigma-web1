@@ -244,7 +244,11 @@ if (!isMobile) {
             y: 300,
             ease: "power4.inOut"
         }, "-=0.7")
-       
+        countTimeline.from(".text-rveal span", 1.4, {
+            y: "180",
+            duration: 0.5, stagger: 0.3,
+            ease: "power4.inOut"
+        }, "-=0.7")
         countTimeline.from(".hro-img", 1.2, {
             opacity: 0,
             duration: 0.5,
@@ -274,10 +278,7 @@ if (!isMobile) {
             duration: 0.5,
             ease: "power4.inOut"
         }, "-=0.9")
-        countTimeline.from(".text-rveal span", 1, {
-            y: "180",
-            duration: 0.5,
-        }, "-=2")
+        
         
         countTimeline.from(".element", 1, {
             scale: 0,
