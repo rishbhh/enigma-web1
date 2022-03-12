@@ -2771,6 +2771,8 @@ header {
     bottom: auto;
     font-size: 1.1em;
     line-height: 1.5;
+    font-weight: normal;
+    font-family: 'Ageo';
     color: #ffffff;
     letter-spacing: 0.2em;
   }
@@ -3284,6 +3286,8 @@ header {
     font-size: 1.1em;
     line-height: 1.5;
     color: #ffffff;
+    font-weight: normal;
+    font-family: 'Ageo';
     letter-spacing: 0.2em;
   }
   .hero-section .container_hero_content .chapt-icon {
@@ -3690,6 +3694,12 @@ header {
     -webkit-transform: scale(8) translateX(-26vw) translateY(-37vh);
             transform: scale(8) translateX(-26vw) translateY(-37vh);
   }
+}
+.left-b {
+  border-radius: 20px 0px 0px 20px;
+}
+.right-b {
+  border-radius: 0px 20px 20px 0px;
 }
 .tablet_font {
   color: #000000;
@@ -4493,7 +4503,7 @@ header {
 .o-page-tail_inner {
   position: relative;
   padding-bottom: 2em;
-  background-color: #f2f3f4;
+  background-color: #fff;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   display: none;
@@ -4533,7 +4543,6 @@ header {
   z-index: 1;
   overflow: hidden;
   border-radius: 0em;
-  background-color: #d8d8d8;
 }
 .o-media.hm-us {
   z-index: 2;
@@ -4690,7 +4699,6 @@ header {
   z-index: 1;
   overflow: hidden;
   border-radius: 0em;
-  background-color: #d8d8d8;
 }
 .o-media.hm-us {
   z-index: 2;
@@ -7468,7 +7476,6 @@ header {
     z-index: 1;
     overflow: hidden;
     border-radius: 1.25em;
-    background-color: #d8d8d8;
   }
   .o-media {
     border-radius: 0.75em;
@@ -7854,9 +7861,9 @@ header {
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
   font-family: 'Ageo';
-  font-size: 1.2em;
+  font-size: 0.8em;
   padding-right: 17%;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   margin-bottom: 30px;
   color: #444;
 }
@@ -7865,10 +7872,8 @@ header {
   overflow: hidden;
   -webkit-transition: 0.8s ease-in-out;
   transition: 0.8s ease-in-out;
-  font-family: 'NeueHaasDisplay-Roman';
-  font-size: 1.5em;
-  padding-right: 3%;
-  letter-spacing: 1px;
+  font-size: 1.3em;
+  padding-left: 4.6%;
 }
 .accordion-list .cont .en-form-submit {
   margin: 0 0 0;
@@ -7908,7 +7913,7 @@ header {
   display: block;
 }
 .accordion-list li.open .cont {
-  max-height: 165px;
+  max-height: 335px;
   padding-bottom: 20px;
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
@@ -8983,7 +8988,8 @@ section.horizontal .animation-wrap.to-left {
 }
 @media screen and (max-width: 1280px) {
   .works__hero__line {
-    font-size: 10em;
+    font-size: 8em;
+    line-height: 0.8;
   }
   .services-s .image {
     width: 35%;
