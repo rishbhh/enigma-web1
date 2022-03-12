@@ -2769,13 +2769,10 @@ header {
     right: 0;
     top: 2.5vh;
     bottom: auto;
-    font-size: 1em;
-    opacity: 0;
+    font-size: 1.1em;
     line-height: 1.5;
-    font-family: 'NeueHaasDisplay-light';
-    text-transform: uppercase;
     color: #ffffff;
-    letter-spacing: 0.37em;
+    letter-spacing: 0.2em;
   }
   .hero-section .container_hero_content .chapt-icon {
     position: absolute;
@@ -3286,9 +3283,8 @@ header {
     bottom: auto;
     font-size: 1.1em;
     line-height: 1.5;
-    text-transform: uppercase;
     color: #ffffff;
-    letter-spacing: 0.37em;
+    letter-spacing: 0.2em;
   }
   .hero-section .container_hero_content .chapt-icon {
     position: absolute;
@@ -4598,15 +4594,11 @@ header {
 .t-lead {
   margin-top: 0px;
   margin-bottom: 40px;
-  font-size: 2.2em;
-  font-variant: small-caps;
+  font-size: 2em;
   line-height: 1.4;
-  /* font-weight: 400; */
-  text-shadow: 2px 3px 4px #0000003d;
   font-synthesis: none;
-  letter-spacing: 0.1em;
-  /* text-transform: uppercase; */
-  font-family: 'Ageo';
+  letter-spacing: 0;
+  font-family: 'Ageo-SemiBold';
 }
 .c-hm-us_title {
   max-width: 38vw;
