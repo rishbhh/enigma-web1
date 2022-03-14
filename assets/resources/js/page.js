@@ -342,7 +342,6 @@ $(document).ready(function() {
     splt()
     About();
     Serv();
-    PortfolioS();
     aliothRecentWorks()
     Marq();
     Changehum();
@@ -1012,7 +1011,7 @@ function Horizontal() {
             start: '-300 center',
             end: '300 top',
             scroller: ".smooth-scroll",
-            toggleActions: 'restart none none reverse ',
+            // toggleActions: 'restart none none reverse ',
 
         },
     });
@@ -1032,7 +1031,7 @@ function Works() {
             start: '-300 top',
             end: '500 top',
             scroller: ".smooth-scroll",
-            toggleActions: 'restart reverse restart reverse ',
+            // toggleActions: 'restart reverse restart reverse ',
 
         },
     });
@@ -1088,12 +1087,6 @@ function About() {
             // toggleActions: 'restart reverse restart reverse ',
         },
     });
-    // about.to(".about-us-image img", 1, {
-    //     opacity: 0,
-    //     duration: 0.3,
-    //     transformOrigin: "bottom",
-    //     ease: "power4.inOut"
-    // }, "-=2")
 
     about.from(".about-p p", { y: -50, opacity: 0, duration: 0.4, ease: "Power2.easeInOut" }, "-=1.8");
     about.from(".about-f img", 1, { y: -100, opacity: 0, duration: 0.3, ease: "Power2.easeInOut" }, "-=2");
@@ -1180,110 +1173,7 @@ function Opaci() {
 
 }
 
-// Portfolio section
-function PortfolioS() {
-    let ports = gsap.timeline({
-        scrollTrigger: {
-            trigger: '.portfolio',
-            start: '-400 top',
-            end: '1200 top',
-            scroller: ".smooth-scroll",
-            toggleActions: 'restart reverse restart reverse ',
-        },
-    });
-    ports.from(
-        ".back span",
-        1, {
-            opacity: 0,
-            y: 60,
-            ease: "Power2.easeIn",
-            duration: 1,
-            stagger: 0.1,
-        },
-        "-=0.7"
-    );
-    ports.from(
-        ".back2 span",
-        1, {
-            opacity: 0,
-            y: 60,
-            ease: "Power2.easeIn",
-            duration: 1,
-            stagger: 0.1,
-        },
-        "-=0.7"
-    );
-    ports.from(
-        ".headers > div",
-        1, {
-            opacity: 0,
-            y: 60,
-            ease: "Power2.easeIn",
-            duration: 1,
-            stagger: 0.1,
-        },
-        "-=0.5"
-    );
-    ports.from(".container-item h3", {
-        opacity: 0,
-        y: 50,
-        display: "none",
-        duration: 0.5,
-        ease: "back.out",
-        stagger: 0.2,
-    }, "-=0.5")
 
-    const allcontainer = gsap.utils.toArray(".container-item");
-    const venueImageWrap = document.querySelector(".container-img-wrap");
-    const venueImage = document.querySelector(".container-img");
-
-    function initcontainer() {
-        allcontainer.forEach((link) => {
-            link.addEventListener("mouseenter", venueHover);
-            link.addEventListener("mouseleave", venueHover);
-            link.addEventListener("mousemove", moveVenueImage);
-        });
-    }
-
-    function moveVenueImage(e) {
-        let xpos = e.clientX;
-        let ypos = e.clientY;
-        const tl = gsap.timeline();
-        tl.to(venueImageWrap, {
-            x: xpos,
-            y: ypos,
-        });
-    }
-
-    function venueHover(e) {
-        if (e.type === "mouseenter") {
-            const targetImage = e.target.dataset.img;
-
-            const tl = gsap.timeline();
-            tl.set(venueImage, {
-                backgroundImage: `url(${targetImage})`,
-            }).to(venueImageWrap, {
-                duration: 0.5,
-                autoAlpha: 1,
-            });
-        } else if (e.type === "mouseleave") {
-            const tl = gsap.timeline();
-            tl.to(venueImageWrap, {
-                duration: 0.5,
-                autoAlpha: 0,
-            });
-        }
-    }
-
-    function init() {
-        initcontainer();
-    }
-
-    window.addEventListener("load", function() {
-        init();
-    });
-
-}
 
 // Footer
 function Footer() {

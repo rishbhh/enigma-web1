@@ -193,7 +193,7 @@ figure {
   box-sizing: border-box;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: '';
   font-size: 13px;
   color: #000;
   line-height: normal;
@@ -692,6 +692,9 @@ figure {
  */
 body {
   margin: 0;
+}
+a {
+  cursor: pointer;
 }
 /**
  * 1. Add the correct box sizing in Firefox.
@@ -1926,6 +1929,7 @@ header {
   position: relative;
   overflow: hidden;
   color: #ffffff;
+  font-family: 'NeueHaasDisplay-me';
 }
 .sub-navlink {
   color: #ffffff;
@@ -1994,9 +1998,6 @@ header {
   pointer-events: none;
   z-index: 10;
 }
-.navItem:hover .navItemLink {
-  color: transparent;
-}
 @keyframes gradient {
   0% {
     background-position: 0 0;
@@ -2026,6 +2027,7 @@ header {
           transform-origin: 100% 100%;
   display: inline-block;
   color: #fff;
+  font-family: 'NeueHaasDisplay-me';
 }
 @media (max-width: 1023px) {
   .nav-num {
@@ -2090,6 +2092,8 @@ header {
   height: auto;
   line-height: 1;
   opacity: 1;
+  font-family: 'Ageo';
+  text-transform: capitalize;
   text-align: left;
 }
 .sub-nav .cb-outro-social-item .cb-outro-social-item-title {
@@ -2488,13 +2492,14 @@ header {
     margin-left: 7rem;
   }
   .sub-nav {
-    margin-right: 4rem;
+    margin-right: 3rem;
   }
   .nav-second {
     position: absolute;
     text-align: right;
     bottom: 0;
     right: -1rem;
+    font-family: 'Ageo';
     bottom: 19vh;
   }
 }
@@ -4778,6 +4783,8 @@ header {
 .about-us-section h1 {
   width: 100%;
   color: #2b2b2b;
+  font-family: 'NeueHaasDisplay-me';
+  font-size: 3.2em;
 }
 .about-us-section .small-h1 {
   font-size: 2.5em;
@@ -4870,6 +4877,7 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: 'NeueHaasDisplay-me';
+  overflow: visible;
 }
 .client-section .container .parh {
   font-size: 1.1em;
@@ -6976,16 +6984,23 @@ header {
     padding: 90px 0 30px;
     margin-bottom: 110px;
   }
+  .about-us-image {
+    width: 900px;
+  }
   .about-us-content {
     margin-left: 111px;
-    margin-top: 15%;
+    margin-top: 1%;
+    width: 940px;
   }
   .c-hm-us_top {
     padding-top: 1.6em;
   }
   .c-hm-us_s2 {
-    padding-top: 10em;
-    padding-bottom: 10em;
+    padding-top: 18em;
+    padding-bottom: 18em;
+  }
+  .t-lead {
+    font-size: 3em;
   }
 }
 @media screen and (max-width: 1680px) {
@@ -7058,8 +7073,8 @@ header {
     font-size: 1.3em;
   }
   .about-us-section {
-    padding: 90px 0 30px;
-    margin-bottom: 110px;
+    padding: 15% 0 30px;
+    margin-bottom: 10px;
   }
   .about-us-content {
     margin-left: 110px;
@@ -7069,7 +7084,7 @@ header {
     padding-top: 0.6em;
   }
   .c-hm-us_s2 {
-    padding-top: 12em;
+    padding-top: 7em;
     padding-bottom: 8em;
   }
 }
@@ -8964,6 +8979,41 @@ section.horizontal .animation-wrap.to-left {
   padding: 0vw;
   position: relative;
 }
+.services-s .content-p {
+  padding-right: 0%;
+}
+.services-s .content-p .en-form-submit {
+  margin: 0 0 0;
+  overflow: hidden;
+  /* height: 100%; */
+  text-align: left;
+  margin-bottom: 20%;
+  margin-top: 30px;
+}
+.services-s .content-p .en-form-submit .en-btn_send {
+  color: #1a1a1a;
+  background: 0 0;
+  border: 0;
+  border-radius: 0;
+  outline: 0 !important;
+  font-family: 'Ageo';
+  font-size: 1em;
+  letter-spacing: 1px;
+  line-height: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  text-indent: inherit;
+  text-decoration: none;
+}
+@media screen and (max-width: 1920px) {
+  .services-s .image {
+    width: 35%;
+    /* height: 940px; */
+  }
+  .services-s .image img {
+    width: 500px;
+  }
+}
 @media screen and (max-width: 1680px) {
   .services-s .image {
     width: 46%;
@@ -8988,8 +9038,8 @@ section.horizontal .animation-wrap.to-left {
 }
 @media screen and (max-width: 1280px) {
   .works__hero__line {
-    font-size: 8em;
-    line-height: 0.8;
+    font-size: 11em;
+    line-height: 0.9;
   }
   .services-s .image {
     width: 35%;
@@ -12505,6 +12555,7 @@ section.horizontal .animation-wrap.to-left {
   background-size: cover;
   clear: both;
   background-position: center;
+  padding-top: 6%;
 }
 .section-w .wrapper-small {
   width: 100%;
@@ -12991,17 +13042,18 @@ section.horizontal .animation-wrap.to-left {
   letter-spacing: 0.05em;
   padding: 10px 0px 0 18px;
   margin-top: -40px;
+  font-family: 'NeueHaasDisplay-me';
 }
 body.dark .ar-work-title,
 .a-recent-works.dark .ar-work-title {
   color: #fff;
 }
 .ar-work-cat {
-  font-size: 25px;
-  font-weight: 700;
+  font-size: 18px;
   letter-spacing: -0.02em;
   padding-left: 20px;
   color: rgba(25, 27, 29, 0.6);
+  font-family: 'NeueHaasDisplay-me';
 }
 body.dark .ar-work-cat,
 .a-recent-works.dark .ar-work-cat {
@@ -13015,7 +13067,7 @@ body.dark .ar-work-cat,
   font-size: 200px;
   white-space: nowrap;
   font-weight: 700;
-  letter-spacing: -0.06em;
+  font-family: 'NeueHaasDisplay-me';
   color: #191b1d;
   pointer-events: none;
 }
