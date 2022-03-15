@@ -462,17 +462,36 @@
             letter-spacing: 1px;
         }
 
-        .blockquote {
+        blockquote {
+            text-align: center;
+            font: italic normal bold 24px/29px Ageo;
+            letter-spacing: 3.6px;
+            font-family: 'Ageo-Bold';
+            color: #2B2B2B;
             position: relative;
 
-            span {
+            &::after {
+                content: '';
+                background-image: url('/assets/resources/img/Service-elements/quote-icon.svg');
                 position: absolute;
-                left: -40px;
+                left: 40px;
+                background-size: contain;
+                width: 51px;
+                height: 40px;
+                background-repeat: no-repeat;
 
-                img {
-                    width: 35px;
-                }
             }
+
+            // span {
+            //     position: absolute;
+            //     left: 40px;
+            //     z-index: 0;
+
+            //     img {
+            //         width: 35px;
+            //         z-index: -1;
+            //     }
+            // }
         }
 
         .content {
