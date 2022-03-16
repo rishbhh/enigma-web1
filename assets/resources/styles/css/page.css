@@ -2780,6 +2780,7 @@ header {
     font-family: 'Ageo';
     color: #ffffff;
     letter-spacing: 0.2em;
+    padding: 0 10px;
   }
   .hero-section .container_hero_content .chapt-icon {
     position: absolute;
@@ -3058,11 +3059,17 @@ header {
     color: #8e8e93;
   }
   .hero-section .t-lead {
-    font-size: 1.2em;
-    line-height: 1.3;
-    font-weight: 400;
-    letter-spacing: 0em;
-    margin-bottom: 7px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-size: 1.7em;
+    font-variant: small-caps;
+    line-height: 1.5;
+    /* font-weight: 400; */
+    text-shadow: none;
+    font-synthesis: none;
+    letter-spacing: 0.07em;
+    /* text-transform: uppercase; */
+    font-family: 'Ageo';
   }
   .hero-section .o-container {
     padding-right: 0em;
@@ -7098,6 +7105,9 @@ header {
   #sectionPin {
     display: none;
   }
+  .about-us-images {
+    display: none;
+  }
   #about2 {
     margin-top: 20%;
   }
@@ -7134,12 +7144,12 @@ header {
   }
   .about-us-section .d-flex .about-us-content {
     margin-left: 11px;
-    margin-top: -50%;
+    margin-top: 0%;
     width: 100%;
   }
   .about-us-section .d-flex .about-us-content h1 {
-    font-size: 57px;
-    line-height: 55px;
+    font-size: 33px;
+    line-height: 43px;
   }
   .about-page .container .flex {
     display: block;
@@ -7150,6 +7160,26 @@ header {
   .about-page .container .flex .left-con {
     width: 30%;
     margin-bottom: 10px;
+  }
+  .client-section .grid-logo .logo-item {
+    width: 50%;
+    padding: 15px;
+    border-right: none;
+    position: relative;
+  }
+  .client-section .grid-logo .logo-item img {
+    width: 80%;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+  }
+  .client-section .grid-logo .bottom-border::after {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
   }
   section.section-container {
     width: 100%;
@@ -7505,8 +7535,8 @@ header {
     padding-top: 20%;
   }
   .c-hm-us_s2 {
-    padding-top: 4em;
-    padding-bottom: 4em;
+    padding-top: 8em;
+    padding-bottom: 8em;
   }
   .t-lead {
     margin-top: 0px;
@@ -7560,10 +7590,13 @@ header {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-box-shadow: 0px 20px 30px -30px #202637;
-    box-shadow: 0px 20px 30px -30px #202637;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     -webkit-transition: all 0.25s ease;
     transition: all 0.25s ease;
+  }
+  .mob-port .swiper-pagination-bullet {
+    border-radius: 0px;
   }
   .mob-port .top-row {
     display: -webkit-box;
@@ -7636,7 +7669,7 @@ header {
     padding: 0 20px 40px;
   }
   .mob-port .slider-element-container .swiper-pagination-bullet {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 16px));
     height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 3px));
   }
@@ -7683,7 +7716,7 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #fff;
+    color: #2b2b2b;
     font-family: 'NeueHaasDisplay-me';
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -8655,7 +8688,7 @@ header {
   position: absolute;
   top: -29px;
   right: 0;
-  font-family: 'NeueHaasDisplay-bold';
+  font-family: 'NeueHaasDisplay-me';
   z-index: 0;
 }
 .scroll-sec2 .back-text h1 {
@@ -9076,10 +9109,10 @@ section.horizontal .animation-wrap.to-left {
   }
 }
 .aproch {
-  background: linear-gradient(1deg, #090e26, #031554);
-  padding: 10% 0;
+  padding: 5% 0;
   position: relative;
   padding-bottom: 0;
+  font-family: 'NeueHaasDisplay-me';
 }
 .aproch .top-bg {
   position: absolute;
@@ -9095,19 +9128,30 @@ section.horizontal .animation-wrap.to-left {
   width: 74%;
   right: -370px;
 }
+.aproch .m-0 {
+  margin-top: 0 !important;
+}
 .aproch .container {
   width: 80%;
 }
 .aproch .container h2 {
   padding: 20px 0%;
   font-size: 3em;
-  color: #fff;
+  color: #2b2b2b;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: 'NeueHaasDisplay-me';
 }
 .aproch .container .approach-lis {
   margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .aproch .container .approach-lis .flex-con {
   display: -webkit-box;
@@ -9122,36 +9166,133 @@ section.horizontal .animation-wrap.to-left {
   margin: 0%;
   position: relative;
   margin-bottom: 10%;
+  width: 45%;
+  overflow: hidden;
 }
 .aproch .container .approach-lis .flex-con .ap-no {
   position: relative;
   margin-left: 3%;
-  width: 34%;
+  width: 33%;
+  overflow: visible;
 }
 .aproch .container .approach-lis .flex-con .ap-no h6 .numb {
   font-size: 9em;
   font-family: 'NeueHaasDisplay-me';
-  color: #ffffff52;
+  color: #00000028;
   letter-spacing: 1px;
   text-transform: uppercase;
   position: relative;
 }
-.aproch .container .approach-lis .flex-con .ap-no h6 .cons {
-  font-size: 18px;
-  position: absolute;
-  left: 10px;
-  text-align: center;
-  bottom: 0;
-  top: 42%;
-  color: #fff;
-}
 .aproch .container .approach-lis .flex-con .ap-prah {
   padding-right: 10%;
 }
-.aproch .container .approach-lis .flex-con .ap-prah p {
-  color: #fff;
+.aproch .container .approach-lis .flex-con .ap-prah .cons {
+  font-size: 1.1em;
+  /* position: absolute; */
+  /* left: 10px; */
+  text-align: center;
+  color: #2b2b2b;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+.aproch .container .approach-lis .flex-con p {
+  color: #444;
+  letter-spacing: 1px;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+  .aproch {
+    padding: 5% 0;
+    position: relative;
+    padding-bottom: 0;
+    font-family: 'NeueHaasDisplay-me';
+  }
+  .aproch .m-0 {
+    margin-top: 0 !important;
+  }
+  .aproch .container {
+    width: 80%;
+  }
+  .aproch .container h2 {
+    padding: 20px 0%;
+    font-size: 3em;
+    color: #2b2b2b;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'NeueHaasDisplay-me';
+  }
+  .aproch .container .approach-lis {
+    margin-top: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .aproch .container .approach-lis .flex-con {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0%;
+    position: relative;
+    margin-bottom: 10%;
+    width: 100%;
+    overflow: hidden;
+  }
+  .aproch .container .approach-lis .flex-con .ap-no {
+    position: relative;
+    margin-right: 3%;
+    width: 36%;
+    overflow: visible;
+  }
+  .aproch .container .approach-lis .flex-con .ap-no h6 .numb {
+    font-size: 6em;
+    font-family: 'NeueHaasDisplay-me';
+    color: #00000028;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .aproch .container .approach-lis .flex-con .ap-prah {
+    padding-right: 0%;
+  }
+  .aproch .container .approach-lis .flex-con .ap-prah .cons {
+    font-size: 1.1em;
+    /* position: absolute; */
+    /* left: 10px; */
+    text-align: center;
+    color: #2b2b2b;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+  }
+  .aproch .container .approach-lis .flex-con p {
+    color: #444;
+    letter-spacing: 1px;
+  }
+  .services-s .flex-con .fle {
+    width: 100%;
+  }
+  .services-s .image {
+    width: 100%;
+    /* height: 940px; */
+    margin-bottom: 60px;
+    overflow: hidden;
+  }
+  .services-s .p-left {
+    padding-left: 0%;
+  }
+  .wrap-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .works__inner {
     padding: 0px 10px;
     height: 100vh;
@@ -9169,6 +9310,24 @@ section.horizontal .animation-wrap.to-left {
     width: 100%;
     font-family: 'Bebas Neue';
   }
+  .accordion-title h2 span {
+    font-size: 0.5em;
+    letter-spacing: 2px;
+    position: absolute;
+    -webkit-text-stroke: 1px;
+    left: 7px;
+    top: 40px;
+  }
+  .wrap-reverse {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  width: 100%;
+  position: relative;
+  color: #2B2B2B;
+  .services-s .flex-con .fle {
+    width: 100%;
+  }
   .works__hero {
     width: 100%;
   }
@@ -9176,7 +9335,7 @@ section.horizontal .animation-wrap.to-left {
     margin-left: 19%;
   }
   #services {
-    padding: 7rem 5rem;
+    padding: 7rem 1rem;
   }
   #services .accordion-title {
     padding: 40px 0;
@@ -9187,25 +9346,31 @@ section.horizontal .animation-wrap.to-left {
     letter-spacing: 3px;
     padding-left: 34px;
     line-height: 1.1;
-    -webkit-text-fill-color: #fff;
+    -webkit-text-fill-color: #2b2b2b;
     font-family: 'NeueHaasDisplay-roman';
     -webkit-text-stroke-color: #ffffff;
     -webkit-text-stroke: 0.4px;
-    stroke: #ffffff;
-    color: #fff;
+    /* stroke: #ffffff; */
+    color: #2b2b2b;
   }
   #services .arrow-icon-large svg {
     fill: none;
     width: 22px;
     stroke-width: 8px;
-    stroke: #ffffff;
+    stroke: #2b2b2b;
   }
   #services .accordion-list p {
-    font-size: 16px;
+    font-size: 14px;
     padding-right: 0;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #444;
+  }
+  #services .accordion-list li.open .cont {
+    max-height: 475px;
+    padding-bottom: 20px;
+    -webkit-transition: 0.4s all ease-in-out;
+    transition: 0.4s all ease-in-out;
   }
   #services .accordion-list .cont .en-btn_send {
     font-size: 0.6em;
@@ -9661,6 +9826,9 @@ section.horizontal .animation-wrap.to-left {
     bottom: 20px;
     right: 17px;
     overflow: hidden;
+  }
+  .section-w {
+    display: none;
   }
   .c-scrollbar_thumb {
     display: none;
@@ -11548,6 +11716,13 @@ section.horizontal .animation-wrap.to-left {
 .blog-details .blog-flex .ad p,
 .blog-details .blog-flex .comen p {
   font-size: 11px;
+}
+.author {
+  margin-top: 10px !important;
+}
+.author img {
+  width: 38px;
+  margin-right: 10px;
 }
 .overlap-text p {
   -webkit-user-select: auto;
