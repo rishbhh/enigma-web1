@@ -11387,10 +11387,21 @@ section.horizontal .animation-wrap.to-left {
 }
 .blog-conent p {
   letter-spacing: 2px;
-  font-family: 'NeueHaasDisplay-roman';
+  font-family: 'Ageo';
   margin-bottom: 11px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.blog-conent h2 {
+  text-align: center;
+  letter-spacing: 4.8px;
+  color: #2B2B2B;
+  font-size: 1.8em;
+  line-height: 1.6;
+  font-family: 'NeueHaasDisplay-me';
+  margin-top: 12%;
   margin-bottom: 5%;
 }
 @media (min-width: 1024px) {
@@ -11451,6 +11462,9 @@ section.horizontal .animation-wrap.to-left {
 .blog-right {
   width: 50%;
   padding-left: 5em;
+}
+.blog-right .p-img {
+  margin-top: 20%;
 }
 .blog-right p {
   letter-spacing: 2px;
@@ -11514,6 +11528,27 @@ section.horizontal .animation-wrap.to-left {
   width: 70%;
   margin: 0 auto;
 }
+.blog-details .blog-flex .date,
+.blog-details .blog-flex .ad,
+.blog-details .blog-flex .comen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.blog-details .blog-flex .date img,
+.blog-details .blog-flex .ad img,
+.blog-details .blog-flex .comen img {
+  width: 10px;
+  margin-right: 6px;
+}
+.blog-details .blog-flex .date p,
+.blog-details .blog-flex .ad p,
+.blog-details .blog-flex .comen p {
+  font-size: 11px;
+}
 .overlap-text p {
   -webkit-user-select: auto;
      -moz-user-select: auto;
@@ -11553,13 +11588,15 @@ section.horizontal .animation-wrap.to-left {
 }
 .blog-d .container blockquote::after {
   content: '';
-  background-image: url('/assets/resources/img/Service-elements/quote-icon.svg');
+  background-image: url(/assets/resources/img/blog-element/quote-icon.svg);
   position: absolute;
-  left: 40px;
+  left: 10px;
   background-size: contain;
   width: 51px;
   height: 40px;
   background-repeat: no-repeat;
+  z-index: -1;
+  top: 0;
 }
 .blog-d .container .content .typ {
   text-align: center;

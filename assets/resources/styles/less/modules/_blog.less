@@ -274,11 +274,24 @@
 
     p {
         letter-spacing: 2px;
-        font-family: 'NeueHaasDisplay-roman';
+        font-family: 'Ageo';
         margin-bottom: 11px;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.6;
         margin-bottom: 5%;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        letter-spacing: 4.8px;
+        color: #2B2B2B;
+        font-size: 1.8em;
+        line-height: 1.6;
+        font-family: 'NeueHaasDisplay-me';
+        margin-top: 12%;
+        margin-bottom: 5%;
+        ;
     }
 }
 
@@ -345,6 +358,10 @@
 .blog-right {
     width: 50%;
     padding-left: 5em;
+
+    .p-img {
+        margin-top: 20%;
+    }
 }
 
 .blog-right p {
@@ -428,6 +445,24 @@
         justify-content: space-evenly;
         width: 70%;
         margin: 0 auto;
+
+        .date,
+        .ad,
+        .comen {
+            display: flex;
+            align-items: baseline;
+
+            img {
+                width: 10px;
+                margin-right: 6px;
+            }
+
+            p {
+                font-size: 11px;
+            }
+        }
+
+
     }
 }
 
@@ -472,13 +507,15 @@
 
             &::after {
                 content: '';
-                background-image: url('/assets/resources/img/Service-elements/quote-icon.svg');
+                background-image: url(/assets/resources/img/blog-element/quote-icon.svg);
                 position: absolute;
-                left: 40px;
+                left: 10px;
                 background-size: contain;
                 width: 51px;
                 height: 40px;
                 background-repeat: no-repeat;
+                z-index: -1;
+                top: 0;
 
             }
 
@@ -514,6 +551,8 @@
                 color: #000;
                 text-shadow: 1px 1px 10px #0006;
             }
+
+
         }
     }
 }
@@ -696,6 +735,7 @@
     .blog-right {
         width: 100%;
         padding: 8%;
+
     }
 
     .blog-right p {
