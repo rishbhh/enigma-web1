@@ -11955,6 +11955,63 @@ section.horizontal .animation-wrap.to-left {
   .qts h1 {
     line-height: 1.3;
   }
+  .recent-post {
+    margin-top: 17%;
+    margin-bottom: 8%;
+    padding: 0 3%;
+  }
+  .recent-post .pr-list {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    z-index: 0;
+  }
+  .recent-post .bl-main {
+    position: relative;
+    width: 100%;
+    padding: 0 0 0px;
+    overflow: hidden;
+  }
+  .recent-post .pr-thum a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    padding: 1px;
+    z-index: 3;
+  }
+  .recent-post .p-prj-caption {
+    width: 100%;
+    padding-left: 17px;
+    pointer-events: none;
+    -webkit-transform: translateZ(100px);
+    transform: translateZ(100px);
+    z-index: 4;
+    margin-top: 30px;
+  }
+  .recent-post .p-prj-caption-name {
+    font-size: 2.3em;
+    letter-spacing: 2.5px;
+    font-family: 'NeueHaasDisplay-me';
+    color: #000;
+    line-height: 1.2;
+    margin-bottom: 1%;
+  }
+  .recent-post .p-prj-caption-credit {
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 19px;
+    color: #737373;
+    margin-top: 0;
+    font-family: 'NeueHaasDisplay-me';
+  }
 }
 /******************************************************************************/
 /************************ contact page css start  ************************/
@@ -12829,18 +12886,59 @@ section.horizontal .animation-wrap.to-left {
 }
 .section-w {
   width: 100%;
-  margin-bottom: 100px;
   position: relative;
   background-size: cover;
   clear: both;
   background-position: center;
   padding-top: 6%;
+  padding-bottom: 10%;
+}
+.section-w .en-form-submit {
+  margin: 0 0 0;
+  /* overflow: hidden; */
+  /* height: 100%; */
+  text-align: center;
+  margin-bottom: 0%;
+  margin-top: 70px;
+  margin-right: 120px;
 }
 .section-w .wrapper-small {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 100px;
+}
+.section-w .wrappers {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.section-w .en-btn_contact,
+.section-w .en-btn_dummy,
+.section-w .en-btn_menu,
+.section-w .en-btn_more,
+.section-w .en-btn_nav,
+.section-w .en-btn_plus,
+.section-w .en-btn_seemore,
+.section-w .en-btn_send {
+  position: relative;
+  display: inline-block;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background: 0 0;
+  border: 0;
+  border-radius: 0;
+  outline: 0 !important;
+  font-family: 'NeueHaasDisplay-bol';
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  line-height: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  text-indent: inherit;
+  text-decoration: none;
 }
 .section-w .c-col-12 {
   width: 100%;
@@ -13403,7 +13501,6 @@ body.dark .ar-work-cat,
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 100px;
   }
   .six-clum {
     display: -webkit-box;
