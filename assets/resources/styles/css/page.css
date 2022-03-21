@@ -1415,6 +1415,11 @@ template {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+  .ht-cursor {
+    display: none;
+  }
+}
 .init-load {
   opacity: 1;
   z-index: 20;
@@ -7102,9 +7107,6 @@ header {
   .teams-slider {
     display: block;
   }
-  #sectionPin {
-    display: none;
-  }
   .about-us-images {
     display: none;
   }
@@ -8972,6 +8974,18 @@ section.horizontal .animation-wrap {
   letter-spacing: 1px;
   margin-top: 9px;
 }
+#sectionPin2 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  padding: 50px 10vw;
+  margin: auto;
+  place-items: center;
+}
 section.horizontal .animation-wrap.to-right {
   counter-reset: item;
   float: left;
@@ -9199,6 +9213,17 @@ section.horizontal .animation-wrap.to-left {
   color: #444;
   letter-spacing: 1px;
 }
+.heigh_100 {
+  height: 100vh;
+}
+.flex-cen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
   .aproch {
     padding: 5% 0;
@@ -9383,6 +9408,201 @@ section.horizontal .animation-wrap.to-left {
   }
   #services .accordion-container {
     margin: 0px 0px;
+  }
+  .ser-hero video {
+    position: absolute;
+    /* left: 0; */
+    right: 0;
+    margin: 0 auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    opacity: 0.8;
+    width: 100% !important;
+  }
+  .ser-hero .top-h h1 {
+    font-size: 4.7em;
+  }
+  .ser-hero .top-h .h1-r {
+    margin-left: 17%;
+    margin-top: 14px;
+  }
+  .bol-prh {
+    padding: 8% 5%;
+  }
+  .bol-prh p {
+    font-size: 2.5em;
+  }
+  .ser-c .flex-con {
+    display: block;
+  }
+  .ser-c .flex-con .left-d {
+    width: 100%;
+    padding-left: 20px;
+  }
+  .ser-c .flex-con .right {
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 30px;
+  }
+  .scroll-sec2 .back-text {
+    top: -6px;
+  }
+  .scroll-sec2 .back-text h1 {
+    font-size: 2.9em;
+    color: #7575750a;
+  }
+  .scroll-sec2 .container h2 {
+    padding: 19px 0%;
+    font-size: 1.9em;
+    padding-right: 0%;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 3%;
+    letter-spacing: 4px;
+    font-family: 'NeueHaasDisplay-me';
+  }
+  .details-f .cont {
+    width: 100%;
+    padding-right: 4.6%;
+  }
+  .details-f .cont p {
+    font-size: 1.1em;
+    font-family: 'Ageo';
+    color: #000000;
+    line-height: 1.8;
+    letter-spacing: 2px;
+  }
+  .image-div {
+    width: 100%;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 12%;
+    margin-bottom: 7%;
+  }
+  .scroll-sec2 .container .bo-h {
+    font-size: 2.2em;
+    padding-right: 0%;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .serv {
+    display: block;
+  }
+  .serv .pin-wrap {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 46px 13vw;
+    position: relative;
+  }
+  .serv .pin-wrap .item {
+    position: relative;
+    padding: 27px 36px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 500px;
+    flex: 0 0 367px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 1.7;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+  }
+  .serv .pin-wrap .item:before {
+    font-family: 'NeueHaasDisplay-me';
+    position: absolute;
+    font-size: 10em;
+    opacity: 0.11;
+    z-index: -1;
+    -webkit-transform: translate(-60px, -102px);
+    transform: translate(-60px, -62px);
+    line-height: 1;
+    color: #000000;
+  }
+  .get-in .flex-con .right::after {
+    content: '';
+    background: url(/assets/resources/img/Service-elements/phone-icon.svg);
+    width: 20%;
+    height: 96px;
+    position: absolute;
+    background-repeat: no-repeat;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    top: -20px;
+    background-size: contain;
+  }
+  .ser-c .flex-con .right {
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 70px;
+  }
+  .service-points .container h2 {
+    font-size: 1.9em;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    padding-right: 0%;
+    margin-bottom: 70px;
+    font-family: 'NeueHaasDisplay-roman';
+    text-align: center;
+  }
+  .service-points .container .point li {
+    width: 100%;
+    font-size: 1.4em;
+    font-family: 'Ageo';
+    color: #444444;
+    line-height: 1.7;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .service-points .container .point li::before {
+    content: '';
+    background-image: url(/assets/resources/img/Service-elements/bullet-icon.svg);
+    width: 15px;
+    height: 14px;
+    top: 6px;
+    left: 0;
+    background-size: cover;
+    position: absolute;
+  }
+  .last .gr-b {
+    text-align: center;
+    font-size: 2.1em;
+  }
+  .service-points .container p {
+    padding-right: 0%;
+    margin-bottom: 13%;
+    letter-spacing: 1px;
+  }
+  .ser-two .item {
+    width: 100%;
+  }
+  .ser-two .item h2 {
+    font-size: 1.3em;
+    line-height: 1.2;
+    letter-spacing: 1.3px;
+    font-family: 'NeueHaasDisplay-me';
+  }
+  .ser-three .item {
+    position: relative;
+    padding: 30px px 70px;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 1.7;
+    background-color: transparent;
   }
 }
 .wid {
@@ -11301,6 +11521,12 @@ section.horizontal .animation-wrap.to-left {
 .dark-footer lottie-player {
   -webkit-filter: brightness(14.5);
           filter: brightness(14.5);
+  stroke: red;
+  fill: #fff;
+}
+.dark-footer lottie-player path {
+  stroke: rebeccapurple;
+  fill: red !important;
 }
 .dark-footer .bottom-footer {
   padding: 30px 0;

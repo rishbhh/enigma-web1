@@ -400,6 +400,11 @@ ScrollTrigger.config({
 });
 
 
+// s
+window.addEventListener('orientationchange', () => {
+    window.location.reload();
+  });
+  const desktop_size = window.matchMedia('(min-width: 1150px)');
 // Moobile Js
 const mobile_size = window.matchMedia('(max-width: 900px)');
 if (mobile_size.matches) {
@@ -583,8 +588,23 @@ function HeroSection() {
               }
             } };
 }
-port()
+    port()
+    
+// ab
+
 }
+
+
+// desktop
+if (desktop_size.matches) { 
+    $(document).ready(function () {
+       
+    });
+}
+
+
+
+
 
 
 
