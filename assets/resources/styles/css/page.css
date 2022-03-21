@@ -1602,6 +1602,7 @@ template {
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
   .init-load .inner {
     left: 1vw;
+    bottom: 22vw;
   }
   .init-load .counter {
     height: 27vh;
