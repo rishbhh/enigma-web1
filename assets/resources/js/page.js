@@ -1031,7 +1031,7 @@ function Horizontal() {
             start: '-300 center',
             end: '300 top',
             scroller: ".smooth-scroll",
-            // toggleActions: 'restart none none reverse ',
+            toggleActions: 'restart none none reverse ',
 
         },
     });
