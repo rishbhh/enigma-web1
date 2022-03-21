@@ -2011,10 +2011,8 @@ section.horizontal .animation-wrap.to-left {
     display: block;
 
     .pin-wrap {
-      height: 100vh;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
+      height: 100%;
+      display: block;
       -webkit-box-pack: start;
       -ms-flex-pack: start;
       justify-content: flex-start;
@@ -2040,16 +2038,16 @@ section.horizontal .animation-wrap.to-left {
       -ms-user-select: none;
       user-select: none;
       background-color: transparent;
+      margin-bottom: 20%;
     }
 
     .pin-wrap .item:before {
       font-family: 'NeueHaasDisplay-me';
       position: absolute;
-      font-size: 10em;
+      font-size: 8em;
       opacity: 0.11;
       z-index: -1;
-      -webkit-transform: translate(-60px, -102px);
-      transform: translate(-60px, -62px);
+      transform: translate(-20px, -62px);
       line-height: 1;
       color: #000000;
     }

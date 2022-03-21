@@ -1309,6 +1309,7 @@ template {
   opacity: 0;
   color: white;
   font-size: 16px;
+  font-family: 'Ageo';
   line-height: 20px;
   text-align: center;
   letter-spacing: -0.01em;
@@ -7108,6 +7109,9 @@ header {
   .teams-slider {
     display: block;
   }
+  #sectionPin {
+    display: none;
+  }
   .about-us-images {
     display: none;
   }
@@ -9490,10 +9494,8 @@ section.horizontal .animation-wrap.to-left {
     display: block;
   }
   .serv .pin-wrap {
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    height: 100%;
+    display: block;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -9518,15 +9520,16 @@ section.horizontal .animation-wrap.to-left {
     -ms-user-select: none;
     user-select: none;
     background-color: transparent;
+    margin-bottom: 20%;
   }
   .serv .pin-wrap .item:before {
     font-family: 'NeueHaasDisplay-me';
     position: absolute;
-    font-size: 10em;
+    font-size: 8em;
     opacity: 0.11;
     z-index: -1;
-    -webkit-transform: translate(-60px, -102px);
-    transform: translate(-60px, -62px);
+    -webkit-transform: translate(-20px, -62px);
+            transform: translate(-20px, -62px);
     line-height: 1;
     color: #000000;
   }
@@ -12116,18 +12119,61 @@ section.horizontal .animation-wrap.to-left {
   #blogs-sction .pr-list .bl-main:nth-child(2n+2) {
     margin: 20px 0 0;
   }
+  .blog-details {
+    margin-top: 45%;
+    margin-bottom: 1%;
+  }
   .blog-details .container .content h1 {
-    font-size: 4em;
+    font-size: 2.3em;
     padding: 0px 5%;
     text-align: center;
     line-height: 1.4;
     font-family: 'NeueHaasDisplay-roman';
-    -webkit-transform: translateY(210px);
-    transform: translateY(210px);
     /* color: #000; */
-    text-shadow: 1px 1px 10px #0006;
-    margin-bottom: 60%;
+    text-shadow: none;
+    margin-bottom: 10%;
     mix-blend-mode: difference;
+  }
+  .blog-details .blog-flex {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .overlap-text p {
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+    font-size: 3em;
+    font-family: 'NeueHaasDisplay-me';
+    margin-top: -45px;
+    color: #fff;
+    /* text-shadow: 1px 1px 11px #0000002e; */
+    text-shadow: 10px 10px 20px #00000029;
+    margin-left: -120px;
+  }
+  .blog-details .blog-flex .date,
+  .blog-details .blog-flex .ad,
+  .blog-details .blog-flex .comen {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+  }
+  .blog-details .blog-flex .date p,
+  .blog-details .blog-flex .ad p,
+  .blog-details .blog-flex .comen p {
+    font-size: 15px;
+  }
+  .blog-details .blog-flex .date img,
+  .blog-details .blog-flex .ad img,
+  .blog-details .blog-flex .comen img {
+    width: 18px;
+    margin-right: 6px;
   }
   .blog-details .container .blog-prha {
     text-align: center;
@@ -12138,6 +12184,11 @@ section.horizontal .animation-wrap.to-left {
     margin-top: 12%;
     margin-bottom: 4%;
     padding: 0 0%;
+  }
+  .blog-details .blog-flex .date p,
+  .blog-details .blog-flex .ad p,
+  .blog-details .blog-flex .comen p {
+    font-size: 15px;
   }
   .flex {
     display: block;
