@@ -357,15 +357,19 @@ gsap.registerPlugin(ScrollTrigger);
 
 let locoScroll = new LocomotiveScroll({
     el: document.querySelector(".smooth-scroll"),
+    inertia: 0.8,
     smooth: true,
+    getDirection: true,
     mobile: {
-        smooth: true
+      breakpoint: 0,
+      smooth: false,
+      getDirection: true,
     },
-    // for tablet smooth
-    tablet: { smooth: true },
-
-    // for mobile
-    smartphone: { smooth: true }
+    tablet: {
+      breakpoint: 0,
+      smooth: false,
+      getDirection: true,
+    },
 });
 locoScroll.on("scroll", ScrollTrigger.update);
 
