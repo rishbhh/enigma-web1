@@ -1432,6 +1432,12 @@ html:not(.has-scroll-smooth) .c-fixed {
   .c-speed-block {
     margin: 15px 0;
   }
+
+  #project>div:first-child {
+    grid-column: 3 / 30;
+  }
+
+
 }
 
 .c-speed-block_image {
@@ -2097,4 +2103,25 @@ html[data-direction="up"] .c-choochoo_item.-reverse span {
 #portf>.concept {
   grid-column: 3 / 31;
   margin-top: 10%;
+}
+
+@media (max-width: 699px) {
+
+  #project>div:first-child {
+    grid-column: 3 / 30;
+  }
+
+  #image_ob>div {
+    grid-column: 3 / 30;
+    position: relative;
+  }
+
+  #portf>div {
+    grid-column: 3 / 30;
+  }
+
+  .blocco div.text_anim {
+    grid-column: 3 / 30;
+  }
+
 }

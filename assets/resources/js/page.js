@@ -639,7 +639,7 @@ $(document).on("click", ".menu-open", function() {
 $(document).on("click", ".menu-close", function() {
     t1.reversed(!t1.reversed());
 });
-$(document).on("click", ".nav-num a", function() {
+$(document).on("click", ".navItemLink", function() {
     t1.reversed(!t1.reversed());
 });
 
