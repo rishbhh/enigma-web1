@@ -3864,7 +3864,7 @@ header {
 .action-icon {
   position: fixed;
   display: block;
-  width: 8%;
+  width: 7%;
   cursor: pointer;
   bottom: 20px;
   right: 17px;
@@ -7676,7 +7676,7 @@ header {
     padding: 0 20px 40px;
   }
   .mob-port .slider-element-container .swiper-pagination-bullet {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 16px));
     height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 3px));
   }
@@ -7723,7 +7723,7 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #2b2b2b;
+    color: #ffffff;
     font-family: 'NeueHaasDisplay-me';
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -13692,11 +13692,10 @@ section.horizontal .animation-wrap.to-left {
   object-fit: cover;
 }
 .ar-work-title {
-  font-size: 1.8em;
-  font-weight: 700;
+  font-size: 2.8em;
   letter-spacing: 0.05em;
   padding: 10px 0px 0 18px;
-  margin-top: -40px;
+  margin-top: -50px;
   font-family: 'NeueHaasDisplay-me';
 }
 body.dark .ar-work-title,
