@@ -1416,6 +1416,42 @@ template {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.o-image {
+  overflow: hidden;
+}
+.o-image img {
+  opacity: 0;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition: opacity 1.2s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 1.2s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 1.2s cubic-bezier(0.215, 0.61, 0.355, 1), transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 1.2s cubic-bezier(0.215, 0.61, 0.355, 1), transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  width: 100%;
+}
+.o-image.is-inview img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+.c-speed-block_title.is-inview {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+.c-speed-block_title {
+  opacity: 0;
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+  -webkit-transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
   .ht-cursor {
     display: none;
@@ -4443,6 +4479,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 #about2 .about-p {
   padding-left: 2%;
@@ -6994,7 +7031,7 @@ header {
     font-size: 1em;
   }
   .about-us-section {
-    padding: 90px 0 30px;
+    padding: 1% 0 30px;
     margin-bottom: 110px;
   }
   .about-us-image {
@@ -7037,12 +7074,12 @@ header {
     font-size: 1em;
   }
   .about-us-section {
-    padding: 90px 0 30px;
+    padding: 1% 0 30px;
     margin-bottom: 110px;
   }
   .about-us-content {
     margin-left: 30px;
-    margin-top: 23%;
+    margin-top: 40%;
   }
   .about-us-image {
     margin-top: 5%;
@@ -7063,12 +7100,12 @@ header {
     font-size: 1em;
   }
   .about-us-section {
-    padding: 90px 0 30px;
+    padding: 1% 0 30px;
     margin-bottom: 110px;
   }
   .about-us-content {
-    margin-left: 181px;
-    margin-top: 20%;
+    margin-left: 30px;
+    margin-top: 40%;
   }
   .c-hm-us_top {
     padding-top: 1.6em;
@@ -7086,12 +7123,12 @@ header {
     font-size: 1.3em;
   }
   .about-us-section {
-    padding: 15% 0 30px;
+    padding: 1% 0 30px;
     margin-bottom: 10px;
   }
   .about-us-content {
-    margin-left: 110px;
-    margin-top: 20%;
+    margin-left: 30px;
+    margin-top: 40%;
   }
   .c-hm-us_top {
     padding-top: 0.6em;
@@ -13791,12 +13828,14 @@ section.horizontal .animation-wrap.to-left {
   padding: 10px 0px 0 18px;
   margin-top: -50px;
   font-family: 'NeueHaasDisplay-me';
+  position: absolute;
 }
 body.dark .ar-work-title,
 .a-recent-works.dark .ar-work-title {
   color: #fff;
 }
 .ar-work-cat {
+  margin-top: 10px;
   font-size: 18px;
   letter-spacing: -0.02em;
   padding-left: 20px;
