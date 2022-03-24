@@ -1708,7 +1708,7 @@ header {
 .menu-close {
   position: absolute;
   top: 30px;
-  right: 35px;
+  right: 39px;
   font-size: 20px;
   cursor: pointer;
   z-index: 9;
@@ -2041,6 +2041,9 @@ header {
   pointer-events: none;
   z-index: 10;
 }
+.navItemLink:hover .navItemLinkInner {
+  color: transparent;
+}
 @keyframes gradient {
   0% {
     background-position: 0 0;
@@ -2257,6 +2260,8 @@ header {
   bottom: 0;
   right: -4rem;
   bottom: 13vh;
+  font-family: 'Ageo';
+  letter-spacing: 3px;
 }
 .quick-clickItem {
   text-transform: uppercase;
@@ -2515,13 +2520,13 @@ header {
 @media only screen and (max-width: 1680px) {
   .nav-second {
     right: -3rem;
-    bottom: 1vh;
+    bottom: 10vh;
   }
 }
 @media only screen and (max-width: 1440px) {
   .nav-second {
     right: -1rem;
-    bottom: 4vh;
+    bottom: 10vh;
   }
 }
 @media screen and (max-width: 1280px) {
