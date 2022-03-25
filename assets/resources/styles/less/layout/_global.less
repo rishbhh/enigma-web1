@@ -1058,6 +1058,27 @@ template {
   transition: opacity .6s cubic-bezier(.215, .61, .355, 1), transform .6s cubic-bezier(.215, .61, .355, 1);
 }
 
+.c-header_title_line {
+  display: block;
+  opacity: 0;
+  transform: translateY(100%) rotateX(-80deg);
+  transform-origin: center top;
+  transform-style: preserve-3d;
+  transition: opacity 0s cubic-bezier(.215, .61, .355, 1), transform 0s cubic-bezier(.215, .61, .355, 1);
+}
+
+html.is-ready .c-header_title_line:first-child {
+  transition-delay: .1s;
+}
+
+html.is-ready .c-header_title_line {
+  opacity: 1;
+  transform: none;
+  transition-duration: .8s;
+}
+
+
+
 // Mobile Quries
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
   .ht-cursor {

@@ -246,7 +246,8 @@ if (!isMobile) {
         }, "-=0.7")
         countTimeline.from(".text-rveal span", 1.4, {
             y: "180",
-            duration: 0.5, stagger: 0.3,
+            rotateX:'-80deg',
+            duration: 0.5,
             ease: "power4.inOut"
         }, "-=0.7")
         countTimeline.from(".hro-img", 1.2, {
@@ -347,6 +348,7 @@ $(document).ready(function() {
     Changehum();
     Scrol();
     Footer();
+    d();
 });
 
 
@@ -360,6 +362,7 @@ let locoScroll = new LocomotiveScroll({
     inertia: 0.8,
     smooth: true,
     getDirection: true,
+    
     mobile: {
       breakpoint: 0,
       smooth: true,
@@ -413,6 +416,57 @@ window.addEventListener('orientationchange', () => {
   const desktop_size = window.matchMedia('(min-width: 1150px)');
 // Moobile Js
 const mobile_size = window.matchMedia('(max-width: 900px)');
+
+
+
+
+function d() {
+    document.documentElement.classList.add("is-loaded"), document.documentElement.classList.remove("is-loading"), setTimeout((function() {
+        document.documentElement.classList.add("is-ready")
+    }), 300);
+    var t = {
+        el: document.querySelector(".smooth-scroll"),
+        smooth: !0,
+        getSpeed: !0,
+        getDirection: !0
+    };
+    "true" == document.querySelector(".smooth-scroll").getAttribute("data-horizontal") && (t.direction = "horizontal", t.gestureDirection = "both", t.tablet = {
+        smooth: !0,
+        direction: "horizontal",
+        horizontalGesture: !0
+    }, t.smartphone = {
+        smooth: !1
+    }, t.reloadOnContextChange = !0), setTimeout((function() {
+        var e = new ht(t),
+            i = [],
+            s = [];
+        e.on("scroll", (function(t) {
+            var n = 360 * t.scroll.y / t.limit.y;
+            e.el.style.backgroundColor = "hsl(".concat(n, ", 11%, 81%)"), i.forEach((function(t) {
+                t.el.style.backgroundColor = "hsl(".concat(n, ", 11%, 81%)")
+            })), s.forEach((function(t) {
+                t.el.style.color = "hsl(".concat(n, ", 11%, 81%)")
+            })), document.documentElement.setAttribute("data-direction", t.direction)
+        })), e.on("call", (function(t, e, n) {
+            if ("dynamicBackground" === t)
+                if ("enter" === e) i.push({
+                    id: n.id,
+                    el: n.el
+                });
+                else
+                    for (var o = 0; o < i.length; o++) n.id === i[o].id && i.splice(o, 1);
+            else if ("dynamicColor" === t)
+                if ("enter" === e) s.push({
+                    id: n.id,
+                    el: n.el
+                });
+                else
+                    for (o = 0; o < s.length; o++) n.id === s[o].id && s.splice(o, 1)
+        }))
+    }), 1e3)
+}
+
+
 if (mobile_size.matches) {
 
     ScrollTrigger.config({
@@ -603,6 +657,9 @@ function HeroSection() {
 
 // desktop
 if (desktop_size.matches) { 
+    ScrollTrigger.config({
+        autoRefreshEvents: 'visibilitychange,DOMContentLoaded,load',
+    });
     $(document).ready(function () {
        
     });

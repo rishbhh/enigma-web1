@@ -847,46 +847,16 @@ Blog_.forEach((container) => {
 });
 
 
-let client = document.querySelectorAll(".client-section");
+// let client = document.querySelectorAll(".client-section");
 
-client.forEach((container) => {
-    let hea = container.querySelector("h2");
-    let tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: container,
-            start: "-200 top",
-            scroller: ".smooth-scroll",
-            // toggleActions: 'restart reverse restart reverse ',
-        }
-    });
-
-
-    tl.from(container, 1, {
-        duration: 0.5,
-        ease: Power2.out,
-        opacity: 0
-    }, "-=0.7")
-    tl.from(hea, 1, {
-        y: 100,
-        duration: 0.5,
-        ease: Power2.out,
-        opacity: 0
-    }, "-=0.7")
-
-});
-
-// let Team = document.querySelectorAll(".team-s");
-
-// Team.forEach((container) => {
-//     let he = container.querySelector(".he span");
-//     let pr = container.querySelector(".parh");
-
+// client.forEach((container) => {
+//     let hea = container.querySelector("h2");
 //     let tl = gsap.timeline({
 //         scrollTrigger: {
 //             trigger: container,
-//             start: "-300 top",
+//             start: "-200 top",
 //             scroller: ".smooth-scroll",
-//             toggleActions: 'restart reverse restart reverse ',
+//             // toggleActions: 'restart reverse restart reverse ',
 //         }
 //     });
 
@@ -896,19 +866,12 @@ client.forEach((container) => {
 //         ease: Power2.out,
 //         opacity: 0
 //     }, "-=0.7")
-//     tl.from(he, 1, {
-//         y: 200,
+//     tl.from(hea, 1, {
+//         y: 100,
 //         duration: 0.5,
 //         ease: Power2.out,
 //         opacity: 0
-//     }, "-=0.9")
-//     tl.from(pr, 1, {
-//         y: 200,
-//         duration: 0.5,
-//         ease: Power2.out,
-//         opacity: 0
-//     }, "-=0.9")
-  
+//     }, "-=0.7")
 
 // });
 

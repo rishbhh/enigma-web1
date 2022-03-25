@@ -1045,19 +1045,19 @@ html.is-ready .c-header_title_line {
 }
 
 html.is-ready .c-header_title_line:first-child {
-  transition-delay: 0.1s;
+  transition-delay: 0.9s;
 }
 
 html.is-ready .c-header_title_line:nth-child(2) {
-  transition-delay: 0.2s;
+  transition-delay: 1s;
 }
 
 html.is-ready .c-header_title_line:nth-child(3) {
-  transition-delay: 0.3s;
+  transition-delay: 1.2s;
 }
 
 html.is-ready .c-header_title_line:nth-child(4) {
-  transition-delay: 0.4s;
+  transition-delay: 1.4s;
 }
 
 .c-header_title_line span {

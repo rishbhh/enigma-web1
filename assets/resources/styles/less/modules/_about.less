@@ -30,6 +30,23 @@
     transition-delay: .5s;
 }
 
+
+#abt>div>div>.las::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0%;
+    background: #000;
+    position: absolute;
+    bottom: 0px;
+}
+
+#abt.is-inview>div>div>.las::after {
+    width: 100%;
+    transition: width 1s ease-out;
+    transition-delay: .5s;
+}
+
 .why {
     position: relative;
 
@@ -954,6 +971,7 @@
 
             .left-con {
                 width: 30%;
+                overflow: hidden;
 
                 h4 {
                     font-size: 1.6em;
@@ -3385,6 +3403,24 @@
     .t-lead {
         font-size: 3em;
     }
+
+    .home-sec {
+        .about-us-images {
+            width: 778px;
+            margin-top: 68px;
+        }
+
+        .about-us-content {
+            margin-left: 30px;
+            margin-top: 35%;
+            width: 1000px;
+
+            h1 {
+                font-size: 5.6em;
+            }
+        }
+
+    }
 }
 
 
@@ -3403,6 +3439,19 @@
         .big-h h1 {
             font-size: 9.8em;
         }
+    }
+
+    .home-sec {
+
+        .about-us-content {
+            margin-left: 30px;
+            margin-top: 35%;
+
+            h1 {
+                font-size: 3.9em;
+            }
+        }
+
     }
 }
 
@@ -3441,6 +3490,19 @@
     .c-hm-us_s2 {
         padding-top: 13em;
         padding-bottom: 13em;
+    }
+
+    .home-sec {
+
+        .about-us-content {
+            margin-left: 30px;
+            margin-top: 35%;
+
+            h1 {
+                font-size: 3.6em;
+            }
+        }
+
     }
 }
 
@@ -3510,6 +3572,18 @@
         padding-bottom: 8em;
     }
 
+    .home-sec {
+
+        .about-us-content {
+            margin-left: 30px;
+            margin-top: 35%;
+
+            h1 {
+                font-size: 3.2em;
+            }
+        }
+
+    }
 }
 
 .teams-slider {
@@ -3600,6 +3674,7 @@
         .left-con {
             width: 30%;
             margin-bottom: 10px;
+
         }
     }
 
