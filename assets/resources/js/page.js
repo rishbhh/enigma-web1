@@ -244,12 +244,13 @@ if (!isMobile) {
             y: 300,
             ease: "power4.inOut"
         }, "-=0.7")
-        countTimeline.from(".text-rveal span", 1.4, {
-            transform: "translateY(100%) rotateX(-80deg) ",
-            transformOrigin:"center",
-            duration: 0.5,
-            ease: "power4.inOut"
-        }, "-=0.7")
+        countTimeline.from(".text-rveal .header_title_line", 0.9, {
+            duration: 0.3,
+            opacity: 0,
+            ease: "power2.In",
+            css:{transform:"translateY(100%) rotateX(-80deg)", opacity:'0'},
+            stagger: 0.3,
+        }, "-=0.9")
         countTimeline.from(".hro-img", 1.2, {
             opacity: 0,
             duration: 0.5,

@@ -8757,17 +8757,20 @@ header {
 .ser-hero .top-h h1 {
   font-size: 10em;
   font-family: 'NeueHaasDisplay-me';
-  overflow: hidden;
+  -webkit-perspective: 600px;
+          perspective: 600px;
 }
-.ser-hero .top-h h1 span {
+.ser-hero .top-h h1 .header_title_line {
   display: block;
-  color: transparent;
-  background-image: radial-gradient(farthest-corner at center 0px, #919ccd 0%, black 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-size: 200% auto;
-  -webkit-animation: gradient-animation 3s linear infinite;
-          animation: gradient-animation 3s linear infinite;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.ser-hero .top-h h1 .header_title_line span {
+  display: inline-block;
 }
 @-webkit-keyframes gradient-animation {
   to {
