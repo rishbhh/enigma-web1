@@ -1152,9 +1152,7 @@ template {
   opacity: 1 !important;
 }
 .-color-white .ht-cursor-text {
-  font-size: 1.8em !important;
   text-transform: uppercase;
-  line-height: 31px;
   letter-spacing: 1px;
 }
 .-color-green {
@@ -8572,7 +8570,7 @@ header {
   border: 0;
   border-radius: 0;
   outline: 0 !important;
-  font-family: 'NeueHaasDisplay-bol';
+  font-family: 'Ageo';
   font-size: 0.9em;
   letter-spacing: 1px;
   line-height: inherit;
@@ -8582,7 +8580,7 @@ header {
   text-decoration: none;
 }
 .accordion-list .cont .en-btn_send span {
-  background-image: linear-gradient(49deg, #2d4de0 0, #9f71f0 30%, #fc6277 58%, #f8ef6f 95%);
+  background-image: linear-gradient(45deg, dodgerblue, purple, red, dodgerblue);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -8593,7 +8591,7 @@ header {
   animation-direction: alternate;
 }
 .accordion-list .cont .en-btn_send:after {
-  background-image: linear-gradient(49deg, #2d4de0 0, #9f71f0 30%, #fc6277 58%, #f8ef6f 95%);
+  background-image: linear-gradient(45deg, dodgerblue, purple, red, dodgerblue);
   background-size: 100% 500%;
   -webkit-animation: gradient 2s ease infinite;
   animation: gradient 2s ease infinite;
@@ -8875,11 +8873,12 @@ header {
   text-transform: inherit;
   text-align: justify;
 }
-.ser-c .flex-con .left-d p span {
+.ser-c .flex-con .left-d p .qou {
   position: absolute;
+  display: contents;
   left: -40px;
 }
-.ser-c .flex-con .left-d p span img {
+.ser-c .flex-con .left-d p .qou img {
   width: 35px;
 }
 .ser-c .flex-con .right {
@@ -8990,7 +8989,7 @@ header {
   text-align: left;
   color: #2B2B2B;
 }
-.last .gr-b span {
+.last .gr-b .grd {
   font-family: 'NeueHaasDisplay-me';
   font-size: 1.2em;
   color: #fff;
@@ -9375,11 +9374,11 @@ header {
   font-size: 27px;
   padding-right: 11%;
   color: #000000;
-  line-height: 1.8;
+  line-height: 1.7;
   margin-bottom: 3%;
   margin-top: 10%;
-  letter-spacing: 4px;
-  font-family: 'NeueHaasDisplay-me';
+  letter-spacing: 1px;
+  font-family: 'Ageo-SemiBold';
   position: relative;
 }
 .scroll-sec2 .container .bo-h img {
@@ -9631,8 +9630,7 @@ section.horizontal .animation-wrap {
   min-height: 100vh;
   width: 100%;
   position: relative;
-  display: -ms-grid;
-  display: grid;
+  display: none;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
   padding: 50px 10vw;
@@ -9732,6 +9730,9 @@ section.horizontal .animation-wrap.to-left {
   .services-s .image img {
     width: 500px;
   }
+  .get-in .flex-con .right::after {
+    height: 367px;
+  }
 }
 @media screen and (max-width: 1680px) {
   .services-s .image {
@@ -9744,21 +9745,34 @@ section.horizontal .animation-wrap.to-left {
   .services-s .flex-con .fle h3 {
     font-size: 4em;
   }
+  .get-in .flex-con .right::after {
+    height: 300px;
+  }
 }
 @media screen and (max-width: 1440px) {
   .works__hero__line {
     line-height: 1.06;
+  }
+  .get-in .flex-con .right::after {
+    height: 276px;
   }
 }
 @media screen and (max-width: 1367px) {
   .works__hero__line {
     font-size: 11.4em;
   }
+  .get-in .flex-con .right::after {
+    height: 276px;
+    height: 246px;
+  }
 }
 @media screen and (max-width: 1280px) {
   .works__hero__line {
     font-size: 11em;
     line-height: 0.9;
+  }
+  .get-in .flex-con .right::after {
+    height: 246px;
   }
   .services-s .image {
     width: 35%;

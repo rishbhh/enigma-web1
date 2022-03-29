@@ -1242,7 +1242,7 @@ function Scrol() {
             scroller: ".smooth-scroll",
             anticipatePin: 1,
             start: "top top",
-            end: "+=4000"
+            end: "+=1000"
         },
         x: -horizontalScrollLength,
         ease: "none",
