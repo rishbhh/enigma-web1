@@ -272,7 +272,7 @@ if (!isMobile) {
         }, "-=0.6")
 
         countTimeline.from(".about-us-image img", 1, {
-            duration: 1,
+            duration: 0.8,
             opacity: 0,
         }, "-=1.2")
         countTimeline.to(".tris_titles span", 2, {

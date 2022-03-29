@@ -1120,13 +1120,17 @@
   .back-text {
     position: absolute;
     top: -29px;
-    right: 0;
+    right: inherit;
     font-family: 'NeueHaasDisplay-me';
     z-index: 0;
 
     h1 {
-      font-size: 7.17em;
-      // color: #fafafa;
+      color: #7575750a;
+      -webkit-transform: translateX(192vw);
+      transform: translateX(192vw);
+      width: 250vw;
+      font-size: 9em;
+      font-family: 'NeueHaasDisplay-me';
       color: #7575750a;
     }
   }
@@ -1636,7 +1640,7 @@ section.horizontal .animation-wrap.to-left {
         text-decoration: none;
 
         span {
-          background-image: linear-gradient(49deg, #2d4de0 0, #9f71f0 30%, #fc6277 58%, #f8ef6f 95%);
+          background-image: linear-gradient(49deg, #1e0253 0, #820060 30%, #c20027 58%, #1e0253 95%);
           -webkit-text-fill-color: transparent;
           -webkit-background-clip: text;
           background-clip: text;
@@ -1649,7 +1653,7 @@ section.horizontal .animation-wrap.to-left {
       }
 
       .en-btn_send:after {
-        background-image: linear-gradient(49deg, #2d4de0 0, #9f71f0 30%, #fc6277 58%, #f8ef6f 95%);
+        background-image: linear-gradient(49deg, #1e0253 0, #820060 30%, #c20027 58%, #1e0253 95%);
         background-size: 100% 500%;
         -webkit-animation: gradient 2s ease infinite;
         animation: gradient 2s ease infinite;
