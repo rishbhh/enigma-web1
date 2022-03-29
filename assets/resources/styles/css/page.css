@@ -8765,6 +8765,19 @@ header {
           perspective: 600px;
 }
 .ser-hero .top-h h1 .header_title_line {
+  color: transparent;
+  background-image: radial-gradient(farthest-corner at center 0px, #919ccd 0%, black 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background-size: 200% auto;
+  -webkit-animation: gradient-animation 3s linear infinite;
+          animation: gradient-animation 3s linear infinite;
+  -webkit-transition: opacity 0s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0s cubic-bezier(0.215, 0.61, 0.355, 1);
   display: block;
   -webkit-transform: none;
           transform: none;
