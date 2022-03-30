@@ -244,13 +244,15 @@ if (!isMobile) {
             y: 300,
             ease: "power4.inOut"
         }, "-=0.7")
-        countTimeline.from(".text-rveal .header_title_line", 0.9, {
-            duration: 0.3,
+        countTimeline.from('.typ ', 0.9, { y: 40, opacity: 0,duration: 0.5,  },"-=1");
+        countTimeline.from(".text-rveal .header_title_line", {
+            duration: 0.5,
             opacity: 0,
             ease: "power2.In",
             css:{transform:"translateY(100%) rotateX(-80deg)", opacity:'0'},
-            stagger: 0.3,
+            stagger: 0.1,
         }, "-=0.9")
+        countTimeline.from('.blog-flex ', 0.9, { y: 40, opacity: 0,duration: 0.5,  },"-=0.7");
         countTimeline.from(".hro-img", 1.2, {
             opacity: 0,
             duration: 0.5,

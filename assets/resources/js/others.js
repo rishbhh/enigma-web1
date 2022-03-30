@@ -74,7 +74,7 @@ const cont = gsap.timeline({
     },
 })
 
-cont.from('.typ ', 0.9, { y: 70, opacity: 0, stagger: 0.03 });
+// cont.from('.typ ', 0.9, { y: 70, opacity: 0, stagger: 0.03 });
 const evry_gl = gsap.utils.toArray('.bot-b img');
 evry_gl.forEach(evry_gl => {
     gsap.from(evry_gl, {

@@ -8803,6 +8803,9 @@ header {
   margin-left: 30%;
   margin-top: 14px;
 }
+.ser-hero .top-h .h1-r6 {
+  margin-left: 6%;
+}
 .ser-hero .top-h .element {
   position: absolute;
   top: 110px;
@@ -9534,7 +9537,7 @@ section.horizontal .animation-wrap {
   font-family: 'NeueHaasDisplay-me';
   position: absolute;
   font-size: 10em;
-  opacity: 0.11;
+  opacity: 0.05;
   z-index: -1;
   -webkit-transform: translate(-60px, -102px);
           transform: translate(-60px, -102px);
@@ -9577,7 +9580,7 @@ section.horizontal .animation-wrap {
   font-family: 'NeueHaasDisplay-me';
   position: absolute;
   font-size: 5em;
-  opacity: 0.11;
+  opacity: 0.05;
   z-index: -1;
   -webkit-transform: translate(-45px, -26px);
           transform: translate(-45px, -26px);
@@ -9622,7 +9625,7 @@ section.horizontal .animation-wrap {
   font-family: 'NeueHaasDisplay-me';
   position: absolute;
   font-size: 10em;
-  opacity: 0.11;
+  opacity: 0.05;
   z-index: -1;
   -webkit-transform: translate(-80px, -26px);
           transform: translate(-80px, -26px);
@@ -9633,6 +9636,7 @@ section.horizontal .animation-wrap {
   font-size: 1.4em;
   line-height: 1.2;
   letter-spacing: 1.3px;
+  font-family: 'NeueHaasDisplay-me';
 }
 .ser-two .item p {
   line-height: 1.4;
@@ -9945,6 +9949,9 @@ section.horizontal .animation-wrap.to-left {
       -ms-flex-align: center;
           align-items: center;
 }
+.right-align {
+  text-align: right;
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
   .aproch {
     padding: 5% 0;
@@ -10242,7 +10249,7 @@ section.horizontal .animation-wrap.to-left {
     font-family: 'NeueHaasDisplay-me';
     position: absolute;
     font-size: 8em;
-    opacity: 0.11;
+    opacity: 0.05;
     z-index: -1;
     -webkit-transform: translate(-20px, -62px);
             transform: translate(-20px, -62px);
@@ -12725,7 +12732,23 @@ section.horizontal .animation-wrap.to-left {
   line-height: 1.4;
   font-family: 'NeueHaasDisplay-roman';
   color: #000;
+  -webkit-perspective: 600px;
+  perspective: 600px px;
   text-shadow: 1px 1px 10px #0006;
+  -webkit-transition: opacity 0s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0s cubic-bezier(0.215, 0.61, 0.355, 1);
+  display: block;
+  -webkit-transform: none;
+          transform: none;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.blog-details .container .content h1 span {
+  display: inline-block;
 }
 .blog-details .blog-flex {
   display: -webkit-box;
@@ -12770,10 +12793,11 @@ section.horizontal .animation-wrap.to-left {
      -moz-user-select: auto;
       -ms-user-select: auto;
           user-select: auto;
-  font-size: 4em;
+  font-size: 7em;
   font-family: 'NeueHaasDisplay-me';
   margin-top: -45px;
   color: #fff;
+  width: 250vw;
   /* text-shadow: 1px 1px 11px #0000002e; */
   text-shadow: 10px 10px 20px #00000029;
 }
@@ -12840,6 +12864,11 @@ section.horizontal .animation-wrap.to-left {
   margin-top: 17%;
   margin-bottom: 8%;
   padding: 0 3%;
+}
+.recent-post .author {
+  margin-top: 10px !important;
+  width: 100% !important;
+  padding-left: 0 !important;
 }
 .recent-post .pr-list {
   display: -ms-flexbox;
@@ -13048,6 +13077,10 @@ section.horizontal .animation-wrap.to-left {
     margin-top: 17%;
     margin-bottom: 8%;
     padding: 0 3%;
+  }
+  .recent-post .author {
+    margin-top: 10px !important;
+    width: 100% !important;
   }
   .recent-post .pr-list {
     display: -ms-flexbox;

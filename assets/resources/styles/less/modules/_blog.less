@@ -435,7 +435,18 @@
                 font-family: 'NeueHaasDisplay-roman';
                 // transform: translateY(210px);
                 color: #000;
+                -webkit-perspective: 600px;
+                perspective: 600px px;
                 text-shadow: 1px 1px 10px #0006;
+                transition: opacity 0s cubic-bezier(.215, .61, .355, 1), transform 0s cubic-bezier(.215, .61, .355, 1);
+                display: block;
+                transform: none;
+                transform-origin: center top;
+                transform-style: preserve-3d;
+
+                span {
+                    display: inline-block;
+                }
             }
         }
     }
@@ -478,10 +489,11 @@
 .overlap-text {
     p {
         user-select: auto;
-        font-size: 4em;
+        font-size: 7em;
         font-family: 'NeueHaasDisplay-me';
         margin-top: -45px;
         color: #fff;
+        width: 250vw;
         /* text-shadow: 1px 1px 11px #0000002e; */
         text-shadow: 10px 10px 20px #00000029;
     }
@@ -578,6 +590,12 @@
     margin-top: 17%;
     margin-bottom: 8%;
     padding: 0 3%;
+
+    .author {
+        margin-top: 10px !important;
+        width: 100% !important;
+        padding-left: 0 !important;
+    }
 
     .pr-list {
         display: -ms-flexbox;
@@ -822,6 +840,11 @@
         margin-top: 17%;
         margin-bottom: 8%;
         padding: 0 3%;
+
+        .author {
+            margin-top: 10px !important;
+            width: 100% !important;
+        }
 
         .pr-list {
             display: -ms-flexbox;
