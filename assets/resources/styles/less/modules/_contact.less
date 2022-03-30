@@ -23,10 +23,21 @@
             font-family: 'NeueHaasDisplay-me';
             font-size: 9em;
             overflow: hidden;
+            -webkit-perspective: 600px;
+            perspective: 600px;
 
-            .l {
-                display: inline-block;
-                font-family: 'NeueHaasDisplay-me' !important;
+            .header_title_line {
+                display: block;
+                -webkit-transform: none;
+                transform: none;
+                -webkit-transform-origin: center top;
+                transform-origin: center top;
+                -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+
+                span {
+                    display: inline-block;
+                }
             }
         }
 

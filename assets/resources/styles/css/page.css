@@ -13157,10 +13157,20 @@ section.horizontal .animation-wrap.to-left {
   font-family: 'NeueHaasDisplay-me';
   font-size: 9em;
   overflow: hidden;
+  -webkit-perspective: 600px;
+  perspective: 600px;
 }
-.lets .flex-row h1 .l {
+.lets .flex-row h1 .header_title_line {
+  display: block;
+  -webkit-transform: none;
+  transform: none;
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.lets .flex-row h1 .header_title_line span {
   display: inline-block;
-  font-family: 'NeueHaasDisplay-me' !important;
 }
 .lets .flex-row .sec-h1 {
   text-align: right;
