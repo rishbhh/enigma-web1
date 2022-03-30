@@ -2636,538 +2636,19 @@ header {
   height: 100vh;
   background-color: #000;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
-  .hero-section .ht-cursor {
-    display: none;
-  }
-  .hero-section .container_hero {
-    z-index: 10;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-  }
-  .hero-section .container_word_change_t {
-    -webkit-backdrop-filter: blur(15px) !important;
-    backdrop-filter: blur(15px) !important;
-    display: none;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: 12 !important;
-    background: #fff;
-    overflow: hidden;
-  }
-  .hero-section .container_word_change_t .container_word_change_t_content {
-    -webkit-backdrop-filter: blur(15px) !important;
-    backdrop-filter: blur(15px) !important;
-    opacity: 1;
-    z-index: 13;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 8.6vw;
-  }
-  .hero-section .container_word_change_t .we {
-    padding-right: 5px;
-    display: inline-block;
-    opacity: 0;
-    letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-me';
-  }
-  .hero-section .container_word_change_t .make {
-    padding-right: 5px;
-    display: inline-block;
-    opacity: 0;
-    letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-me';
-  }
-  .hero-section .container_word_change_t .digital {
-    padding-right: 5px;
-    display: inline-block;
-    opacity: 0;
-    letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-me';
-  }
-  .hero-section .container_word_change_t .brand {
-    padding-right: 5px;
-    display: inline-block;
-    opacity: 0;
-    letter-spacing: 2px;
-    position: relative;
-    font-family: 'NeueHaasDisplay-me';
-  }
-  .hero-section .container_word_change_t .experince {
-    padding-right: 5px;
-    display: inline-block;
-    opacity: 0;
-    letter-spacing: 2px;
-    position: relative;
-    font-family: 'NeueHaasDisplay-me';
-  }
-  .hero-section .transition_to_lapi {
-    opacity: 0;
-    z-index: 59 !important;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    content: "";
-  }
-  .hero-section .container_hero_content {
-    z-index: 11;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    z-index: 12;
-    height: 100%;
-    text-align: center;
-  }
-  .hero-section .container_hero_content #enigma-svg {
-    width: 100vw;
-    fill: currentColor;
-    overflow: visible;
-    z-index: 9;
-  }
-  .hero-section .container_hero_content #enigma-svg .st0 {
-    enable-background: new;
-  }
-  .hero-section .container_hero_content #enigma-svg .st1 {
-    fill: #808080;
-  }
-  .hero-section .container_hero_content #enigma-svg .st2 {
-    fill: #8B8B8B;
-  }
-  .hero-section .container_hero_content #enigma-svg .st3 {
-    fill: #939393;
-  }
-  .hero-section .container_hero_content #enigma-svg .st4 {
-    fill: #878787;
-  }
-  .hero-section .container_hero_content #enigma-svg .st5 {
-    fill: #AAAAAA;
-  }
-  .hero-section .container_hero_content #enigma-svg .st6 {
-    -webkit-clip-path: url(#SVGID_2_);
-            clip-path: url(#SVGID_2_);
-  }
-  .hero-section .container_hero_content #enigma-svg .st7 {
-    -webkit-clip-path: url(#SVGID_6_);
-            clip-path: url(#SVGID_6_);
-  }
-  .hero-section .container_hero_content #enigma-svg .st8 {
-    -webkit-clip-path: url(#SVGID_10_);
-            clip-path: url(#SVGID_10_);
-  }
-  .hero-section .container_hero_content #enigma-svg .st9 {
-    -webkit-clip-path: url(#SVGID_14_);
-            clip-path: url(#SVGID_14_);
-  }
-  .hero-section .container_hero_content #enigma-svg .st10 {
-    -webkit-clip-path: url(#SVGID_18_);
-            clip-path: url(#SVGID_18_);
-  }
-  .hero-section .container_hero_content #enigma-svg .st11 {
-    -webkit-clip-path: url(#SVGID_22_);
-            clip-path: url(#SVGID_22_);
-  }
-  .hero-section .container_hero_content #enigma-svg .st12 {
-    -webkit-clip-path: url(#SVGID_26_);
-            clip-path: url(#SVGID_26_);
-  }
-  .hero-section .container_hero_content #enigma-svg .st13 {
-    -webkit-clip-path: url(#SVGID_30_);
-            clip-path: url(#SVGID_30_);
-  }
-  .hero-section .container_hero_content #enigma-svg .st14 {
-    -webkit-clip-path: url(#SVGID_34_);
-            clip-path: url(#SVGID_34_);
-  }
-  .hero-section .container_hero_content #enigma-svg .st15 {
-    -webkit-clip-path: url(#SVGID_38_);
-            clip-path: url(#SVGID_38_);
-  }
-  .hero-section .container_hero_content #enigma-svg .st16 {
-    -webkit-clip-path: url(#SVGID_42_);
-            clip-path: url(#SVGID_42_);
-  }
-  .hero-section .container_hero_content #enigma-svg .st17 {
-    fill: #8C8C8C;
-  }
-  .hero-section .container_hero_content #enigma-svg .st18 {
-    -webkit-clip-path: url(#SVGID_46_);
-            clip-path: url(#SVGID_46_);
-  }
-  .hero-section .container_hero_content #enigma-svg #e {
-    -webkit-transform: scale(7) translate(-58px, -123px);
-            transform: scale(7) translate(-58px, -123px);
-  }
-  .hero-section .container_hero_content #enigma-svg #n {
-    -webkit-transform: scale(4) translate(-107px, -643px);
-            transform: scale(4) translate(-107px, -643px);
-  }
-  .hero-section .container_hero_content #enigma-svg #i {
-    -webkit-transform: scale(2.9) translate(-160px, 613px);
-            transform: scale(2.9) translate(-160px, 613px);
-  }
-  .hero-section .container_hero_content #enigma-svg #g {
-    -webkit-transform: scale(2.9) translate(-240px, -727px);
-            transform: scale(2.9) translate(-240px, -727px);
-  }
-  .hero-section .container_hero_content #enigma-svg #m {
-    -webkit-transform: scale(2.7) translate(-230px, -757px);
-            transform: scale(2.7) translate(-230px, -757px);
-  }
-  .hero-section .container_hero_content #enigma-svg #a {
-    -webkit-transform: scale(3.5) translate(-546px, 469px);
-            transform: scale(3.5) translate(-546px, 469px);
-  }
-  .hero-section .container_hero_content .small_heading {
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 2.5vh;
-    bottom: auto;
-    font-size: 1.1em;
-    line-height: 1.5;
-    font-weight: normal;
-    font-family: 'Ageo';
-    color: #ffffff;
-    letter-spacing: 0.2em;
-    padding: 0 10px;
-  }
-  .hero-section .container_hero_content .chapt-icon {
-    position: absolute;
-    display: block;
-    width: 12%;
-    cursor: pointer;
-    bottom: 50px;
-    right: 20px;
-  }
-  .hero-section .container_hero_content .chapt-icon .scroll-circle {
-    opacity: 0;
-    visibility: inherit;
-  }
-  .hero-section .container_hero_content .chapt-icon .icon-circles {
-    position: absolute;
-    width: 2.5rem;
-    top: 48%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    /* -webkit-filter: invert(1); */
-    /* filter: invert(1); */
-    /* -webkit-animation: float 3s ease-in-out infinite; */
-    /* animation: float 3s ease-in-out infinite; */
-  }
-  @-webkit-keyframes float {
-    0% {
-      -webkit-transform: translatey(-23px);
-              transform: translatey(-23px);
-    }
-    50% {
-      -webkit-transform: translatey(-12px);
-              transform: translatey(-12px);
-    }
-    100% {
-      -webkit-transform: translatey(-23px);
-              transform: translatey(-23px);
-    }
-  }
-  @keyframes float {
-    0% {
-      -webkit-transform: translatey(-23px);
-              transform: translatey(-23px);
-    }
-    50% {
-      -webkit-transform: translatey(-12px);
-              transform: translatey(-12px);
-    }
-    100% {
-      -webkit-transform: translatey(-23px);
-              transform: translatey(-23px);
-    }
-  }
-  .hero-section .container_hero_content .chapt-icon .scroll-icon {
-    -webkit-transition: 0.9s all ease-in;
-    transition: 0.9s all ease-in;
-    fill: #EAEAEA;
-    -webkit-transition: all 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
-    -webkit-animation: circleSpin 8s linear infinite;
-            animation: circleSpin 8s linear infinite;
-  }
-  .hero-section .container_hero_content .chapt-icon .scroll-arrow {
-    overflow: hidden;
-  }
-  .hero-section .container_hero_content .chapt-icon .scroll-arrow svg {
-    fill: #EAEAEA;
-    height: 148px;
-    margin-top: 30px;
-    -webkit-transform: translate(0px, -210px);
-            transform: translate(0px, -210px);
-    opacity: 0;
-    -webkit-transition: 0.3s all ease-in;
-    transition: 0.3s all ease-in;
-  }
-  .hero-section .container_lapi {
-    display: none;
-    z-index: 60;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-  }
-  .hero-section .container_lapi .container_lapi_content {
-    width: inherit;
-    height: inherit;
-    position: relative;
-  }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container_2 {
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    z-index: -1 !important;
-  }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container_2 .enigma_bg_2 {
-    position: relative;
-    top: 50% !important;
-    -webkit-transform: translateY(-50%) !important;
-            transform: translateY(-50%) !important;
-    width: 100%;
-    text-align: center;
-    font-family: 'NeueHaasDisplay-me';
-    font-size: 25vw;
-    font-weight: 500;
-  }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container_2 .enigma_bg_2 img {
-    width: 100%;
-  }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container_2 .enigma_bg_2 {
-    color: #8e8e93;
-  }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container {
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    z-index: 81 !important;
-  }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container .enigma_bg {
-    position: relative;
-    top: 50% !important;
-    -webkit-transform: translateY(-50%) !important;
-            transform: translateY(-50%) !important;
-    width: 100%;
-    text-align: center;
-    font-family: 'NeueHaasDisplay-roman';
-    letter-spacing: 3px;
-    font-size: 6vw;
-    font-weight: 600;
-  }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container .enigma_bg {
-    color: #fff;
-  }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together {
-    position: relative;
-    width: inherit;
-    height: inherit;
-  }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner {
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateY(-50%) translateX(-50%);
-            transform: translateY(-50%) translateX(-50%);
-  }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div {
-    position: relative;
-    z-index: 70 !important;
-    width: auto;
-    height: 38vh;
-  }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_pro {
-    content: url('/assets/resources/img/MacBook_Pro.png');
-    position: relative;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    right: auto;
-    overflow: hidden;
-    width: auto;
-    height: 100%;
-    z-index: 80 !important;
-  }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame {
-    z-index: 74 !important;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    margin: auto;
-    top: -47px;
-    bottom: 0;
-    left: 2px;
-    right: 0;
-    width: calc(78%);
-    height: calc(73%);
-    overflow: hidden;
-    background: #000;
-    border-radius: 0;
-  }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame video {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 1vh;
-    left: 3%;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    overflow: hidden;
-    z-index: 67;
-  }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_logo {
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 55vh;
-    margin: auto;
-    top: 15px;
-    z-index: -1;
-    opacity: 0.2;
-    -webkit-filter: invert(1) blur(5px);
-            filter: invert(1) blur(5px);
-  }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading {
-    position: relative;
-    font-family: 'NeueHaasDisplay-Mediu';
-    color: #9d9d9d;
-    letter-spacing: 2px;
-    text-align: left;
-    font-size: 31px;
-    line-height: 69px;
-    text-transform: capitalize;
-  }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading p {
-    font-family: 'NeueHaasDisplay-Mediu';
-  }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading span {
-    font-style: italic;
-    color: #fff;
-    margin-right: 5px;
-    font-family: 'NeueHaasDisplay-blod';
-  }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one {
-    width: 85%;
-    height: auto;
-    position: absolute;
-    bottom: 2vh;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    border-radius: 25px;
-    overflow: hidden;
-    z-index: 67;
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    background-color: rgba(0, 0, 0, 0.4);
-    content: "";
-  }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content {
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-  }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content svg {
-    width: 5vh;
-    padding-bottom: 5px;
-  }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_heading {
-    position: relative;
-    font-family: 'NeueHaasDisplay-Mediu';
-    font-size: 2.5vh;
-    line-height: 1.5;
-    color: #fff;
-  }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_text {
-    padding-top: 5px;
-    position: relative;
-    font-family: 'NeueHaasDisplay-Mediu';
-    font-size: 1.75vh;
-    line-height: 1.5;
-    color: #8e8e93;
-  }
-  .hero-section .t-lead {
-    margin-top: 0px;
-    margin-bottom: 40px;
-    font-size: 1.7em;
-    font-variant: small-caps;
-    line-height: 1.5;
-    /* font-weight: 400; */
-    text-shadow: none;
-    font-synthesis: none;
-    letter-spacing: 0.07em;
-    /* text-transform: uppercase; */
-    font-family: 'Ageo';
-  }
-  .hero-section .o-container {
-    padding-right: 0em;
-    padding-left: 0em;
-  }
-  .hero-section .c-hm-us_top {
-    padding-top: 3.6em;
-  }
-}
 @media only screen and (max-device-width: 1920px) {
-  .hero-section .tablet_container .macbook_frame_2_evolves_mask_logo .macbook_frame_2_evolves_mask_logo_path {
+  .tablet_container .macbook_frame_2_evolves_mask_logo .macbook_frame_2_evolves_mask_logo_path {
     -webkit-transform: scale(8) translateX(-22vw) translateY(-37vh);
             transform: scale(8) translateX(-22vw) translateY(-37vh);
   }
-  .hero-section .container_hero {
+  .container_hero {
     z-index: 10;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     position: relative;
   }
-  .hero-section .container_word_change_t {
+  .container_word_change_t {
     -webkit-backdrop-filter: blur(15px) !important;
     backdrop-filter: blur(15px) !important;
     display: none;
@@ -3183,7 +2664,7 @@ header {
     background: #fff;
     overflow: hidden;
   }
-  .hero-section .container_word_change_t .container_word_change_t_content {
+  .container_word_change_t .container_word_change_t_content {
     -webkit-backdrop-filter: blur(15px) !important;
     backdrop-filter: blur(15px) !important;
     opacity: 1;
@@ -3197,36 +2678,28 @@ header {
     text-align: center;
     font-size: 5.6vw;
   }
-  .hero-section .container_word_change_t .we {
+  .container_word_change_t .we {
     padding-right: 5px;
     display: inline-block;
     opacity: 0;
     letter-spacing: 2px;
     font-family: 'NeueHaasDisplay-me';
   }
-  .hero-section .container_word_change_t .make {
+  .container_word_change_t .make {
     padding-right: 5px;
     display: inline-block;
     opacity: 0;
     letter-spacing: 2px;
     font-family: 'NeueHaasDisplay-me';
   }
-  .hero-section .container_word_change_t .digital {
+  .container_word_change_t .digital {
     padding-right: 5px;
     display: inline-block;
     opacity: 0;
     letter-spacing: 2px;
     font-family: 'NeueHaasDisplay-me';
   }
-  .hero-section .container_word_change_t .brand {
-    padding-right: 5px;
-    display: inline-block;
-    opacity: 0;
-    letter-spacing: 2px;
-    position: relative;
-    font-family: 'NeueHaasDisplay-me';
-  }
-  .hero-section .container_word_change_t .experince {
+  .container_word_change_t .brand {
     padding-right: 5px;
     display: inline-block;
     opacity: 0;
@@ -3234,7 +2707,15 @@ header {
     position: relative;
     font-family: 'NeueHaasDisplay-me';
   }
-  .hero-section .transition_to_lapi {
+  .container_word_change_t .experince {
+    padding-right: 5px;
+    display: inline-block;
+    opacity: 0;
+    letter-spacing: 2px;
+    position: relative;
+    font-family: 'NeueHaasDisplay-me';
+  }
+  .transition_to_lapi {
     opacity: 0;
     z-index: 59 !important;
     position: absolute;
@@ -3246,7 +2727,7 @@ header {
     height: 100vh;
     content: "";
   }
-  .hero-section .container_hero_content {
+  .container_hero_content {
     z-index: 11;
     position: relative;
     display: -webkit-box;
@@ -3266,106 +2747,106 @@ header {
     height: 100%;
     text-align: center;
   }
-  .hero-section .container_hero_content #enigma-svg {
+  .container_hero_content #enigma-svg {
     width: 59vw;
     fill: currentColor;
     overflow: visible;
     z-index: 9;
   }
-  .hero-section .container_hero_content #enigma-svg .st0 {
+  .container_hero_content #enigma-svg .st0 {
     enable-background: new;
   }
-  .hero-section .container_hero_content #enigma-svg .st1 {
+  .container_hero_content #enigma-svg .st1 {
     fill: #808080;
   }
-  .hero-section .container_hero_content #enigma-svg .st2 {
+  .container_hero_content #enigma-svg .st2 {
     fill: #8B8B8B;
   }
-  .hero-section .container_hero_content #enigma-svg .st3 {
+  .container_hero_content #enigma-svg .st3 {
     fill: #939393;
   }
-  .hero-section .container_hero_content #enigma-svg .st4 {
+  .container_hero_content #enigma-svg .st4 {
     fill: #878787;
   }
-  .hero-section .container_hero_content #enigma-svg .st5 {
+  .container_hero_content #enigma-svg .st5 {
     fill: #AAAAAA;
   }
-  .hero-section .container_hero_content #enigma-svg .st6 {
+  .container_hero_content #enigma-svg .st6 {
     -webkit-clip-path: url(#SVGID_2_);
             clip-path: url(#SVGID_2_);
   }
-  .hero-section .container_hero_content #enigma-svg .st7 {
+  .container_hero_content #enigma-svg .st7 {
     -webkit-clip-path: url(#SVGID_6_);
             clip-path: url(#SVGID_6_);
   }
-  .hero-section .container_hero_content #enigma-svg .st8 {
+  .container_hero_content #enigma-svg .st8 {
     -webkit-clip-path: url(#SVGID_10_);
             clip-path: url(#SVGID_10_);
   }
-  .hero-section .container_hero_content #enigma-svg .st9 {
+  .container_hero_content #enigma-svg .st9 {
     -webkit-clip-path: url(#SVGID_14_);
             clip-path: url(#SVGID_14_);
   }
-  .hero-section .container_hero_content #enigma-svg .st10 {
+  .container_hero_content #enigma-svg .st10 {
     -webkit-clip-path: url(#SVGID_18_);
             clip-path: url(#SVGID_18_);
   }
-  .hero-section .container_hero_content #enigma-svg .st11 {
+  .container_hero_content #enigma-svg .st11 {
     -webkit-clip-path: url(#SVGID_22_);
             clip-path: url(#SVGID_22_);
   }
-  .hero-section .container_hero_content #enigma-svg .st12 {
+  .container_hero_content #enigma-svg .st12 {
     -webkit-clip-path: url(#SVGID_26_);
             clip-path: url(#SVGID_26_);
   }
-  .hero-section .container_hero_content #enigma-svg .st13 {
+  .container_hero_content #enigma-svg .st13 {
     -webkit-clip-path: url(#SVGID_30_);
             clip-path: url(#SVGID_30_);
   }
-  .hero-section .container_hero_content #enigma-svg .st14 {
+  .container_hero_content #enigma-svg .st14 {
     -webkit-clip-path: url(#SVGID_34_);
             clip-path: url(#SVGID_34_);
   }
-  .hero-section .container_hero_content #enigma-svg .st15 {
+  .container_hero_content #enigma-svg .st15 {
     -webkit-clip-path: url(#SVGID_38_);
             clip-path: url(#SVGID_38_);
   }
-  .hero-section .container_hero_content #enigma-svg .st16 {
+  .container_hero_content #enigma-svg .st16 {
     -webkit-clip-path: url(#SVGID_42_);
             clip-path: url(#SVGID_42_);
   }
-  .hero-section .container_hero_content #enigma-svg .st17 {
+  .container_hero_content #enigma-svg .st17 {
     fill: #8C8C8C;
   }
-  .hero-section .container_hero_content #enigma-svg .st18 {
+  .container_hero_content #enigma-svg .st18 {
     -webkit-clip-path: url(#SVGID_46_);
             clip-path: url(#SVGID_46_);
   }
-  .hero-section .container_hero_content #enigma-svg #e {
+  .container_hero_content #enigma-svg #e {
     -webkit-transform: scale(5.9) translate(-83px, -118px);
             transform: scale(5.9) translate(-83px, -118px);
   }
-  .hero-section .container_hero_content #enigma-svg #n {
+  .container_hero_content #enigma-svg #n {
     -webkit-transform: scale(3) translate(-108px, -499px);
             transform: scale(3) translate(-108px, -499px);
   }
-  .hero-section .container_hero_content #enigma-svg #i {
+  .container_hero_content #enigma-svg #i {
     -webkit-transform: scale(2.5) translate(-170px, 452px);
             transform: scale(2.5) translate(-170px, 452px);
   }
-  .hero-section .container_hero_content #enigma-svg #g {
+  .container_hero_content #enigma-svg #g {
     -webkit-transform: scale(2.9) translate(-260px, -556px);
             transform: scale(2.9) translate(-260px, -556px);
   }
-  .hero-section .container_hero_content #enigma-svg #m {
+  .container_hero_content #enigma-svg #m {
     -webkit-transform: scale(2.5) translate(-240px, -590px);
             transform: scale(2.5) translate(-240px, -590px);
   }
-  .hero-section .container_hero_content #enigma-svg #a {
+  .container_hero_content #enigma-svg #a {
     -webkit-transform: scale(3.5) translate(-546px, 279px);
             transform: scale(3.5) translate(-546px, 279px);
   }
-  .hero-section .container_hero_content .small_heading {
+  .container_hero_content .small_heading {
     position: relative;
     left: 0;
     right: 0;
@@ -3378,7 +2859,7 @@ header {
     font-family: 'Ageo';
     letter-spacing: 0.2em;
   }
-  .hero-section .container_hero_content .chapt-icon {
+  .container_hero_content .chapt-icon {
     position: absolute;
     display: block;
     width: 12%;
@@ -3386,11 +2867,11 @@ header {
     bottom: 30px;
     right: 20px;
   }
-  .hero-section .container_hero_content .chapt-icon .scroll-circle {
+  .container_hero_content .chapt-icon .scroll-circle {
     opacity: 0;
     visibility: inherit;
   }
-  .hero-section .container_hero_content .chapt-icon .icon-circles {
+  .container_hero_content .chapt-icon .icon-circles {
     position: absolute;
     width: 2.5rem;
     top: 48%;
@@ -3431,7 +2912,7 @@ header {
               transform: translatey(-23px);
     }
   }
-  .hero-section .container_hero_content .chapt-icon .scroll-icon {
+  .container_hero_content .chapt-icon .scroll-icon {
     -webkit-transition: 0.9s all ease-in;
     transition: 0.9s all ease-in;
     fill: #EAEAEA;
@@ -3440,10 +2921,10 @@ header {
     -webkit-animation: circleSpin 8s linear infinite;
             animation: circleSpin 8s linear infinite;
   }
-  .hero-section .container_hero_content .chapt-icon .scroll-arrow {
+  .container_hero_content .chapt-icon .scroll-arrow {
     overflow: hidden;
   }
-  .hero-section .container_hero_content .chapt-icon .scroll-arrow svg {
+  .container_hero_content .chapt-icon .scroll-arrow svg {
     fill: #EAEAEA;
     height: 148px;
     margin-top: 30px;
@@ -3453,19 +2934,19 @@ header {
     -webkit-transition: 0.3s all ease-in;
     transition: 0.3s all ease-in;
   }
-  .hero-section .container_lapi {
+  .container_lapi {
     display: none;
     z-index: 60;
     width: 100vw;
     height: 100vh;
     position: absolute;
   }
-  .hero-section .container_lapi .container_lapi_content {
+  .container_lapi .container_lapi_content {
     width: inherit;
     height: inherit;
     position: relative;
   }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container_2 {
+  .container_lapi .container_lapi_content .enigma_bg_container_2 {
     width: 100vw;
     height: 100vh;
     left: 0;
@@ -3475,7 +2956,7 @@ header {
     position: absolute;
     z-index: -1 !important;
   }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container_2 .enigma_bg_2 {
+  .container_lapi .container_lapi_content .enigma_bg_container_2 .enigma_bg_2 {
     position: relative;
     top: 50% !important;
     -webkit-transform: translateY(-50%) !important;
@@ -3486,13 +2967,13 @@ header {
     font-size: 25vw;
     font-weight: 500;
   }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container_2 .enigma_bg_2 img {
+  .container_lapi .container_lapi_content .enigma_bg_container_2 .enigma_bg_2 img {
     width: 100%;
   }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container_2 .enigma_bg_2 {
+  .container_lapi .container_lapi_content .enigma_bg_container_2 .enigma_bg_2 {
     color: #8e8e93;
   }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container {
+  .container_lapi .container_lapi_content .enigma_bg_container {
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     width: 100vw;
@@ -3504,7 +2985,7 @@ header {
     position: absolute;
     z-index: 81 !important;
   }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container .enigma_bg {
+  .container_lapi .container_lapi_content .enigma_bg_container .enigma_bg {
     position: relative;
     top: 50% !important;
     -webkit-transform: translateY(-50%) !important;
@@ -3516,15 +2997,15 @@ header {
     font-size: 6vw;
     font-weight: 600;
   }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container .enigma_bg {
+  .container_lapi .container_lapi_content .enigma_bg_container .enigma_bg {
     color: #fff;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together {
+  .container_lapi .container_lapi_content .container_lapi_content_together {
     position: relative;
     width: inherit;
     height: inherit;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner {
     width: auto;
     height: auto;
     position: absolute;
@@ -3533,13 +3014,13 @@ header {
     -webkit-transform: translateY(-50%) translateX(-50%);
             transform: translateY(-50%) translateX(-50%);
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div {
     position: relative;
     z-index: 70 !important;
     width: auto;
     height: 80vh;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_pro {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_pro {
     content: url('/assets/resources/img/MacBook_Pro.png');
     position: relative;
     top: auto;
@@ -3551,7 +3032,7 @@ header {
     height: 100%;
     z-index: 80 !important;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame {
     z-index: 74 !important;
     opacity: 1;
     position: absolute;
@@ -3567,11 +3048,11 @@ header {
     background: #000;
     border-radius: 0;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame video {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame video {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper {
     width: 100%;
     height: auto;
     position: absolute;
@@ -3582,7 +3063,7 @@ header {
     overflow: hidden;
     z-index: 67;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_logo {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_logo {
     position: absolute;
     left: 0;
     right: 0;
@@ -3594,7 +3075,7 @@ header {
     -webkit-filter: invert(1) blur(5px);
             filter: invert(1) blur(5px);
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading {
     position: relative;
     font-family: 'NeueHaasDisplay-Mediu';
     color: #9d9d9d;
@@ -3604,16 +3085,16 @@ header {
     line-height: 69px;
     text-transform: capitalize;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading p {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading p {
     font-family: 'NeueHaasDisplay-Mediu';
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading span {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading span {
     font-style: italic;
     color: #fff;
     margin-right: 5px;
     font-family: 'NeueHaasDisplay-blod';
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one {
     width: 85%;
     height: auto;
     position: absolute;
@@ -3629,24 +3110,24 @@ header {
     background-color: rgba(0, 0, 0, 0.4);
     content: "";
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content {
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content svg {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content svg {
     width: 5vh;
     padding-bottom: 5px;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_heading {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_heading {
     position: relative;
     font-family: 'NeueHaasDisplay-Mediu';
     font-size: 2.5vh;
     line-height: 1.5;
     color: #fff;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_text {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_text {
     padding-top: 5px;
     position: relative;
     font-family: 'NeueHaasDisplay-Mediu';
@@ -3656,18 +3137,18 @@ header {
   }
 }
 @media only screen and (max-device-width: 1440px) {
-  .hero-section .tablet_container .macbook_frame_2_evolves_mask_logo .macbook_frame_2_evolves_mask_logo_path {
+  .tablet_container .macbook_frame_2_evolves_mask_logo .macbook_frame_2_evolves_mask_logo_path {
     -webkit-transform: scale(8) translateX(-22vw) translateY(-37vh);
             transform: scale(8) translateX(-22vw) translateY(-37vh);
   }
-  .hero-section .container_hero {
+  .container_hero {
     z-index: 10;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     position: relative;
   }
-  .hero-section .container_word_change_t {
+  .container_word_change_t {
     -webkit-backdrop-filter: blur(15px) !important;
     backdrop-filter: blur(15px) !important;
     display: none;
@@ -3683,7 +3164,7 @@ header {
     background: #fff;
     overflow: hidden;
   }
-  .hero-section .container_word_change_t .container_word_change_t_content {
+  .container_word_change_t .container_word_change_t_content {
     -webkit-backdrop-filter: blur(15px) !important;
     backdrop-filter: blur(15px) !important;
     opacity: 1;
@@ -3697,36 +3178,28 @@ header {
     text-align: center;
     font-size: 5.6vw;
   }
-  .hero-section .container_word_change_t .we {
+  .container_word_change_t .we {
     padding-right: 5px;
     display: inline-block;
     opacity: 0;
     letter-spacing: 2px;
     font-family: 'NeueHaasDisplay-me';
   }
-  .hero-section .container_word_change_t .make {
+  .container_word_change_t .make {
     padding-right: 5px;
     display: inline-block;
     opacity: 0;
     letter-spacing: 2px;
     font-family: 'NeueHaasDisplay-me';
   }
-  .hero-section .container_word_change_t .digital {
+  .container_word_change_t .digital {
     padding-right: 5px;
     display: inline-block;
     opacity: 0;
     letter-spacing: 2px;
     font-family: 'NeueHaasDisplay-me';
   }
-  .hero-section .container_word_change_t .brand {
-    padding-right: 5px;
-    display: inline-block;
-    opacity: 0;
-    letter-spacing: 2px;
-    position: relative;
-    font-family: 'NeueHaasDisplay-me';
-  }
-  .hero-section .container_word_change_t .experince {
+  .container_word_change_t .brand {
     padding-right: 5px;
     display: inline-block;
     opacity: 0;
@@ -3734,7 +3207,15 @@ header {
     position: relative;
     font-family: 'NeueHaasDisplay-me';
   }
-  .hero-section .transition_to_lapi {
+  .container_word_change_t .experince {
+    padding-right: 5px;
+    display: inline-block;
+    opacity: 0;
+    letter-spacing: 2px;
+    position: relative;
+    font-family: 'NeueHaasDisplay-me';
+  }
+  .transition_to_lapi {
     opacity: 0;
     z-index: 59 !important;
     position: absolute;
@@ -3746,7 +3227,7 @@ header {
     height: 100vh;
     content: "";
   }
-  .hero-section .container_hero_content {
+  .container_hero_content {
     z-index: 11;
     position: relative;
     display: -webkit-box;
@@ -3766,106 +3247,106 @@ header {
     height: 100%;
     text-align: center;
   }
-  .hero-section .container_hero_content #enigma-svg {
+  .container_hero_content #enigma-svg {
     width: 59vw;
     fill: currentColor;
     overflow: visible;
     z-index: 9;
   }
-  .hero-section .container_hero_content #enigma-svg .st0 {
+  .container_hero_content #enigma-svg .st0 {
     enable-background: new;
   }
-  .hero-section .container_hero_content #enigma-svg .st1 {
+  .container_hero_content #enigma-svg .st1 {
     fill: #808080;
   }
-  .hero-section .container_hero_content #enigma-svg .st2 {
+  .container_hero_content #enigma-svg .st2 {
     fill: #8B8B8B;
   }
-  .hero-section .container_hero_content #enigma-svg .st3 {
+  .container_hero_content #enigma-svg .st3 {
     fill: #939393;
   }
-  .hero-section .container_hero_content #enigma-svg .st4 {
+  .container_hero_content #enigma-svg .st4 {
     fill: #878787;
   }
-  .hero-section .container_hero_content #enigma-svg .st5 {
+  .container_hero_content #enigma-svg .st5 {
     fill: #AAAAAA;
   }
-  .hero-section .container_hero_content #enigma-svg .st6 {
+  .container_hero_content #enigma-svg .st6 {
     -webkit-clip-path: url(#SVGID_2_);
             clip-path: url(#SVGID_2_);
   }
-  .hero-section .container_hero_content #enigma-svg .st7 {
+  .container_hero_content #enigma-svg .st7 {
     -webkit-clip-path: url(#SVGID_6_);
             clip-path: url(#SVGID_6_);
   }
-  .hero-section .container_hero_content #enigma-svg .st8 {
+  .container_hero_content #enigma-svg .st8 {
     -webkit-clip-path: url(#SVGID_10_);
             clip-path: url(#SVGID_10_);
   }
-  .hero-section .container_hero_content #enigma-svg .st9 {
+  .container_hero_content #enigma-svg .st9 {
     -webkit-clip-path: url(#SVGID_14_);
             clip-path: url(#SVGID_14_);
   }
-  .hero-section .container_hero_content #enigma-svg .st10 {
+  .container_hero_content #enigma-svg .st10 {
     -webkit-clip-path: url(#SVGID_18_);
             clip-path: url(#SVGID_18_);
   }
-  .hero-section .container_hero_content #enigma-svg .st11 {
+  .container_hero_content #enigma-svg .st11 {
     -webkit-clip-path: url(#SVGID_22_);
             clip-path: url(#SVGID_22_);
   }
-  .hero-section .container_hero_content #enigma-svg .st12 {
+  .container_hero_content #enigma-svg .st12 {
     -webkit-clip-path: url(#SVGID_26_);
             clip-path: url(#SVGID_26_);
   }
-  .hero-section .container_hero_content #enigma-svg .st13 {
+  .container_hero_content #enigma-svg .st13 {
     -webkit-clip-path: url(#SVGID_30_);
             clip-path: url(#SVGID_30_);
   }
-  .hero-section .container_hero_content #enigma-svg .st14 {
+  .container_hero_content #enigma-svg .st14 {
     -webkit-clip-path: url(#SVGID_34_);
             clip-path: url(#SVGID_34_);
   }
-  .hero-section .container_hero_content #enigma-svg .st15 {
+  .container_hero_content #enigma-svg .st15 {
     -webkit-clip-path: url(#SVGID_38_);
             clip-path: url(#SVGID_38_);
   }
-  .hero-section .container_hero_content #enigma-svg .st16 {
+  .container_hero_content #enigma-svg .st16 {
     -webkit-clip-path: url(#SVGID_42_);
             clip-path: url(#SVGID_42_);
   }
-  .hero-section .container_hero_content #enigma-svg .st17 {
+  .container_hero_content #enigma-svg .st17 {
     fill: #8C8C8C;
   }
-  .hero-section .container_hero_content #enigma-svg .st18 {
+  .container_hero_content #enigma-svg .st18 {
     -webkit-clip-path: url(#SVGID_46_);
             clip-path: url(#SVGID_46_);
   }
-  .hero-section .container_hero_content #enigma-svg #e {
+  .container_hero_content #enigma-svg #e {
     -webkit-transform: scale(5.9) translate(-83px, -118px);
             transform: scale(5.9) translate(-83px, -118px);
   }
-  .hero-section .container_hero_content #enigma-svg #n {
+  .container_hero_content #enigma-svg #n {
     -webkit-transform: scale(3) translate(-108px, -499px);
             transform: scale(3) translate(-108px, -499px);
   }
-  .hero-section .container_hero_content #enigma-svg #i {
+  .container_hero_content #enigma-svg #i {
     -webkit-transform: scale(2.5) translate(-170px, 452px);
             transform: scale(2.5) translate(-170px, 452px);
   }
-  .hero-section .container_hero_content #enigma-svg #g {
+  .container_hero_content #enigma-svg #g {
     -webkit-transform: scale(2.9) translate(-260px, -556px);
             transform: scale(2.9) translate(-260px, -556px);
   }
-  .hero-section .container_hero_content #enigma-svg #m {
+  .container_hero_content #enigma-svg #m {
     -webkit-transform: scale(2.5) translate(-240px, -590px);
             transform: scale(2.5) translate(-240px, -590px);
   }
-  .hero-section .container_hero_content #enigma-svg #a {
+  .container_hero_content #enigma-svg #a {
     -webkit-transform: scale(3.5) translate(-546px, 279px);
             transform: scale(3.5) translate(-546px, 279px);
   }
-  .hero-section .container_hero_content .small_heading {
+  .container_hero_content .small_heading {
     position: relative;
     left: 0;
     right: 0;
@@ -3878,7 +3359,7 @@ header {
     font-family: 'Ageo';
     letter-spacing: 0.2em;
   }
-  .hero-section .container_hero_content .chapt-icon {
+  .container_hero_content .chapt-icon {
     position: absolute;
     display: block;
     width: 12%;
@@ -3886,11 +3367,11 @@ header {
     bottom: 30px;
     right: 20px;
   }
-  .hero-section .container_hero_content .chapt-icon .scroll-circle {
+  .container_hero_content .chapt-icon .scroll-circle {
     opacity: 0;
     visibility: inherit;
   }
-  .hero-section .container_hero_content .chapt-icon .icon-circles {
+  .container_hero_content .chapt-icon .icon-circles {
     position: absolute;
     width: 2.5rem;
     top: 48%;
@@ -3931,7 +3412,7 @@ header {
               transform: translatey(-23px);
     }
   }
-  .hero-section .container_hero_content .chapt-icon .scroll-icon {
+  .container_hero_content .chapt-icon .scroll-icon {
     -webkit-transition: 0.9s all ease-in;
     transition: 0.9s all ease-in;
     fill: #EAEAEA;
@@ -3940,10 +3421,10 @@ header {
     -webkit-animation: circleSpin 8s linear infinite;
             animation: circleSpin 8s linear infinite;
   }
-  .hero-section .container_hero_content .chapt-icon .scroll-arrow {
+  .container_hero_content .chapt-icon .scroll-arrow {
     overflow: hidden;
   }
-  .hero-section .container_hero_content .chapt-icon .scroll-arrow svg {
+  .container_hero_content .chapt-icon .scroll-arrow svg {
     fill: #EAEAEA;
     height: 148px;
     margin-top: 30px;
@@ -3953,19 +3434,19 @@ header {
     -webkit-transition: 0.3s all ease-in;
     transition: 0.3s all ease-in;
   }
-  .hero-section .container_lapi {
+  .container_lapi {
     display: none;
     z-index: 60;
     width: 100vw;
     height: 100vh;
     position: absolute;
   }
-  .hero-section .container_lapi .container_lapi_content {
+  .container_lapi .container_lapi_content {
     width: inherit;
     height: inherit;
     position: relative;
   }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container_2 {
+  .container_lapi .container_lapi_content .enigma_bg_container_2 {
     width: 100vw;
     height: 100vh;
     left: 0;
@@ -3975,7 +3456,7 @@ header {
     position: absolute;
     z-index: -1 !important;
   }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container_2 .enigma_bg_2 {
+  .container_lapi .container_lapi_content .enigma_bg_container_2 .enigma_bg_2 {
     position: relative;
     top: 50% !important;
     -webkit-transform: translateY(-50%) !important;
@@ -3986,13 +3467,13 @@ header {
     font-size: 25vw;
     font-weight: 500;
   }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container_2 .enigma_bg_2 img {
+  .container_lapi .container_lapi_content .enigma_bg_container_2 .enigma_bg_2 img {
     width: 100%;
   }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container_2 .enigma_bg_2 {
+  .container_lapi .container_lapi_content .enigma_bg_container_2 .enigma_bg_2 {
     color: #8e8e93;
   }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container {
+  .container_lapi .container_lapi_content .enigma_bg_container {
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     width: 100vw;
@@ -4004,7 +3485,7 @@ header {
     position: absolute;
     z-index: 81 !important;
   }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container .enigma_bg {
+  .container_lapi .container_lapi_content .enigma_bg_container .enigma_bg {
     position: relative;
     top: 50% !important;
     -webkit-transform: translateY(-50%) !important;
@@ -4016,15 +3497,15 @@ header {
     font-size: 6vw;
     font-weight: 600;
   }
-  .hero-section .container_lapi .container_lapi_content .enigma_bg_container .enigma_bg {
+  .container_lapi .container_lapi_content .enigma_bg_container .enigma_bg {
     color: #fff;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together {
+  .container_lapi .container_lapi_content .container_lapi_content_together {
     position: relative;
     width: inherit;
     height: inherit;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner {
     width: auto;
     height: auto;
     position: absolute;
@@ -4033,13 +3514,13 @@ header {
     -webkit-transform: translateY(-50%) translateX(-50%);
             transform: translateY(-50%) translateX(-50%);
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div {
     position: relative;
     z-index: 70 !important;
     width: auto;
     height: 80vh;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_pro {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_pro {
     content: url('/assets/resources/img/MacBook_Pro.png');
     position: relative;
     top: auto;
@@ -4051,7 +3532,7 @@ header {
     height: 100%;
     z-index: 80 !important;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame {
     z-index: 74 !important;
     opacity: 1;
     position: absolute;
@@ -4067,11 +3548,11 @@ header {
     background: #000;
     border-radius: 0;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame video {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame video {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper {
     width: 100%;
     height: auto;
     position: absolute;
@@ -4082,7 +3563,7 @@ header {
     overflow: hidden;
     z-index: 67;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_logo {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_logo {
     position: absolute;
     left: 0;
     right: 0;
@@ -4094,7 +3575,7 @@ header {
     -webkit-filter: invert(1) blur(5px);
             filter: invert(1) blur(5px);
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading {
     position: relative;
     font-family: 'NeueHaasDisplay-Mediu';
     color: #9d9d9d;
@@ -4104,16 +3585,16 @@ header {
     line-height: 69px;
     text-transform: capitalize;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading p {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading p {
     font-family: 'NeueHaasDisplay-Mediu';
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading span {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading span {
     font-style: italic;
     color: #fff;
     margin-right: 5px;
     font-family: 'NeueHaasDisplay-blod';
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one {
     width: 85%;
     height: auto;
     position: absolute;
@@ -4129,24 +3610,24 @@ header {
     background-color: rgba(0, 0, 0, 0.4);
     content: "";
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content {
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content svg {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content svg {
     width: 5vh;
     padding-bottom: 5px;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_heading {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_heading {
     position: relative;
     font-family: 'NeueHaasDisplay-Mediu';
     font-size: 2.5vh;
     line-height: 1.5;
     color: #fff;
   }
-  .hero-section .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_text {
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_text {
     padding-top: 5px;
     position: relative;
     font-family: 'NeueHaasDisplay-Mediu';
@@ -4156,12 +3637,12 @@ header {
   }
 }
 @media screen and (max-width: 1280px) {
-  .hero-section .container_lapi_content_together {
+  .container_lapi_content_together {
     position: relative;
     width: inherit;
     height: inherit;
   }
-  .hero-section .container_lapi_content_together .container_lapi_content_inner {
+  .container_lapi_content_together .container_lapi_content_inner {
     width: auto;
     height: auto;
     position: absolute;
@@ -4170,13 +3651,13 @@ header {
     -webkit-transform: translateY(-50%) translateX(-50%);
             transform: translateY(-50%) translateX(-50%);
   }
-  .hero-section .container_lapi_content_together .container_lapi_content_inner .lapi_div {
+  .container_lapi_content_together .container_lapi_content_inner .lapi_div {
     position: relative;
     z-index: 70 !important;
     width: auto;
     height: 80vh;
   }
-  .hero-section .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_pro {
+  .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_pro {
     content: url("/assets/resources/img/MacBook_Pro.png");
     position: relative;
     top: auto;
@@ -4188,7 +3669,7 @@ header {
     height: 100%;
     z-index: 80 !important;
   }
-  .hero-section .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame {
+  .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame {
     z-index: 74 !important;
     opacity: 1;
     position: absolute;
@@ -4203,11 +3684,11 @@ header {
     overflow: hidden;
     border-radius: 0;
   }
-  .hero-section .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame video {
+  .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame video {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .hero-section .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper {
+  .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper {
     width: 80%;
     height: auto;
     position: absolute;
@@ -4218,7 +3699,7 @@ header {
     overflow: hidden;
     z-index: 67;
   }
-  .hero-section .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_logo {
+  .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_logo {
     position: absolute;
     left: 0;
     right: 0;
@@ -4230,14 +3711,14 @@ header {
     -webkit-filter: invert(1) blur(5px);
             filter: invert(1) blur(5px);
   }
-  .hero-section .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading {
+  .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading {
     position: relative;
     font-family: 'NeueHaasDisplay-Mediu';
     font-size: 5vh;
     color: #fff;
     text-align: center;
   }
-  .hero-section .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one {
+  .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one {
     width: 85%;
     height: auto;
     position: absolute;
@@ -4253,24 +3734,24 @@ header {
     background-color: rgba(0, 0, 0, 0.4);
     content: "";
   }
-  .hero-section .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content {
+  .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content {
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
   }
-  .hero-section .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content svg {
+  .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content svg {
     width: 5vh;
     padding-bottom: 5px;
   }
-  .hero-section .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_heading {
+  .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_heading {
     position: relative;
     font-family: 'NeueHaasDisplay-Mediu';
     font-size: 2.5vh;
     line-height: 1.5;
     color: #fff;
   }
-  .hero-section .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_text {
+  .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_text {
     padding-top: 5px;
     position: relative;
     font-family: 'NeueHaasDisplay-Mediu';
@@ -4278,7 +3759,7 @@ header {
     line-height: 1.5;
     color: #8e8e93;
   }
-  .hero-section .tablet_container .macbook_frame_2_evolves_mask_logo .macbook_frame_2_evolves_mask_logo_path {
+  .tablet_container .macbook_frame_2_evolves_mask_logo .macbook_frame_2_evolves_mask_logo_path {
     -webkit-transform: scale(8) translateX(-26vw) translateY(-37vh);
             transform: scale(8) translateX(-26vw) translateY(-37vh);
   }
@@ -4611,6 +4092,525 @@ header {
     z-index: -1;
     width: 100%;
     height: 100%;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+  .ht-cursor {
+    display: none;
+  }
+  .container_hero {
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  .container_word_change_t {
+    -webkit-backdrop-filter: blur(15px) !important;
+    backdrop-filter: blur(15px) !important;
+    display: none;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 12 !important;
+    background: #fff;
+    overflow: hidden;
+  }
+  .container_word_change_t .container_word_change_t_content {
+    -webkit-backdrop-filter: blur(15px) !important;
+    backdrop-filter: blur(15px) !important;
+    opacity: 1;
+    z-index: 13;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 8.6vw;
+  }
+  .container_word_change_t .we {
+    padding-right: 5px;
+    display: inline-block;
+    opacity: 0;
+    letter-spacing: 2px;
+    font-family: 'NeueHaasDisplay-me';
+  }
+  .container_word_change_t .make {
+    padding-right: 5px;
+    display: inline-block;
+    opacity: 0;
+    letter-spacing: 2px;
+    font-family: 'NeueHaasDisplay-me';
+  }
+  .container_word_change_t .digital {
+    padding-right: 5px;
+    display: inline-block;
+    opacity: 0;
+    letter-spacing: 2px;
+    font-family: 'NeueHaasDisplay-me';
+  }
+  .container_word_change_t .brand {
+    padding-right: 5px;
+    display: inline-block;
+    opacity: 0;
+    letter-spacing: 2px;
+    position: relative;
+    font-family: 'NeueHaasDisplay-me';
+  }
+  .container_word_change_t .experince {
+    padding-right: 5px;
+    display: inline-block;
+    opacity: 0;
+    letter-spacing: 2px;
+    position: relative;
+    font-family: 'NeueHaasDisplay-me';
+  }
+  .transition_to_lapi {
+    opacity: 0;
+    z-index: 59 !important;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+  }
+  .container_hero_content {
+    z-index: 11;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    z-index: 12;
+    height: 100%;
+    text-align: center;
+  }
+  .container_hero_content #enigma-svg {
+    width: 100vw;
+    fill: currentColor;
+    overflow: visible;
+    z-index: 9;
+  }
+  .container_hero_content #enigma-svg .st0 {
+    enable-background: new;
+  }
+  .container_hero_content #enigma-svg .st1 {
+    fill: #808080;
+  }
+  .container_hero_content #enigma-svg .st2 {
+    fill: #8B8B8B;
+  }
+  .container_hero_content #enigma-svg .st3 {
+    fill: #939393;
+  }
+  .container_hero_content #enigma-svg .st4 {
+    fill: #878787;
+  }
+  .container_hero_content #enigma-svg .st5 {
+    fill: #AAAAAA;
+  }
+  .container_hero_content #enigma-svg .st6 {
+    -webkit-clip-path: url(#SVGID_2_);
+            clip-path: url(#SVGID_2_);
+  }
+  .container_hero_content #enigma-svg .st7 {
+    -webkit-clip-path: url(#SVGID_6_);
+            clip-path: url(#SVGID_6_);
+  }
+  .container_hero_content #enigma-svg .st8 {
+    -webkit-clip-path: url(#SVGID_10_);
+            clip-path: url(#SVGID_10_);
+  }
+  .container_hero_content #enigma-svg .st9 {
+    -webkit-clip-path: url(#SVGID_14_);
+            clip-path: url(#SVGID_14_);
+  }
+  .container_hero_content #enigma-svg .st10 {
+    -webkit-clip-path: url(#SVGID_18_);
+            clip-path: url(#SVGID_18_);
+  }
+  .container_hero_content #enigma-svg .st11 {
+    -webkit-clip-path: url(#SVGID_22_);
+            clip-path: url(#SVGID_22_);
+  }
+  .container_hero_content #enigma-svg .st12 {
+    -webkit-clip-path: url(#SVGID_26_);
+            clip-path: url(#SVGID_26_);
+  }
+  .container_hero_content #enigma-svg .st13 {
+    -webkit-clip-path: url(#SVGID_30_);
+            clip-path: url(#SVGID_30_);
+  }
+  .container_hero_content #enigma-svg .st14 {
+    -webkit-clip-path: url(#SVGID_34_);
+            clip-path: url(#SVGID_34_);
+  }
+  .container_hero_content #enigma-svg .st15 {
+    -webkit-clip-path: url(#SVGID_38_);
+            clip-path: url(#SVGID_38_);
+  }
+  .container_hero_content #enigma-svg .st16 {
+    -webkit-clip-path: url(#SVGID_42_);
+            clip-path: url(#SVGID_42_);
+  }
+  .container_hero_content #enigma-svg .st17 {
+    fill: #8C8C8C;
+  }
+  .container_hero_content #enigma-svg .st18 {
+    -webkit-clip-path: url(#SVGID_46_);
+            clip-path: url(#SVGID_46_);
+  }
+  .container_hero_content #enigma-svg #e {
+    -webkit-transform: scale(7) translate(-58px, -123px);
+            transform: scale(7) translate(-58px, -123px);
+  }
+  .container_hero_content #enigma-svg #n {
+    -webkit-transform: scale(4) translate(-107px, -643px);
+            transform: scale(4) translate(-107px, -643px);
+  }
+  .container_hero_content #enigma-svg #i {
+    -webkit-transform: scale(2.9) translate(-160px, 613px);
+            transform: scale(2.9) translate(-160px, 613px);
+  }
+  .container_hero_content #enigma-svg #g {
+    -webkit-transform: scale(2.9) translate(-240px, -727px);
+            transform: scale(2.9) translate(-240px, -727px);
+  }
+  .container_hero_content #enigma-svg #m {
+    -webkit-transform: scale(2.7) translate(-230px, -757px);
+            transform: scale(2.7) translate(-230px, -757px);
+  }
+  .container_hero_content #enigma-svg #a {
+    -webkit-transform: scale(3.5) translate(-546px, 469px);
+            transform: scale(3.5) translate(-546px, 469px);
+  }
+  .container_hero_content .small_heading {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 2.5vh;
+    bottom: auto;
+    font-size: 1.1em;
+    line-height: 1.5;
+    font-weight: normal;
+    font-family: 'Ageo';
+    color: #ffffff;
+    letter-spacing: 0.2em;
+    padding: 0 10px;
+  }
+  .container_hero_content .chapt-icon {
+    position: absolute;
+    display: block;
+    width: 12%;
+    cursor: pointer;
+    bottom: 50px;
+    right: 20px;
+  }
+  .container_hero_content .chapt-icon .scroll-circle {
+    opacity: 0;
+    visibility: inherit;
+  }
+  .container_hero_content .chapt-icon .icon-circles {
+    position: absolute;
+    width: 2.5rem;
+    top: 48%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* -webkit-filter: invert(1); */
+    /* filter: invert(1); */
+    /* -webkit-animation: float 3s ease-in-out infinite; */
+    /* animation: float 3s ease-in-out infinite; */
+  }
+  @-webkit-keyframes float {
+    0% {
+      -webkit-transform: translatey(-23px);
+              transform: translatey(-23px);
+    }
+    50% {
+      -webkit-transform: translatey(-12px);
+              transform: translatey(-12px);
+    }
+    100% {
+      -webkit-transform: translatey(-23px);
+              transform: translatey(-23px);
+    }
+  }
+  @keyframes float {
+    0% {
+      -webkit-transform: translatey(-23px);
+              transform: translatey(-23px);
+    }
+    50% {
+      -webkit-transform: translatey(-12px);
+              transform: translatey(-12px);
+    }
+    100% {
+      -webkit-transform: translatey(-23px);
+              transform: translatey(-23px);
+    }
+  }
+  .container_hero_content .chapt-icon .scroll-icon {
+    -webkit-transition: 0.9s all ease-in;
+    transition: 0.9s all ease-in;
+    fill: #EAEAEA;
+    -webkit-transition: all 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-animation: circleSpin 8s linear infinite;
+            animation: circleSpin 8s linear infinite;
+  }
+  .container_hero_content .chapt-icon .scroll-arrow {
+    overflow: hidden;
+  }
+  .container_hero_content .chapt-icon .scroll-arrow svg {
+    fill: #EAEAEA;
+    height: 148px;
+    margin-top: 30px;
+    -webkit-transform: translate(0px, -210px);
+            transform: translate(0px, -210px);
+    opacity: 0;
+    -webkit-transition: 0.3s all ease-in;
+    transition: 0.3s all ease-in;
+  }
+  .container_lapi {
+    display: none;
+    z-index: 60;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+  }
+  .container_lapi .container_lapi_content {
+    width: inherit;
+    height: inherit;
+    position: relative;
+  }
+  .container_lapi .container_lapi_content .enigma_bg_container_2 {
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1 !important;
+  }
+  .container_lapi .container_lapi_content .enigma_bg_container_2 .enigma_bg_2 {
+    position: relative;
+    top: 50% !important;
+    -webkit-transform: translateY(-50%) !important;
+            transform: translateY(-50%) !important;
+    width: 100%;
+    text-align: center;
+    font-family: 'NeueHaasDisplay-me';
+    font-size: 25vw;
+    font-weight: 500;
+  }
+  .container_lapi .container_lapi_content .enigma_bg_container_2 .enigma_bg_2 img {
+    width: 100%;
+  }
+  .container_lapi .container_lapi_content .enigma_bg_container_2 .enigma_bg_2 {
+    color: #8e8e93;
+  }
+  .container_lapi .container_lapi_content .enigma_bg_container {
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 81 !important;
+  }
+  .container_lapi .container_lapi_content .enigma_bg_container .enigma_bg {
+    position: relative;
+    top: 50% !important;
+    -webkit-transform: translateY(-50%) !important;
+            transform: translateY(-50%) !important;
+    width: 100%;
+    text-align: center;
+    font-family: 'NeueHaasDisplay-roman';
+    letter-spacing: 3px;
+    font-size: 6vw;
+    font-weight: 600;
+  }
+  .container_lapi .container_lapi_content .enigma_bg_container .enigma_bg {
+    color: #fff;
+  }
+  .container_lapi .container_lapi_content .container_lapi_content_together {
+    position: relative;
+    width: inherit;
+    height: inherit;
+  }
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+  }
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div {
+    position: relative;
+    z-index: 70 !important;
+    width: auto;
+    height: 38vh;
+  }
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_pro {
+    content: url('/assets/resources/img/MacBook_Pro.png');
+    position: relative;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    overflow: hidden;
+    width: auto;
+    height: 100%;
+    z-index: 80 !important;
+  }
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame {
+    z-index: 74 !important;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    margin: auto;
+    top: -47px;
+    bottom: 0;
+    left: 2px;
+    right: 0;
+    width: calc(78%);
+    height: calc(73%);
+    overflow: hidden;
+    background: #000;
+    border-radius: 0;
+  }
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame video {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 1vh;
+    left: 3%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    overflow: hidden;
+    z-index: 67;
+  }
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 55vh;
+    margin: auto;
+    top: 15px;
+    z-index: -1;
+    opacity: 0.2;
+    -webkit-filter: invert(1) blur(5px);
+            filter: invert(1) blur(5px);
+  }
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading {
+    position: relative;
+    font-family: 'NeueHaasDisplay-Mediu';
+    color: #9d9d9d;
+    letter-spacing: 2px;
+    text-align: left;
+    font-size: 31px;
+    line-height: 69px;
+    text-transform: capitalize;
+  }
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading p {
+    font-family: 'NeueHaasDisplay-Mediu';
+  }
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading span {
+    font-style: italic;
+    color: #fff;
+    margin-right: 5px;
+    font-family: 'NeueHaasDisplay-blod';
+  }
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one {
+    width: 85%;
+    height: auto;
+    position: absolute;
+    bottom: 2vh;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 67;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.4);
+    content: "";
+  }
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content svg {
+    width: 5vh;
+    padding-bottom: 5px;
+  }
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_heading {
+    position: relative;
+    font-family: 'NeueHaasDisplay-Mediu';
+    font-size: 2.5vh;
+    line-height: 1.5;
+    color: #fff;
+  }
+  .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_text {
+    padding-top: 5px;
+    position: relative;
+    font-family: 'NeueHaasDisplay-Mediu';
+    font-size: 1.75vh;
+    line-height: 1.5;
+    color: #8e8e93;
+  }
+  .t-lead {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-size: 1.7em;
+    font-variant: small-caps;
+    line-height: 1.5;
+    /* font-weight: 400; */
+    text-shadow: none;
+    font-synthesis: none;
+    letter-spacing: 0.07em;
+    /* text-transform: uppercase; */
+    font-family: 'Ageo';
+  }
+  .o-container {
+    padding-right: 0em;
+    padding-left: 0em;
+  }
+  .c-hm-us_top {
+    padding-top: 3.6em;
   }
 }
 #abt {
@@ -5230,6 +5230,9 @@ header {
 }
 .t-d3-fluid.cta {
   white-space: nowrap;
+}
+.t-d3-fluid.cta a {
+  color: #2b2b2b;
 }
 .w-inline-block {
   max-width: 100%;
@@ -14527,10 +14530,10 @@ section.horizontal .animation-wrap.to-left {
 }
 .ar-work {
   display: block;
-  margin-right: 100px;
+  margin-right: 190px;
   -ms-flex-preferred-size: 40vw;
   flex-basis: 40vw;
-  min-width: 40vw;
+  min-width: 50vw;
   position: relative;
 }
 .ar-work a {
@@ -14571,7 +14574,7 @@ body.dark .ar-work-cat,
 }
 .recent-works-bg-text {
   position: absolute;
-  top: 0;
+  top: 43%;
   -webkit-transform: translateX(50%);
   transform: translateX(50%);
   font-size: 200px;

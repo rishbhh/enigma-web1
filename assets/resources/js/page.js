@@ -415,7 +415,7 @@ ScrollTrigger.config({
 window.addEventListener('orientationchange', () => {
     window.location.reload();
   });
-  const desktop_size = window.matchMedia('(min-width: 1150px)');
+ 
 // Moobile Js
 const mobile_size = window.matchMedia('(max-width: 900px)');
 
@@ -521,6 +521,7 @@ function HeroSection() {
     // fixed_scrol.to('.lapi-content p ', { opacity: 0, duration: 2, ease: 'power1.inOut', }, 21);
    
 }
+HeroSection()
      
 
     function port() {
@@ -609,14 +610,12 @@ function HeroSection() {
 
 
 // desktop
-if (desktop_size.matches) { 
-    ScrollTrigger.config({
-        autoRefreshEvents: 'visibilitychange,DOMContentLoaded,load',
-    });
-    $(document).ready(function () {
-       
-    });
-}
+// if (desktop_size.matches) { 
+//     ScrollTrigger.config({
+//         autoRefreshEvents: 'visibilitychange,DOMContentLoaded,load',
+//     });
+
+// }
 
 
 
