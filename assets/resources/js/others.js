@@ -10,12 +10,12 @@ gsap.utils.toArray(".next").forEach((el) => {
         },
         startFollow = () => document.addEventListener("mousemove", align),
         stopFollow = () => document.removeEventListener("mousemove", align),
-        fade = gsap.to(image, { autoAlpha: 1, opacity: 0.7, scale: 1, ease: "none", paused: true, onReverseComplete: stopFollow });
+        fade = gsap.to(image, { autoAlpha: 1, opacity: 0.7, scale: 1,duration:0.5, ease: "power2.inOut", paused: true, onReverseComplete: stopFollow },"-=0.5");
 
     el.addEventListener('mouseenter', (e) => {
         fade.play();
-        startFollow();
-        align(e);
+        // startFollow();
+        // align(e);
     });
 
     el.addEventListener('mouseleave', () => fade.reverse());

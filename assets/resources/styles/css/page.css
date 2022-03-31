@@ -6661,14 +6661,14 @@ header {
 }
 .next img.swipeimage {
   position: absolute;
-  width: 200px;
-  height: 200px;
-  top: -80px;
-  left: -360px;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  width: 307px;
+  height: 230px;
+  top: -50px;
+  right: 0;
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: 9;
   opacity: 0;
   visibility: hidden;
@@ -6962,8 +6962,8 @@ header {
   transition: -webkit-transform 0.8s ease-out;
   transition: transform 0.8s ease-out;
   transition: transform 0.8s ease-out, -webkit-transform 0.8s ease-out;
-  -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 .is-inview .text_anim.spline_p div:nth-child(2) span {
   -webkit-transition-delay: 0.45s;
@@ -7092,7 +7092,6 @@ header {
 #studio_p div.text_anim.spline_p,
 #filosofia div.text_anim.spline_p {
   padding-left: 0.25vw;
-  font-family: 'NeueHaasDisplay-roman';
   letter-spacing: 2px;
   margin-top: 50px;
   line-height: 2;
@@ -7168,6 +7167,7 @@ header {
   position: absolute;
   margin: 0px;
   bottom: 0px;
+  font-family: 'NeueHaasDisplay-me';
   mix-blend-mode: multiply;
 }
 #colori ul {
@@ -7251,19 +7251,26 @@ header {
 .blocco div.text_anim {
   grid-column: 0.13043478;
 }
+#portf p,
+#colori p {
+  margin-top: 30px;
+  padding-left: 0;
+  font-size: calc(15px + 10 * ((100vw - 320px) / 1920));
+  line-height: calc(28px + 10 * ((100vw - 320px) / 1920));
+}
 .blocco h2 {
   color: var(--black);
-  margin: 0px;
   font-size: calc(50px + 10 * ((100vw - 320px) / 1920));
   line-height: calc(55px + 10 * ((100vw - 320px) / 1920));
-  margin-bottom: 50px;
+  font-family: 'NeueHaasDisplay-me';
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
-.blocco div.spline_p {
+.blocco div p {
+  margin-top: 30px;
   padding-left: 0;
-  font-size: calc(18px + 10 * ((100vw - 320px) / 1920));
+  font-size: calc(15px + 10 * ((100vw - 320px) / 1920));
   line-height: calc(28px + 10 * ((100vw - 320px) / 1920));
-  color: var(--grey);
   padding-bottom: 150px;
 }
 .blocco div.right_block,
@@ -7354,7 +7361,6 @@ header {
   font-size: 14px;
   letter-spacing: 1px;
   letter-spacing: 1.2;
-  font-family: "NeueHaasDisplay-roman";
 }
 .cer .flex-con .f-left .hdn {
   margin-top: 10%;
@@ -7543,7 +7549,8 @@ header {
 }
 /*####### next #######*/
 .next-project {
-  text-align: center;
+  background: #efefef;
+  text-align: left;
   height: 30.107143vw;
   max-height: 909px;
   display: -webkit-box;
@@ -7558,36 +7565,37 @@ header {
   padding-bottom: 5vw;
 }
 .next-project__content {
-  width: 66.66666667vw;
+  width: 76.666667vw;
 }
 .txt--p5 {
-  font-size: 1.8em;
+  font-size: 1.2em;
   line-height: 1.66666667em;
-  letter-spacing: -0.00555556em;
-  font-weight: 400;
+  letter-spacing: 0.4px;
   position: relative;
+  text-transform: capitalize;
 }
 .next-project__content .txt--p5 {
-  margin-bottom: 1.5em;
+  margin-bottom: 0em;
 }
 .title--title2 {
   position: relative;
-  font-family: 'Bebas Neue';
+  font-family: 'NeueHaasDisplay-me';
   font-size: 6em;
   line-height: 0.94166667em;
-  letter-spacing: -0.01783333em;
+  letter-spacing: 3px;
   font-weight: 600;
+  color: #2b2b2b;
 }
 .next-project__content a {
   display: inline-block;
-  text-align: center;
+  text-align: left;
   position: relative;
   padding-bottom: 0.3em;
 }
 .next-project__content a span {
   display: block;
   color: transparent;
-  color: #c7c7c7;
+  color: #2b2b2b;
 }
 .next-project__content a span::after {
   content: attr(data-label);
@@ -7618,23 +7626,23 @@ header {
 }
 .next-project__content a svg {
   position: absolute;
-  bottom: -62px;
+  top: 0;
   width: 62px;
-  left: 50%;
-  margin-left: -31px;
+  right: 0;
+  stroke: #2b2b2b;
+  margin-left: 0;
   -webkit-transform-origin: center;
   transform-origin: center;
-  -webkit-transform: translateY(50px) rotate(-45deg);
-  transform: translateY(50px) rotate(-45deg);
-  opacity: 0;
-  -webkit-transition: transform 0.4s cubic-bezier(0.18, 0, 0.16, 1), opacity 0.4s cubic-bezier(0.18, 0, 0.16, 1);
-  -webkit-transition: opacity 0.4s cubic-bezier(0.18, 0, 0.16, 1), -webkit-transform 0.4s cubic-bezier(0.18, 0, 0.16, 1);
-  transition: opacity 0.4s cubic-bezier(0.18, 0, 0.16, 1), -webkit-transform 0.4s cubic-bezier(0.18, 0, 0.16, 1);
-  transition: transform 0.4s cubic-bezier(0.18, 0, 0.16, 1), opacity 0.4s cubic-bezier(0.18, 0, 0.16, 1);
-  transition: transform 0.4s cubic-bezier(0.18, 0, 0.16, 1), opacity 0.4s cubic-bezier(0.18, 0, 0.16, 1), -webkit-transform 0.4s cubic-bezier(0.18, 0, 0.16, 1);
+  -webkit-transform: translateY(0px) rotate(-45deg);
+  transform: translateY(0px) rotate(-45deg);
+  opacity: 1;
+  transition: opacity 0.2s cubic-bezier(0.18, 0, 0.16, 1), -webkit-transform 0.2s cubic-bezier(0.18, 0, 0.16, 1);
+  -webkit-transition: opacity 0.2s cubic-bezier(0.18, 0, 0.16, 1), -webkit-transform 0.2s cubic-bezier(0.18, 0, 0.16, 1);
+  transition: transform 0.2s cubic-bezier(0.18, 0, 0.16, 1), opacity 0.2s cubic-bezier(0.18, 0, 0.16, 1);
+  transition: transform 0.2s cubic-bezier(0.18, 0, 0.16, 1), opacity 0.2s cubic-bezier(0.18, 0, 0.16, 1), -webkit-transform 0.2s cubic-bezier(0.18, 0, 0.16, 1);
 }
 .next-project__content a:hover svg {
-  opacity: 1;
+  opacity: 0;
   -webkit-transform: translateY(0) rotate(0deg);
   transform: translateY(0) rotate(0deg);
 }
