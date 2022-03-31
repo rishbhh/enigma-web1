@@ -898,7 +898,7 @@ h6 {
 }
 
 .c-scrollbar_thumb {
-  background-color: #000;
+  background: linear-gradient(49deg, #2d4de00a 0, #9f71f0 30%, #fc6277 58%, #f8ef6f4a 95%);
   position: absolute;
   top: 0;
   left: 0;
