@@ -259,27 +259,34 @@
                 </nav>
                 <div class="nav-second">
                     <div class="Menu-socials">
-                        <div class="Menu-socialsItem">
+                        <div class="Menu-socialsItem" data-cursor="-opaque">
                             <a href="https://www.facebook.com/weareenigma/" target="_blank" rel="noopener"
                                 class="Menu-socialsItemLink">
                                 <span class="Menu-socialsItemLabel">Facebook</span>
                             </a>
                         </div>
-                        <div class="Menu-socialsItem">
+                        <div class="Menu-socialsItem" data-cursor="-opaque">
                             <a href="https://www.instagram.com/enigmadigital/?hl=en" target="_blank" rel="noopener"
                                 class="Menu-socialsItemLink">
                                 <span class="Menu-socialsItemLabel">Instagram</span>
                             </a>
                         </div>
-                        <div class="Menu-socialsItem">
+                        <div class="Menu-socialsItem" data-cursor="-opaque">
                             <a href="https://www.linkedin.com/company/enigma-digital-in/mycompany/" target="_blank"
                                 rel="noopener" class="Menu-socialsItemLink">
                                 <span class="Menu-socialsItemLabel">Linkedin</span>
                             </a>
                         </div>
-                        <div class="Menu-socialsItem">
-                            <a href="" target="_blank" rel="noopener" class="Menu-socialsItemLink">
+                        <div class="Menu-socialsItem" data-cursor="-opaque">
+                            <a href="https://twitter.com/_EnigmaDigital" target="_blank" rel="noopener"
+                                class="Menu-socialsItemLink">
                                 <span class="Menu-socialsItemLabel">Twitter</span>
+                            </a>
+                        </div>
+                        <div class="Menu-socialsItem" data-cursor="-opaque">
+                            <a href="https://www.behance.net/enigma-digital" target="_blank" rel="noopener"
+                                class="Menu-socialsItemLink">
+                                <span class="Menu-socialsItemLabel">behance</span>
                             </a>
                         </div>
                     </div>
@@ -559,10 +566,12 @@
                                     <div class="o-media o-media1 hm-us">
                                         <div data-loop="true" data-wf-ignore="true"
                                             class="o-media_obj w-background-video w-background-video-atom left-b">
-                                            <video autoplay="" loop="" style="background-image:url" muted=""
+                                            <!-- <video autoplay="" loop="" style="background-image:url" muted=""
                                                 playsinline="" data-wf-ignore="true" data-object-fit="cover">
                                                 <source src="/assets/resources/left.mp4" data-wf-ignore="true">
-                                            </video>
+                                            </video> -->
+                                            <video src="/assets/resources/left.mp4" autoPlay muted playsinline loop
+                                                id="beach-waves"></video>
                                         </div>
                                     </div>
                                     <div class="c-hm-us_s2">
@@ -572,17 +581,19 @@
                                         <div class="c-hm-us_title">
                                             <h2 class="t-d3-fluid cta" data-magnetic data-cursor="-opaque"> <a
                                                     href="contact.html"><span>
-                                                        Say, Hello! 👋
+                                                        Say, Hello! <span class="wave">👋</span>
                                                     </span></a> </h2>
                                         </div>
 
                                     </div>
                                     <div class="o-media o-media2 hm-us">
                                         <div class="o-media_obj w-background-video w-background-video-atom right-b">
-                                            <video autoplay="" loop="" style="background-image:url" muted=""
+                                            <!-- <video autoplay="" loop="" style="background-image:url" muted=""
                                                 playsinline="" data-wf-ignore="true" data-object-fit="cover">
                                                 <source src="/assets/resources/right.mp4" data-wf-ignore="true">
-                                            </video>
+                                            </video> -->
+                                            <video src="/assets/resources/right.mp4" autoPlay muted playsinline loop
+                                                id="beach-waves"></video>
                                         </div>
                                     </div>
                                 </div>
@@ -612,7 +623,7 @@
                                         Or Take Your<br>Brand To The Next level?</h4>
                                     <div class="c-hm-us_title">
                                         <h2 class="t-d3-fluid cta" data-magnetic data-cursor="-opaque"> <a><span>
-                                                    Say, Hello! 👋
+                                                    Say, Hello! <span class="wave">👋</span>
                                                 </span></a> </h2>
                                     </div>
 
@@ -892,6 +903,7 @@
 
                     </div>
                 </section>
+
                 <!--Section-->
                 <div class="section-w" style="background:#000;" data-humcolor="#fff">
 
@@ -1206,7 +1218,7 @@
                                     <ul>
                                         <li>
                                             <a href="https://www.facebook.com/in.enigmadigital" target="_blank"
-                                                class="insta"><span>
+                                                class="insta" data-cursor="-opaque"><span>
                                                     <lottie-player class="so" src="facebook.json"
                                                         background="transparent" speed="1"
                                                         style="width: 15px; height: 20px;" hover></lottie-player>
@@ -1214,7 +1226,7 @@
                                         </li>
                                         <li>
                                             <a href="https://www.instagram.com/enigmadigital/" target="_blank"
-                                                class="face"><span>
+                                                class="face" data-cursor="-opaque"><span>
                                                     <lottie-player class="so" src="Instagram-logo.json"
                                                         background="transparent" speed="1"
                                                         style="width: 20px; height: 20px;" hover></lottie-player>
@@ -1222,7 +1234,7 @@
                                         </li>
                                         <li>
                                             <a href="https://www.linkedin.com/company/in-enigmadigital" target="_blank"
-                                                class="lin"><span>
+                                                class="lin" data-cursor="-opaque"><span>
                                                     <lottie-player class="so" src="linkedin.json"
                                                         background="transparent" speed="1"
                                                         style="width: 20px; height: 20px;" hover></lottie-player>
@@ -1230,8 +1242,8 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="https://twitter.com/_EnigmaDigital" target="_blank"
-                                                class="twit"><span>
+                                            <a href="https://twitter.com/_EnigmaDigital" target="_blank" class="twit"
+                                                data-cursor="-opaque"><span>
                                                     <lottie-player class="so" src="twitter.json"
                                                         background="transparent" speed="1"
                                                         style="width: 20px; height: 20px;" hover></lottie-player>
@@ -1239,7 +1251,7 @@
                                         </li>
                                         <li>
                                             <a href="https://www.behance.net/enigma-digital" target="_blank"
-                                                class="face"><span>
+                                                class="face" data-cursor="-opaque"><span>
                                                     <lottie-player class="so" src="behance.json"
                                                         background="transparent" speed="1"
                                                         style="width: 20px; height: 20px;" hover></lottie-player>

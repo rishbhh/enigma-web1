@@ -608,6 +608,26 @@ HeroSection()
 
 }
 
+function playVideo(el) {
+    let vid = document.getElementById(el);
+    vid.play();
+    console.log('playing video');
+  }
+  
+  function pauseVideo(el) {
+    let vid = document.getElementById(el);
+    vid.pause();
+    console.log('pausing video');
+  }
+  
+    
+    ScrollTrigger.create({
+      trigger: '.o-container',
+      start: 'top top',
+      end: '+=500',
+      onToggle: self => self.isActive ? playVideo("beach-waves") : pauseVideo("beach-waves"),
+      toggleActions: 'play pause reverse none'
+    })
 
 // desktop
 // if (desktop_size.matches) { 
