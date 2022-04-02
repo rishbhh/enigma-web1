@@ -12956,7 +12956,7 @@ ul.aw-cats {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(0, 0, 0, 0.975);
+  background: rgba(255, 255, 255, 0.975);
   height: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12986,9 +12986,9 @@ ul.aw-cats {
 }
 #searchbox {
   background: transparent;
-  border: solid #fff;
+  border: solid #000000;
   border-width: 0 0 1px 0;
-  color: #fff;
+  color: #000000;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
@@ -12997,10 +12997,11 @@ ul.aw-cats {
   max-width: 50%;
   outline: 0;
   padding: 2rem 1rem;
+  font-family: 'Ageo';
 }
 .close-btn {
   display: none;
-  color: #fff;
+  color: #000000;
   font-size: 2rem;
   position: absolute;
   top: 0.5rem;
