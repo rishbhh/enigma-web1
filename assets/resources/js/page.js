@@ -637,7 +637,9 @@ function playVideo(el) {
 
 // }
 
-
+var changeClass = function(name){
+    $('#search, #cl').removeAttr('class').addClass(name);
+  }
 
 
 

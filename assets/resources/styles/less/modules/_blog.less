@@ -477,6 +477,139 @@
     }
 }
 
+.page-header {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding-top: 20%;
+    background: #EBEBEB;
+    margin-bottom: 150px;
+    z-index: 2;
+
+    .wrapper-small {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 100px;
+
+        .page-title {
+            display: block;
+            float: left;
+            padding: 0 15px;
+
+            h1.big-title {
+                font-size: 90px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 100px;
+                margin-left: -7px;
+                margin-top: 20px;
+                font-family: 'NeueHaasDisplay-me';
+                margin-bottom: 69px;
+                padding-right: 10px;
+            }
+
+            h1.big-title {
+                margin-bottom: 20px;
+                margin-top: 0;
+                line-height: 20px;
+                font-size: 110px;
+            }
+        }
+    }
+}
+
+.aw-categories {
+    display: block;
+    margin-bottom: 50px;
+    padding: 0 5%;
+
+    ul.aw-cats li.active {
+        color: #191b1d;
+    }
+
+    ul.aw-cats li {
+        display: inline-block;
+        text-decoration: none;
+        color: rgba(25, 27, 29, .6);
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        cursor: pointer;
+        font-family: 'NeueHaasDisplay-me';
+    }
+
+    ul.aw-cats li.active::after {
+        color: #dbdbdb;
+    }
+
+    ul.aw-cats li::after {
+        content: "/";
+        margin: 0 10px;
+    }
+}
+
+ul.aw-cats {
+    padding: 0;
+    list-style: none;
+}
+
+/**********************/
+/* Full screen search */
+/**********************/
+
+#search {
+    align-items: center;
+    background: rgba(0, 0, 0, .975);
+    height: 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    position: fixed;
+    transition: all .5s;
+    width: 100vw;
+    will-change: transform, opacity;
+    z-index: -1;
+
+    &:target {
+        height: 100vh !important;
+        opacity: 1;
+        width: 100vw !important;
+        z-index: 2;
+
+        .close-btn {
+            display: block;
+        }
+    }
+}
+
+#cl a:hover {
+    color: #000;
+}
+
+#searchbox {
+    background: transparent;
+    border: solid #fff;
+    border-width: 0 0 1px 0;
+    color: #fff;
+    flex: 1 0 auto;
+    font-size: 2rem;
+    height: 2rem;
+    max-width: 50%;
+    outline: 0;
+    padding: 2rem 1rem;
+}
+
+.close-btn {
+    display: none;
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: .5rem;
+    right: 2rem;
+    font-family: 'Ageo';
+}
+
 .author {
     margin-top: 10px !important;
 
@@ -587,7 +720,7 @@
 }
 
 .recent-post {
-    margin-top: 17%;
+    margin-top: 8%;
     margin-bottom: 8%;
     padding: 0 3%;
 
