@@ -1886,7 +1886,7 @@ header {
   z-index: 999;
 }
 .en-logo img {
-  width: 50px;
+  width: 35px;
 }
 .logo img {
   width: 35px;
@@ -14900,6 +14900,77 @@ body.dark .ar-work-cat,
     width: 86%;
     margin-bottom: 7%;
   }
+}
+.col-12 {
+  -ms-flex: 0 0 100%;
+  -webkit-box-flex: 0;
+          flex: 0 0 100%;
+  max-width: 100%;
+}
+.site-footer {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .site-footer.footer-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 50px;
+    /* z-index: -1; */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .site-footer.footer-fixed > .container,
+  .site-footer.footer-fixed > .container-fluid {
+    min-height: 50px;
+  }
+  .container,
+  .container-fluid {
+    position: relative;
+  }
+}
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 992px) {
+  .oli-fullpage .oli-section {
+    padding-left: 50px;
+    padding-right: 50px;
+    position: absolute;
+    top: 0;
+    font-family: 'NeueHaasDisplay-me';
+    z-index: -1;
+    width: 100%;
+  }
+  .col-lg-8 {
+    -ms-flex: 0 0 66.666667%;
+    -webkit-box-flex: 0;
+            flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .ml-lg-auto,
+  .mx-lg-auto {
+    margin-left: auto!important;
+  }
+  .mr-lg-auto,
+  .mx-lg-auto {
+    margin-right: auto!important;
+  }
+}
+.min-vh--100 {
+  min-height: 100vh;
 }
 .footer {
   height: 100vh;
