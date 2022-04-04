@@ -38,7 +38,7 @@ if (strlen($message) < 5) { //check emtpy message
     die($output);
 }
 
-$to = "info@wearecoders.net"; //Replace with recipient email address
+$to = "rishabh@weareenigma.com"; //Replace with recipient email address
 //proceed with PHP email.
 $headers = 'From: ' . $useremail . '' . "\r\n" .
         'Reply-To: ' . $useremail . '' . "\r\n" .

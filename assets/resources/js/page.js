@@ -1399,72 +1399,72 @@ function splt() {
 
 
 
-$("#enform_submit_button_2").click(function() { 
-    //get input field values
-    var name            = $('#name').val(); 
-    var email = $('#email').val();
-    var mobile           = $('#number').val();
-    var company         = $('#company').val();
-    var flag = true;
-    /********validate all our form fields***********/
-    /* Name field validation  */
-    if(name==""){ 
-        $('#name').css('border-color','red'); 
-        flag = false;
-    }
-    /* email field validation  */
-    if(email==""){ 
-        $('#email').css('border-color','red'); 
-        flag = false;
-    } 
-      /* mobile field validation  */
-      if(mobile==""){ 
-        $('#number').css('border-color','red'); 
-        flag = false;
-    } 
-    /* company field validation */
-    if(company=="") {  
-       $('#company').css('border-color','red'); 
-        flag = false;
-    }
-    /********Validation end here ****/
-    /* If all are ok then we send ajax request to email_send.php *******/
-    if(flag) 
-    {
-        $.ajax({
-            type: 'post',
-            url: "mail.php", 
-            dataType: 'json',
-            data: 'username='+name+'&useremail='+email+'&message='+message,
-            beforeSend: function() {
-                $('#enform_submit_button_2').attr('disabled', true);
-                $('#enform_submit_button_2').after('<span class="wait">&nbsp;<img src="image/loading.gif" alt="" /></span>');
-            },
-            complete: function() {
-                $('#enform_submit_button_2').attr('disabled', false);
-                $('.wait').remove();
-            },  
-            success: function(data)
-            {
-                if(data.type == 'error')
-                {
-                    output = '<div class="error">'+data.text+'</div>';
-                }else{
-                    output = '<div class="success">'+data.text+'</div>';
-                    $('input[type=text]').val(''); 
-                    $('#contactform textarea').val(''); 
-                }
+// $("#enform_submit_button_2").click(function() { 
+//     //get input field values
+//     var name            = $('#name').val(); 
+//     var email = $('#email').val();
+//     var mobile           = $('#number').val();
+//     var company         = $('#company').val();
+//     var flag = true;
+//     /********validate all our form fields***********/
+//     /* Name field validation  */
+//     if(name==""){ 
+//         $('#name').css('border-color','red'); 
+//         flag = false;
+//     }
+//     /* email field validation  */
+//     if(email==""){ 
+//         $('#email').css('border-color','red'); 
+//         flag = false;
+//     } 
+//       /* mobile field validation  */
+//       if(mobile==""){ 
+//         $('#number').css('border-color','red'); 
+//         flag = false;
+//     } 
+//     /* company field validation */
+//     if(company=="") {  
+//        $('#company').css('border-color','red'); 
+//         flag = false;
+//     }
+//     /********Validation end here ****/
+//     /* If all are ok then we send ajax request to email_send.php *******/
+//     if(flag) 
+//     {
+//         $.ajax({
+//             type: 'post',
+//             url: "mail.php", 
+//             dataType: 'json',
+//             data: 'username='+name+'&useremail='+email+'&message='+message,
+//             beforeSend: function() {
+//                 $('#enform_submit_button_2').attr('disabled', true);
+//                 $('#enform_submit_button_2').after('<span class="wait">&nbsp;<img src="image/loading.gif" alt="" /></span>');
+//             },
+//             complete: function() {
+//                 $('#enform_submit_button_2').attr('disabled', false);
+//                 $('.wait').remove();
+//             },  
+//             success: function(data)
+//             {
+//                 if(data.type == 'error')
+//                 {
+//                     output = '<div class="error">'+data.text+'</div>';
+//                 }else{
+//                     output = '<div class="success">'+data.text+'</div>';
+//                     $('input[type=text]').val(''); 
+//                     $('#contactform textarea').val(''); 
+//                 }
 
-                $("#result").hide().html(output).slideDown();           
-                }
-        });
-    }
-});
-//reset previously set border colors and hide all message on .keyup()
-$("#contactform input, #contactform textarea").keyup(function() { 
-    $("#contactform input, #contactform textarea").css('border-color',''); 
-    $("#result").slideUp();
-});
+//                 $("#result").hide().html(output).slideDown();           
+//                 }
+//         });
+//     }
+// });
+// //reset previously set border colors and hide all message on .keyup()
+// $("#contactform input, #contactform textarea").keyup(function() { 
+//     $("#contactform input, #contactform textarea").css('border-color',''); 
+//     $("#result").slideUp();
+// });
 
 
 
