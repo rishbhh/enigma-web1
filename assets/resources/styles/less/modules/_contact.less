@@ -2,11 +2,12 @@
 /************************ contact page css start  ************************/
 /******************************************************************************/
 .lets {
-    margin-top: 12%;
-    padding:
-        30px 50px;
+    margin-top: 0;
+    padding: 30px 50px;
     overflow: hidden;
+    align-items: center;
     position: relative;
+    display: flex;
     height: 100vh;
 
     img {
@@ -227,6 +228,7 @@
     font-family: 'Ageo';
     text-transform: capitalize;
 }
+
 .contact-inner .enform_wrapper form .enform_body ul li .ginput_container input:focus::placeholder,
 .contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea:focus::placeholder {
     color: transparent;
@@ -268,6 +270,7 @@
     font-family: 'Ageo';
     // overflow: hidden;
 }
+
 .contact-inner .enform_wrapper ul.enform_fields li.gfield:after {
     content: '';
     position: absolute;
@@ -286,13 +289,14 @@
     -o-transform-origin: left center;
     transform-origin: left center;
     background: #171717;
-    -webkit-transition: -webkit-transform cubic-bezier(.23,1,.32,1) 1.2s;
-    transition: -webkit-transform cubic-bezier(.23,1,.32,1) 1.2s;
-    -o-transition: -o-transform cubic-bezier(.23,1,.32,1) 1.2s;
-    -moz-transition: transform cubic-bezier(.23,1,.32,1) 1.2s,-moz-transform cubic-bezier(.23,1,.32,1) 1.2s;
-    transition: transform cubic-bezier(.23,1,.32,1) 1.2s;
-    transition: transform cubic-bezier(.23,1,.32,1) 1.2s,-webkit-transform cubic-bezier(.23,1,.32,1) 1.2s,-moz-transform cubic-bezier(.23,1,.32,1) 1.2s,-o-transform cubic-bezier(.23,1,.32,1) 1.2s;
+    -webkit-transition: -webkit-transform cubic-bezier(.23, 1, .32, 1) 1.2s;
+    transition: -webkit-transform cubic-bezier(.23, 1, .32, 1) 1.2s;
+    -o-transition: -o-transform cubic-bezier(.23, 1, .32, 1) 1.2s;
+    -moz-transition: transform cubic-bezier(.23, 1, .32, 1) 1.2s, -moz-transform cubic-bezier(.23, 1, .32, 1) 1.2s;
+    transition: transform cubic-bezier(.23, 1, .32, 1) 1.2s;
+    transition: transform cubic-bezier(.23, 1, .32, 1) 1.2s, -webkit-transform cubic-bezier(.23, 1, .32, 1) 1.2s, -moz-transform cubic-bezier(.23, 1, .32, 1) 1.2s, -o-transform cubic-bezier(.23, 1, .32, 1) 1.2s;
 }
+
 .contact-inner .enform_wrapper ul.enform_fields li.gfield:hover:after {
     -webkit-transform: scaleX(1);
     -moz-transform: scaleX(1);
@@ -300,6 +304,7 @@
     -o-transform: scaleX(1);
     transform: scaleX(1);
 }
+
 .contact-inner .enform_wrapper form .enform_footer input[type="submit"] span,
 .enform_wrapper form .enform_footer #enform_submit_button_2 span {
     // position: relative;
@@ -309,16 +314,18 @@
         width: 12px;
         transition: all 0.3s ease-in-out;
         margin-top: 3px;
-    left: 67px;
+        left: 67px;
     }
 }
+
 .contact-inner .enform_wrapper form .enform_footer input[type="submit"] span,
 .enform_wrapper form .enform_footer #enform_submit_button_2 span:hover {
     img {
-    transform: rotate(90deg);
-    transition: all 0.3s ease-in-out;
+        transform: rotate(90deg);
+        transition: all 0.3s ease-in-out;
     }
 }
+
 .contact-inner .enform_wrapper form .enform_footer input[type="submit"] em,
 .enform_wrapper form .enform_footer #enform_submit_button_2 em {
     position: absolute;
