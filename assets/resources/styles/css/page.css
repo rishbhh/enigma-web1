@@ -14950,7 +14950,7 @@ body.dark .ar-work-cat,
     padding-right: 50px;
     position: absolute;
     top: 0;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: 'Ageo-SemiBold';
     z-index: -1;
     width: 100%;
   }
@@ -14971,6 +14971,15 @@ body.dark .ar-work-cat,
 }
 .min-vh--100 {
   min-height: 100vh;
+}
+.sub-1 {
+  font-size: 1.3em;
+}
+.main-h {
+  margin-bottom: 0;
+}
+.social-nav a i {
+  font-size: 16px;
 }
 .footer {
   height: 100vh;
