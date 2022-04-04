@@ -8692,6 +8692,20 @@ header {
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
 }
+.accordion-list .cont .en-btn_send span .arro img {
+  width: 10px;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), color-stop(75%, #d33333));
+  -webkit-mask-image: linear-gradient(to bottom, transparent 25%, #d33333 75%);
+  mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), color-stop(75%, #bf1d1d));
+  mask-image: linear-gradient(to bottom, transparent 25%, #bf1d1d 75%);
+  margin-left: 10px;
+}
+.accordion-list .cont .en-btn_send:hover .arro img {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 .accordion-list .cont .en-btn_send:after {
   background-image: linear-gradient(45deg, dodgerblue, purple, red, dodgerblue);
   background-size: 100% 500%;
