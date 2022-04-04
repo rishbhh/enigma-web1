@@ -341,10 +341,9 @@
                            <br /><span>Your Project.</span>
                         </h1>
                      </div>
-                     <div id="result"></div>
                      <div class='gf_browser_chrome enform_wrapper enform_legacy_markup_wrapper' id='enform_wrapper_2'>
                         <div id='gf_2' class='enform_anchor' tabindex='-1'></div>
-                        <form id='contactform'>
+                        <form method="post" action="/mail.php">
                            <div class='enform_body enform-body'>
                               <ul id='enform_fields_2'
                                  class='enform_fields top_label form_sublabel_below description_below'>
@@ -352,23 +351,24 @@
                                     class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible">
                                     <label class='gfield_label' for='input_2_1'>Name<span class="gfield_required"><span
                                              class="gfield_required gfield_required_asterisk">*</span></span></label>
-                                    <div class='ginput_container ginput_container_text'><input name='' id='name'
-                                          type='text' value='' class='medium' tabindex='49' placeholder='Name*'
-                                          required /></div>
+                                    <div class='ginput_container ginput_container_text'>
+                                       <input name='name' id='name' type='text' value='' class='medium' tabindex='49'
+                                          placeholder='Name*' required />
+                                    </div>
                                  </li>
                                  <li id="field_2_2"
                                     class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible">
                                     <label class='gfield_label' for='input_2_2'>Company Name<span
                                           class="gfield_required"><span
                                              class="gfield_required gfield_required_asterisk">*</span></span></label>
-                                    <div class='ginput_container ginput_container_text'><input name='' id='company'
-                                          type='text' value='' class='medium' tabindex='50' placeholder='Company Name*'
-                                          required /></div>
+                                    <div class='ginput_container ginput_container_text'><input name='company'
+                                          id='company' type='text' value='' class='medium' tabindex='50'
+                                          placeholder='Company Name*' required /></div>
                                  </li>
                                  <li id="field_2_3"
                                     class="gfield field_sublabel_below field_description_below gfield_visibility_visible">
                                     <label class='gfield_label' for='input_2_3'>Phone Number</label>
-                                    <div class='ginput_container ginput_container_text'><input name='' id='number'
+                                    <div class='ginput_container ginput_container_text'><input name='number' id='number'
                                           type='text' value='' class='medium' tabindex='51' placeholder='Phone Number'
                                           required /></div>
                                  </li>
@@ -376,17 +376,19 @@
                                     class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible">
                                     <label class='gfield_label' for='input_2_4'>Email<span class="gfield_required"><span
                                              class="gfield_required gfield_required_asterisk">*</span></span></label>
-                                    <div class='ginput_container ginput_container_email'> <input name='' id='email'
-                                          type='text' value='' class='medium' tabindex='52' placeholder='Email Address*'
-                                          required />
+                                    <div class='ginput_container ginput_container_email'> <input name='email' id='email'
+                                          type='email' value='' class='medium' tabindex='52'
+                                          placeholder='Email Address*' required />
                                     </div>
                                  </li>
                               </ul>
                            </div>
-                           <div class='enform_footer top_label'> <button class='button enform_button' data-magnetic=""
-                                 data-cursor="-opaque" id='enform_submit_button_2' type="submit">Submit <span><img
-                                       src="/assets/resources/img/arrow-icon-c-01.svg" /></span></button>
+                           <div class='enform_footer top_label'> <input class='button enform_button' data-magnetic=""
+                                 data-cursor="-opaque" id='enform_submit_button_2' type="submit"
+                                 value="Send Message">Submit <span><img
+                                    src="/assets/resources/img/arrow-icon-c-01.svg" /></span>
                            </div>
+                           <div class="success">We received your submission, thank you!</div>
                         </form>
                      </div>
 
@@ -529,72 +531,42 @@
 
    <script>
       var s = Splitting();
+      (function ($) {
+         'use strict';
+         var form = $('.contact__form'),
+            message = $('.contact__msg'),
+            form_data;
+         // Success function
+         function done_func(response) {
+            message.fadeIn().removeClass('alert-danger').addClass('alert-success');
+            message.text(response);
+            setTimeout(function () {
+               message.fadeOut();
+            }, 2000);
+            form.find('input:not([type="submit"]), textarea').val('');
+         }
+         // fail function
+         function fail_func(data) {
+            message.fadeIn().removeClass('alert-success').addClass('alert-success');
+            message.text(data.responseText);
+            setTimeout(function () {
+               message.fadeOut();
+            }, 2000);
+         }
 
-      $("#enform_submit_button_2").click(function () {
-         //get input field values
-         var name = $('#name').val();
-         var email = $('#email').val();
-         var mobile = $('#number').val();
-         var company = $('#company').val();
-         var flag = true;
-         /********validate all our form fields***********/
-         /* Name field validation  */
-         if (name == "") {
-            $('#name').css('border-color', 'red');
-            flag = false;
-         }
-         /* email field validation  */
-         if (email == "") {
-            $('#email').css('border-color', 'red');
-            flag = false;
-         }
-         /* mobile field validation  */
-         if (mobile == "") {
-            $('#number').css('border-color', 'red');
-            flag = false;
-         }
-         /* company field validation */
-         if (company == "") {
-            $('#company').css('border-color', 'red');
-            flag = false;
-         }
-         /********Validation end here ****/
-         /* If all are ok then we send ajax request to email_send.php *******/
-         if (flag) {
+         form.submit(function (e) {
+            e.preventDefault();
+            form_data = $(this).serialize();
             $.ajax({
-               type: 'post',
-               url: "mail.php",
-               dataType: 'json',
-               data: 'username=' + name + '&useremail=' + email + '&message=' + message,
-               beforeSend: function () {
-                  $('#enform_submit_button_2').attr('disabled', true);
-                  $('#enform_submit_button_2').after('<span class="wait">&nbsp;<img src="image/loading.gif" alt="" /></span>');
-               },
-               complete: function () {
-                  $('#enform_submit_button_2').attr('disabled', false);
-                  $('.wait').remove();
-               },
-               success: function (data) {
-                  if (data.type == 'error') {
-                     output = '<div class="error">' + data.text + '</div>';
-                  } else {
-                     output = '<div class="success">' + data.text + '</div>';
-                     $('input[type=text]').val('');
-                     $('#contactform textarea').val('');
-                  }
+               type: 'POST',
+               url: form.attr('action'),
+               data: form_data
+            })
+               .done(done_func)
+               .fail(fail_func);
+         });
 
-                  $("#result").hide().html(output).slideDown();
-               }
-            });
-         }
-      });
-      //reset previously set border colors and hide all message on .keyup()
-      $("#contactform input, #contactform textarea").keyup(function () {
-         $("#contactform input, #contactform textarea").css('border-color', '');
-         $("#result").slideUp();
-      });
-
-
+      })(jQuery);
    </script>
 </body>
 

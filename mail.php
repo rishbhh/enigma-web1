@@ -1,55 +1,48 @@
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-//check if its an ajax request, exit if not
-if (!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
+<?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    //exit script outputting json data
-    $output = json_encode(
-            array(
-                'type' => 'error',
-                'text' => 'Request must come from Ajax'
-    ));
+        # FIX: Replace this email with recipient email
+        $mail_to = "rishabh@weareenigma.com";
+        
+        # Sender Data
+        $subject = trim($_POST["subject"]);
+        $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["name"])));
+        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+        $phone = trim($_POST["phone"]);
+        $company = trim($_POST["company"]);
+        
+        if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone) OR empty($subject) OR empty($message)) {
+            # Set a 400 (bad request) response code and exit.
+            http_response_code(400);
+            echo "Please complete the form and try again.";
+            exit;
+        }
+        
+        # Mail Content
+        $content = "Name: $name\n";
+        $content .= "Email: $email\n\n";
+        $content .= "Phone: $phone\n";
+        $content .= "Company:\n$company\n";
 
-    die($output);
-}
+        # email headers.
+        $headers = "From: $name &lt;$email&gt;";
 
-//check $_POST vars are set, exit if any missing
-if (!isset($_POST["username"]) || !isset($_POST["useremail"]) || !isset($_POST["message"])) {
-    $output = json_encode(array('type' => 'error', 'text' => 'Input fields are empty!'));
-    die($output);
-}
+        # Send the email.
+        $success = mail($mail_to, $subject, $content, $headers);
+        if ($success) {
+            # Set a 200 (okay) response code.
+            http_response_code(200);
+            echo "Thank You! Your message has been sent.";
+        } else {
+            # Set a 500 (internal server error) response code.
+            http_response_code(500);
+            echo "Oops! Something went wrong, we couldn't send your message.";
+        }
 
-//Sanitize input data using PHP filter_var().
-$username = filter_var(trim($_POST["username"]), FILTER_SANITIZE_STRING);
-$useremail = filter_var(trim($_POST["useremail"]), FILTER_SANITIZE_EMAIL);
-$message = filter_var(trim($_POST["message"]), FILTER_SANITIZE_STRING);
-
-//additional php validation
-if (strlen($username) < 4) { // If length is less than 4 it will throw an HTTP error.
-    $output = json_encode(array('type' => 'error', 'text' => 'Name is too short!'));
-    die($output);
-}
-if (!filter_var($useremail, FILTER_VALIDATE_EMAIL)) { //email validation
-    $output = json_encode(array('type' => 'error', 'text' => 'Please enter a valid email!'));
-    die($output);
-}
-if (strlen($message) < 5) { //check emtpy message
-    $output = json_encode(array('type' => 'error', 'text' => 'Too short message!'));
-    die($output);
-}
-
-$to = "rishabh@weareenigma.com"; //Replace with recipient email address
-//proceed with PHP email.
-$headers = 'From: ' . $useremail . '' . "\r\n" .
-        'Reply-To: ' . $useremail . '' . "\r\n" .
-        'X-Mailer: PHP/' . phpversion();
-
-$sentMail = @mail($to, $subject, $message . '  -' . $username, $headers);
-//$sentMail = true;
-if (!$sentMail) {
-    $output = json_encode(array('type' => 'error', 'text' => 'Could not send mail! Please contact administrator.'));
-    die($output);
-} else {
-    $output = json_encode(array('type' => 'message', 'text' => 'Hi ' . $username . ' Thank you for your email'));
-    die($output);
-}
+        } else {
+            # Not a POST request, set a 403 (forbidden) response code.
+            http_response_code(403);
+            echo "There was a problem with your submission, please try again.";
+        }
+?>
