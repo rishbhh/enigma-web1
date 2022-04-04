@@ -2549,7 +2549,7 @@ header {
 @media only screen and (max-width: 1680px) {
   .nav-second {
     right: -3rem;
-    bottom: 10vh;
+    bottom: 0vh;
   }
 }
 @media only screen and (max-width: 1440px) {
@@ -3134,6 +3134,11 @@ header {
     font-size: 1.75vh;
     line-height: 1.5;
     color: #8e8e93;
+  }
+}
+@media only screen and (min-width: 1680px) {
+  .container_hero_content .small_heading {
+    font-size: 1.4em;
   }
 }
 @media only screen and (max-device-width: 1440px) {
@@ -7720,8 +7725,8 @@ header {
 }
 @media screen and (max-width: 1680px) {
   .c-hm-us_s2 {
-    padding-top: 16em;
-    padding-bottom: 16em;
+    padding-top: 14em;
+    padding-bottom: 14em;
   }
   .about-us-content {
     margin-left: 111px;
@@ -9871,6 +9876,9 @@ section.horizontal .animation-wrap.to-left {
   .services-s .image {
     width: 46%;
     /* height: 940px; */
+  }
+  .ser-hero .top-h .h1-r6 {
+    margin-left: 16%;
   }
   .services-s .content-p {
     padding-right: 0%;
@@ -13729,14 +13737,6 @@ ul.aw-cats {
           transform: translate(-50%, -50%);
   z-index: 0;
 }
-@media only screen and (min-width: 1680px) {
-  .contact-inner .enform_wrapper form .enform_footer input[type="submit"],
-  .enform_wrapper form .enform_footer #enform_submit_button_2 {
-    width: 7.917vw;
-    height: 7.917vw;
-    font-size: 0.744vw;
-  }
-}
 .contact-inner .enform_wrapper form .enform_footer input[type="submit"]:hover,
 .enform_wrapper form .enform_footer #enform_submit_button_2:hover span img {
   -webkit-transform: rotate(-46deg);
@@ -13750,11 +13750,6 @@ ul.aw-cats {
 .contact-inner .enform_wrapper .enform_footer {
   margin: 36px 0 0;
   padding: 0px;
-}
-@media only screen and (min-width: 1680px) {
-  .contact-inner .enform_wrapper .enform_footer {
-    margin: 5.714vw 0 0;
-  }
 }
 .contact-inner .enform_wrapper ul.enform_fields li.gfield {
   padding-right: 0px;
@@ -14030,26 +14025,12 @@ ul.aw-cats {
   font-family: 'Ageo-bold';
   margin-right: 20%;
 }
-@media only screen and (min-width: 1680px) {
-  .contact-left-img ul li h6 {
-    font-size: 1.19vw;
-    line-height: 1.19vw;
-    margin: 0 0 2.679vw;
-  }
-}
 .contact-left-img ul li p {
   margin: 0px;
   font-size: 1.45em;
   line-height: 30px;
   color: #1a1a1a;
   font-family: 'Ageo-bold';
-}
-@media only screen and (min-width: 1680px) {
-  .contact-left-img ul li p {
-    margin: 0px;
-    font-size: 1.19vw;
-    line-height: 1.57vw;
-  }
 }
 .contact-left-img ul li p a {
   color: #1a1a1a;
