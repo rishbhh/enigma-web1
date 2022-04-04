@@ -88,7 +88,7 @@
 .contact-form-block {
     width: 100%;
     padding-bottom: 190px;
-    padding-top: 233px;
+    padding-top: 8%;
     position: relative;
 }
 
@@ -150,36 +150,37 @@
     }
 }
 
-.contact-inner .gform_wrapper {
+.contact-inner .enform_wrapper {
     width: 100%;
     margin: 0px;
     max-width: 540px;
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-inner .gform_wrapper {
+    .contact-inner .enform_wrapper {
         max-width: 32.17vw;
     }
 }
 
 
 
-.contact-inner .gform_wrapper form .gform_body ul li .ginput_container input,
-.contact-inner .gform_wrapper form .gform_body ul li .ginput_container textarea {
+.contact-inner .enform_wrapper form .enform_body ul li .ginput_container input,
+.contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea {
     width: 100%;
     border: none;
-    border-bottom: 1px solid #000;
-    padding: 12px 0px 12px !important;
-    font-size: 20px !important;
+    border-bottom: 1px solid rgba(165, 165, 165, 0.764);
+    padding: 12px 0px 15px !important;
+    font-size: 17px !important;
     line-height: 20px !important;
-    // color: #fff;
+    color: #000;
+    font-family: 'Ageo';
     background-color: #1b1b1b00;
 }
 
 @media only screen and (min-width: 1680px) {
 
-    .contact-inner .gform_wrapper form .gform_body ul li .ginput_container input,
-    .contact-inner .gform_wrapper form .gform_body ul li .ginput_container textarea {
+    .contact-inner .enform_wrapper form .enform_body ul li .ginput_container input,
+    .contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea {
         padding: 0.71vw 0 0.71vw !important;
         font-size: 1.190vw !important;
         line-height: 1.190vw !important;
@@ -187,11 +188,11 @@
 }
 
 
-/*.gform_wrapper textarea{resize:vertical !important;}
+/*.enform_wrapper textarea{resize:vertical !important;}
 
-.mac .contact-inner .gform_wrapper form .gform_body ul li .ginput_container textarea{resize:vertical !important;}*/
+.mac .contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea{resize:vertical !important;}*/
 
-.contact-inner .gform_wrapper form .gform_body ul li .ginput_container textarea {
+.contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea {
     height: 48px;
     min-height: 48px;
     overflow: hidden;
@@ -199,38 +200,45 @@
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-inner .gform_wrapper form .gform_body ul li .ginput_container textarea {
+    .contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea {
         min-height: 2.85vw;
         height: 2.85vw;
     }
 }
 
-.contact-inner .gform_wrapper textarea.medium {
+.contact-inner .enform_wrapper textarea.medium {
     height: auto;
 }
 
-.contact-inner .gform_wrapper .top_label div.ginput_container {
+.contact-inner .enform_wrapper .top_label div.ginput_container {
     margin-top: 0px;
     display: flex;
     flex-direction: column;
 }
 
-.contact-inner .gform_wrapper form .gform_body ul li label {
+.contact-inner .enform_wrapper form .enform_body ul li label {
     display: none;
 }
 
-.contact-inner .gform_wrapper form .gform_body ul li .ginput_container input::placeholder,
-.contact-inner .gform_wrapper form .gform_body ul li .ginput_container textarea::placeholder {
+.contact-inner .enform_wrapper form .enform_body ul li .ginput_container input::placeholder,
+.contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea::placeholder {
     color: #8d8d8d;
-    font-size: 20px;
-    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-size: 17px;
+    font-family: 'Ageo';
+    text-transform: capitalize;
+}
+.contact-inner .enform_wrapper form .enform_body ul li .ginput_container input:focus::placeholder,
+.contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea:focus::placeholder {
+    color: transparent;
+    font-size: 17px;
+    font-family: 'Ageo';
     text-transform: capitalize;
 }
 
 @media only screen and (min-width: 1680px) {
 
-    .contact-inner .gform_wrapper form .gform_body ul li .ginput_container input::placeholder,
-    .contact-inner .gform_wrapper form .gform_body ul li .ginput_container textarea::placeholder {
+    .contact-inner .enform_wrapper form .enform_body ul li .ginput_container input::placeholder,
+    .contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea::placeholder {
         font-size: 1.190vw;
     }
 
@@ -243,10 +251,10 @@
     }
 }
 
-.contact-inner .gform_wrapper form .gform_footer input[type="submit"],
-.gform_wrapper form .gform_footer #gform_submit_button_2 {
+.contact-inner .enform_wrapper form .enform_footer input[type="submit"],
+.enform_wrapper form .enform_footer #enform_submit_button_2 {
 
-    font-size: 15px;
+    font-size: 18px;
     color: #000;
     border: none;
     transition: 0.4s;
@@ -257,22 +265,62 @@
     margin: 0px;
     font-family: inherit;
     position: relative;
+    font-family: 'Ageo';
     // overflow: hidden;
 }
-
-.contact-inner .gform_wrapper form .gform_footer input[type="submit"] span,
-.gform_wrapper form .gform_footer #gform_submit_button_2 span {
-    position: relative;
+.contact-inner .enform_wrapper ul.enform_fields li.gfield:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+    background: #171717;
+    -webkit-transition: -webkit-transform cubic-bezier(.23,1,.32,1) 1.2s;
+    transition: -webkit-transform cubic-bezier(.23,1,.32,1) 1.2s;
+    -o-transition: -o-transform cubic-bezier(.23,1,.32,1) 1.2s;
+    -moz-transition: transform cubic-bezier(.23,1,.32,1) 1.2s,-moz-transform cubic-bezier(.23,1,.32,1) 1.2s;
+    transition: transform cubic-bezier(.23,1,.32,1) 1.2s;
+    transition: transform cubic-bezier(.23,1,.32,1) 1.2s,-webkit-transform cubic-bezier(.23,1,.32,1) 1.2s,-moz-transform cubic-bezier(.23,1,.32,1) 1.2s,-o-transform cubic-bezier(.23,1,.32,1) 1.2s;
+}
+.contact-inner .enform_wrapper ul.enform_fields li.gfield:hover:after {
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.contact-inner .enform_wrapper form .enform_footer input[type="submit"] span,
+.enform_wrapper form .enform_footer #enform_submit_button_2 span {
+    // position: relative;
     z-index: 9;
 
     img {
-        width: 8px;
+        width: 12px;
         transition: all 0.3s ease-in-out;
+        margin-top: 3px;
+    left: 67px;
     }
 }
-
-.contact-inner .gform_wrapper form .gform_footer input[type="submit"] em,
-.gform_wrapper form .gform_footer #gform_submit_button_2 em {
+.contact-inner .enform_wrapper form .enform_footer input[type="submit"] span,
+.enform_wrapper form .enform_footer #enform_submit_button_2 span:hover {
+    img {
+    transform: rotate(90deg);
+    transition: all 0.3s ease-in-out;
+    }
+}
+.contact-inner .enform_wrapper form .enform_footer input[type="submit"] em,
+.enform_wrapper form .enform_footer #enform_submit_button_2 em {
     position: absolute;
     display: block;
     width: 0;
@@ -286,88 +334,89 @@
 
 @media only screen and (min-width: 1680px) {
 
-    .contact-inner .gform_wrapper form .gform_footer input[type="submit"],
-    .gform_wrapper form .gform_footer #gform_submit_button_2 {
+    .contact-inner .enform_wrapper form .enform_footer input[type="submit"],
+    .enform_wrapper form .enform_footer #enform_submit_button_2 {
         width: 7.917vw;
         height: 7.917vw;
         font-size: 0.744vw;
     }
 }
 
-.contact-inner .gform_wrapper form .gform_footer input[type="submit"]:hover,
-.gform_wrapper form .gform_footer #gform_submit_button_2:hover span img {
+.contact-inner .enform_wrapper form .enform_footer input[type="submit"]:hover,
+.enform_wrapper form .enform_footer #enform_submit_button_2:hover span img {
     transform: rotate(-46deg);
 }
 
-.contact-inner .gform_wrapper form .gform_footer input[type="submit"]:hover em,
-.gform_wrapper form .gform_footer #gform_submit_button_2:hover em {
+.contact-inner .enform_wrapper form .enform_footer input[type="submit"]:hover em,
+.enform_wrapper form .enform_footer #enform_submit_button_2:hover em {
     width: 225%;
     height: 225%;
 }
 
-.contact-inner .gform_wrapper .gform_footer {
+.contact-inner .enform_wrapper .enform_footer {
     margin: 36px 0 0;
     padding: 0px;
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-inner .gform_wrapper .gform_footer {
+    .contact-inner .enform_wrapper .enform_footer {
         margin: 5.714vw 0 0;
     }
 }
 
-.contact-inner .gform_wrapper ul.gform_fields li.gfield {
+.contact-inner .enform_wrapper ul.enform_fields li.gfield {
     padding-right: 0px;
     margin-bottom: 44px;
+    position: relative;
     margin-top: 0px;
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-inner .gform_wrapper ul.gform_fields li.gfield {
+    .contact-inner .enform_wrapper ul.enform_fields li.gfield {
         margin-bottom: 2.61vw;
     }
 }
 
-.contact-right .gform_wrapper li.gfield.gfield_error,
-.contact-right .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+.contact-right .enform_wrapper li.gfield.gfield_error,
+.contact-right .enform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
     margin-bottom: 44px !important;
     margin-top: 0px !important;
 }
 
 @media only screen and (min-width: 1680px) {
 
-    .contact-right .gform_wrapper li.gfield.gfield_error,
-    .contact-right .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+    .contact-right .enform_wrapper li.gfield.gfield_error,
+    .contact-right .enform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
         margin-bottom: 2.61vw !important;
     }
 }
 
-.gform_wrapper li.gfield.gfield_error.gfield_contains_required div.ginput_container,
-.gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label {
+.enform_wrapper li.gfield.gfield_error.gfield_contains_required div.ginput_container,
+.enform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label {
     margin-top: 0px !important;
 }
 
-.contact-inner .gform_wrapper li.gfield.gfield_error,
-.contact-inner .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+.contact-inner .enform_wrapper li.gfield.gfield_error,
+.contact-inner .enform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
     border: none;
     background: transparent;
 }
 
-.contact-inner .gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half) {
+.contact-inner .enform_wrapper.enform_validation_error .enform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half) {
     border: none;
     background-color: transparent;
     padding: 0px;
     max-width: 100% !important;
 }
 
-.gform_wrapper li.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.gform_wrapper li.gfield_error textarea {
+.enform_wrapper li.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+.enform_wrapper li.gfield_error textarea {
     border: none !important;
     border-bottom: 2px solid #ff4646 !important;
     margin-bottom: 0px !important;
 }
 
-.contact-inner .gform_wrapper .validation_message {
+.contact-inner .enform_wrapper .validation_message {
     padding-top: 5px !important;
     color: #ff4646;
     font-weight: 500;
@@ -377,13 +426,13 @@
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-inner .gform_wrapper .validation_message {
+    .contact-inner .enform_wrapper .validation_message {
         padding-top: 0.298vw !important;
         font-size: 0.833vw;
     }
 }
 
-.contact-inner .gform_wrapper div.validation_error {
+.contact-inner .enform_wrapper div.validation_error {
     border: none;
     padding: 0px;
     margin: 0px;
@@ -395,21 +444,21 @@
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-inner .gform_wrapper div.validation_error {
+    .contact-inner .enform_wrapper div.validation_error {
         font-size: 0.952vw;
         line-height: 1.429vw;
     }
 }
 
-.contact-inner img#gform_ajax_spinner_2 {
+.contact-inner img#enform_ajax_spinner_2 {
     display: none;
 }
 
-.contact-inner .gform_wrapper ul.gform_fields li.textarea .ginput_container_textarea {
+.contact-inner .enform_wrapper ul.enform_fields li.textarea .ginput_container_textarea {
     position: relative;
 }
 
-.contact-inner .gform_wrapper ul.gform_fields li.textarea .ginput_container_textarea:before {
+.contact-inner .enform_wrapper ul.enform_fields li.textarea .ginput_container_textarea:before {
     content: none;
     position: absolute;
     right: 0px;
@@ -423,13 +472,13 @@
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-inner .gform_wrapper ul.gform_fields li.textarea .ginput_container_textarea:before {
+    .contact-inner .enform_wrapper ul.enform_fields li.textarea .ginput_container_textarea:before {
         bottom: 0.41vw;
         width: 0.59vw;
     }
 }
 
-.contact-inner .gform_wrapper ul.gform_fields li.textarea .ginput_container_textarea:after {
+.contact-inner .enform_wrapper ul.enform_fields li.textarea .ginput_container_textarea:after {
     content: none;
     position: absolute;
     right: 0px;
@@ -443,17 +492,17 @@
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-inner .gform_wrapper ul.gform_fields li.textarea .ginput_container_textarea:after {
+    .contact-inner .enform_wrapper ul.enform_fields li.textarea .ginput_container_textarea:after {
         bottom: 0.65vw;
         width: 1.07vw;
     }
 }
 
-.contact-inner .gform_wrapper ul.gform_fields li.gfield.textarea {
+.contact-inner .enform_wrapper ul.enform_fields li.gfield.textarea {
     position: relative;
 }
 
-.contact-inner .gform_wrapper ul.gform_fields li.gfield.textarea:after {
+.contact-inner .enform_wrapper ul.enform_fields li.gfield.textarea:after {
     content: none;
     width: 16px;
     height: 16px;
@@ -465,7 +514,7 @@
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-inner .gform_wrapper ul.gform_fields li.gfield.textarea:after {
+    .contact-inner .enform_wrapper ul.enform_fields li.gfield.textarea:after {
         width: 0.95vw;
         height: 0.95vw;
     }
@@ -605,7 +654,7 @@
 
 
 .contact-left-img ul li:before {
-    content: "0"counter(list)"";
+    content: "0";
     position: absolute;
     left: 0px;
     top: 0px;
@@ -711,14 +760,14 @@
     display: block;
 }
 
-.contact-inner .gform_confirmation_wrapper {
+.contact-inner .enform_confirmation_wrapper {
     line-height: 15px;
     color: #676767;
     font-size: 20px;
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-inner .gform_confirmation_wrapper {
+    .contact-inner .enform_confirmation_wrapper {
         line-height: 0.89vw;
         font-size: 1.19vw;
     }
@@ -726,18 +775,18 @@
 
 /* contact onfirmation message css */
 
-.contact-right .gform_confirmation_wrapper {
+.contact-right .enform_confirmation_wrapper {
     width: 100%;
     max-width: 622px;
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-right .gform_confirmation_wrapper {
+    .contact-right .enform_confirmation_wrapper {
         max-width: 37.02vw;
     }
 }
 
-.contact-right .gform_confirmation_wrapper h1 {
+.contact-right .enform_confirmation_wrapper h1 {
     text-transform: uppercase;
     // color: #ffffff;
     font-size: 100px;
@@ -745,17 +794,17 @@
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-right .gform_confirmation_wrapper h1 {
+    .contact-right .enform_confirmation_wrapper h1 {
         font-size: 5.95vw;
         margin-bottom: 3.57vw;
     }
 }
 
-.contact-right .gform_confirmation_wrapper br {
+.contact-right .enform_confirmation_wrapper br {
     display: none;
 }
 
-.contact-right .gform_confirmation_wrapper p {
+.contact-right .enform_confirmation_wrapper p {
     // color: #ffffff;
     font-size: 24px;
     line-height: 34px;
@@ -763,14 +812,14 @@
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-right .gform_confirmation_wrapper p {
+    .contact-right .enform_confirmation_wrapper p {
         font-size: 1.42vw;
         line-height: 2.02vw;
         margin-bottom: 1.31vw;
     }
 }
 
-.contact-right .gform_confirmation_wrapper a {
+.contact-right .enform_confirmation_wrapper a {
     // color: #ffffff;
     font-size: 24px;
     line-height: 24px;
@@ -778,7 +827,7 @@
 }
 
 @media only screen and (min-width: 1680px) {
-    .contact-right .gform_confirmation_wrapper a {
+    .contact-right .enform_confirmation_wrapper a {
         font-size: 1.42vw;
         line-height: 1.42vw;
     }
@@ -787,19 +836,19 @@
 
 /* bigcommerce onfirmation message css */
 
-.tell-us-contact-form .gform_confirmation_wrapper {
+.tell-us-contact-form .enform_confirmation_wrapper {
     width: 100%;
     max-width: 622px;
 }
 
 @media only screen and (min-width: 1680px) {
-    .tell-us-contact-form .gform_confirmation_wrapper {
+    .tell-us-contact-form .enform_confirmation_wrapper {
         max-width: 37.02vw;
         margin-top: -0.3vw;
     }
 }
 
-.tell-us-contact-form .gform_confirmation_wrapper h1 {
+.tell-us-contact-form .enform_confirmation_wrapper h1 {
     text-transform: uppercase;
     // color: #ffffff;
     font-size: 100px;
@@ -807,17 +856,17 @@
 }
 
 @media only screen and (min-width: 1680px) {
-    .tell-us-contact-form .gform_confirmation_wrapper h1 {
+    .tell-us-contact-form .enform_confirmation_wrapper h1 {
         font-size: 5.95vw;
         margin-bottom: 3.57vw;
     }
 }
 
-.tell-us-contact-form .gform_confirmation_wrapper br {
+.tell-us-contact-form .enform_confirmation_wrapper br {
     display: none;
 }
 
-.tell-us-contact-form .gform_confirmation_wrapper p {
+.tell-us-contact-form .enform_confirmation_wrapper p {
     color: #ffffff;
     font-size: 24px;
     line-height: 34px;
@@ -825,27 +874,27 @@
 }
 
 @media only screen and (min-width: 1680px) {
-    .tell-us-contact-form .gform_confirmation_wrapper p {
+    .tell-us-contact-form .enform_confirmation_wrapper p {
         font-size: 1.42vw;
         line-height: 2.02vw;
         margin-bottom: 1.31vw;
     }
 }
 
-.tell-us-contact-form .gform_confirmation_wrapper a {
+.tell-us-contact-form .enform_confirmation_wrapper a {
     color: #ffffff;
     font-size: 24px;
     line-height: 24px;
 }
 
 @media only screen and (min-width: 1680px) {
-    .tell-us-contact-form .gform_confirmation_wrapper a {
+    .tell-us-contact-form .enform_confirmation_wrapper a {
         font-size: 1.42vw;
         line-height: 1.42vw;
     }
 }
 
-.tell-us-contact-form .gform_wrapper form .gform_body ul li .ginput_container textarea {
+.tell-us-contact-form .enform_wrapper form .enform_body ul li .ginput_container textarea {
     height: 48px;
     min-height: 48px;
     /*resize:vertical !important;  */
@@ -853,41 +902,41 @@
 }
 
 @media only screen and (min-width: 1680px) {
-    .tell-us-contact-form .gform_wrapper form .gform_body ul li .ginput_container textarea {
+    .tell-us-contact-form .enform_wrapper form .enform_body ul li .ginput_container textarea {
         height: 2.85vw;
         min-height: 2.85vw;
     }
 }
 
 
-.tell-us-contact-form .gform_wrapper form .gform_body ul li.textarea {
+.tell-us-contact-form .enform_wrapper form .enform_body ul li.textarea {
     position: relative;
 }
 
-.tell-us-contact-form .gform_wrapper form .gform_body ul li .ginput_container.ginput_container_textarea {
+.tell-us-contact-form .enform_wrapper form .enform_body ul li .ginput_container.ginput_container_textarea {
     position: relative;
 }
 
 
-.tell-us-contact-form .gform_wrapper ul.gform_fields li.textarea .ginput_container_textarea {
+.tell-us-contact-form .enform_wrapper ul.enform_fields li.textarea .ginput_container_textarea {
     position: relative;
 }
 
-/*.tell-us-contact-form .gform_wrapper ul.gform_fields li.textarea .ginput_container_textarea:before{content:"";position:absolute;right:0px;bottom: 7px;width: 10px;height: 1px;background-color: #8d8d8d;transform: rotate(-40deg);pointer-events:none;z-index:11;}
+/*.tell-us-contact-form .enform_wrapper ul.enform_fields li.textarea .ginput_container_textarea:before{content:"";position:absolute;right:0px;bottom: 7px;width: 10px;height: 1px;background-color: #8d8d8d;transform: rotate(-40deg);pointer-events:none;z-index:11;}
 @media only screen and (min-width: 1680px) {
-	.tell-us-contact-form .gform_wrapper ul.gform_fields li.textarea .ginput_container_textarea:before{bottom:0.41vw;width:0.59vw;}
+	.tell-us-contact-form .enform_wrapper ul.enform_fields li.textarea .ginput_container_textarea:before{bottom:0.41vw;width:0.59vw;}
 }
 
-.tell-us-contact-form .gform_wrapper ul.gform_fields li.textarea .ginput_container_textarea:after{content:"";position:absolute;right:0px;bottom: 11px;width: 18px;height: 1px;background-color: #8d8d8d;transform: rotate(-40deg);pointer-events:none;z-index:11;}
+.tell-us-contact-form .enform_wrapper ul.enform_fields li.textarea .ginput_container_textarea:after{content:"";position:absolute;right:0px;bottom: 11px;width: 18px;height: 1px;background-color: #8d8d8d;transform: rotate(-40deg);pointer-events:none;z-index:11;}
 @media only screen and (min-width: 1680px) {	
-	.tell-us-contact-form .gform_wrapper ul.gform_fields li.textarea .ginput_container_textarea:after{bottom:0.65vw;width:1.07vw;}
+	.tell-us-contact-form .enform_wrapper ul.enform_fields li.textarea .ginput_container_textarea:after{bottom:0.65vw;width:1.07vw;}
 }
  */
-.tell-us-contact-form .gform_wrapper ul.gform_fields li.gfield.textarea {
+.tell-us-contact-form .enform_wrapper ul.enform_fields li.gfield.textarea {
     position: relative;
 }
 
-.tell-us-contact-form .gform_wrapper ul.gform_fields li.gfield.textarea:after {
+.tell-us-contact-form .enform_wrapper ul.enform_fields li.gfield.textarea:after {
     content: "";
     width: 16px;
     height: 16px;
@@ -969,7 +1018,7 @@
         color: #000;
     }
 
-    .contact-inner .gform_wrapper .gform_footer {
+    .contact-inner .enform_wrapper .enform_footer {
         margin: 66px 0 0;
         padding: 0px;
         text-align: center;
