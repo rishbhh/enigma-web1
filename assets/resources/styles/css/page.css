@@ -8699,10 +8699,6 @@ header {
 }
 .accordion-list .cont .en-btn_send span .arro img {
   width: 10px;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), color-stop(75%, #d33333));
-  -webkit-mask-image: linear-gradient(to bottom, transparent 25%, #d33333 75%);
-  mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(25%, transparent), color-stop(75%, #bf1d1d));
-  mask-image: linear-gradient(to bottom, transparent 25%, #bf1d1d 75%);
   margin-left: 10px;
 }
 .accordion-list .cont .en-btn_send:hover .arro img {
@@ -8741,8 +8737,8 @@ header {
   transition: 0.3s all ease-in-out;
 }
 .accordion-list li.open figure {
-  -webkit-transform: rotate(92deg);
-  transform: rotate(92deg);
+  -webkit-transform: rotate(44deg);
+  transform: rotate(44deg);
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
