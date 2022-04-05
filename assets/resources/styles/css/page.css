@@ -7769,6 +7769,9 @@ header {
   .c-hm-us_s2 {
     padding-top: 0em;
     padding-bottom: 0em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .home-sec .about-us-content {
     margin-left: 30px;
