@@ -7797,11 +7797,16 @@ header {
     margin-top: 40%;
   }
   .c-hm-us_top {
-    padding-top: 1.6em;
+    padding-top: 4.6em;
+    height: 93vh;
+    padding-bottom: 0;
   }
   .c-hm-us_s2 {
-    padding-top: 10em;
-    padding-bottom: 10em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (max-width: 1280px) {
