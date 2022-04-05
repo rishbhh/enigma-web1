@@ -283,6 +283,7 @@ let Blog_ = document.querySelectorAll(".p-prj-caption");
 Blog_.forEach((container) => {
     let bl = container.querySelector(".p-prj-caption-name");
     let bl2 = container.querySelector("p");
+    let bl3 = container.querySelector(".xss");
 
     let tl = gsap.timeline({
         scrollTrigger: {
@@ -300,6 +301,12 @@ Blog_.forEach((container) => {
         opacity: 0
     }, "-=0.7")
     tl.from(bl2, 1, {
+        y: 40,
+        duration: 0.5,
+        ease: Power2.out,
+        opacity: 0
+    }, "-=0.5")
+    tl.from(bl3, 1, {
         y: 40,
         duration: 0.5,
         ease: Power2.out,

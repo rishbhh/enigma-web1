@@ -13028,10 +13028,17 @@ ul.aw-cats {
 }
 .author {
   margin-top: 10px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .author img {
-  width: 38px;
-  margin-right: 10px;
+  width: 29px;
+  margin-right: 6px;
+  margin-left: 20px;
 }
 .overlap-text p {
   -webkit-user-select: auto;
@@ -13114,6 +13121,15 @@ ul.aw-cats {
   margin-top: 10px !important;
   width: 100% !important;
   padding-left: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.recent-post .author img {
+  margin-left: 20px;
 }
 .recent-post .pr-list {
   display: -ms-flexbox;
@@ -13134,7 +13150,7 @@ ul.aw-cats {
   padding: 0 0 60px;
   overflow: hidden;
 }
-.recent-post a {
+.recent-post .rec {
   width: 50%;
   padding-left: 20px;
 }

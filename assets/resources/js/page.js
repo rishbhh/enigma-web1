@@ -639,6 +639,11 @@ function playVideo(el) {
 
 var changeClass = function(name){
     $('#search, #cl').removeAttr('class').addClass(name);
+
+        if(e.key === "Enter") {
+            $('#search, #cl').removeAttr('class').addClass(name);
+        }
+    
   }
 
 
