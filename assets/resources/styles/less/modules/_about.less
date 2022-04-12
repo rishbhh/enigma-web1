@@ -987,7 +987,7 @@
 
 .opacity-0 {
     opacity: 0;
-    transition: opacity 1.2s, top 1s linear;
+    transition: opacity 1.6s, top 1.4s linear;
     position: relative;
 }
 
@@ -2614,20 +2614,22 @@
 
 .text_anim h2 span,
 .text_anim h3 span {
-    transform: translateY(400%) skewY(1deg);
+    transform: translateY(200%) skewY(1deg);
 }
 
 .text_anim span {
     display: inline-block;
-    transform: translateY(400%) skewY(1deg);
+    transform: translateY(200%) skewY(1deg);
 }
 
 .is-inview .text_anim span {
     transform: translateY(0) skewY(0deg);
-    transition: transform 1s ease-out;
-    transition-delay: .4s;
+    transition: transform 1.2s ease-out;
+    transition-delay: .5s;
 }
-
+.over{
+    overflow: hidden;
+}
 .is-inview .text_anim.spline_p div:nth-child(2) span {
     transition-delay: .45s;
 }

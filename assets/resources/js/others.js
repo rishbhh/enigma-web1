@@ -1,3 +1,4 @@
+
 gsap.utils.toArray(".next").forEach((el) => {
 
     const image = el.querySelector('img.swipeimage'),
@@ -143,45 +144,6 @@ window.onload = function() {
 }
 
 
-
-// pop Form
-var ClickForm = new TimelineMax({ paused: true });
-
-ClickForm.to(".form-container", 1, {
-    bottom: 0,
-    ease: Expo.easeInOut,
-});
-
-ClickForm.staggerFrom(".frm", 0.5, { y: 100, opacity: 0, duration: 0.5, ease: 'power2.In' }, "-=0.3");
-
-ClickForm.reverse();
-$(document).on("click", ".action-icon a", function() {
-    ClickForm.reversed(!ClickForm.reversed());
-});
-$(document).on("click", ".form-close", function() {
-    ClickForm.reversed(!ClickForm.reversed());
-});
-$(document).ready(function() {
-    var $cat = $('select[name=country]'),
-        $items = $('select[name=items]');
-
-    $cat.change(function() {
-        var $this = $(this).find(':selected'),
-            rel = $this.attr('rel'),
-            $set = $items.find('option.' + rel);
-
-        if ($set.size() < 0) {
-            $items.hide();
-            return;
-        }
-
-        $items.show().find('option').hide();
-
-        $set.show().first().prop('selected', true);
-    });
-
-
-});
 
 
 // let why = document.querySelectorAll(".flex");

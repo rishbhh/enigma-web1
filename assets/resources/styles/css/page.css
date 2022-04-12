@@ -5500,8 +5500,8 @@ header {
 }
 .opacity-0 {
   opacity: 0;
-  -webkit-transition: opacity 1.2s, top 1s linear;
-  transition: opacity 1.2s, top 1s linear;
+  -webkit-transition: opacity 1.6s, top 1.4s linear;
+  transition: opacity 1.6s, top 1.4s linear;
   position: relative;
 }
 .opacity-0.is-inview {
@@ -6952,23 +6952,26 @@ header {
 }
 .text_anim h2 span,
 .text_anim h3 span {
-  -webkit-transform: translateY(400%) skewY(1deg);
-          transform: translateY(400%) skewY(1deg);
+  -webkit-transform: translateY(200%) skewY(1deg);
+          transform: translateY(200%) skewY(1deg);
 }
 .text_anim span {
   display: inline-block;
-  -webkit-transform: translateY(400%) skewY(1deg);
-          transform: translateY(400%) skewY(1deg);
+  -webkit-transform: translateY(200%) skewY(1deg);
+          transform: translateY(200%) skewY(1deg);
 }
 .is-inview .text_anim span {
   -webkit-transform: translateY(0) skewY(0deg);
           transform: translateY(0) skewY(0deg);
-  -webkit-transition: -webkit-transform 1s ease-out;
-  transition: -webkit-transform 1s ease-out;
-  transition: transform 1s ease-out;
-  transition: transform 1s ease-out, -webkit-transform 1s ease-out;
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
+  -webkit-transition: -webkit-transform 1.2s ease-out;
+  transition: -webkit-transform 1.2s ease-out;
+  transition: transform 1.2s ease-out;
+  transition: transform 1.2s ease-out, -webkit-transform 1.2s ease-out;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+.over {
+  overflow: hidden;
 }
 .is-inview .text_anim.spline_p div:nth-child(2) span {
   -webkit-transition-delay: 0.45s;
@@ -9135,6 +9138,7 @@ header {
   letter-spacing: 3px;
   text-align: left;
   color: #2B2B2B;
+  overflow: hidden;
 }
 .last .gr-b .grd {
   font-family: 'NeueHaasDisplay-me';
@@ -12347,10 +12351,10 @@ section.horizontal .animation-wrap.to-left {
   position: relative;
   z-index: 1;
   color: transparent;
-  -webkit-transition: -webkit-transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: -webkit-transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 #footer .footer-right .cb-outro-social-item .cb-outro-social-item-title span:after,
 #footer .footer-right .cb-outro-social-item .cb-outro-social-item-title span:before {
