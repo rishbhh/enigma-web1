@@ -9834,7 +9834,7 @@ section.horizontal .animation-wrap.to-left {
 }
 .services-s .content-p .en-form-submit {
   margin: 0 0 0;
-  overflow: hidden;
+  overflow: visible;
   /* height: 100%; */
   text-align: left;
   margin-bottom: 20%;
@@ -9856,7 +9856,7 @@ section.horizontal .animation-wrap.to-left {
   text-decoration: none;
 }
 .services-s .content-p .en-form-submit .en-btn_send span {
-  background-image: linear-gradient(49deg, #2d4de0 0, #9f71f0 30%, #fc6277 58%, #f8ef6f 95%);
+  background-image: linear-gradient(45deg, dodgerblue, purple, red, dodgerblue);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -9866,13 +9866,23 @@ section.horizontal .animation-wrap.to-left {
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
 }
+.services-s .content-p .en-form-submit .en-btn_send span .arro img {
+  width: 10px;
+  margin-left: 7px;
+}
 .services-s .content-p .en-form-submit .en-btn_send:after {
-  background-image: linear-gradient(49deg, #2d4de0 0, #9f71f0 30%, #fc6277 58%, #f8ef6f 95%);
+  background-image: linear-gradient(45deg, dodgerblue, purple, red, dodgerblue);
   background-size: 100% 500%;
   -webkit-animation: gradient 2s ease infinite;
   animation: gradient 2s ease infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
+}
+.services-s .content-p .en-btn_send:hover .arro img {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 @media screen and (max-width: 1920px) {
   .services-s .image {
