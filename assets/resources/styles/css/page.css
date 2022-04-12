@@ -6952,21 +6952,21 @@ header {
 }
 .text_anim h2 span,
 .text_anim h3 span {
-  -webkit-transform: translateY(200%) skewY(0deg);
-          transform: translateY(200%) skewY(0deg);
+  -webkit-transform: translateY(400%) skewY(1deg);
+          transform: translateY(400%) skewY(1deg);
 }
 .text_anim span {
   display: inline-block;
-  -webkit-transform: translateY(300%) skewY(0deg);
-          transform: translateY(300%) skewY(0deg);
+  -webkit-transform: translateY(400%) skewY(1deg);
+          transform: translateY(400%) skewY(1deg);
 }
 .is-inview .text_anim span {
   -webkit-transform: translateY(0) skewY(0deg);
           transform: translateY(0) skewY(0deg);
-  -webkit-transition: -webkit-transform 0.8s ease-out;
-  transition: -webkit-transform 0.8s ease-out;
-  transition: transform 0.8s ease-out;
-  transition: transform 0.8s ease-out, -webkit-transform 0.8s ease-out;
+  -webkit-transition: -webkit-transform 1s ease-out;
+  transition: -webkit-transform 1s ease-out;
+  transition: transform 1s ease-out;
+  transition: transform 1s ease-out, -webkit-transform 1s ease-out;
   -webkit-transition-delay: 0.4s;
           transition-delay: 0.4s;
 }
@@ -14289,6 +14289,15 @@ ul.aw-cats {
 }
 .mob {
   display: none;
+}
+@media screen and (max-width: 1440px) {
+  .lets .flex-row P {
+    text-align: right;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding-left: 45%;
+    letter-spacing: 2px;
+  }
 }
 @media screen and (max-width: 767px) {
   .mob {
