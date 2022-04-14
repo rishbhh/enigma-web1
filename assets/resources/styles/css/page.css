@@ -8718,7 +8718,7 @@ header {
   animation-direction: alternate;
 }
 .accordion-list .cont .en-btn_send span .arro img {
-  width: 10px;
+  width: 13px;
   margin-left: 10px;
 }
 .accordion-list .cont .en-btn_send:hover .arro img {
@@ -9870,7 +9870,7 @@ section.horizontal .animation-wrap.to-left {
   animation-direction: alternate;
 }
 .services-s .content-p .en-form-submit .en-btn_send span .arro img {
-  width: 10px;
+  width: 13px;
   margin-left: 7px;
 }
 .services-s .content-p .en-form-submit .en-btn_send:after {

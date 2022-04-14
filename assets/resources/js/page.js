@@ -778,7 +778,7 @@ function HeroSection() {
     fixed_scrol.to('.make', { opacity: 1, duration: 2, ease: 'power1.inOut' }, 24);
     fixed_scrol.to('.digital', { opacity: 1, duration: 2, ease: 'power1.inOut' }, 28);
     fixed_scrol.to('.brand', { opacity: 1, duration: 2, ease: 'power1.inOut' }, 32);
-    fixed_scrol.to('.container_word_change_t', { scale: 1.2, duration: 7, ease: 'power2.in' }, 29);
+    // fixed_scrol.to('.container_word_change_t', { scale: 1.2, duration: 7, ease: 'power2.in' }, 29);
     fixed_scrol.to('.container_word_change_t', { scale: 2.5, duration: 7, ease: 'power2.out' }, 39);
     fixed_scrol.to('.container_hero', { scale: 0.5, duration: 10, ease: 'power2.out' }, 27);
     fixed_scrol.to('.container_word_change_t', { duration: 15, ease: 'power1.inOut' }, 25);
@@ -817,7 +817,7 @@ function HeroSection() {
         duration: 5.5,
         ease: 'power1.inOut',
     }, 55);
-    fixed_scrol.to('.macbook_frame', { opacity: 0, scale: 1, duration: 5.5, ease: 'power1.inOut' }, 54);
+    fixed_scrol.to('.macbook_frame', { opacity: 0, scale: 1, duration: 5.5, ease: 'power1.inOut' }, 52);
     fixed_scrol.set('.o-page-tail_inner', {
         display: 'block',
         width: "100vw",
