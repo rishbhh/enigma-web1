@@ -464,16 +464,16 @@
     top: 50%;
     left: 8.5%;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     max-width: 80vw;
-    font-size: 60px;
+    font-size: 54px;
     font-weight: 700;
-    letter-spacing: -.06em;
+    letter-spacing: 0;
     line-height: 75px;
     padding-left: 5%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: 'NeueHaasDisplay-me';
 }
 .carousel-showcase.dark .cas-titles .cs-title a, body.dark .cas-titles .cs-title a, .carousel-showcase.dark .cas-headline, body.dark .cas-headline {
     color: #fff;
@@ -526,42 +526,7 @@
     object-fit: cover;
     height: 100%;
 }
-.plyr {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    align-items: center;
-    direction: ltr;
-    display: flex;
-    flex-direction: column;
-    font-family: inherit;
-    font-family: var(--plyr-font-family,inherit);
-    font-variant-numeric: tabular-nums;
-    font-weight: 400;
-    font-weight: var(--plyr-font-weight-regular,400);
-    line-height: 1.7;
-    line-height: var(--plyr-line-height,1.7);
-    max-width: 100%;
-    min-width: 200px;
-    position: relative;
-    text-shadow: none;
-    transition: box-shadow .3s ease;
-    z-index: 0;
-}   
 
-.plyr--full-ui {
-    box-sizing: border-box;
-}
-
-.plyr--video {
-    background: #000;
-    background: var(--plyr-video-background,var(--plyr-video-background,#000));
-    overflow: hidden;
-}
-.portfolio-showcase .plyr {
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-}
 .cas-titles {
     position: fixed;
     top: 50%;
@@ -582,19 +547,14 @@
     transform: translateY(250px);
 }
 .cas-titles .cs-title {
-    font-size: 150px;
+    font-size: 110px;
     font-weight: 700;
-    letter-spacing: -.06em;
+    letter-spacing: 0em;
     white-space: nowrap;
-    padding: 50px 0;
+    padding: 40px 0;
+    font-family: 'NeueHaasDisplay-me';
 }
-.cas-titles .cs-title {
-    font-size: 150px;
-    font-weight: 700;
-    letter-spacing: -.06em;
-    white-space: nowrap;
-    padding: 50px 0;
-}
+
 .cas-titles .cs-title a {
     text-decoration: none;
     color: #191b1d;
