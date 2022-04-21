@@ -1,5 +1,7 @@
 // preloader 
-
+(function($) {
+    "use strict";
+    console.clear();
 
 if (!isMobile) {
 
@@ -349,6 +351,7 @@ $(document).ready(function() {
     aliothRecentWorks()
     Marq();
     Changehum();
+    initShowcases();
     Scrol();
     Footer();
 });
@@ -1307,26 +1310,6 @@ function Marq() {
     });
 }
 
-// asa
-// function scr(){
-
-//     let op2 = gsap.timeline({
-
-//         scrollTrigger: {
-//           trigger: "body",
-//           scroller: ".smooth-scroll",
-//           scrub: 0.3,
-//           start: "top top",
-//           end: "500%+",
-//         },
-
-//       })
-//       op2.to('.progress span', { height: '100px', ease: 'none' }, 0)
-
-// }
-
-
-
 
 
 
@@ -1403,93 +1386,136 @@ function splt() {
 }
 
 
+function aliothShowcaseCarousel() {
+    var project = $('.cas-project'),
+        wrapper = $('.cas-project-wrapper'),
+        projectTitles = $('.cas-titles'),
+        headline = $('.cas-headline'),
+        bgText = $('.cas-bg-text'),
+        wrapFirstTrans = $(window).outerWidth() / 100 * 90,
+        activeProject;
+    new SplitText(headline, {
+        type: 'lines',
+        linesClass: 'cas-line',
+    })
+    project.each(function(i) {
+        i++
+        let $this = $(this),
+            title = $this.find('.cs-title'),
+            img = $this.find('img').attr('src');
+        $this.addClass('cas_project_' + i)
+        $this.attr('data-title', '.title_' + i)
+        projectTitles.append(title.addClass('title_' + i));
+        title.attr('data-project', '.cas_project_' + i)
+    });
+    projectTitles.wrapInner('<div class="cas-titles-wrap"></div>')
+    $('.cas-line').wrapInner('<span></span>')
+    gsap.to('.cas-line span', {
+        y: '-100%',
+        stagger: 0.01,
+        ease: 'none',
+        scrollTrigger: {
+            trigger: '.carousel-showcase',
+            scroller: ".smooth-scroll",
+            start: 'top top',
+            end: '10% top',
+            scrub: 1,
+            markers: false
+        }
+    })
+    gsap.fromTo(bgText, {
+        x: '100%'
+    }, {
+        x: '-30%',
+        scrollTrigger: {
+            trigger: '.carousel-showcase',
+            scroller: ".smooth-scroll",
+            scrub: 1,
+            start: 'top top',
+            end: 'bottom top',
+            markers: false
+        }
+    });
+    var totProj = $('.cas-project').length,
+        transVal = totProj * 250 - 250
+    var mobileQuery = window.matchMedia('(max-width: 450px)'),
+        tabletQuery = window.matchMedia('(min-width: 450px) and (max-width: 900px)');
+    if (mobileQuery.matches) {
+        transVal = totProj * 80 - 80
+    }
+    if (tabletQuery.matches) {
+        transVal = totProj * 200 - 200
+    }
+    gsap.to('.cas-titles-wrap', {
+        y: -transVal,
+        scrollTrigger: {
+            trigger: '.carousel-showcase',
+            scroller: ".smooth-scroll",
+            scrub: 1,
+            start: 'top top',
+            end: 'bottom top',
+            markers: false
+        }
+    })
+    gsap.set('.showcase-footer', {
+        position: 'fixed'
+    })
+    let csw = gsap.fromTo(wrapper, {
+            x: wrapFirstTrans
+        }, {
+            x: '-' + (wrapper.outerWidth() - $(window).outerWidth() + 350)
+        }),
+        windowWidth = $(window).outerWidth(),
+        css = new ScrollTrigger({
+            trigger: '.carousel-showcase',
+            scroller: ".smooth-scroll",
+            animation: csw,
+            pin: true,
+            scrub: 1,
+            id: 'showcaseScroll',
+            start: 'top top',
+            end: 'bottom top',
+            markers: false,
+            onUpdate: function(self, progress) {
+                let prog = $('.cas-progress span');
+                gsap.to(prog, {
+                    width: self.progress * 100 + '%'
+                })
+                project.each(function() {
+                    let $this = $(this)
+                })
+            },
+            onLeave: function() {
+                gsap.to('.showcase-footer', {
+                    opacity: 0
+                })
+            },
+            onEnterBack: function() {
+                gsap.to('.showcase-footer', {
+                    opacity: 1
+                })
+            },
+        });
+    $('.cs-title').on('mouseenter', function() {
+        let $this = $(this);
+        $this.addClass('active')
+    })
+    $('.cs-title').on('mouseleave', function() {
+        let $this = $(this);
+        $this.removeClass('active')
+    })
+}
 
-// $("#enform_submit_button_2").click(function() { 
-//     //get input field values
-//     var name            = $('#name').val(); 
-//     var email = $('#email').val();
-//     var mobile           = $('#number').val();
-//     var company         = $('#company').val();
-//     var flag = true;
-//     /********validate all our form fields***********/
-//     /* Name field validation  */
-//     if(name==""){ 
-//         $('#name').css('border-color','red'); 
-//         flag = false;
-//     }
-//     /* email field validation  */
-//     if(email==""){ 
-//         $('#email').css('border-color','red'); 
-//         flag = false;
-//     } 
-//       /* mobile field validation  */
-//       if(mobile==""){ 
-//         $('#number').css('border-color','red'); 
-//         flag = false;
-//     } 
-//     /* company field validation */
-//     if(company=="") {  
-//        $('#company').css('border-color','red'); 
-//         flag = false;
-//     }
-//     /********Validation end here ****/
-//     /* If all are ok then we send ajax request to email_send.php *******/
-//     if(flag) 
-//     {
-//         $.ajax({
-//             type: 'post',
-//             url: "mail.php", 
-//             dataType: 'json',
-//             data: 'username='+name+'&useremail='+email+'&message='+message,
-//             beforeSend: function() {
-//                 $('#enform_submit_button_2').attr('disabled', true);
-//                 $('#enform_submit_button_2').after('<span class="wait">&nbsp;<img src="image/loading.gif" alt="" /></span>');
-//             },
-//             complete: function() {
-//                 $('#enform_submit_button_2').attr('disabled', false);
-//                 $('.wait').remove();
-//             },  
-//             success: function(data)
-//             {
-//                 if(data.type == 'error')
-//                 {
-//                     output = '<div class="error">'+data.text+'</div>';
-//                 }else{
-//                     output = '<div class="success">'+data.text+'</div>';
-//                     $('input[type=text]').val(''); 
-//                     $('#contactform textarea').val(''); 
-//                 }
 
-//                 $("#result").hide().html(output).slideDown();           
-//                 }
-//         });
-//     }
-// });
-// //reset previously set border colors and hide all message on .keyup()
-// $("#contactform input, #contactform textarea").keyup(function() { 
-//     $("#contactform input, #contactform textarea").css('border-color',''); 
-//     $("#result").slideUp();
-// });
 
-// $("#ajaxForm").submit(function(e){
-//     e.preventDefault();
-//     var action = $(this).attr("action");
-//     var data = {};
-//     $(this).serializeArray().map(function(x){data[x.name] = x.value;}); 
-//     $.ajax({
-//       type: "POST",
-//       url: action,
-//       data: JSON.stringify(data),
-//       contentType: "application/json",
-//       headers: {
-//         "Accept": "application/json"
-//       }
-//     }).done(function() {
-//        $('.success').addClass('is-active');
-//     }).fail(function() {
-//        alert('An error occurred please try again later.')
-//     });
-//   });
+function initShowcases() {
+    aliothShowcaseCarousel();
+}
 
-console.clear();
-console.log('PortfolioS')
+
+let mobileQuery = window.matchMedia('(max-width: 450px)');
+$(window).on('load', function() {
+    initShowcases();
+    
+});
+}(jQuery));

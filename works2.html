@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home page</title>
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" type="text/css" rel="stylesheet">
+    <link href="assets/resources/styles/css/page.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/resources/img/fav-icon.png" type="" sizes="16x16">
+    <link href="https://unpkg.com/splitting@1.0.0/dist/splitting.css" type="text/css" rel="stylesheet">
+    <link href="/assets/resources/styles/css/st.css" type="text/css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKJE9LVB35"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PKJE9LVB35');
+    </script>
+</head>
+<div class="load-container">
+    <div class="loading-screen"></div>
+</div>
+
+<body data-barba="wrapper" class="dark">
+    <div class="init-load">
+        <div id="noise2"></div>
+        <div class="inner">
+            <div class="counter c-first">
+                <div class="count">
+                    <span>0</span>
+                    <span class="t">1</span>
+                </div>
+            </div>
+            <div class=" counter c-second">
+                <div class="count">
+                    <span>0</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span class="t">0</span>
+                </div>
+            </div>
+            <div class="counter c-third">
+                <div class="count">
+                    <span>0</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>0</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>0</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>0</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>0</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>0</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>0</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>0</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>0</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>0</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span class="t">0</span>
+                </div>
+            </div>
+            <span class="percentage t">%</span>
+        </div>
+    </div>
+
+    <header>
+        <a class="en-logo" href="index.html">
+            <img src="/assets/resources/img/enigma-en-logo.svg" alt="logo" />
+        </a>
+        <div class="menu-open" data-magnetic data-cursor="-opaque">
+            <div id="hamburger-icon" href="#" title="Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </div>
+        </div>
+        <div class="nav-container">
+            <button class="NavBtn menu-open1 menu-close" data-v-2cdfcd8e="" data-v-1d869191="" data-magnetic
+                data-cursor="-exclusion -lg" data-cursor-stick="#cursor-stick-area1">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="NavBtn-border" data-v-2cdfcd8e=""
+                    id="cursor-stick-area1">
+                    <circle cx="50" cy="50" r="49" data-v-2cdfcd8e=""></circle>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="NavBtn-cross" data-v-2cdfcd8e="">
+                    <path d="M0 8.6h20v2.7H0V8.6z" data-v-2cdfcd8e=""></path>
+                    <path d="M8.6 0h2.7v20H8.6V0z" data-v-2cdfcd8e=""></path>
+                </svg>
+            </button>
+            <div class="Nav-wrapper">
+                <div class="Menu-circle"></div>
+                <div class="Menu-circle2"></div>
+                <nav class="Menu-nav">
+                    <div class="navItem" data-cursor="-opaque" data-cursor-stick="#nav1">
+                        <div class="nav-num"><span>01</span></div>
+                        <a href="about.html" class="navItemLink" id="nav1">
+                            <div class="navItemLinkInner" data-label="About">
+                                About
+                            </div>
+                        </a>
+                        <!---->
+                    </div>
+                    <div class="navItem" data-cursor="-opaque" data-cursor-stick="#nav2">
+                        <div class="nav-num"><span>02</span></div>
+                        <a href="services.html" class="navItemLink" id="nav2">
+                            <div class="navItemLinkInner" data-label="Expertises">
+                                Expertises
+                            </div>
+                        </a>
+                        <div class="Menu-subnav">
+                            <div class="sub-nav">
+                                <a class="cb-outro-social-item sub-navlink" data-cursor="-opaque"
+                                    href="strategy.html"><span class="cb-outro-social-item-title"><span
+                                            data-text="Strategy">Strategy</span></span></a>
+                            </div>
+                            <div class="sub-nav">
+                                <a class="cb-outro-social-item sub-navlink" data-cursor="-opaque"
+                                    href="interface-design.html"><span class="cb-outro-social-item-title"><span
+                                            data-text="Design">Design</span></span></a>
+                            </div>
+                            <div class="sub-nav">
+                                <a class="cb-outro-social-item sub-navlink" data-cursor="-opaque"
+                                    href="technology-development.html"><span class="cb-outro-social-item-title"><span
+                                            data-text="Development">Development</span></span></a>
+                            </div>
+                            <div class="sub-nav">
+                                <a class="cb-outro-social-item sub-navlink" data-cursor="-opaque"
+                                    href="digital-marketing.html"><span class="cb-outro-social-item-title"><span
+                                            data-text="Marketing">Marketing</span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navItem" data-cursor="-opaque" data-cursor-stick="#nav3">
+                        <div class="nav-num"><span>03</span></div>
+                        <a href="works.html" class="navItemLink" id="nav3">
+                            <div class="navItemLinkInner" data-label="Portfolio">
+                                Portfolio
+                            </div>
+                        </a>
+                        <!---->
+                    </div>
+                    <div class="navItem" data-cursor="-opaque " data-cursor-stick="#nav4">
+                        <div class="nav-num"><span>04</span></div>
+                        <a href="blogs.html" class="navItemLink" id="nav4">
+                            <div class="navItemLinkInner" data-label="Insights">
+                                Insights
+                            </div>
+                        </a>
+                        <!---->
+                    </div>
+                    <div class="navItem" data-cursor="-opaque" data-cursor-stick="#nav5">
+                        <div class="nav-num"><span>05</span></div>
+                        <a href="contact.html" class="navItemLink" id="nav5">
+                            <div class="navItemLinkInner" data-label="Contact">
+                                Contact
+                            </div>
+                        </a>
+                        <!---->
+                    </div>
+                </nav>
+                <div class="nav-second">
+                    <div class="Menu-socials">
+                        <div class="Menu-socialsItem" data-cursor="-opaque">
+                            <a href="https://www.facebook.com/weareenigma/" target="_blank" rel="noopener"
+                                class="Menu-socialsItemLink">
+                                <span class="Menu-socialsItemLabel">Facebook</span>
+                            </a>
+                        </div>
+                        <div class="Menu-socialsItem" data-cursor="-opaque">
+                            <a href="https://www.instagram.com/enigmadigital/?hl=en" target="_blank" rel="noopener"
+                                class="Menu-socialsItemLink">
+                                <span class="Menu-socialsItemLabel">Instagram</span>
+                            </a>
+                        </div>
+                        <div class="Menu-socialsItem" data-cursor="-opaque">
+                            <a href="https://www.linkedin.com/company/enigma-digital-in/mycompany/" target="_blank"
+                                rel="noopener" class="Menu-socialsItemLink">
+                                <span class="Menu-socialsItemLabel">Linkedin</span>
+                            </a>
+                        </div>
+                        <div class="Menu-socialsItem" data-cursor="-opaque">
+                            <a href="https://twitter.com/_EnigmaDigital" target="_blank" rel="noopener"
+                                class="Menu-socialsItemLink">
+                                <span class="Menu-socialsItemLabel">Twitter</span>
+                            </a>
+                        </div>
+                        <div class="Menu-socialsItem" data-cursor="-opaque">
+                            <a href="https://www.behance.net/enigma-digital" target="_blank" rel="noopener"
+                                class="Menu-socialsItemLink">
+                                <span class="Menu-socialsItemLabel">Behance</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main role="main" id="main" style="background: #000;">
+        <div class="scroll-content smooth-scroll" data-scroll-speed="8">
+            <div class="wrapper">
+                <!--Section-->
+                <div class="section">
+                    <div class="wrapper-full no-gap">
+                        <div class="c-col-12 no-gap">
+                            <div class="portfolio-showcase carousel-showcase">
+                                <div class="cas-bg-text">Featured Works</div>
+                                <div class="cas-headline">
+                                    Hello! We are PeThemes,
+                                    <br>a digital creative agency from NY.
+                                    <br>Creating wonderful digital products
+                                    <br>and a pinch of rock'n roll!
+                                </div>
+                                <div class="cas-project-wrapper">
+                                    <div class="cas-project">
+                                        <div class="cs-image">
+                                            <div class="showcase-video">
+                                                <img alt="Project Image" src="/assets/resources/img/patronum-work.png">
+                                            </div>
+                                        </div>
+                                        <div class="cs-title">
+                                            <a href="project-1.html">Deals App</a>
+                                        </div>
+                                    </div>
+                                    <div class="cas-project">
+                                        <div class="cs-image">
+                                            <img alt="Project Image" src="/assets/resources/img/patronum-work.png">
+                                        </div>
+                                        <div class="cs-title">
+                                            <a href="project-8.html">Blast</a>
+                                        </div>
+                                    </div>
+                                    <div class="cas-project">
+                                        <div class="cs-image">
+                                            <img alt="Project Image" src="/assets/resources/img/patronum-work.png">
+                                        </div>
+                                        <div class="cs-title">
+                                            <a href="project-2.html">Meskalina Studio</a>
+                                        </div>
+                                    </div>
+                                    <div class="cas-project">
+                                        <div class="cs-image">
+                                            <img alt="Project Image" src="/assets/resources/img/patronum-work.png">
+                                        </div>
+                                        <div class="cs-title">
+                                            <a href="project-4.html">Codicis</a>
+                                        </div>
+                                    </div>
+                                    <div class="cas-project">
+                                        <div class="cs-image">
+                                            <img alt="Project Image" src="/assets/resources/img/patronum-work.png">
+                                        </div>
+                                        <div class="cs-title">
+                                            <a href="project-6.html">Men's Cave</a>
+                                        </div>
+                                    </div>
+                                    <div class="cas-project">
+                                        <div class="cs-image">
+                                            <img alt="Project Image" src="/assets/resources/img/patronum-work.png">
+                                        </div>
+                                        <div class="cs-title">
+                                            <a href="project-7.html">Maxibillion London</a>
+                                        </div>
+                                    </div>
+                                    <div class="cas-project">
+                                        <div class="cs-image">
+                                            <img alt="Project Image" src="/assets/resources/img/patronum-work.png">
+                                        </div>
+                                        <div class="cs-title">
+                                            <a href="project-9.html">Moneta App</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cas-titles"></div>
+                                <div class="cas-progress"><span></span></div>
+                            </div>
+                            <div class="showcase-footer">
+                                <div class="showcase-footer-left">
+                                    <div data-target="#secondSec" class="scroll-notice">
+                                        <span>SCROLL</span>
+                                    </div>
+                                </div>
+                                <div class="showcase-footer-right">
+                                    <div class="a-plus-button">
+                                        <a href="works.html">
+                                            <span><span>ALL PROJECTS</span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- footer -->
+                <footer id="footer" class="">
+                    <div class="f-container">
+                        <div class="top-f" data-cursor="-exclusion -lg" data-cursor-stick="#cursor-stick-area">
+                            <h3>Let’s Build Something </h3>
+                            <div class="ctaa" data-cursor="-exclusion -lg" data-cursor-stick="#cursor-stick-area">
+                                <a href="contact.html" class="great-cta" href="" id="cursor-stick-area">
+                                    Great Together
+                                    <div class="arow">
+                                        <img src="/assets/resources/img/get-arrow.svg" />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-flex">
+                            <div class="footer-right">
+                                <a class="cb-outro-social-item" data-cursor="-opaque" href="about.html"><span
+                                        class="cb-outro-social-item-title"><span
+                                            data-text="About">About</span></span></a>
+                                <a class="cb-outro-social-item" data-cursor="-opaque" href="services.html"><span
+                                        class="cb-outro-social-item-title"><span
+                                            data-text="Expertises">Expertises</span></span></a>
+                                <a class="cb-outro-social-item" data-cursor="-opaque" href="works.html"><span
+                                        class="cb-outro-social-item-title"><span
+                                            data-text="Works">Works</span></span></a>
+                                <a class="cb-outro-social-item" data-cursor="-opaque" href="blogs.html"><span
+                                        class="cb-outro-social-item-title"><span
+                                            data-text="Insights">Insights</span></span></a>
+
+                                <a class="cb-outro-social-item" data-cursor="-opaque"><span
+                                        class="cb-outro-social-item-title"><span
+                                            data-text="Career">Career</span></span></a>
+                                <a class="cb-outro-social-item" data-cursor="-opaque" href="contact.html"><span
+                                        class="cb-outro-social-item-title"><span
+                                            data-text="Contact">Contact</span></span></a>
+                            </div>
+                            <div class="footer-left">
+                                <div class="botom">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.facebook.com/in.enigmadigital" target="_blank"
+                                                class="insta" data-cursor="-opaque"><span>
+                                                    <lottie-player class="so" src="facebook.json"
+                                                        background="transparent" speed="1"
+                                                        style="width: 15px; height: 20px;" hover></lottie-player>
+                                                </span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/enigmadigital/" target="_blank"
+                                                class="face" data-cursor="-opaque"><span>
+                                                    <lottie-player class="so" src="Instagram-logo.json"
+                                                        background="transparent" speed="1"
+                                                        style="width: 20px; height: 20px;" hover></lottie-player>
+                                                </span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.linkedin.com/company/in-enigmadigital" target="_blank"
+                                                class="lin" data-cursor="-opaque"><span>
+                                                    <lottie-player class="so" src="linkedin.json"
+                                                        background="transparent" speed="1"
+                                                        style="width: 20px; height: 20px;" hover></lottie-player>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://twitter.com/_EnigmaDigital" target="_blank" class="twit"
+                                                data-cursor="-opaque"><span>
+                                                    <lottie-player class="so" src="twitter.json"
+                                                        background="transparent" speed="1"
+                                                        style="width: 20px; height: 20px;" hover></lottie-player>
+                                                </span></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.behance.net/enigma-digital" target="_blank"
+                                                class="face" data-cursor="-opaque"><span>
+                                                    <lottie-player class="so" src="behance.json"
+                                                        background="transparent" speed="1"
+                                                        style="width: 20px; height: 20px;" hover></lottie-player>
+                                                </span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="bottom-footer">
+                            <p>© 2022 Enigma Digital Consulting, LLP. All Rights Reserved. All Wrongs Reversed.</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="action-icon play-icon" id="cursor-stick-area" data-magnetic data-cursor="-opaque">
+        <a href="contact.html">
+            <img class="pll" src="./assets/resources/img/play-reel-01.svg" alt="play reel circular text">
+            <img class="inner" src="./assets/resources/img/arrow-circle-line.svg" alt="play icon"
+                style="transform: translate(0px, 0px);">
+        </a>
+    </div>
+
+
+
+
+    <script src="/assets/vendors/lib/plugins.js"></script>
+    <script src="./assets/resources/js/cursor.js"></script>
+    <script src="assets/resources/js/page.js"></script>
+    <!-- <script src="assets/resources/js/pot.js"></script> -->
+    <script>
+        var s = Splitting();
+    </script>
+</body>
+
+</html>

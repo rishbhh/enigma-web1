@@ -144,8 +144,6 @@ window.onload = function() {
 }
 
 
-
-
 // let why = document.querySelectorAll(".flex");
 
 // why.forEach((container) => {
