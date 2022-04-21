@@ -11131,6 +11131,114 @@ body.dark .cas-progress span {
   transition: transform 0.3s ease 0.3s;
   transition: transform 0.3s ease 0.3s, -webkit-transform 0.3s ease 0.3s;
 }
+.alioth-page-loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 888;
+}
+.alioth-page-loader .apl-wrapper {
+  position: fixed;
+  bottom: 10%;
+  left: 8.5%;
+  width: 100%;
+  height: 200px;
+  z-index: 9999999;
+}
+span.apl-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #191b1d;
+  width: 100%;
+  height: 100%;
+  z-index: -15;
+}
+.alioth-page-loader.light span.apl-background {
+  background: #ebebeb;
+}
+.apl-count {
+  position: fixed;
+  bottom: 0;
+  left: -4%;
+}
+.apl-loading > span {
+  display: inline-block;
+  overflow: hidden;
+}
+.apl-load-word {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+.apl-text {
+  font-size: 65px;
+  line-height: 75px;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  white-space: nowrap;
+  color: #191b1d;
+  z-index: 3;
+  visibility: hidden;
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%) translateX(500px);
+  transform: translateY(-50%) translateX(500px);
+}
+.apl-count {
+  position: absolute;
+  font-size: 250px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+.alioth-page-loader.light .apl-count {
+  color: rgba(25, 27, 29, 0.05);
+}
+.apl-count .apl-num {
+  display: block;
+  overflow: hidden;
+  float: left;
+  height: 250px;
+}
+.apl-num-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.apl-num-1 .apl-num-wrapper {
+  -webkit-transform: translateY(10%);
+  transform: translateY(10%);
+  text-align: right;
+}
+.apl-num-2 .apl-num-wrapper {
+  -webkit-transform: translateY(5%);
+  transform: translateY(5%);
+  text-align: left;
+}
+.apl-num-3 .apl-num-wrapper {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+.apl-num-3 span {
+  display: block;
+}
+.apl-num.apl-num-3 {
+  margin-left: -25px;
+}
+.alioth-page-loader.dark .apl-text {
+  color: #fff;
+}
+.alioth-page-loader.dark .apl-count {
+  color: hsla(0, 0%, 100%, 0.05);
+}
 @media screen and (max-width: 1280px) {
   #work-sction .hd-rvl {
     font-size: 20px;
