@@ -11379,6 +11379,40 @@ span.ac-sign {
   font-family: 'Ageo-SemiBold';
   letter-spacing: 0em;
 }
+@media only screen and (max-width: 450px) {
+  .cas-headline {
+    font-size: 30px;
+    line-height: 45px;
+    max-width: 70vw;
+    padding-left: 0;
+  }
+  .cas-titles {
+    height: 80px;
+  }
+  .cas-titles .cs-title {
+    font-size: 40px;
+    padding: 20px 0;
+  }
+  .cas-project {
+    width: 80vw;
+    height: 60vh;
+  }
+  .c-col-1,
+  .c-col-2,
+  .c-col-3,
+  .c-col-4,
+  .c-col-5,
+  .c-col-6,
+  .c-col-7,
+  .c-col-8,
+  .c-col-9,
+  .c-col-10,
+  .c-col-11,
+  .c-col-12 {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
 @media screen and (max-width: 1280px) {
   #work-sction .hd-rvl {
     font-size: 20px;
