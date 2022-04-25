@@ -1552,6 +1552,35 @@ html.is-ready .c-header_title_line {
   right: -72px;
   color: #efefef;
 }
+.align-b {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.load-text {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #ffffff), color-stop(15%, #c7c7c7), color-stop(35%, #939393), color-stop(52%, #333333), color-stop(75%, #000000));
+  background-image: linear-gradient(to top, #ffffff 5%, #c7c7c7 15%, #939393 35%, #333333 52%, #000000 75%);
+  background-size: 300% 300%;
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: gradient 8s ease infinite;
+          animation: gradient 8s ease infinite;
+  font-family: 'NeueHaasDisplay-me';
+  -webkit-transition: 3s all ease-in-out;
+  transition: 3s all ease-in-out;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
 #noise {
   -webkit-animation: grain 6s steps(10) infinite;
   animation: grain 6s steps(10) infinite;

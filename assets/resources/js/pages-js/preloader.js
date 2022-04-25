@@ -2,21 +2,11 @@
     "use strict";
     console.clear();
     gsap.registerPlugin( ScrollTrigger,);
-    var pageSet, pageCursor, siteLoader, headerStick, smoothScroll, siteHeader, pageLayout, headerLayout, footerLayout, menuLayout, menuStyle;
+    var pageSet, siteLoader;
 
     function pageSettings() {
         pageSet = $('body');
-        pageCursor = pageSet.data('cursor');
         siteLoader = pageSet.data('page-loader');
-        headerStick = pageSet.data('header-sticky');
-        smoothScroll = pageSet.data('smoothScroll');
-        menuStyle = pageSet.data('menu-style');
-        pageLayout = pageSet.data('page-layout');
-        headerLayout = pageSet.data('header-layout');
-        menuLayout = pageSet.data('menu-layout');
-        footerLayout = pageSet.data('footer-layout');
-        pageSet.addClass(pageLayout)
-        $('.site-footer').addClass(footerLayout);
     }
     pageSettings()
     var loader, loaderOv, loadAn;
@@ -67,12 +57,17 @@
                 y: '0%',
                 ease: 'power2.Out',
             }, .5)
-            loadAn.to('.site-logo', 1, {
-                y: '0%',
-                ease: 'power2.out',
-            }, 2)
+            loadAn.to(num3wrap, 1, {
+                y: '-50%',
+                ease: 'power2.Out',
+            }, duration - .6)
+            loadAn.to('.apl-num-wrapper', .6, {
+                y: '-100%',
+                ease: 'power2.in',
+                stagger: .1,
+            }, duration + .6)
         
-           
+            // loader.hide();
         }
     }
    
@@ -83,11 +78,7 @@
        
     }
     $(window).on('load', function() {
-        if ($('.section.fullscreen').length) {
-            $('#footer').hide()
-        } else {
-            $('#footer').show()
-        }
+     
         pageLoader();
         if (siteLoader == true) {
             loadAn.eventCallback('onComplete', function() {
@@ -102,33 +93,23 @@
                         loader.hide();
                     }
                 })
-                showcaseOpenings();
-                initShortcodes();
-                initPages();
+    
+           
                 let mobileQuery = window.matchMedia('(max-width: 900px)');
                 if (!mobileQuery.matches) {
-                    aliothParallaxScroll();
+                   
                 }
-                enableScroll()
-                aliothScrollAnimations();
+     
                 ScrollTrigger.refresh(true)
             })
         } else {
             loader.hide();
-            if ($('.section.fullscreen').length) {
-                $('#footer').hide()
-            } else {
-                $('#footer').show()
-            }
-            showcaseOpenings();
-            initShortcodes();
-            initPages();
+          
             let mobileQuery = window.matchMedia('(max-width: 900px)');
             if (!mobileQuery.matches) {
-                aliothParallaxScroll();
+                // aliothParallaxScroll();
             }
-            enableScroll()
-            aliothScrollAnimations();
+     
             ScrollTrigger.refresh(true)
         }
     })

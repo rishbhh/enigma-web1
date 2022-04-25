@@ -61,6 +61,36 @@
   }
 }
 
+.align-b {
+  align-items: baseline;
+
+}
+
+.load-text {
+  background-image: linear-gradient(to top, #ffffff 5%, #c7c7c7 15%, #939393 35%, #333333 52%, #000000 75%);
+  background-size: 300% 300%;
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: gradient 8s ease infinite;
+  font-family: 'NeueHaasDisplay-me';
+  transition: 03s all ease-in-out;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 50% 50%;
+  }
+
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
 #noise {
   -webkit-animation: grain 6s steps(10) infinite;
   animation: grain 6s steps(10) infinite;
