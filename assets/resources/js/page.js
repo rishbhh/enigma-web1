@@ -1035,12 +1035,12 @@ function Changehum() {
             scroller: ".smooth-scroll",
             start: "top 50%",
             onEnter: () =>
-                gsap.to(".line", {
+                gsap.to(".toggle-line", {
                     backgroundColor: colorSections.dataset.humcolor,
                     overwrite: "auto"
                 }),
             onLeaveBack: () =>
-                gsap.to(".line", {
+                gsap.to(".toggle-line", {
                     backgroundColor: prevBg,
                     overwrite: "auto"
                 })

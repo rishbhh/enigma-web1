@@ -1165,6 +1165,9 @@ template {
 .-color-cert {
   color: #f9063c;
 }
+.-color-patra {
+  color: #273d8f;
+}
 .-color-dmtca {
   color: #15b3da;
 }
@@ -1179,6 +1182,9 @@ template {
 }
 .-color-bl {
   color: #000;
+}
+.-color-dharan {
+  color: #b52a6a;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -6709,6 +6715,7 @@ header {
   font-size: 16px;
   letter-spacing: 1px;
   color: #ffffff;
+  overflow: hidden;
 }
 #project p a {
   color: #ffffff;
@@ -11474,7 +11481,7 @@ section:after {
   display: block;
   position: absolute;
   width: 100%;
-  height: 150px;
+  height: 80px;
   z-index: 9999;
 }
 .site-header.fullscreen_menu::before {
@@ -11483,7 +11490,7 @@ section:after {
   position: fixed;
   top: 0;
   left: 0;
-  background: #f1f1f1;
+  background: #171717;
   width: 100%;
   height: 0%;
   -webkit-transition: all 0.75s cubic-bezier(0.25, 0.74, 0.22, 0.99);
@@ -11519,7 +11526,7 @@ section:after {
   position: absolute;
   left: 50%;
   top: 60%;
-  width: 83%;
+  width: 86%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -11562,7 +11569,7 @@ section:after {
   opacity: 0;
 }
 .site-logo {
-  width: 80px;
+  width: 40px;
   display: block;
   overflow: hidden;
   -webkit-transform: translateY(100%);
@@ -11734,12 +11741,13 @@ section:after {
   display: none;
 }
 .site-navigation.fullscreen .menu.main-menu > li.menu-item {
-  font-size: 50px;
-  line-height: 80px;
-  font-weight: 700;
-  letter-spacing: 0em;
+  font-size: 61px;
+  line-height: 90px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   display: block;
   overflow: hidden;
+  font-family: 'NeueHaasDisplay-me';
   padding-bottom: 0;
 }
 .site-navigation.fullscreen .menu.main-menu > li.menu-item a {
@@ -11747,7 +11755,7 @@ section:after {
   display: inline-block;
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
-  color: rgba(25, 27, 29, 0.6);
+  color: rgba(255, 255, 255, 0.061);
   padding-right: 5px;
 }
 .site-navigation.fullscreen .menu.main-menu > li.menu-item a::before {
@@ -11756,23 +11764,24 @@ section:after {
   left: 0;
   width: 100%;
   overflow: hidden;
-  color: #191b1d;
+  color: #ffffff;
   -webkit-transition: width 0.75s cubic-bezier(0.63, 0.03, 0.21, 1);
   transition: width 0.75s cubic-bezier(0.63, 0.03, 0.21, 1);
   white-space: nowrap;
+}
+.site-navigation.fullscreen .menu.main-menu > li.menu-item a:hover:before {
+  color: red;
+  background-image: linear-gradient(45deg, dodgerblue, purple, red, dodgerblue);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 100% 200%;
+  -webkit-background-clip: text;
 }
 .site-navigation.fullscreen .menu.main-menu.hovered > li.menu-item a::before {
   width: 0%;
 }
 .site-navigation.fullscreen .menu.main-menu.hovered > li.menu-item a.hovered::before {
   width: 100%;
-}
-.site-navigation.fullscreen .menu.main-menu {
-  position: fixed;
-  left: 25%;
-  right: 0;
-  bottom: 15%;
-  padding: 0;
 }
 .site-navigation.fullscreen ul.ulcol {
   -webkit-column-count: 2;
@@ -11782,10 +11791,10 @@ section:after {
 .sub-toggle {
   display: inline-block;
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   margin-left: 20px;
-  top: -5px;
+  top: -8px;
   -webkit-transition: -webkit-transform 0.6s ease;
   transition: -webkit-transform 0.6s ease;
   transition: transform 0.6s ease;
@@ -11794,8 +11803,8 @@ section:after {
 .sub-togg-line {
   position: absolute;
   width: 0%;
-  height: 1px;
-  background: #000;
+  height: 2.5px;
+  background: #ffffff;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -11815,18 +11824,6 @@ section:after {
 .menu-item.has-children > a:hover > .sub-toggle {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
-}
-.sub-back {
-  cursor: pointer;
-  overflow: hidden;
-  display: block;
-  position: absolute;
-  opacity: 0;
-  left: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  font-size: 30px;
 }
 .sub-back.is-active {
   opacity: 0.4;
@@ -11849,11 +11846,13 @@ section:after {
 }
 .social-list li a {
   text-decoration: none;
-  color: rgba(25, 27, 29, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   display: block;
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
   opacity: 0;
+  font-family: 'Ageo';
+  letter-spacing: 0.06em;
 }
 .social-list li {
   font-size: 18px;
@@ -11894,7 +11893,7 @@ section:after {
 }
 .site-navigation.fullscreen ul ul {
   position: absolute;
-  top: 0;
+  top: 18px;
   left: 0;
   visibility: hidden;
   opacity: 0;
@@ -11902,11 +11901,12 @@ section:after {
 }
 .site-navigation.fullscreen ul ul li {
   overflow: hidden;
-  font-size: 40px;
+  font-size: 35px;
   line-height: 70px;
-  letter-spacing: -0.06em;
+  letter-spacing: 1px;
   padding: 0;
   padding-right: 18px;
+  font-family: 'Ageo';
 }
 .site-navigation.fullscreen ul ul li a {
   -webkit-transform: translateY(100%);
@@ -11964,6 +11964,12 @@ body.loading span.toggle-line {
   -webkit-transition: none !important;
   transition: none !important;
 }
+.menu-toggle.is-active .toggle-line {
+  background: #000000;
+}
+[data-humcolor="#fff"] .menu-toggle.is-active .toggle-line {
+  background: #000000;
+}
 .menu-toggle.is-active .toggle-line:nth-child(1) {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -11996,7 +12002,7 @@ body.loading span.toggle-line {
   background: #191b1d;
 }
 .site-header.menu_dark .site-navigation.fullscreen .menu.main-menu > li.menu-item a {
-  color: hsla(0, 0%, 100%, 0.2);
+  color: rgba(255, 255, 255, 0.2);
 }
 .site-header.menu_dark .site-navigation.fullscreen .menu.main-menu > li.menu-item a::before {
   color: #fff;
@@ -12108,25 +12114,6 @@ ul.product-tags li a {
   padding: 10px;
   display: block;
 }
-.site-header {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 150px;
-  z-index: 9999;
-}
-.site-header.fullscreen_menu::before {
-  content: "";
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #f1f1f1;
-  width: 100%;
-  height: 0%;
-  -webkit-transition: all 0.75s cubic-bezier(0.25, 0.74, 0.22, 0.99);
-  transition: all 0.75s cubic-bezier(0.25, 0.74, 0.22, 0.99);
-}
 .site-header.anim_start .site-header.fullscreen_menu::before {
   height: 100%;
 }
@@ -12152,14 +12139,6 @@ ul.product-tags li a {
 .site-header.fullscreen_menu.menu-has-open::after {
   opacity: 1;
   visibility: visible;
-}
-.header-wrapper {
-  position: absolute;
-  left: 50%;
-  top: 60%;
-  width: 83%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 .header-wrapper.menu-opened {
   -webkit-transform: translateX(-50%);
@@ -12198,13 +12177,6 @@ ul.product-tags li a {
   -webkit-transform: translateX(-20px);
   transform: translateX(-20px);
   opacity: 0;
-}
-.site-logo {
-  width: 80px;
-  display: block;
-  overflow: hidden;
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
 }
 .site-logo img {
   width: 100%;
@@ -12371,34 +12343,6 @@ ul.product-tags li a {
 .site-navigation.fullscreen .fs-menu-wrapper {
   display: none;
 }
-.site-navigation.fullscreen .menu.main-menu > li.menu-item {
-  font-size: 50px;
-  line-height: 80px;
-  font-weight: 700;
-  letter-spacing: 0em;
-  display: block;
-  overflow: hidden;
-  padding-bottom: 0;
-}
-.site-navigation.fullscreen .menu.main-menu > li.menu-item a {
-  position: relative;
-  display: inline-block;
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
-  color: rgba(25, 27, 29, 0.6);
-  padding-right: 5px;
-}
-.site-navigation.fullscreen .menu.main-menu > li.menu-item a::before {
-  content: attr(data-hover);
-  position: absolute;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  color: #191b1d;
-  -webkit-transition: width 0.75s cubic-bezier(0.63, 0.03, 0.21, 1);
-  transition: width 0.75s cubic-bezier(0.63, 0.03, 0.21, 1);
-  white-space: nowrap;
-}
 .site-navigation.fullscreen .menu.main-menu.hovered > li.menu-item a::before {
   width: 0%;
 }
@@ -12407,41 +12351,15 @@ ul.product-tags li a {
 }
 .site-navigation.fullscreen .menu.main-menu {
   position: fixed;
-  left: 25%;
+  left: 0%;
   right: 0;
-  bottom: 15%;
+  bottom: 14%;
   padding: 0;
 }
 .site-navigation.fullscreen ul.ulcol {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
-}
-.sub-toggle {
-  display: inline-block;
-  position: relative;
-  width: 20px;
-  height: 20px;
-  margin-left: 20px;
-  top: -5px;
-  -webkit-transition: -webkit-transform 0.6s ease;
-  transition: -webkit-transform 0.6s ease;
-  transition: transform 0.6s ease;
-  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
-}
-.sub-togg-line {
-  position: absolute;
-  width: 0%;
-  height: 1px;
-  background: #000;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: width 0.4s ease, -webkit-transform 0.5s ease 0.4s;
-  transition: width 0.4s ease, -webkit-transform 0.5s ease 0.4s;
-  transition: width 0.4s ease, transform 0.5s ease 0.4s;
-  transition: width 0.4s ease, transform 0.5s ease 0.4s, -webkit-transform 0.5s ease 0.4s;
 }
 .has-sub-in .sub-togg-line {
   width: 100%;
@@ -12460,15 +12378,11 @@ ul.product-tags li a {
   display: block;
   position: absolute;
   opacity: 0;
-  left: 0;
+  left: -62px;
   visibility: hidden;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  font-size: 30px;
-}
-.sub-back.is-active {
-  opacity: 0.4;
-  visibility: visible;
+  width: 30px;
 }
 .site-header.menu_dark .sub-back {
   color: #fff;
@@ -12512,26 +12426,6 @@ ul.product-tags li a {
   opacity: 1;
   -webkit-transform: translateY(-1px) translateX(0);
   transform: translateY(-1px) translateX(0);
-}
-.site-navigation.fullscreen ul ul {
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-  opacity: 0;
-  padding: 0;
-}
-.site-navigation.fullscreen ul ul li {
-  overflow: hidden;
-  font-size: 40px;
-  line-height: 70px;
-  letter-spacing: -0.06em;
-  padding: 0;
-  padding-right: 18px;
-}
-.site-navigation.fullscreen ul ul li a {
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
 }
 .site-navigation.fullscreen ul.hidden > li,
 .site-navigation.fullscreen ul.hidden {
@@ -12615,9 +12509,6 @@ body.loading span.toggle-line {
 }
 .site-header.menu_dark.fullscreen_menu::before {
   background: #191b1d;
-}
-.site-header.menu_dark .site-navigation.fullscreen .menu.main-menu > li.menu-item a {
-  color: hsla(0, 0%, 100%, 0.2);
 }
 .site-header.menu_dark .site-navigation.fullscreen .menu.main-menu > li.menu-item a::before {
   color: #fff;
