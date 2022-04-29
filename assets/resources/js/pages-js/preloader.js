@@ -562,6 +562,319 @@
     if (!mobileQuery.matches) {
        
     }
+    function showcaseOpenings() {
+        var showcaseCheck = $('.portfolio-showcase');
+        if (showcaseCheck.length > 0) {
+            if (showcaseCheck.hasClass('showcase-list')) {
+                var scWelcome = gsap.timeline();
+                scWelcome.fromTo('.sl-project-title', 2, {
+                    y: '110%'
+                }, {
+                    y: '0%',
+                    ease: 'power2.out',
+                    stagger: 0.1,
+                }, 0)
+                scWelcome.fromTo('.sl-project-meta', 1, {
+                    y: '100%'
+                }, {
+                    y: '0%',
+                    ease: 'power2.out',
+                    stagger: 0.05,
+                }, 1)
+                var slBef = CSSRulePlugin.getRule('.sl-project::before');
+                scWelcome.to(slBef, .4, {
+                    cssRule: {
+                        opacity: 1,
+                    },
+                }, 1.3)
+                scWelcome.fromTo('.showcase-footer', .6, {
+                    opacity: 0
+                }, {
+                    opacity: 1,
+                }, 2)
+            } else if (showcaseCheck.hasClass('showcase-wall')) {
+                var wallOpen = gsap.timeline({
+                    once: true,
+                    delay: 0,
+                    onStart: function() {
+                        $('body').addClass('loading')
+                    },
+                    onComplete: function() {
+                        $('body').removeClass('loading')
+                    }
+                })
+                wallOpen.fromTo('.wall-projects-top', 4, {
+                    x: '-110%'
+                }, {
+                    x: '10%',
+                    ease: 'power4.out'
+                }, 0)
+                wallOpen.fromTo('.wall-projects-bottom', 4, {
+                    x: '110%'
+                }, {
+                    x: '-10%',
+                    ease: 'power4.out'
+                }, 0)
+                wallOpen.fromTo('.wall-drag', 2, {
+                    width: '0%'
+                }, {
+                    width: '50%',
+                    ease: 'power2.out'
+                }, 2)
+                wallOpen.fromTo('.showcase-footer', 1, {
+                    opacity: 0
+                }, {
+                    opacity: 1,
+                    ease: 'power2.out'
+                }, 3)
+            } else if (showcaseCheck.hasClass('showcase-slideshow-v2')) {
+                var ss2Welcome = gsap.timeline({
+                    once: true
+                });
+                ss2Welcome.fromTo('.title-char', 1, {
+                    y: '100%'
+                }, {
+                    y: '0%',
+                    stagger: 0.02,
+                    ease: 'power2.out',
+                }, 0)
+                ss2Welcome.fromTo('.ss2-project-cat span', .75, {
+                    y: '100%'
+                }, {
+                    y: '0%',
+                    ease: 'power2.out',
+                }, 1)
+                ss2Welcome.fromTo('.excerpt-line span', 1, {
+                    y: '100%'
+                }, {
+                    y: '0%',
+                    stagger: 0.05,
+                    ease: 'power2.out',
+                }, 1)
+                ss2Welcome.fromTo('.ss2-dot', .5, {
+                    x: -30,
+                    opacity: 0
+                }, {
+                    x: 0,
+                    opacity: 1,
+                    stagger: 0.05,
+                    ease: 'power2.out',
+                }, 1)
+                ss2Welcome.fromTo('.ss2-nav', .5, {
+                    opacity: 0
+                }, {
+                    opacity: 1,
+                }, 1)
+                ss2Welcome.fromTo('.showcase-footer', .5, {
+                    opacity: 0
+                }, {
+                    opacity: 1,
+                    ease: 'power1.out',
+                }, 1)
+            } else if (showcaseCheck.hasClass('showcase-slideshow')) {
+                let ssWelcome = gsap.timeline({
+                    once: true,
+                    onStart: function() {
+                        disableScroll();
+                        gsap.set('.ss-project.active .ss1-cat', {
+                            visibility: 'hidden'
+                        })
+                        gsap.set('.ss-project.active .ss1-summary', {
+                            visibility: 'hidden'
+                        })
+                    }
+                });
+                let butWidth = $('.ss1-button').outerWidth();
+                ssWelcome.fromTo('.st-char', 1.5, {
+                    y: '110%',
+                }, {
+                    y: '0%',
+                    stagger: 0.02,
+                    ease: 'power2.out',
+                }, 0)
+                ssWelcome.fromTo('.cat_char', 1, {
+                    y: '110%',
+                }, {
+                    y: '0%',
+                    stagger: 0.02,
+                    ease: 'power2.out',
+                    onStart: function() {
+                        gsap.set('.ss-project.active .ss1-cat', {
+                            visibility: 'visible',
+                            delay: .2
+                        })
+                    }
+                }, 1)
+                ssWelcome.fromTo('.ss1-button', .7, {
+                    width: 0,
+                }, {
+                    width: butWidth,
+                    ease: 'power2.inOut',
+                }, 1.3)
+                ssWelcome.fromTo('.ssum-line', 1.5, {
+                    y: '110%',
+                }, {
+                    y: '0%',
+                    stagger: 0.02,
+                    ease: 'power2.out',
+                    onStart: function() {
+                        gsap.set('.ss-project.active .ss1-summary', {
+                            visibility: 'visible',
+                            delay: .1
+                        })
+                    }
+                }, 1)
+                ssWelcome.fromTo('.ss1-nav', 1, {
+                    opacity: 0,
+                }, {
+                    opacity: 1,
+                    ease: 'power2.out',
+                }, 2)
+                ssWelcome.fromTo('.ss1-fraction', 1, {
+                    opacity: 0,
+                }, {
+                    opacity: 1,
+                    ease: 'power2.out',
+                }, 2.5)
+                ssWelcome.fromTo('.ss1-dots .swiper-pagination-bullet', 1.5, {
+                    opacity: 0,
+                    x: 50,
+                }, {
+                    x: 0,
+                    opacity: 1,
+                    stagger: 0.05,
+                    ease: 'power2.out',
+                    onComplete: function() {
+                        gsap.to('.ss1-dots .swiper-pagination-bullet', {
+                            clearProps: 'opacity'
+                        })
+                    }
+                }, 1.55)
+            } else if (showcaseCheck.hasClass('carousel-showcase')) {
+                let sCarouselWelcome = gsap.timeline({
+                        onStart: function() {
+                            disableScroll();
+                        },
+                        onComplete: function() {
+                            enableScroll();
+                        }
+                    }),
+                    wrapper = $('.cas-project-wrapper'),
+                    wrapFirstTrans = $(window).outerWidth() / 100 * 90,
+                    wrapWidth = -wrapper.outerWidth();
+                sCarouselWelcome.fromTo('.cas-line span', 1, {
+                    y: '100%'
+                }, {
+                    y: '0%',
+                    stagger: 0.1,
+                    ease: 'power3.out'
+                }, 2)
+                sCarouselWelcome.fromTo(wrapper, 2.5, {
+                    x: wrapWidth
+                }, {
+                    x: wrapFirstTrans,
+                    ease: 'circ.inOut',
+                }, .2)
+                sCarouselWelcome.fromTo('.cas-bg-text', 1.5, {
+                    x: '-100%'
+                }, {
+                    x: '100%',
+                    ease: 'power2.out',
+                }, .7)
+                sCarouselWelcome.fromTo('.cas-progress', 1.5, {
+                    width: '0%'
+                }, {
+                    width: '50%',
+                    ease: 'power2.out',
+                }, 2.2)
+                sCarouselWelcome.fromTo('.showcase-footer', 1, {
+                    opacity: 0,
+                }, {
+                    opacity: 1
+                }, 2.7)
+            } else if (showcaseCheck.hasClass('fullscreen-slider-showcase')) {
+                let welcomeAnim = gsap.timeline({
+                        once: true
+                    }),
+                    currentSlide = $('.swiper-slide-active'),
+                    nextSlide = $('.swiper-slide-next'),
+                    prevSlide = $('.swiper-slide-prev'),
+                    actImg = $(currentSlide).find('img'),
+                    nextImg = $(nextSlide).find('img'),
+                    prevImg = $(prevSlide).find('img'),
+                    activeProj = $(currentSlide).data('project'),
+                    actIndex = $(currentSlide).data('index'),
+                    titLines = $(activeProj).find('.fs-tit-char > span');
+                welcomeAnim.fromTo(titLines, 1.5, {
+                    x: -100,
+                }, {
+                    x: -0,
+                    stagger: 0.01,
+                    ease: 'power2.out',
+                }, .3)
+                welcomeAnim.fromTo('.fs-fraction span', .6, {
+                    x: -30,
+                    opacity: 0
+                }, {
+                    x: 0,
+                    opacity: 1,
+                    ease: 'power2.out',
+                }, 1)
+                welcomeAnim.fromTo('.fs-meta > span', 1, {
+                    x: -30,
+                    opacity: 0
+                }, {
+                    x: 0,
+                    opacity: 1,
+                    ease: 'power2.out',
+                }, 1);
+                welcomeAnim.fromTo('.fs-button a', 1.5, {
+                    x: '-100%',
+                    opacity: 0
+                }, {
+                    x: '0%',
+                    opacity: 1,
+                    ease: 'power2.out',
+                }, 1.5)
+                welcomeAnim.fromTo('.showcase-footer', 1, {
+                    opacity: 0
+                }, {
+                    opacity: 1,
+                    ease: 'power2.out',
+                }, 1.7)
+            } else if (showcaseCheck.hasClass('fullscreen-wall-showcase')) {
+                let fsWallWelcome = gsap.timeline({
+                        once: true
+                    }),
+                    dashs = CSSRulePlugin.getRule('.fw-project::after');
+                fsWallWelcome.fromTo('.fw-project a', 1.5, {
+                    y: '150%',
+                }, {
+                    y: '0%',
+                    stagger: 0.1,
+                    ease: 'power2.out',
+                }, 0)
+                fsWallWelcome.fromTo(dashs, 1.5, {
+                    cssRule: {
+                        y: '150%',
+                    }
+                }, {
+                    cssRule: {
+                        y: '0%',
+                    },
+                    stagger: 0.1,
+                    ease: 'power2.out',
+                }, 1)
+                fsWallWelcome.fromTo('.showcase-footer', .75, {
+                    opacity: 0
+                }, {
+                    opacity: 1,
+                    ease: 'power2.out',
+                }, 2)
+            }
+        }
+    }
+
     $(window).on('load', function() {
         siteHeaderSet()
         fullscreenNavigation()
@@ -648,7 +961,7 @@
                     duration: 0.5,
                     ease: "power4.inOut"
                 }, "-=2")
-           
+                showcaseOpenings();
                 let mobileQuery = window.matchMedia('(max-width: 900px)');
                 if (!mobileQuery.matches) {
                    
