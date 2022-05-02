@@ -334,10 +334,12 @@ $(document).ready(function() {
 
     "use strict";
     // scr();
+   
     HeroSection();
     ChangeColor();
+    About();
     Horizontal();
-    navigation()
+    Changehum();
     Opaci();
     Works();
     toggel()
@@ -345,13 +347,10 @@ $(document).ready(function() {
     Plrax();
     About2();
     splt()
-    About();
     Serv();
     worksSlider()
     Marq();
-    Changehum();
     initShowcases();
-
     Scrol();
     Footer();
 });
@@ -412,6 +411,9 @@ ScrollTrigger.refresh();
 ScrollTrigger.config({
     autoRefreshEvents: 'visibilitychange,DOMContentLoaded,load',
 });
+
+
+
 
 
 // s
@@ -611,6 +613,14 @@ HeroSection()
 
 }
 
+
+
+// Hero
+
+
+
+
+
 function playVideo(el) {
     let vid = document.getElementById(el);
     vid.play();
@@ -653,37 +663,7 @@ var changeClass = function(name){
 
 
 
-    function navigation() {
-    
-gsap.to(".navItemLinkInner", { attr: { x: 0 }, duration: 1, repeat: -1, yoyo: true });
-// humburger menu
-var t1 = new TimelineMax({ paused: true });
 
-t1.to(".nav-container", 1, {
-    left: -1,
-    ease: Expo.easeInOut,
-    duration: 0.3,
-}, "-=0.8");
-
-t1.staggerFrom(
-    ".Menu-nav > div, .nav-second > div",
-    0.8, { y: 100, opacity: 0, ease: Expo.easeOut },
-    "0.1",
-    "-=0.2"
-);
-
-t1.reverse();
-
-$(document).on("click", ".menu-open", function() {
-    t1.reversed(!t1.reversed());
-});
-$(document).on("click", ".menu-close", function() {
-    t1.reversed(!t1.reversed());
-});
-$(document).on("click", ".navItemLink", function() {
-    t1.reversed(!t1.reversed());
-});
-}
 
 //
 window.addEventListener("load", function() {

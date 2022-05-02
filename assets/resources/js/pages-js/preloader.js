@@ -2,7 +2,7 @@
     "use strict";
     console.clear();
     gsap.registerPlugin( ScrollTrigger,);
-    var pageSet, pageCursor, siteLoader, headerStick, smoothScroll, siteHeader, locoScroll, pageLayout, headerLayout, footerLayout, menuLayout, menuStyle;
+    var pageSet, siteLoader, headerStick, siteHeader, pageLayout, headerLayout, menuLayout, menuStyle;
 
     function pageSettings() {
         pageSet = $('body');
@@ -74,39 +74,7 @@
                 ease: 'power2.in',
                 stagger: .1,
             }, duration + .6)
-            loadAn.to('.site-logo', 1, {
-                y: '0%',
-                ease: 'power2.out',
-            }, 2)
-          
-            if (siteHeader.hasClass('classic_menu')) {
-                gsap.set('.main-menu > li', {
-                    overflow: 'hidden'
-                })
-                loadAn.fromTo('.main-menu > li > a', 1, {
-                    y: '100%'
-                }, {
-                    y: '0%',
-                    stagger: .1,
-                    ease: 'power2.out',
-                    onComplete: function() {
-                        gsap.set('.main-menu > li', {
-                            clearProps: 'all'
-                        })
-                    }
-                }, 3)
-            } else {
-                loadAn.to('.toggle-line', 1, {
-                    width: 50,
-                    ease: 'power2.out',
-                    stagger: .3
-                }, 3)
-            }
-            loadAn.to('.header-widget', 1.5, {
-                x: 0,
-                opacity: 1,
-                ease: 'power2.out',
-            }, 4)
+            
             loadAn.to(num3wrap, 1, {
                 y: '-50%',
                 ease: 'power2.Out',
@@ -117,16 +85,7 @@
                 stagger: .1,
             }, duration + .6)
         } else {
-            gsap.set('.site-logo', {
-                y: '0%',
-            })
-            gsap.set('.toggle-line', {
-                width: 50,
-            })
-            gsap.set('.header-widget', {
-                x: 0,
-                opacity: 1,
-            })
+          
             loader.hide();
         }
         
@@ -559,7 +518,6 @@
         }
     }
     function initShort() {
-  
         alitohNumberCt();
 
     }
@@ -897,7 +855,43 @@
                         loader.hide();
                     }
                 })
-          
+               
+                    loader.hide();
+                    gsap.to('.site-logo', 2, {
+                        y: '0%',
+                        ease: 'power2.out',
+                    }, )
+                  
+                    if (siteHeader.hasClass('classic_menu')) {
+                        gsap.set('.main-menu > li', {
+                            overflow: 'hidden'
+                        })
+                        gsap.fromTo('.main-menu > li > a', 0.5, {
+                            y: '100%'
+                        }, {
+                            y: '0%',
+                            stagger: .1,
+                            ease: 'power2.out',
+                            onComplete: function() {
+                                gsap.set('.main-menu > li', {
+                                    clearProps: 'all'
+                                })
+                            }
+                        }, )
+                    } else {
+                        gsap.to('.toggle-line', 0.5, {
+                            width: 50,
+                            ease: 'power2.out',
+                            stagger: .3
+                        }, )
+                    }
+                    gsap.to('.header-widget', 0.5, {
+                        x: 0,
+                        opacity: 1,
+                        ease: 'power2.out',
+                    }, )
+                    
+                
                 gsap.from(".text-rveal .header_title_line", {
                     duration: 1,
                     opacity: 0,
@@ -905,17 +899,19 @@
                     css:{transform:"translateY(100%) rotateX(-80deg)", opacity:'0'},
                     stagger: 0.1,
                 })
-                gsap.from(".about-us-image img", 1, {
-                    duration:0.7,
+                gsap.from(".hro-img", 1, {
                     opacity: 0,
-                },"+=0.1")
-                gsap.from('.blog-flex ', 0.9, { y: 40, opacity: 0,duration: 0.5,  },"-=0.7");
-                gsap.from(".hro-img", 1.2, {
-                    opacity: 0,
-                    duration: 0.5,
-                    y: 300,
+                    duration: 0.2,
+                    y: 100,
                     ease: "power4.inOut"
-                }, "-=0.7")
+                }, )
+                gsap.from(".about-us-image img", 1, {
+                    duration:0.5,
+                    opacity: 0,
+                }, "+=0.1")
+                
+                gsap.from('.blog-flex ', 0.9, { y: 40, opacity: 0,duration: 0.5,  },"-=0.7");
+              
                 gsap.to(".scroll-circle", {
                     duration: 0.5,
                     ease: 'power1.inOut',
@@ -931,10 +927,10 @@
                 
                 gsap.from(".module--header__bg", 1, {
                     opacity: 0,
-                    duration: 0.5,
+                    duration: 0.1,
                     x: -100,
                     ease: "power4.inOut"
-                }, "-=0.6")
+                }, )
         
                 
                 gsap.to(".tris_titles span", 2, {
@@ -978,9 +974,20 @@
         } else {
             loader.hide();
             initShort();
+            gsap.set('.site-logo', {
+                y: '0%',
+            })
+            gsap.set('.toggle-line', {
+                width: 50,
+            })
+            gsap.set('.header-widget', {
+                x: 0,
+                opacity: 1,
+            })
+            
             let mobileQuery = window.matchMedia('(max-width: 900px)');
             if (!mobileQuery.matches) {
-                // aliothParallaxScroll();
+               
             }
      
             ScrollTrigger.refresh(true)
