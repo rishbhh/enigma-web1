@@ -1,7 +1,4 @@
-// preloader 
-(function($) {
-    "use strict";
-    console.clear();
+
 
 // if (!isMobile) {
 
@@ -343,17 +340,18 @@ $(document).ready(function() {
     navigation()
     Opaci();
     Works();
+    toggel()
     TitleChange();
     Plrax();
     About2();
     splt()
     About();
     Serv();
-    aliothRecentWorks()
+    worksSlider()
     Marq();
     Changehum();
     initShowcases();
-    alitohNumberCt()
+
     Scrol();
     Footer();
 });
@@ -882,7 +880,7 @@ function ChangeColor() {
 
 /* Recent Works Carousel */
 
-function aliothRecentWorks() {
+function worksSlider() {
 
     var recentWorkCarousel = $('.a-recent-works');
 
@@ -1052,26 +1050,28 @@ function Changehum() {
 
 
 // Services Accordian
-let accordion = document.querySelector('.accordion-list');
-let items = accordion.querySelectorAll('li');
-let questions = accordion.querySelectorAll('.accordion-title');
-
-questions.forEach(question => question.addEventListener('click', toggleAccordion));
-
-
-function toggleAccordion() {
-
-    thisItem = this.parentNode;
-
-    items.forEach(item => {
-        if (thisItem == item) {
-            thisItem.classList.toggle('open');
-            return;
+    function toggel() {
+        let accordion = document.querySelector('.accordion-list');
+        let items = accordion.querySelectorAll('li');
+        let questions = accordion.querySelectorAll('.accordion-title');
+        
+        questions.forEach(question => question.addEventListener('click', toggleAccordion));
+        
+        
+        function toggleAccordion() {
+        
+            thisItem = this.parentNode;
+        
+            items.forEach(item => {
+                if (thisItem == item) {
+                    thisItem.classList.toggle('open');
+                    return;
+                }
+                item.classList.remove('open');
+        
+            })
+        
         }
-        item.classList.remove('open');
-
-    })
-
 }
 // horizontal Scrll section
 function Horizontal() {
@@ -1575,4 +1575,3 @@ $(window).on('load', function() {
     })
 }   
     
-}(jQuery));

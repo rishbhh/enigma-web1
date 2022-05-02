@@ -11170,7 +11170,7 @@ body.dark .cas-progress span {
   transition: transform 0.3s ease 0.3s;
   transition: transform 0.3s ease 0.3s, -webkit-transform 0.3s ease 0.3s;
 }
-.alioth-page-loader {
+.en-page-loader {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -11178,7 +11178,7 @@ body.dark .cas-progress span {
   left: 0;
   z-index: 888;
 }
-.alioth-page-loader .apl-wrapper {
+.en-page-loader .apl-wrapper {
   position: fixed;
   bottom: 10%;
   left: 8.5%;
@@ -11195,7 +11195,7 @@ span.apl-background {
   height: 100%;
   z-index: -15;
 }
-.alioth-page-loader.light span.apl-background {
+.en-page-loader.light span.apl-background {
   background: #ebebeb;
 }
 .apl-count {
@@ -11276,7 +11276,7 @@ span.apl-background {
 .apl-num.apl-num-3 {
   font-family: 'NeueHaasDisplay-me';
 }
-.alioth-page-loader.dark .apl-text {
+.en-page-loader.dark .apl-text {
   color: #fff;
 }
 .top-p {

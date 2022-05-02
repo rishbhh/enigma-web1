@@ -20,7 +20,7 @@
     var loader, loaderOv, loadAn;
 
     function pageLoader() {
-        loader = $('.alioth-page-loader');
+        loader = $('.en-page-loader');
         if (siteLoader == true) {
             $('.apl-count').wrap('<div class="apl-wrapper"></div>');
             var loaderLayout = loader.data('layout');
@@ -437,7 +437,7 @@
                     headerWrapper.removeClass('menu-opened');
                     menuToggle.removeClass('is-active');
                     $('.site-header').removeClass('menu-has-open');
-                    enableScroll();
+                    // enableScroll();
                     menuItemHasSub.removeClass('has-sub-in')
                 },
                 onComplete: function() {
@@ -558,6 +558,11 @@
             });
         }
     }
+    function initShort() {
+  
+        alitohNumberCt();
+
+    }
     let mobileQuery = window.matchMedia('(max-width: 450px)');
     if (!mobileQuery.matches) {
        
@@ -675,7 +680,7 @@
                 let ssWelcome = gsap.timeline({
                     once: true,
                     onStart: function() {
-                        disableScroll();
+                        // disableScroll();
                         gsap.set('.ss-project.active .ss1-cat', {
                             visibility: 'hidden'
                         })
@@ -753,10 +758,10 @@
             } else if (showcaseCheck.hasClass('carousel-showcase')) {
                 let sCarouselWelcome = gsap.timeline({
                         onStart: function() {
-                            disableScroll();
+                            // disableScroll();
                         },
                         onComplete: function() {
-                            enableScroll();
+                            // enableScroll();
                         }
                     }),
                     wrapper = $('.cas-project-wrapper'),
@@ -962,6 +967,7 @@
                     ease: "power4.inOut"
                 }, "-=2")
                 showcaseOpenings();
+                initShort();
                 let mobileQuery = window.matchMedia('(max-width: 900px)');
                 if (!mobileQuery.matches) {
                    
@@ -971,7 +977,7 @@
             })
         } else {
             loader.hide();
-          
+            initShort();
             let mobileQuery = window.matchMedia('(max-width: 900px)');
             if (!mobileQuery.matches) {
                 // aliothParallaxScroll();
