@@ -90,7 +90,40 @@
         }
         
     }
-   
+    function buttonsHover() {
+        $(".button button .line, .button a .line").length && ($(".button button, .button a").mouseenter(function() {
+            $(this);
+            TweenMax.to($(this).find(".line"), .3, {
+                left: "20%",
+                width: "100%",
+                ease: Power1.easeInOut
+            }), TweenMax.to($(this).find(".text"), .3, {
+                x: "10%",
+                ease: Power1.easeInOut
+            })
+        }), $(".button button, .button a").mouseleave(function() {
+            var e = $(this);
+            TweenMax.to($(this).find(".text"), .3, {
+                x: "0%",
+                ease: Power1.easeInOut
+            }), $(this).find(".line").css("transform-origin", "right 0"), TweenMax.to(e.find(".line"), .3, {
+                scaleX: 0,
+                ease: Power1.easeInOut,
+                onComplete: function() {
+                    e.find(".line").css({
+                        left: "",
+                        width: 0,
+                        transform: "",
+                        "transform-origin": "0 0"
+                    }), TweenMax.to(e.find(".line"), .5, {
+                        width: 20,
+                        scaleX: 1,
+                        ease: Power1.easeInOut
+                    })
+                }
+            })
+        }))
+    }
     function siteHeaderSet() {
         siteHeader = $('.site-header');
         gsap.set(siteHeader, {
@@ -841,6 +874,7 @@
     $(window).on('load', function() {
         siteHeaderSet()
         fullscreenNavigation()
+        buttonsHover()
         pageLoader();
         if (siteLoader == true) {
             loadAn.eventCallback('onComplete', function() {
