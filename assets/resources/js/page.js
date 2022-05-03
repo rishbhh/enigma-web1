@@ -334,10 +334,11 @@ $(document).ready(function() {
 
     "use strict";
     // scr();
-   
+    
     HeroSection();
     ChangeColor();
     About();
+    Marq();
     Horizontal();
     Changehum();
     Opaci();
@@ -349,7 +350,6 @@ $(document).ready(function() {
     splt()
     Serv();
     worksSlider()
-    Marq();
     initShowcases();
     Scrol();
     Footer();

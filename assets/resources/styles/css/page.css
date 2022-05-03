@@ -10293,6 +10293,12 @@ section.horizontal .animation-wrap.to-left {
     margin-bottom: 60px;
     overflow: hidden;
   }
+  .services-s {
+    padding: 0px 0%;
+  }
+  .services-s .p-right {
+    padding-right: 0%;
+  }
   .services-s .p-left {
     padding-left: 0%;
   }
@@ -11247,7 +11253,7 @@ body.dark .cas-progress span {
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 888;
 }
 .en-page-loader .apl-wrapper {
   position: fixed;
@@ -11501,7 +11507,7 @@ section:after {
   content: '';
 }
 @media only screen and (max-width: 450px) {
-  .alioth-page-loader {
+  .en-page-loader {
     width: 100%;
     height: 100%;
   }
@@ -12699,6 +12705,14 @@ ul.product-tags li a {
     display: block;
     padding: 10px 0px 80px 0px;
   }
+  .site-navigation.fullscreen {
+    position: fixed;
+    width: 100%;
+    height: 85%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
   #work-sction .pr-list .pr-main {
     width: 100%;
     padding: 0 0 0px;
@@ -12706,7 +12720,7 @@ ul.product-tags li a {
             transform: none !important;
     margin-top: 40%;
   }
-  .alioth-page-loader {
+  .en-page-loader {
     width: 100%;
     height: 100%;
   }
