@@ -879,7 +879,7 @@
                             }
                         }, )
                     } else {
-                        gsap.to('.toggle-line', 0.5, {
+                        gsap.to('.toggle-line', 0.8, {
                             width: 50,
                             ease: 'power2.out',
                             stagger: .3
