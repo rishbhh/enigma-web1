@@ -12030,6 +12030,9 @@ section:after {
   font-family: 'Ageo';
   letter-spacing: 0.06em;
 }
+.social-list li a:hover {
+  color: #fff;
+}
 .social-list li {
   font-size: 18px;
   line-height: 22px;
@@ -16864,6 +16867,7 @@ ul.aw-cats {
   margin-top: -50px;
   font-family: 'NeueHaasDisplay-me';
   position: absolute;
+  text-transform: uppercase;
 }
 body.dark .ar-work-title,
 .a-recent-works.dark .ar-work-title {
