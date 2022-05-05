@@ -13001,12 +13001,12 @@ ul.product-tags li a {
 /* contact */
 .form-container {
   position: fixed;
-  right: 0;
-  bottom: -100%;
+  left: -100%;
   width: 100%;
   height: 100vh;
   background: #fff;
   z-index: 10;
+  top: 0;
   overflow: auto;
 }
 .form-container ::-webkit-scrollbar {
@@ -13076,12 +13076,13 @@ ul.product-tags li a {
   border-bottom: 1px solid #d4d4d4;
 }
 .form-container .form-close {
-  position: absolute;
+  position: fixed;
   top: 30px;
   right: 50px;
   font-size: 20px;
   cursor: pointer;
   z-index: 9;
+  width: 50px;
 }
 .uploader__input {
   display: none;
@@ -13258,20 +13259,16 @@ ul.product-tags li a {
   opacity: 0;
 }
 .en-checkbox_rounded-box {
-  position: relative;
-  font-size: 28px;
+  font-size: 25px;
   overflow: hidden;
-  font-family: 'Bebas Neue';
-  letter-spacing: 0.1em;
+  font-family: 'Ageo-SemiBold';
+  letter-spacing: 0.2px;
   color: #6d6d6d;
   background: #fff;
   border-radius: 90px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
+  text-transform: capitalize;
 }
 .en-checkbox_rounded-box img {
   width: 70px;
@@ -13352,8 +13349,8 @@ ul.product-tags li a {
   border-radius: 0;
   -webkit-transform: translateY(0) translateZ(0);
   transform: translateY(0) translateZ(0);
-  -webkit-transition-duration: 0s,0s;
-  transition-duration: 0s,0s;
+  -webkit-transition-duration: 0s, 0s;
+  transition-duration: 0s, 0s;
   -webkit-animation: cb-checkbox_rounded-ripple-in 0.5s cubic-bezier(0.4, 0, 0, 1);
   animation: cb-checkbox_rounded-ripple-in 0.5s cubic-bezier(0.4, 0, 0, 1);
 }
@@ -13482,7 +13479,7 @@ ul.product-tags li a {
   background: 0 0;
   border: 0;
   border-radius: 0;
-  outline: 0!important;
+  outline: 0 !important;
   font-family: 'NeueHaasDisplay-bol';
   font-size: 1.4em;
   letter-spacing: 1px;
@@ -13569,6 +13566,7 @@ ul.product-tags li a {
   border: 0;
   border-radius: 0;
   outline: 0;
+  font-family: 'Ageo';
   resize: none;
   font-size: 24px;
   font-weight: 400;
@@ -13786,7 +13784,7 @@ ul.product-tags li a {
   background: 0 0;
   border: 0;
   border-radius: 0;
-  outline: 0!important;
+  outline: 0 !important;
   font-size: 20px;
   font-weight: 600;
   line-height: 25px;
@@ -13920,130 +13918,43 @@ ul.product-tags li a {
   -webkit-transform: translateX(5px);
   transform: translateX(5px);
 }
-.box {
-  --primary: #275efe;
-  --headline: #3F4656;
-  --text: #99A3BA;
-  width: 100%;
-  padding: 9px 0px 18px 13px;
-}
-.box h3 {
-  font-family: inherit;
-  font-size: 32px;
-  font-weight: 700;
-  margin: 0 0 20px 0;
-  color: var(--headline);
-}
-.box h3 span {
-  font-weight: 500;
-}
-.box .values div,
-.box small div {
-  display: inline-block;
-  vertical-align: top;
-}
-.box .values {
-  margin: 0;
-  font-weight: 500;
-  font-size: 2em;
-  color: var(--primary);
-}
-.box .values > div:first-child {
-  margin-right: 2px;
-}
-.box .values > div:last-child {
-  margin-left: 2px;
-}
-.box small {
-  color: var(--text);
-  display: block;
-  margin-top: 8px;
-  font-size: 14px;
-}
-.box .slider {
-  margin-top: 40px;
-}
-.slider {
-  --primary: #275efe;
-  --handle: #fff;
-  --handle-active: #becfff;
-  --handle-hover: #e9efff;
-  --handle-border: 2px solid var(--primary);
-  --line: #cdd9ed;
-  --line-active: var(--primary);
-  height: 23px;
-  width: 70%;
+.price {
   position: relative;
-  pointer-events: none;
 }
-.slider .ui-slider-handle {
-  --y: 0;
-  --background: var(--handle);
-  cursor: -webkit-grab;
-  cursor: grab;
-  -webkit-tap-highlight-color: transparent;
-  top: 0;
-  width: 23px;
-  height: 23px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  position: absolute;
+.price .range-input {
+  padding: 10px 0px;
+}
+.price .range-input input {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 3px;
+  background-color: #4471ef;
   outline: none;
-  display: block;
-  pointer-events: auto;
 }
-.slider .ui-slider-handle div {
-  width: 23px;
-  height: 23px;
+.price .range-input input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  border: 2px solid #4471ef;
   border-radius: 50%;
-  -webkit-transition: background 0.4s ease;
-  transition: background 0.4s ease;
-  -webkit-transform: translateY(calc(var(--y) * 1px));
-          transform: translateY(calc(var(--y) * 1px));
-  background: transparent linear-gradient(44deg, #2D4DE0 0%, #9F71F0 54%, #E76592 100%) 0% 0% no-repeat padding-box;
+  outline: none;
 }
-.slider .ui-slider-handle:hover {
-  --background: var(--handle-hover);
+.price .range-input input::-webkit-slider-thumb:hover {
+  background-color: #4471ef;
 }
-.slider .ui-slider-handle:active {
-  --background: var(--handle-active);
-  cursor: -webkit-grabbing;
-  cursor: grabbing;
-}
-.slider svg {
-  --stroke: var(--line);
-  display: block;
-  height: 83px;
-}
-.slider svg path {
-  fill: none;
-  stroke: var(--stroke);
-  stroke-width: 3;
-}
-.slider .active,
-.slider > svg {
-  position: absolute;
-  top: -30px;
-  height: 83px;
-}
-.slider > svg {
-  left: 0;
-  width: 100%;
-}
-.slider .active {
-  position: absolute;
+.price .range-input .value {
+  color: #4471ef;
+  line-height: 40px;
+  height: 40px;
   overflow: hidden;
-  left: calc(var(--l) * 1px);
-  right: calc(var(--r) * 1px);
+  font-family: 'NeueHaasDisplay-me';
+  font-size: 37px;
+  margin-bottom: 20px;
 }
-.slider .active svg {
-  --stroke: var(--line-active);
-  position: relative;
-  left: calc(var(--l) * -1px);
-  right: calc(var(--r) * -1px);
-}
-.slider .active svg path {
-  stroke-width: 3;
+.price .range-input .value div {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 #footer {
   position: relative;
