@@ -13063,14 +13063,6 @@ ul.product-tags li a {
   padding: 0px 15px;
   overflow: hidden;
 }
-.form-container .form-flex .en-form-group .fl {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 .form-container .form-flex .en-form-group .fl select {
   border: none;
   border-bottom: 1px solid #d4d4d4;
@@ -13220,7 +13212,7 @@ ul.product-tags li a {
 .en-checkbox_rounded {
   position: relative;
   display: inline-block;
-  width: 30%;
+  width: 20%;
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -13274,6 +13266,10 @@ ul.product-tags li a {
   width: 70px;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
+}
+.en-checkbox_rounded-box lottie-player {
+  width: 250px;
+  margin: auto;
 }
 .en-checkbox_rounded-title {
   position: relative;
@@ -13933,8 +13929,8 @@ ul.product-tags li a {
 }
 .price .range-input input::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background-color: #eee;
   border: 2px solid #4471ef;
   border-radius: 50%;
