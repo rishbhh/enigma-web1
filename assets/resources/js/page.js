@@ -1225,22 +1225,22 @@ function Opaci() {
 
 // pop Form
 
-// var ClickForm = new TimelineMax({ paused: true });
+var ClickForm = new TimelineMax({ paused: true });
 
-// ClickForm.to(".form-container", 1, {
-//     left: 0,
-//     ease: Expo.easeInOut,
-// });
+ClickForm.to(".form-container", 1, {
+    left: 0,
+    ease: Expo.easeInOut,
+});
 
-// ClickForm.staggerFrom(".frm", 0.5, { y: 100, opacity: 0, duration: 0.5, ease: 'power2.In' }, "-=0.3");
-// // ClickForm.staggerFrom(".form-close", 0.5, {  opacity: 0, duration: 0.5, ease: 'power2.In' });
-// ClickForm.reverse();
-// $(document).on("click", ".action-icon", function() {
-//     ClickForm.reversed(!ClickForm.reversed());
-// });
-// $(document).on("click", ".form-close", function() {
-//     ClickForm.reversed(!ClickForm.reversed());
-// });
+ClickForm.staggerFrom(".frm", 0.5, { y: 100, opacity: 0, duration: 0.5, ease: 'power2.In' }, "-=0.3");
+// ClickForm.staggerFrom(".form-close", 0.5, {  opacity: 0, duration: 0.5, ease: 'power2.In' });
+ClickForm.reverse();
+$(document).on("click", ".action-icon", function() {
+    ClickForm.reversed(!ClickForm.reversed());
+});
+$(document).on("click", ".form-close", function() {
+    ClickForm.reversed(!ClickForm.reversed());
+});
 
 // Rangee
 // let rangeInput = document.querySelector(".range-input input");

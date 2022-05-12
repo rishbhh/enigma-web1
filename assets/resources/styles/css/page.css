@@ -6578,6 +6578,8 @@ header {
 .qux .flex-con .listi {
   width: 90%;
   margin-bottom: 6%;
+  font-family: 'Ageo-SemiBold';
+  letter-spacing: 1px;
 }
 .qux .flex-con .listi ul {
   display: -webkit-box;
