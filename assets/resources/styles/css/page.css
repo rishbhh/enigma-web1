@@ -12773,6 +12773,31 @@ ul.product-tags li a {
   padding: 10px;
   display: block;
 }
+.pd {
+  padding: 0px 10%;
+  position: relative;
+}
+.mt-1 {
+  margin-top: 10%;
+}
+.bck {
+  opacity: 0.2;
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.bck img {
+  width: 1000px;
+}
+.text-clor h2,
+.text-clor p {
+  color: #fff !important;
+}
 @media screen and (max-width: 1280px) {
   #work-sction .hd-rvl {
     font-size: 20px;
