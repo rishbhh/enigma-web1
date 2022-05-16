@@ -6590,8 +6590,9 @@ header {
   overflow: hidden;
 }
 .qux {
-  padding: 0 13%;
-  margin-top: 10%;
+  padding: 0 6%;
+  margin-top: 14%;
+  margin-bottom: 8%;
 }
 .qux .flex-con {
   margin-top: 75px;
@@ -6602,30 +6603,24 @@ header {
       flex-wrap: wrap;
 }
 .qux .flex-con .listi {
-  width: 90%;
+  width: 40%;
   margin-bottom: 6%;
   font-family: 'Ageo-SemiBold';
   letter-spacing: 1px;
 }
-.qux .flex-con .listi ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.qux .flex-con .listi ul li {
+  margin-bottom: 50px;
 }
 .qux .flex-con .listi ul li p {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .qux .t-left {
-  width: 100%;
+  width: 48%;
 }
 .qux .t-left p {
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 1px;
-  letter-spacing: 1.2;
-  font-family: "NeueHaasDisplay-roman";
+  line-height: 2;
 }
 .qux .t-left .hdn {
   margin-top: 10%;
@@ -7108,6 +7103,7 @@ header {
 .text_anim div,
 .text_anim h3,
 .text_anim h2,
+.text_anim h5,
 .text_anim p {
   overflow: hidden;
 }
@@ -8746,6 +8742,47 @@ header {
   .mob-port .swiper-wrapper {
     -webkit-box-sizing: inherit;
             box-sizing: inherit;
+  }
+  .qu .module--header__image {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .qu .el-bg {
+    z-index: 0;
+  }
+  .qu .hro-img {
+    position: relative;
+    top: 0;
+    height: 580px;
+  }
+  .qux .flex-con .listi {
+    width: 100%;
+  }
+  .qux .t-left {
+    width: 100%;
+  }
+  #portf > div,
+  #studio_p > div,
+  #filosofia > div,
+  #design > div {
+    font-size: calc(16px + 15 * ((100vw - 320px) / 1920));
+    line-height: calc(26px + 15 * ((100vw - 320px) / 1920));
+    color: var(--grey);
+  }
+  .margin-r-46 {
+    margin-right: 0%;
+  }
+  #portf p,
+  #colori p {
+    margin-top: 30px;
+    padding-left: 0;
+    font-size: calc(16px + 10 * ((100vw - 320px) / 1920));
+    line-height: calc(24px + 10 * ((100vw - 320px) / 1920));
+  }
+  .blocco div.right_block,
+  .blocco div.left_block {
+    margin-bottom: 55px;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and screen and (max-height: 670px) {
@@ -10887,7 +10924,6 @@ section.horizontal .animation-wrap.to-left {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: #101010;
-  font-family: 'Freight-Display-Pro-bold-italic';
 }
 .portfolio .link {
   margin: 40px 0;
@@ -10908,7 +10944,6 @@ section.horizontal .animation-wrap.to-left {
   top: 20%;
   padding: 0px 40px;
   text-transform: uppercase;
-  font-family: 'Freight-Display-Pro-blod-Italic';
   font-family: "Mak";
   font-size: 40px;
   z-index: 2;
@@ -16342,7 +16377,7 @@ ul.aw-cats {
   border: 0;
   border-radius: 0;
   outline: 0 !important;
-  font-family: 'NeueHaasDisplay-bol';
+  font-family: 'Ageo-Semibold';
   font-size: 1.4em;
   letter-spacing: 1px;
   line-height: inherit;

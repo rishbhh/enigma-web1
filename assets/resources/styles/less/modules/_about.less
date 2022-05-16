@@ -2044,8 +2044,9 @@
 }
 
 .qux {
-    padding: 0 13%;
-    margin-top: 10%;
+    padding: 0 6%;
+    margin-top: 14%;
+    margin-bottom: 8%;
 
     .flex-con {
         margin-top: 75px;
@@ -2055,19 +2056,20 @@
         flex-wrap: wrap;
 
         .listi {
-            width: 90%;
+            width: 40%;
             margin-bottom: 6%;
             font-family: 'Ageo-SemiBold';
             letter-spacing: 1px;
 
             ul {
-                display: flex;
-                justify-content: space-between;
 
                 li {
                     p {
-                        margin-top: 20px;
+                        margin-top: 10px;
+
                     }
+
+                    margin-bottom: 50px;
                 }
             }
         }
@@ -2075,13 +2077,12 @@
     }
 
     .t-left {
-        width: 100%;
+        width: 48%;
 
         p {
-            font-size: 14px;
+            font-size: 16px;
             letter-spacing: 1px;
-            letter-spacing: 1.2;
-            font-family: "NeueHaasDisplay-roman";
+            line-height: 2;
         }
 
         .hdn {
@@ -2611,6 +2612,7 @@
 .text_anim div,
 .text_anim h3,
 .text_anim h2,
+.text_anim h5,
 .text_anim p {
     overflow: hidden;
 }
@@ -4715,5 +4717,59 @@
 
             box-sizing: inherit;
         }
+    }
+
+    .qu {
+        .module--header__image {
+            justify-content: center;
+        }
+
+        .el-bg {
+            z-index: 0;
+        }
+
+        .hro-img {
+            position: relative;
+            top: 0;
+            height: 580px;
+        }
+
+
+    }
+
+    .qux {
+        .flex-con .listi {
+            width: 100%;
+        }
+
+        .t-left {
+            width: 100%;
+        }
+    }
+
+    #portf>div,
+    #studio_p>div,
+    #filosofia>div,
+    #design>div {
+        font-size: calc(16px + 15 * ((100vw - 320px) / 1920));
+        line-height: calc(26px + 15 * ((100vw - 320px) / 1920));
+        color: var(--grey);
+    }
+
+    .margin-r-46 {
+        margin-right: 0%;
+    }
+
+    #portf p,
+    #colori p {
+        margin-top: 30px;
+        padding-left: 0;
+        font-size: calc(16px + 10 * ((100vw - 320px) / 1920));
+        line-height: calc(24px + 10 * ((100vw - 320px) / 1920));
+    }
+
+    .blocco div.right_block,
+    .blocco div.left_block {
+        margin-bottom: 55px;
     }
 }
