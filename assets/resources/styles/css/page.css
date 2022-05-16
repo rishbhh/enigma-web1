@@ -8743,6 +8743,9 @@ header {
     -webkit-box-sizing: inherit;
             box-sizing: inherit;
   }
+  .patr .el-bg {
+    z-index: 0;
+  }
   .qu .module--header__image {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
