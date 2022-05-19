@@ -13188,7 +13188,7 @@ ul.product-tags li a {
   border-bottom: 1px solid #d4d4d4;
 }
 .form-container .form-close {
-  position: fixed;
+  position: absolute;
   top: 30px;
   right: 50px;
   font-size: 20px;
@@ -14628,7 +14628,7 @@ ul.product-tags li a {
   line-height: 19px;
   color: #737373;
   margin-top: 0;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: 'Ageo-SemiBold';
 }
 /* blog-deatails */
 .page-section--hero-article {
@@ -15217,6 +15217,22 @@ ul.aw-cats {
     /* overflow-x: hidden; */
     /* overflow-y: hidden; */
   }
+  .page-header {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding-top: 40%;
+    background: #EBEBEB;
+    margin-bottom: 150px;
+    z-index: 2;
+  }
+  .aw-categories ul.aw-cats li {
+    font-size: 29px;
+  }
+  .recent-post .rec {
+    width: 100%;
+    padding-left: 0;
+  }
   #blogs-sction .pr-list {
     width: 100%;
   }
@@ -15384,28 +15400,59 @@ ul.aw-cats {
   }
   .recent-post .p-prj-caption {
     width: 100%;
-    padding-left: 17px;
+    padding-left: 0px;
+    pointer-events: none;
+    -webkit-transform: translateZ(100px);
+    transform: translateZ(100px);
+    z-index: 4;
+    margin-top: 30px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .recent-post .p-prj-caption-name {
+    font-size: 1.8em;
+    letter-spacing: 2.5px;
+    font-family: 'NeueHaasDisplay-me';
+    color: #000;
+    line-height: 1.4;
+    margin-bottom: 1%;
+  }
+  .recent-post .p-prj-caption-credit {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 19px;
+    color: #737373;
+    margin-top: 0;
+    font-family: 'Ageo-Semibold';
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #blogs-sction .p-prj-caption {
+    width: 100%;
+    padding-left: 0;
     pointer-events: none;
     -webkit-transform: translateZ(100px);
     transform: translateZ(100px);
     z-index: 4;
     margin-top: 30px;
   }
-  .recent-post .p-prj-caption-name {
-    font-size: 2.3em;
-    letter-spacing: 2.5px;
-    font-family: 'NeueHaasDisplay-me';
-    color: #000;
-    line-height: 1.2;
-    margin-bottom: 1%;
-  }
-  .recent-post .p-prj-caption-credit {
-    font-size: 15px;
-    letter-spacing: 2px;
+  #blogs-sction .p-prj-caption-credit {
+    font-size: 13px;
+    letter-spacing: 1px;
     line-height: 19px;
     color: #737373;
     margin-top: 0;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: 'Ageo-Semibold';
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /******************************************************************************/

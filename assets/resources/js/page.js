@@ -1235,7 +1235,7 @@ ClickForm.to(".form-container", 1, {
 ClickForm.staggerFrom(".frm", 0.5, { y: 100, opacity: 0, duration: 0.5, ease: 'power2.In' }, "-=0.3");
 // ClickForm.staggerFrom(".form-close", 0.5, {  opacity: 0, duration: 0.5, ease: 'power2.In' });
 ClickForm.reverse();
-$(document).on("click", ".action-icon", function() {
+$(document).on("click", ".action-icons", function() {
     ClickForm.reversed(!ClickForm.reversed());
 });
 $(document).on("click", ".form-close", function() {
