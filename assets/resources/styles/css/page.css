@@ -209,118 +209,6 @@ ul {
   list-style: none outside none;
 }
 @font-face {
-  font-family: 'Sarabun';
-  font-style: italic;
-  font-weight: 100;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/sarabun/v13/DtVnJx26TKEr37c9aBBx_nwM.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Sarabun';
-  font-style: italic;
-  font-weight: 200;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/sarabun/v13/DtVkJx26TKEr37c9aBBxUl0s7g.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Sarabun';
-  font-style: italic;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/sarabun/v13/DtVkJx26TKEr37c9aBBxNl4s7g.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Sarabun';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/sarabun/v13/DtVhJx26TKEr37c9aBBJmg.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Sarabun';
-  font-style: italic;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/sarabun/v13/DtVkJx26TKEr37c9aBBxbl8s7g.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Sarabun';
-  font-style: italic;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/sarabun/v13/DtVkJx26TKEr37c9aBBxQlgs7g.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Sarabun';
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/sarabun/v13/DtVkJx26TKEr37c9aBBxJlks7g.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Sarabun';
-  font-style: italic;
-  font-weight: 800;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/sarabun/v13/DtVkJx26TKEr37c9aBBxOlos7g.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Sarabun';
-  font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/sarabun/v13/DtVhJx26TKEr37c9YHZJmg.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Sarabun';
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/sarabun/v13/DtVmJx26TKEr37c9YNpoulw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Sarabun';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/sarabun/v13/DtVmJx26TKEr37c9YL5rulw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Sarabun';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/sarabun/v13/DtVjJx26TKEr37c9WBI.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Sarabun';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/sarabun/v13/DtVmJx26TKEr37c9YOZqulw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Sarabun';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/sarabun/v13/DtVmJx26TKEr37c9YMptulw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Sarabun';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/sarabun/v13/DtVmJx26TKEr37c9YK5sulw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Sarabun';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/sarabun/v13/DtVmJx26TKEr37c9YLJvulw.ttf) format('truetype');
-}
-@font-face {
   font-family: "Beatrice-Display-Light";
   src: url(/fonts/BeatriceDisplay-Light.woff);
 }
@@ -16354,8 +16242,27 @@ ul.aw-cats {
     width: 100%;
     padding-top: 64px;
   }
+  .lets img {
+    top: 70px;
+    right: -60px;
+    width: 88%;
+  }
+  .lets .flex-row h1 {
+    font-size: 3em;
+    overflow: hidden;
+    -webkit-perspective: 600px;
+    perspective: 600px;
+  }
   .web {
     display: none;
+  }
+  .lets .flex-row P {
+    text-align: right;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding-left: 0%;
+    letter-spacing: 2px;
+    margin-top: 21%;
   }
   .contact-form-block {
     padding-bottom: 90px;
