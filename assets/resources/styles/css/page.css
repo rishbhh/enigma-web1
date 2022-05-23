@@ -389,50 +389,6 @@ ul {
   src: url('/fonts/NeueHaasDisplayXXThinItalic.woff'), format('woff');
 }
 @font-face {
-  font-family: 'Freight-book-it';
-  src: url('/fonts/FreightDispProBook-Italic.woff');
-}
-@font-face {
-  font-family: 'Freight-light-r';
-  src: url('/fonts/FreightDispProLight-Regular.woff');
-}
-@font-face {
-  font-family: 'Freight-medium-it';
-  src: url('/fonts/FreightDispProMedium-Italic.woff');
-}
-@font-face {
-  font-family: 'Freight-medium-r';
-  src: url('/fonts/FreightDispProMedium-Regular.woff');
-}
-@font-face {
-  font-family: 'Freight-semi-it';
-  src: url('/fonts/FreightDispProSemibold-Italic.woff');
-}
-@font-face {
-  font-family: 'Freight-black-it';
-  src: url('/fonts/FreightDispProBlack-Italic.woff');
-}
-@font-face {
-  font-family: 'Freight-black-r';
-  src: url('/fonts/FreightDispProBlack-Regular.woff');
-}
-@font-face {
-  font-family: 'Freight-bold-it';
-  src: url('/fonts/FreightDispProBold-Italic.woff');
-}
-@font-face {
-  font-family: 'Freight-book-r';
-  src: url('/fonts/FreightDispProBook-Regular.woff');
-}
-@font-face {
-  font-family: 'Freight-light-it';
-  src: url('/fonts/FreightDispProLight-Italic.woff');
-}
-@font-face {
-  font-family: 'Freight-Display-Pro-Semibold';
-  src: url('/fonts/FreightDispProLight-Regular.woff');
-}
-@font-face {
   font-family: 'Ageo';
   src: url('/fonts/Ageo.woff');
 }
@@ -451,6 +407,18 @@ ul {
 @font-face {
   font-family: 'Ageo-SemiBold';
   src: url('/fonts/Ageo-SemiBold.woff');
+}
+@font-face {
+  font-family: 'Ageo-Medium';
+  src: url('/fonts/Ageo-Medium.woff');
+}
+@font-face {
+  font-family: 'Ageo-Light';
+  src: url('/fonts/Ageo-Light.woff');
+}
+@font-face {
+  font-family: 'Ageo-Thin';
+  src: url('/fonts/Ageo-Thin.woff');
 }
 .float_r {
   float: right;
@@ -11218,7 +11186,7 @@ section.horizontal .animation-wrap.to-left {
   padding-left: 5%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: 'Ageo';
 }
 .carousel-showcase.dark .cas-titles .cs-title a,
 body.dark .cas-titles .cs-title a,
@@ -11616,9 +11584,8 @@ span.apl-background {
   transition: all 0.6s ease;
 }
 span.ac-sign {
-  font-size: 100px;
-  font-weight: 700;
-  letter-spacing: -7.5px;
+  font-size: 90px;
+  letter-spacing: 0px;
   display: inline-block;
   padding-bottom: 20px;
   vertical-align: top;
@@ -11687,7 +11654,7 @@ span.ac-sign {
   font-size: 30px;
   line-height: 40px;
   margin-left: -1px;
-  font-family: 'Ageo-SemiBold';
+  font-family: 'Ageo';
   letter-spacing: 0em;
 }
 .wrapper:after,
@@ -11735,6 +11702,19 @@ section:after {
     width: 100%;
     margin-bottom: 35px;
   }
+  .flex-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .a-empty-space {
+    width: 0;
+  }
   .dd {
     display: none;
   }
@@ -11749,6 +11729,13 @@ section:after {
     color: #fff;
     letter-spacing: 1px;
     font-family: 'NeueHaasDisplay-me';
+  }
+  .ac-number {
+    font-size: 80px;
+    height: 117px;
+  }
+  span.ac-sign {
+    font-size: 70px;
   }
 }
 .site-header {
@@ -14276,7 +14263,7 @@ ul.product-tags li a {
   border-top: 1px solid #0d182c;
 }
 #footer .bottom-footer p {
-  font-size: 1.1em;
+  font-size: 16px;
   color: #666;
   text-align: center;
   font-family: 'NeueHaasDisplay-light';
@@ -14311,7 +14298,7 @@ ul.product-tags li a {
   overflow: hidden;
   opacity: 0.3;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 64px;
   letter-spacing: 0.00464286em;
@@ -14983,7 +14970,7 @@ ul.aw-cats {
       -ms-flex-align: center;
           align-items: center;
   background: rgba(255, 255, 255, 0.975);
-  height: 0;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14995,16 +14982,18 @@ ul.aw-cats {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   width: 100vw;
-  will-change: transform, opacity;
+  will-change: opacity;
   z-index: -1;
-}
-#search:target {
-  height: 100vh !important;
-  opacity: 1;
-  width: 100vw !important;
-  z-index: 2;
+  top: 0;
 }
 #search:target .close-btn {
+  display: block;
+}
+.open {
+  opacity: 1 !important;
+  z-index: 2 !important;
+}
+.open .close-btn {
   display: block;
 }
 #cl a:hover {
@@ -15210,6 +15199,16 @@ ul.aw-cats {
   }
 }
 @media screen and (max-width: 767px) {
+  #searchbox {
+    max-width: 75%;
+  }
+  .page-header .wrapper-small .page-title h1.big-title {
+    margin-bottom: -4px;
+    margin-top: 0;
+    line-height: 20px;
+    font-size: 87px;
+    margin-left: 0;
+  }
   .head-ser {
     padding-top: 15%;
     position: relative;

@@ -650,15 +650,22 @@ function playVideo(el) {
 
 // }
 
+$(document).ready(function() {
+    $(".cl").click(function() {
+      $("#search").toggleClass("open");
+    });
+  });
+  
+// var changeClass = function(name){
+//     $('#search, #cl').removeAttr('class').addClass(name);
 
-var changeClass = function(name){
-    $('#search, #cl').removeAttr('class').addClass(name);
-
-        if(e.key === "Enter") {
-            $('#search, #cl').removeAttr('class').addClass(name);
-        }
+//         if(e.key === "Enter") {
+//             $('#search, #cl').removeAttr('class').addClass(name);
+//         }
     
-  }
+//   }
+
+
 
 
 
