@@ -933,6 +933,12 @@
                     css:{transform:"translateY(100%) rotateX(-80deg)", opacity:'0'},
                     stagger: 0.1,
                 })
+                gsap.from(".he1 .l", 1.6,{
+                    y: "100",
+                    opacity: 0,
+                    duration: 0.3, stagger: 0.3,
+                    ease: "power4.inOut"
+                }, "-=0.9")
                 gsap.from(".hro-img", 1, {
                     opacity: 0,
                     duration: 0.2,
@@ -952,12 +958,7 @@
                     opacity: 1,
                     alpha: 1,
                 },"-=0.8")
-                gsap.from(".he1 .l", 1.6,{
-                    y: "150",
-                    opacity: 0,
-                    duration: 0.5, stagger: 0.3,
-                    ease: "power4.inOut"
-                }, "-=0.8")
+                
                 
                 gsap.from(".module--header__bg", 1, {
                     opacity: 0,
@@ -987,7 +988,7 @@
                 }, "-=1.3")
                 gsap.from(".welcome-heading", 1, {
                     opacity: 0,
-                    duration: 1.5,
+                    duration: 1.7,
                     ease: "power4.inOut"
                 }, )
         

@@ -999,7 +999,7 @@
     }
 
     .contact-form-block .contact-inner {
-        display: block;
+        flex-wrap: wrap-reverse;
     }
 
     .contact-inner .contact-left-img {
@@ -1009,7 +1009,7 @@
 
     .contact-right {
         width: 100%;
-        padding-top: 64px;
+        padding-top: 0;
     }
 
     .lets img {
@@ -1030,6 +1030,10 @@
     }
 
     .lets {
+        height: 55vh;
+        padding: 30px 12px;
+        margin-top: 10%;
+
         .flex-row {
             P {
                 text-align: right;
@@ -1044,7 +1048,7 @@
 
     .contact-form-block {
         padding-bottom: 90px;
-        padding-top: 143px;
+        padding-top: 0px;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -1073,9 +1077,9 @@
 
     .contact-left-img ul li {
         position: relative;
-        padding-left: 35px;
+        padding-left: 0;
         margin: 0 0 73px;
-        counter-increment: list;
+        display: block;
     }
 
     .contact-left-img ul li h6 {
@@ -1083,14 +1087,19 @@
         text-transform: uppercase;
         font-size: 20px;
         line-height: 20px;
-        color: #ffffff;
+        color: #000000;
         font-weight: bold;
     }
 
     .contact-left-img {
         position: relative;
         z-index: 1;
-        padding: 0 21px;
+        padding: 0 20px;
+        margin-top: 30%;
+    }
+
+    .contact-left-img ul li:before {
+        display: none;
     }
 }
 

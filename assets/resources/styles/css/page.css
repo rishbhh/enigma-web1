@@ -16232,7 +16232,8 @@ ul.aw-cats {
     display: none;
   }
   .contact-form-block .contact-inner {
-    display: block;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
   }
   .contact-inner .contact-left-img {
     width: 100%;
@@ -16240,7 +16241,7 @@ ul.aw-cats {
   }
   .contact-right {
     width: 100%;
-    padding-top: 64px;
+    padding-top: 0;
   }
   .lets img {
     top: 70px;
@@ -16256,6 +16257,11 @@ ul.aw-cats {
   .web {
     display: none;
   }
+  .lets {
+    height: 55vh;
+    padding: 30px 12px;
+    margin-top: 10%;
+  }
   .lets .flex-row P {
     text-align: right;
     font-size: 1.2em;
@@ -16266,7 +16272,7 @@ ul.aw-cats {
   }
   .contact-form-block {
     padding-bottom: 90px;
-    padding-top: 143px;
+    padding-top: 0px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -16290,22 +16296,26 @@ ul.aw-cats {
   }
   .contact-left-img ul li {
     position: relative;
-    padding-left: 35px;
+    padding-left: 0;
     margin: 0 0 73px;
-    counter-increment: list;
+    display: block;
   }
   .contact-left-img ul li h6 {
     margin: 0px 0 15px;
     text-transform: uppercase;
     font-size: 20px;
     line-height: 20px;
-    color: #ffffff;
+    color: #000000;
     font-weight: bold;
   }
   .contact-left-img {
     position: relative;
     z-index: 1;
-    padding: 0 21px;
+    padding: 0 20px;
+    margin-top: 30%;
+  }
+  .contact-left-img ul li:before {
+    display: none;
   }
 }
 .wrapper-small {
