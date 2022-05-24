@@ -7960,6 +7960,7 @@ header {
   }
   .apl-count .apl-num {
     height: 203px;
+    margin-left: 0px;
   }
   .site-header {
     height: 100px;
@@ -12814,6 +12815,7 @@ ul.product-tags li a {
   }
   .apl-count .apl-num {
     height: 203px;
+    margin-left: 0px;
   }
   #work-sction .pr-list .pr-thum .teg {
     width: 100%;

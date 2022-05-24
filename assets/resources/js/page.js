@@ -232,6 +232,15 @@
 //             alpha: 0,
 //             ease: "power4.inOut"
 //         }, "-=.3")
+//         countTimeline.to('.site-logo', 2, {
+//             y: '0%',
+//             ease: 'power2.out',
+//         }, )
+//         countTimeline.to('.toggle-line', 0.8, {
+//             width: 50,
+//             ease: 'power2.out',
+//             stagger: .3
+//         }, )
 //         countTimeline.from(".el-bg", {
 //             opacity: 0,
 //             duration: 0.5,
