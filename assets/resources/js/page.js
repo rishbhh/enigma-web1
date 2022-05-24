@@ -487,8 +487,8 @@ function HeroSection() {
         ease: 'power1.inOut',
         stagger: 0.3
     }, "-=1.6")
-    fixed_scrol.from(".small_heading", {
-        opacity: 0,
+    fixed_scrol.to(".small_heading", {
+        opacity: 1,
         y: 20,
         duration: 3,
         ease: "power1.In"

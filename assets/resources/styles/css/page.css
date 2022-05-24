@@ -3934,7 +3934,7 @@ header {
 .action-icon {
   position: fixed;
   display: block;
-  width: 7%;
+  width: 6%;
   cursor: pointer;
   bottom: 20px;
   right: 17px;
@@ -4336,6 +4336,7 @@ header {
     color: #ffffff;
     letter-spacing: 0.2em;
     padding: 0 10px;
+    opacity: 0;
   }
   .container_hero_content .chapt-icon {
     position: absolute;
