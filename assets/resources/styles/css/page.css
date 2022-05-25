@@ -10224,6 +10224,9 @@ section.horizontal .animation-wrap.to-left {
 .aproch .container .approach-lis .flex-con .ap-prah {
   padding-right: 10%;
 }
+.aproch .container .approach-lis .flex-con .ap-prah h6 {
+  overflow: hidden;
+}
 .aproch .container .approach-lis .flex-con .ap-prah .cons {
   font-size: 1.1em;
   /* position: absolute; */
@@ -10568,6 +10571,9 @@ section.horizontal .animation-wrap.to-left {
     line-height: 1;
     color: #000000;
   }
+  .last {
+    padding: 0% 3.3%;
+  }
   .get-in .flex-con .right::after {
     content: '';
     background: url(/assets/resources/img/Service-elements/phone-icon.svg);
@@ -10597,7 +10603,7 @@ section.horizontal .animation-wrap.to-left {
   }
   .service-points .container .point li {
     width: 100%;
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-family: 'Ageo';
     color: #444444;
     line-height: 1.7;
@@ -10617,7 +10623,7 @@ section.horizontal .animation-wrap.to-left {
   }
   .last .gr-b {
     text-align: center;
-    font-size: 2.1em;
+    font-size: 1.5em;
   }
   .service-points .container p {
     padding-right: 0%;
@@ -12783,6 +12789,9 @@ ul.product-tags li a {
   #work-sction .pr-list {
     display: block;
     padding: 10px 0px 80px 0px;
+  }
+  .site-navigation.fullscreen .menu.main-menu > li.menu-item a {
+    color: #fff;
   }
   .site-navigation.fullscreen {
     position: fixed;
@@ -15621,7 +15630,7 @@ ul.aw-cats {
     text-align: right;
     font-size: 2em;
     text-transform: uppercase;
-    padding-left: 42.1%;
+    padding-left: 51%;
     letter-spacing: 2px;
   }
 }
@@ -16233,6 +16242,9 @@ ul.aw-cats {
 @media screen and (max-width: 767px) {
   .mob {
     display: none;
+  }
+  .w-hde {
+    display: block;
   }
   .contact-form-block .contact-inner {
     -ms-flex-wrap: wrap-reverse;
