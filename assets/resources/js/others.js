@@ -119,7 +119,7 @@ window.onload = function() {
     let revealContainers = document.querySelectorAll(".reveal");
 
     revealContainers.forEach((container) => {
-        let image = container.querySelector("img");
+        let image = container.querySelector("img, video");
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: container,

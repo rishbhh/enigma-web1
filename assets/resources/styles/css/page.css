@@ -7550,6 +7550,9 @@ header {
 .image-section img {
   margin-bottom: 7%;
 }
+.image-section video {
+  margin-bottom: 7%;
+}
 .image-section .img-right {
   margin-left: 30%;
   display: block;
