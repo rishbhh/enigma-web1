@@ -7697,6 +7697,12 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 }
+#marquee.keda > div {
+  height: 100%;
+}
+.p-10 {
+  padding: 10%;
+}
 @media screen and (max-width: 1920px) {
   #about2 .big-h h1 {
     font-size: 9.42em;
