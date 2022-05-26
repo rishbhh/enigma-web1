@@ -6737,7 +6737,7 @@ header {
 }
 #project > div > div > div ul li,
 #project {
-  color: var(--avana);
+  color: #fff;
   font-size: calc(18px + 10 * ((100vw - 320px) / 1920));
   line-height: calc(28px + 10 * ((100vw - 320px) / 1920));
   margin-top: 0px;
@@ -6745,12 +6745,12 @@ header {
 #project > div > div > div ul li h3,
 .link_w h3 {
   text-transform: uppercase;
-  color: var(--avana);
+  color: #fff;
   font-size: 18px;
   margin-bottom: 10px !important;
   margin: 0px;
   letter-spacing: 3px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: 'Ageo-Semibold';
 }
 #abt {
   position: relative;
@@ -6781,16 +6781,6 @@ header {
   font-size: calc(18px + 10 * ((100vw - 320px) / 1920));
   line-height: calc(28px + 10 * ((100vw - 320px) / 1920));
   margin-top: 0px;
-}
-#project > div > div > div .grdi2 li h3,
-.link_w h3 {
-  text-transform: uppercase;
-  color: var(--avana);
-  font-size: 18px;
-  margin-bottom: 10px !important;
-  margin: 0px;
-  letter-spacing: 2px;
-  font-family: 'NeueHaasDisplay-me';
 }
 .points ul {
   margin-top: 7%;
@@ -7371,6 +7361,7 @@ header {
   margin-bottom: 10px;
   letter-spacing: 1px;
   overflow: hidden;
+  font-family: 'Ageo-SemiBold';
 }
 .cer .flex-con .listi ul li p {
   font-size: 14px;
@@ -7449,8 +7440,8 @@ header {
   padding: 0px 6%;
 }
 #colorc h2 {
-  font-size: calc(30px + 350 * ((75vw - 417px) / 1920));
-  line-height: calc(-110px + 350 * ((100vw - 320px) / 1920));
+  font-size: calc(75px + 350 * ((75vw - 417px) / 1920));
+  line-height: calc(-141px + 396 * ((100vw - 320px) / 1920));
   color: #bbb;
   width: 100%;
   text-align: left;
@@ -7459,7 +7450,7 @@ header {
   margin: 0px;
   bottom: 0;
   top: 60px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   mix-blend-mode: multiply;
 }
 #colorc h2 .reds {
@@ -7533,7 +7524,7 @@ header {
   padding: 30px;
   width: 10vw;
   position: absolute;
-  height: 15vh;
+  height: 18vh;
   /* z-index: 12; */
   border-radius: 90px;
   right: 0;
@@ -7568,6 +7559,13 @@ header {
   margin-right: 30%;
   display: block;
   overflow: hidden;
+}
+.m-p {
+  padding: 10% 0;
+  margin-top: 20%;
+}
+.m-b-10 {
+  margin-bottom: 10%;
 }
 /*####### next #######*/
 .next-project {
@@ -8662,6 +8660,53 @@ header {
   .blocco div.right_block,
   .blocco div.left_block {
     margin-bottom: 55px;
+  }
+  .cer {
+    padding: 0 8%;
+    margin-top: 10%;
+  }
+  .cer .hdn h2 {
+    font-size: 3em;
+  }
+  .cer .flex-con {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cer .flex-con .listi {
+    width: 100%;
+  }
+  .cer .flex-con .f-left {
+    width: 100%;
+  }
+  .patra .module--header__image {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .patra .module--header__image .hro-img {
+    position: relative;
+    top: 0;
+    height: 450px;
+  }
+  #colorc h2 {
+    position: relative;
+    line-height: 0.9;
+  }
+  .dmtca .module--header__image {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .dmtca .module--header__image .hro-img {
+    position: relative;
+    top: 0;
+    height: 800px;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and screen and (max-height: 670px) {
