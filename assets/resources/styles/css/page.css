@@ -8717,6 +8717,20 @@ header {
     top: 0;
     height: 800px;
   }
+  .fixed-section {
+    padding: 10px 0 30px;
+  }
+  .fixed-section .d-flex {
+    display: block;
+  }
+  .fixed-section .text-inner .text-content {
+    width: 100%;
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+  .fixed-section .fixed-image {
+    width: 100%;
+  }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and screen and (max-height: 670px) {
   .mobile-container {
