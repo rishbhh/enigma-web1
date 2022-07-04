@@ -9065,7 +9065,7 @@ header {
   text-decoration: none;
 }
 .accordion-list .cont .en-btn_send span {
-  background-image: linear-gradient(45deg, dodgerblue, purple, red, dodgerblue);
+  background-image: linear-gradient(45deg, black, #000574);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -9080,13 +9080,13 @@ header {
   margin-left: 10px;
 }
 .accordion-list .cont .en-btn_send:hover .arro img {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .accordion-list .cont .en-btn_send:after {
-  background-image: linear-gradient(45deg, dodgerblue, purple, red, dodgerblue);
+  background-image: linear-gradient(45deg, black, #000574);
   background-size: 100% 500%;
   -webkit-animation: gradient 2s ease infinite;
   animation: gradient 2s ease infinite;
@@ -10240,8 +10240,8 @@ section.horizontal .animation-wrap.to-left {
   animation-direction: alternate;
 }
 .services-s .content-p .en-btn_send:hover .arro img {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -10296,6 +10296,16 @@ section.horizontal .animation-wrap.to-left {
   }
 }
 @media screen and (max-width: 1280px) {
+  .services-s .image {
+    width: 35%;
+    /* height: 940px; */
+  }
+  .ser-hero .top-h h1 {
+    font-size: 8.5em;
+  }
+  .services-s .image img {
+    width: 100%;
+  }
   .works__hero__line {
     font-size: 11em;
     line-height: 0.9;
@@ -10334,7 +10344,7 @@ section.horizontal .animation-wrap.to-left {
     text-decoration: none;
   }
   .services-s .content-p .en-form-submit .en-btn_send span {
-    background-image: linear-gradient(49deg, #1e0253 0, #820060 30%, #c20027 58%, #1e0253 95%);
+    background-image: linear-gradient(45deg, black, #000574);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
@@ -10345,7 +10355,7 @@ section.horizontal .animation-wrap.to-left {
     animation-direction: alternate;
   }
   .services-s .content-p .en-form-submit .en-btn_send:after {
-    background-image: linear-gradient(49deg, #1e0253 0, #820060 30%, #c20027 58%, #1e0253 95%);
+    background-image: linear-gradient(45deg, black, #000574);
     background-size: 100% 500%;
     -webkit-animation: gradient 2s ease infinite;
     animation: gradient 2s ease infinite;
@@ -11288,14 +11298,13 @@ section.horizontal .animation-wrap.to-left {
   transform: translateY(-50%);
   max-width: 80vw;
   font-size: 54px;
-  font-weight: 700;
   letter-spacing: 0;
   color: #fff;
   line-height: 75px;
   padding-left: 5%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'Ageo';
+  font-family: 'Ageo-light';
 }
 .carousel-showcase.dark .cas-titles .cs-title a,
 body.dark .cas-titles .cs-title a,
@@ -13000,6 +13009,17 @@ ul.product-tags li a {
   .site-navigation.fullscreen .menu.main-menu > li.menu-item {
     font-size: 54px;
     line-height: 64px;
+  }
+  .site-navigation.fullscreen ul ul li {
+    font-size: 31px;
+    line-height: 54px;
+  }
+  .site-navigation.fullscreen ul ul {
+    position: absolute;
+    top: 46px;
+  }
+  .cas-headline {
+    width: 70vw;
   }
 }
 @media screen and (max-width: 767px) {
@@ -16459,6 +16479,11 @@ ul.aw-cats {
     text-transform: uppercase;
     padding-left: 45%;
     letter-spacing: 2px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .lets .flex-row h1 {
+    font-size: 9em;
   }
 }
 @media screen and (max-width: 767px) {
