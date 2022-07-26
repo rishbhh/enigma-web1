@@ -468,7 +468,7 @@ function HeroSection() {
         duration: 5.5,
         ease: 'power1.inOut',
     }, 55);
-    fixed_scrol.to('.macbook_frame', { opacity: 0, scale: 1, duration: 5.5, ease: 'power1.inOut' }, 52);
+    fixed_scrol.to('.macbook_frame', { opacity: 0, scale: 1, duration: 5.5, ease: 'power1.inOut' }, 55);
     fixed_scrol.set('.o-page-tail_inner', {
         display: 'block',
         width: "100vw",

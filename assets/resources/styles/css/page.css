@@ -2035,7 +2035,7 @@ header {
 }
 .nav__showreel {
   position: absolute;
-  bottom: 6.166667vw;
+  bottom: 25%;
   left: 0.166667vw;
   color: #fff;
   z-index: 999;
@@ -2085,7 +2085,7 @@ header {
 }
 .nav__newsletter-talk {
   position: absolute;
-  bottom: 6.166667vw;
+  bottom: 25%;
   right: 0;
   display: -webkit-box;
   font-family: 'Ageo';
@@ -3393,9 +3393,9 @@ header {
   }
   .container_hero_content .chapt-icon .icon-circles {
     position: absolute;
-    width: 1.5rem;
-    top: 48%;
-    left: 50%;
+    width: 1.3rem;
+    top: 38%;
+    left: 40%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     opacity: 0.7;
@@ -10295,6 +10295,9 @@ section.horizontal .animation-wrap.to-left {
   .get-in .flex-con .right::after {
     height: 276px;
   }
+  .ser-hero .top-h h1 {
+    font-size: 12em;
+  }
 }
 @media screen and (max-width: 1367px) {
   .works__hero__line {
@@ -12123,8 +12126,8 @@ section:after {
   display: none;
 }
 .site-navigation.fullscreen .menu.main-menu > li.menu-item {
-  font-size: 64px;
-  line-height: 80px;
+  font-size: 60px;
+  line-height: 70px;
   letter-spacing: 2px;
   display: block;
   overflow: hidden;
@@ -12279,7 +12282,7 @@ section:after {
 }
 .site-navigation.fullscreen ul ul {
   position: absolute;
-  top: 18px;
+  top: 62px;
   left: 0;
   visibility: hidden;
   opacity: 0;
@@ -12288,7 +12291,7 @@ section:after {
 .site-navigation.fullscreen ul ul li {
   overflow: hidden;
   font-size: 35px;
-  line-height: 70px;
+  line-height: 60px;
   letter-spacing: 1px;
   padding: 0;
   padding-right: 18px;
@@ -12315,8 +12318,8 @@ section:after {
   display: none;
 }
 .menu-widget-right {
-  right: 12%;
-  bottom: 24%;
+  right: 9%;
+  bottom: 28%;
 }
 .menu-toggle {
   height: 25px;
@@ -12729,7 +12732,7 @@ ul.product-tags li a {
   position: fixed;
   left: 8%;
   right: 0;
-  bottom: 24%;
+  bottom: 28%;
   padding: 0;
 }
 .site-navigation.fullscreen ul.ulcol {
@@ -12754,7 +12757,7 @@ ul.product-tags li a {
   display: block;
   position: absolute;
   opacity: 0;
-  left: -62px;
+  left: -12px;
   visibility: hidden;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -13002,6 +13005,12 @@ ul.product-tags li a {
 .text-clor h2,
 .text-clor p {
   color: #fff !important;
+}
+@media screen and (max-width: 1440px) {
+  .site-navigation.fullscreen .menu.main-menu > li.menu-item {
+    font-size: 54px;
+    line-height: 64px;
+  }
 }
 @media screen and (max-width: 1280px) {
   #work-sction .hd-rvl {
@@ -17513,8 +17522,8 @@ body.dark .ar-work-title,
 .ar-work-cat {
   margin-top: 20px;
   font-size: 18px;
-  letter-spacing: 0px;
-  padding-left: 2px;
+  letter-spacing: 2px;
+  padding-left: 18px;
   color: rgba(25, 27, 29, 0.6);
   font-family: 'Ageo';
 }
