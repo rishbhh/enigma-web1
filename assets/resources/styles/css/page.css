@@ -11325,6 +11325,9 @@ body.dark .cas-titles .cs-title a,
 body.dark .cas-headline {
   color: #fff;
 }
+.actived {
+  min-height: 0;
+}
 .cas-headline .cas-line {
   overflow: hidden;
   padding-right: 0px;

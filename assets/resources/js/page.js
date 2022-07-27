@@ -718,6 +718,7 @@ function Changehum() {
         
         }
 }
+
 // horizontal Scrll section
 function Horizontal() {
     let work2 = gsap.timeline({
@@ -1237,4 +1238,3 @@ $(window).on('load', function() {
         });
     })
 }   
-    
