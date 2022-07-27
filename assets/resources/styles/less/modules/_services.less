@@ -370,7 +370,6 @@
   }
 
   .content-p p {
-    font-size: 18px;
     letter-spacing: 1px;
     color: #444444;
     font-weight: 400;
@@ -494,6 +493,7 @@
     font-family: 'NeueHaasDisplay-roman';
     letter-spacing: 3px;
     text-align: center;
+    color: #1a1a1a;
 
     span {
       font-family: 'NeueHaasDisplay-xthin';
@@ -535,7 +535,6 @@
 
 
       p {
-        font-size: 1.1em;
         line-height: 1.8;
         letter-spacing: 1px;
         font-family: 'NeueHaasDisplay-me';
@@ -559,7 +558,6 @@
       padding-left: 4%;
 
       p {
-        font-size: 1.1em;
         line-height: 1.6;
         letter-spacing: 1px;
         font-family: 'Ageo';
@@ -1164,9 +1162,9 @@
 
     h2 {
       padding: 20px 0%;
-      font-size: 1.9em;
+      font-size: 2.6em;
       padding-right: 31%;
-      color: #000000;
+      color:#1a1a1a;
       line-height: 1.5;
       margin-bottom: 3%;
       letter-spacing: 4px;
@@ -1174,33 +1172,11 @@
     }
 
     p {
-      font-size: 1.3em;
-      font-family: 'Ageo';
-      color: rgb(0, 0, 0);
       line-height: 1.8;
       letter-spacing: 2px
     }
 
-    .bo-h {
-      padding: 20px 0%;
-      font-size: 27px;
-      padding-right: 11%;
-      color: #000000;
-      line-height: 1.7;
-      margin-bottom: 3%;
-      margin-top: 10%;
-      letter-spacing: 1px;
-      font-family: 'Ageo-SemiBold';
-      position: relative;
-
-      img {
-        position: absolute;
-        width: 70px;
-        top: 0;
-        right: 0;
-        -webkit-animation: rotation 17s infinite linear;
-      }
-    }
+ 
   }
 
   .pin-wrap {
@@ -1224,9 +1200,6 @@
     padding-right: 4.6%;
 
     p {
-      font-size: 1.1em;
-      font-family: 'Ageo';
-      color: #000000;
       line-height: 1.8;
       letter-spacing: 0px
     }
@@ -1236,8 +1209,8 @@
 .image-div {
   width: 70%;
   position: relative;
-  margin-top: -18%;
-  margin-left: 36%;
+  margin-top: -40%;
+  margin-left: 39%;
   margin-bottom: 7%;
 
 }
@@ -1415,17 +1388,45 @@ section.horizontal .animation-wrap {
 }
 
 .ser-two {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+ 
   padding: 50px 10vw;
   position: relative;
-
+  margin-bottom: 7%;
+  .horizontal-sec{
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    flex-wrap: wrap;
+    margin-bottom:7% ;
+  }
   .mar-top {
     margin-top: 20%;
   }
+  
+  .bo-h {
+    padding: 20px 0%;
+    font-size: 1.6em;
+    padding-right: 30%;
+    color: #ffffff;
+    line-height: 1.4;
+    margin-bottom: 3%;
+    // margin-top: 10%;
+    letter-spacing: 1px;
+    font-family: 'Ageo';
+    position: relative;
 
+    img {
+      position: absolute;
+      width: 70px;
+      top: 0;
+      right: 0;
+      filter: invert(1);
+      -webkit-animation: rotation 17s infinite linear;
+    }
+  }
+  .E-second .bo-h{
+    padding-right: 15%;
+  }
   .item {
     position: relative;
     padding: 60px 60px;
@@ -1443,26 +1444,33 @@ section.horizontal .animation-wrap {
       content: attr(data-text);
       font-family: 'NeueHaasDisplay-me';
       position: absolute;
-      font-size: 10em;
-      opacity: 0.05;
+      font-size: 8em;
+      opacity: 0.6;
       z-index: -1;
-      transform: translate(-80px, -26px);
+      transform: translate(-75px, -45px);
+      // transform: translate(-80px, -26px);
       line-height: 1;
-      color: rgb(0, 0, 0);
+      background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  
     }
 
     h2 {
-      font-size: 1.4em;
+      font-size: 1.6em;
       line-height: 1.2;
       letter-spacing: 1.3px;
       font-family: 'NeueHaasDisplay-me';
+      color: #fff;
+      text-transform: uppercase;
     }
 
     p {
       line-height: 1.4;
       letter-spacing: 1px;
       margin-top: 9px;
-
+text-align: justify;
+color: rgba(255, 255, 255, 0.803);
     }
   }
 
@@ -1556,7 +1564,7 @@ section.horizontal .animation-wrap.to-left {
       // opacity: 0;
       outline: 0 !important;
       font-family: 'Ageo-SemiBold';
-      font-size: 1em;
+      font-size: 1.4em;
       letter-spacing: 1px;
       line-height: inherit;
       text-align: inherit;
@@ -1578,7 +1586,7 @@ section.horizontal .animation-wrap.to-left {
 
         .arro {
           img {
-            width: 13px;
+            width: 16px;
             margin-left: 7px;
 
           }
@@ -2175,9 +2183,7 @@ section.horizontal .animation-wrap.to-left {
   }
 
   .details-f .cont p {
-    font-size: 1.1em;
     font-family: 'Ageo';
-    color: #000000;
     line-height: 1.8;
     letter-spacing: 2px;
   }

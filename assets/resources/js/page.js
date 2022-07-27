@@ -805,7 +805,6 @@ function About() {
     });
 
     about.from(".about-p p", { y: -50, opacity: 0, duration: 0.4, ease: "Power2.easeInOut" }, "-=1.8");
-    about.from(".about-f img", 1, { y: -100, opacity: 0, duration: 0.3, ease: "Power2.easeInOut" }, "-=2");
     about.from(".re .char", 2, { y: -210, opacity: 0, duration: 0.3, ease: "Power2.easeInOut", stagger: 0.03 }, "-=1.9");
 }
 
