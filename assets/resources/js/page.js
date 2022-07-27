@@ -1079,7 +1079,7 @@ function aliothShowcaseCarousel() {
     projectTitles.wrapInner('<div class="cas-titles-wrap"></div>')
     $('.cas-line').wrapInner('<span></span>')
     gsap.to('.cas-line span', {
-        y: '-150%',
+        y: '-100%',
         stagger: 0.01,
         ease: 'none',
         scrollTrigger: {
