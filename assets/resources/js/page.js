@@ -555,7 +555,7 @@ function worksSlider() {
                     trigger: $this,
                     start: "top top",
                     end: "bottom top",
-                    scrub: 3,
+                    scrub: 4,
                     scroller: ".smooth-scroll",
                     pin: true,
                     snap: false,
@@ -569,7 +569,7 @@ function worksSlider() {
                 trigger: $this,
                 start: "top top",
                 end: "bottom top",
-                scrub: 3,
+                scrub: 4,
                 scroller: ".smooth-scroll",
                 pin: true,
                 snap: false,
@@ -588,7 +588,7 @@ function worksSlider() {
                     pin: false,
                     start: 'top bottom',
                     end: 'top top',
-                    scrub: 3,
+                    scrub: 4,
 
                 }
             })
@@ -596,11 +596,11 @@ function worksSlider() {
             gsap.fromTo($this, {
                 x: '0%'
             }, {
-                x: '-25%',
+                x: '-30%',
                 scrollTrigger: {
                     trigger: parentSec,
                     pin: false,
-                    scrub: 3,
+                    scrub: 4,
                     start: 'bottom bottom',
                     end: 'bottom top',
 
@@ -1079,7 +1079,7 @@ function aliothShowcaseCarousel() {
     projectTitles.wrapInner('<div class="cas-titles-wrap"></div>')
     $('.cas-line').wrapInner('<span></span>')
     gsap.to('.cas-line span', {
-        y: '-100%',
+        y: '-150%',
         stagger: 0.01,
         ease: 'none',
         scrollTrigger: {
@@ -1100,7 +1100,7 @@ function aliothShowcaseCarousel() {
             scroller: ".smooth-scroll",
             scrub: 1,
             start: 'top top',
-            end: 'bottom top',
+            end: 'bottom+=3000 top',
             markers: false
         }
     });
@@ -1121,7 +1121,7 @@ function aliothShowcaseCarousel() {
             scroller: ".smooth-scroll",
             scrub: 1,
             start: 'top top',
-            end: 'bottom top',
+            end: 'bottom+=3000 top',
             markers: false
         }
     })
@@ -1142,7 +1142,7 @@ function aliothShowcaseCarousel() {
             scrub: 1,
             id: 'showcaseScroll',
             start: 'top top',
-            end: 'bottom top',
+            end: 'bottom+=3000 top',
             markers: false,
             onUpdate: function(self, progress) {
                 let prog = $('.cas-progress span');
