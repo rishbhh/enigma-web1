@@ -11327,7 +11327,7 @@ body.dark .cas-headline {
 }
 .cas-headline .cas-line {
   overflow: hidden;
-  padding-right: 6px;
+  padding-right: 0px;
 }
 .cas-headline .cas-line span {
   display: block;
