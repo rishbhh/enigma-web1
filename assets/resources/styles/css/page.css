@@ -9528,7 +9528,7 @@ header {
   width: 80%;
 }
 .service-points .container h2 {
-  font-size: 1.9em;
+  font-size: 1.6em;
   line-height: 1.7;
   letter-spacing: 2px;
   color: #fff;
@@ -9550,7 +9550,6 @@ header {
   margin-right: 10%;
   z-index: 2;
   position: relative;
-  width: 91%;
 }
 .service-points .container .pointrs-se .left-content::before {
   content: "";
@@ -9590,8 +9589,8 @@ header {
   width: 50%;
   font-size: 1em;
   font-family: 'Ageo-Semibold';
-  color: #ffffff;
-  padding-left: 20px;
+  color: #444;
+  padding-right: 20px;
   position: relative;
 }
 .service-points .container .point li::before {
@@ -9600,7 +9599,7 @@ header {
   width: 15px;
   height: 14px;
   top: 4px;
-  left: 0;
+  left: -20px;
   background-size: cover;
   position: absolute;
 }
@@ -10422,10 +10421,13 @@ section.horizontal .animation-wrap.to-left {
   -webkit-text-stroke-color: #2b2b2b;
 }
 .aproch {
-  padding: 5% 0;
+  padding: 15% 0;
   position: relative;
   padding-bottom: 0;
   font-family: 'NeueHaasDisplay-me';
+  color: #fff;
+  --bs-gutter-x: 3rem;
+  --bs-gutter-y: 6rem;
 }
 .aproch .top-bg {
   position: absolute;
@@ -10450,7 +10452,6 @@ section.horizontal .animation-wrap.to-left {
 .aproch .container h2 {
   padding: 20px 0%;
   font-size: 3em;
-  color: #2b2b2b;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: 'NeueHaasDisplay-me';
@@ -10462,58 +10463,84 @@ section.horizontal .animation-wrap.to-left {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 .aproch .container .approach-lis .flex-con {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 33.33333333%;
+  display: unset;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 0%;
   position: relative;
   margin-bottom: 10%;
-  width: 45%;
-  overflow: hidden;
+  padding-right: calc(var(--bs-gutter-x)/2);
+  padding-left: calc(var(--bs-gutter-x)/2);
 }
 .aproch .container .approach-lis .flex-con .ap-no {
   position: relative;
-  margin-left: 3%;
-  width: 33%;
   overflow: visible;
 }
+.aproch .container .approach-lis .flex-con .ap-no::before {
+  content: '';
+  position: absolute;
+  background: #fff;
+  opacity: 0.5;
+  width: 100%;
+  height: 1px;
+  top: -20px;
+}
 .aproch .container .approach-lis .flex-con .ap-no h6 .numb {
-  font-size: 9em;
+  font-size: 0.9375rem;
   font-family: 'NeueHaasDisplay-me';
-  color: #00000028;
   letter-spacing: 1px;
+  margin-bottom: 15px;
   text-transform: uppercase;
   position: relative;
+  color: #FFFFFF;
+  opacity: 0.5;
 }
 .aproch .container .approach-lis .flex-con .ap-prah {
   padding-right: 10%;
 }
 .aproch .container .approach-lis .flex-con .ap-prah h6 {
   overflow: hidden;
+  font-size: 2em;
+  margin-bottom: 15px;
 }
 .aproch .container .approach-lis .flex-con .ap-prah .cons {
   font-size: 1.1em;
   /* position: absolute; */
   /* left: 10px; */
   text-align: center;
-  color: #2b2b2b;
   text-transform: uppercase;
   margin-bottom: 9px;
 }
 .aproch .container .approach-lis .flex-con p {
-  color: #444;
+  color: #fff;
   letter-spacing: 1px;
+}
+.aproch .flex-con:hover .numb {
+  opacity: 1 !important;
+}
+.aproch .flex-con:hover .ap-no::before {
+  background: linear-gradient(49deg, #2d4de0 0, #9f71f0 30%, #fc6277 58%, #f8ef6f 95%) !important;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+.aproch .flex-con:hover .ap-prah h6 .cons {
+  background-image: linear-gradient(49deg, #2d4de0 0, #9f71f0 30%, #fc6277 58%, #f8ef6f 95%);
+  -webkit-text-fill-color: transparent;
+  -text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 100% 500%;
+  -webkit-animation: gradient 2s ease infinite;
+          animation: gradient 2s ease infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 .heigh_100 {
   height: 100vh;
@@ -10528,6 +10555,13 @@ section.horizontal .animation-wrap.to-left {
 }
 .right-align {
   text-align: right;
+}
+.light .marquees__part {
+  -webkit-text-stroke-color: #fff;
+}
+.light .marquees__part img {
+  -webkit-filter: invert(10);
+          filter: invert(10);
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
   .aproch {
