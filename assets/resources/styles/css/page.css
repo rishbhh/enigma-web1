@@ -10444,7 +10444,7 @@ section.horizontal .animation-wrap.to-left {
   right: -370px;
 }
 .aproch .m-r {
-  margin-right: 0 !important;
+  margin-right: 0;
 }
 .aproch .m-0 {
   margin-top: 0 !important;
@@ -10470,13 +10470,12 @@ section.horizontal .animation-wrap.to-left {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  width: 30%;
+  width: 33.33333333%;
   display: unset;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 0%;
-  margin-right: 20px;
   position: relative;
   margin-bottom: 10%;
   padding-right: calc(var(--bs-gutter-x)/2);
