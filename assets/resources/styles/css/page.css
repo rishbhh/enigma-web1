@@ -10426,7 +10426,7 @@ section.horizontal .animation-wrap.to-left {
   padding-bottom: 0;
   font-family: 'NeueHaasDisplay-me';
   color: #fff;
-  background-image: url(http://paul-themes.com/html/moonex/assets/img/root/service-bubble.png);
+  background-image: url(/assets/resources/img/circle.png);
   background-repeat: no-repeat;
   background-position: 100% calc(100% + 120px);
   overflow: hidden;
