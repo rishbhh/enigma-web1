@@ -9500,19 +9500,17 @@ header {
   background-size: cover;
 }
 .last {
-  padding: 0% 12%;
+  padding: 5% 12%;
 }
 .last .gr-b {
-  font-size: 1.6em;
+  font-size: 2.6em;
   font-family: 'NeueHaasDisplay-me';
   letter-spacing: 3px;
-  text-align: left;
+  text-align: center;
   color: #2B2B2B;
   overflow: hidden;
 }
 .last .gr-b .grd {
-  font-family: 'NeueHaasDisplay-me';
-  font-size: 1.2em;
   color: #fff;
   background-color: #f3ec78;
   background-image: linear-gradient(45deg, dodgerblue, purple, red, dodgerblue);
@@ -9531,15 +9529,49 @@ header {
 }
 .service-points .container h2 {
   font-size: 1.9em;
-  line-height: 1.4;
+  line-height: 1.7;
   letter-spacing: 2px;
-  padding-right: 31%;
+  color: #fff;
   margin-bottom: 20px;
   font-family: 'NeueHaasDisplay-roman';
 }
 .service-points .container p {
   padding-right: 30%;
   margin-bottom: 3%;
+}
+.service-points .container .pointrs-se {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.service-points .container .pointrs-se .left-content {
+  padding: 59px 40px;
+  background: #000;
+  margin-right: 10%;
+  z-index: 2;
+  position: relative;
+  width: 91%;
+}
+.service-points .container .pointrs-se .left-content::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: #111215;
+  z-index: -1;
+}
+.service-points .container .pointrs-se .left-content::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: -webkit-gradient(linear, left top, right top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  z-index: -4;
 }
 .service-points .container .point {
   display: -webkit-box;
@@ -9550,13 +9582,15 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .service-points .container .point li {
-  width: 40%;
+  width: 50%;
   font-size: 1em;
-  font-family: 'Ageo';
-  color: #444444;
-  line-height: 2.9;
+  font-family: 'Ageo-Semibold';
+  color: #ffffff;
   padding-left: 20px;
   position: relative;
 }
@@ -9565,7 +9599,7 @@ header {
   background-image: url(/assets/resources/img/Service-elements/bullet-icon.svg);
   width: 15px;
   height: 14px;
-  top: 15px;
+  top: 4px;
   left: 0;
   background-size: cover;
   position: absolute;
@@ -9912,7 +9946,7 @@ header {
 .image-div {
   width: 70%;
   position: relative;
-  margin-top: -40%;
+  margin-top: -15%;
   margin-left: 39%;
   margin-bottom: 7%;
 }
@@ -17476,7 +17510,7 @@ ul.aw-cats {
 ---------------------------------------------------*/
 .a-recent-works {
   display: block;
-  padding-top: 10%;
+  padding-top: 7% !important;
   padding-bottom: 0;
 }
 .recent-works-wrapper {
