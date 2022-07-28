@@ -10444,7 +10444,7 @@ section.horizontal .animation-wrap.to-left {
   right: -370px;
 }
 .aproch .m-r {
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 .aproch .m-0 {
   margin-top: 0 !important;
@@ -10456,7 +10456,6 @@ section.horizontal .animation-wrap.to-left {
   padding: 20px 0%;
   font-size: 3em;
   letter-spacing: 1px;
-  text-transform: uppercase;
   font-family: 'NeueHaasDisplay-me';
 }
 .aproch .container .approach-lis {
@@ -10501,7 +10500,6 @@ section.horizontal .animation-wrap.to-left {
   font-family: 'NeueHaasDisplay-me';
   letter-spacing: 1px;
   margin-bottom: 15px;
-  text-transform: uppercase;
   position: relative;
   color: #FFFFFF;
   -webkit-transition: 0.3s all ease-in-out;
