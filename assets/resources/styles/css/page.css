@@ -9504,11 +9504,12 @@ header {
 }
 .last .gr-b {
   font-size: 2.6em;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: 'Ageo-SemiBold';
   letter-spacing: 3px;
   text-align: center;
   color: #2B2B2B;
   overflow: hidden;
+  line-height: 1.5;
 }
 .last .gr-b .grd {
   color: #fff;
@@ -9533,7 +9534,7 @@ header {
   letter-spacing: 2px;
   color: #fff;
   margin-bottom: 20px;
-  font-family: 'NeueHaasDisplay-roman';
+  font-family: 'Ageo-SemiBold';
 }
 .service-points .container p {
   padding-right: 0%;
@@ -9548,7 +9549,7 @@ header {
 .service-points .container .pointrs-se .left-content {
   padding: 59px 40px;
   background: #000;
-  margin-right: 10%;
+  margin-right: 6.9%;
   z-index: 2;
   position: relative;
 }
@@ -9589,7 +9590,7 @@ header {
 .service-points .container .point li {
   width: 50%;
   font-size: 1em;
-  font-family: 'Ageo-Semibold';
+  font-family: 'Ageo';
   color: #444;
   padding-right: 20px;
   position: relative;
