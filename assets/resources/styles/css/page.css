@@ -9536,8 +9536,9 @@ header {
   font-family: 'NeueHaasDisplay-roman';
 }
 .service-points .container p {
-  padding-right: 30%;
+  padding-right: 0%;
   margin-bottom: 3%;
+  color: #fff;
 }
 .service-points .container .pointrs-se {
   display: -webkit-box;
