@@ -10169,8 +10169,8 @@ section.horizontal .animation-wrap {
   -webkit-transform: translate(-75px, -45px);
           transform: translate(-75px, -45px);
   line-height: 1;
-  background: -webkit-gradient(linear, left top, right top, from(#12c2e9), color-stop(#c471ed), to(#f64f59));
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background: -webkit-gradient(linear, left top, right top, from(#12c2e9), color-stop(#c471ed), to(#f64f5a49)), url(https://grainy-gradients.vercel.app/noise.svg);
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f5a49), url(https://grainy-gradients.vercel.app/noise.svg);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -10338,6 +10338,9 @@ section.horizontal .animation-wrap.to-left {
   .ser-hero .top-h h1 {
     font-size: 12em;
   }
+  .image-div {
+    margin-top: -45%;
+  }
 }
 @media screen and (max-width: 1367px) {
   .works__hero__line {
@@ -10349,6 +10352,9 @@ section.horizontal .animation-wrap.to-left {
   }
 }
 @media screen and (max-width: 1280px) {
+  .image-div {
+    margin-top: -35%;
+  }
   .services-s .image {
     width: 35%;
     /* height: 940px; */
@@ -16963,13 +16969,14 @@ ul.aw-cats {
     text-align: right;
     font-size: 2em;
     text-transform: uppercase;
-    padding-left: 45%;
+    padding-left: 32%;
     letter-spacing: 2px;
   }
 }
 @media screen and (max-width: 1280px) {
   .lets .flex-row h1 {
     font-size: 9em;
+    padding-left: 25%;
   }
 }
 @media screen and (max-width: 767px) {
