@@ -17,6 +17,7 @@
         pageSet.addClass(pageLayout)
     }
     pageSettings()
+    
     var loader, loaderOv, loadAn;
 
     function pageLoader() {
@@ -1003,7 +1004,6 @@
                 if (!mobileQuery.matches) {
                    
                 }
-     
                 ScrollTrigger.refresh(true)
             })
         } else {
@@ -1024,7 +1024,6 @@
             if (!mobileQuery.matches) {
                
             }
-     
             ScrollTrigger.refresh(true)
         }
     })

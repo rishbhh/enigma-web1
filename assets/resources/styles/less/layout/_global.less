@@ -19,7 +19,10 @@
     background: #fff;
   }
 }
-
+.has-anim {
+  display: block;
+  width: 100%;
+}
 .container {
   width: auto;
   margin: auto;
@@ -108,7 +111,15 @@ figure {
   display: grid;
   grid-template-columns: repeat(31, 1fr);
 }
-
+.grid_intern2 {
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  figure{
+    width: 100%;
+    grid-column: unset !important;
+    padding: 10px;
+  }
+}
 .sl-smal {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

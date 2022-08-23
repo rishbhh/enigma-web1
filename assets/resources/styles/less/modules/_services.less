@@ -487,7 +487,13 @@
 
 .bol-prh {
   padding: 8% 12%;
-
+  .p-s {
+    font-size: 2.6em;
+    font-family: 'NeueHaasDisplay-roman';
+    letter-spacing: 3px;
+    text-align: center;
+    color: #1a1a1a;
+  }
   p {
     font-size: 2.6em;
     font-family: 'NeueHaasDisplay-roman';
@@ -533,7 +539,22 @@
     .left-d {
       width: 36%;
 
+      .lf{
+        line-height: 1.8;
+        letter-spacing: 1px;
+        font-family: 'NeueHaasDisplay-me';
+        text-transform: inherit;
+        text-align: justify;
+      }
+      .qou {
+        position: absolute;
+        /* display: contents; */
+        left: 38px;
 
+        img {
+          width: 35px;
+        }
+      }
       p {
         line-height: 1.8;
         letter-spacing: 1px;
@@ -557,7 +578,7 @@
       width: 48%;
       padding-left: 4%;
 
-      p {
+      .ri {
         line-height: 1.6;
         letter-spacing: 1px;
         font-family: 'Ageo';
@@ -1435,7 +1456,17 @@ section.horizontal .animation-wrap {
   .mar-top {
     margin-top: 20%;
   }
-  
+  .s{
+    position: relative;
+    img {
+      position: absolute;
+      width: 70px;
+      top: 0;
+      right: 0;
+      filter: invert(1);
+      -webkit-animation: rotation 17s infinite linear;
+    }
+  }
   .bo-h {
     padding: 20px 0%;
     font-size: 1.6em;
@@ -1448,14 +1479,7 @@ section.horizontal .animation-wrap {
     font-family: 'Ageo';
     position: relative;
 
-    img {
-      position: absolute;
-      width: 70px;
-      top: 0;
-      right: 0;
-      filter: invert(1);
-      -webkit-animation: rotation 17s infinite linear;
-    }
+   
   }
   .E-second .bo-h{
     padding-right: 15%;
@@ -2085,10 +2109,9 @@ opacity: 1 !important;
     }
 
     .works__hero__line {
-      font-size: 4.8em;
+      font-size: 3.3em;
       line-height: 1.1;
       width: 100%;
-      font-family: 'Bebas Neue';
 
     }
   }
@@ -2123,7 +2146,7 @@ opacity: 1 !important;
   }
 
   #services {
-    padding: 7rem 1rem;
+    padding: 0rem 1rem;
 
     .accordion-title {
       padding: 40px 0;
@@ -2205,8 +2228,10 @@ opacity: 1 !important;
 
   .bol-prh {
     padding: 8% 5%;
-
     p {
+      font-size: 2em;
+    }
+    .p-s {
       font-size: 2em;
     }
   }
@@ -2261,12 +2286,16 @@ opacity: 1 !important;
     padding-right: 0;
   }
 
-  .details-f .cont p {
+  .details-f .cont p spline_p{
     font-family: 'Ageo';
     line-height: 1.8;
     letter-spacing: 2px;
   }
-
+  .details-f .cont .spline_p{
+    font-family: 'Ageo';
+    line-height: 1.8;
+    letter-spacing: 2px;
+  }
   .image-div {
     width: 100%;
     position: relative;
