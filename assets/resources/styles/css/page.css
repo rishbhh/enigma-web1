@@ -4717,7 +4717,7 @@ header {
   font-size: 1.1em;
   padding-right: 29%;
   line-height: 1.2;
-  font-family: 'NeueHaasDisplay-thin';
+  font-family: "NeueHaasDisplay-thin";
   font-weight: 100;
   letter-spacing: 1px;
   color: #1a1a1a;
@@ -4741,7 +4741,7 @@ header {
 }
 #about .gre {
   color: #666666;
-  font-family: 'NeueHaasDisplay-roman';
+  font-family: "NeueHaasDisplay-roman";
   background-size: cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
@@ -4764,7 +4764,7 @@ header {
   letter-spacing: 2px;
   text-align: justify;
   color: #1a1a1a;
-  font-family: 'NeueHaasDisplay-light';
+  font-family: "NeueHaasDisplay-light";
 }
 #about .flex .flex-r {
   width: 46%;
@@ -5040,7 +5040,7 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: left;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   overflow: hidden;
 }
 #about2 .container .he span {
@@ -5077,7 +5077,7 @@ header {
   line-height: 1.4;
 }
 #about2 .about-p p {
-  font-family: 'Ageo-Bold';
+  font-family: "Ageo-Bold";
   font-size: 1.1em;
   text-align: right;
   color: #333;
@@ -5090,7 +5090,7 @@ header {
 #about2 .big-h h1 {
   margin: auto;
   position: relative;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   right: 7px;
   letter-spacing: 6px;
   line-height: 1;
@@ -5127,7 +5127,7 @@ header {
 }
 #about2 .overlap .right-content p {
   letter-spacing: 1px;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   font-size: 2em;
 }
 #about2 .overlap .right-content .en-form-submit {
@@ -5249,7 +5249,7 @@ header {
   line-height: 1.4;
   font-synthesis: none;
   letter-spacing: 0;
-  font-family: 'Ageo';
+  font-family: "Ageo";
 }
 .c-hm-us_title {
   max-width: 38vw;
@@ -5259,7 +5259,7 @@ header {
 .t-d3-fluid {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   font-size: 2.6em;
   line-height: 0.9;
   letter-spacing: 0.06em;
@@ -5510,18 +5510,18 @@ header {
 .about-us-section h1 {
   width: 100%;
   color: #2b2b2b;
-  font-family: 'Ageo-light';
+  font-family: "Ageo-light";
   font-size: 3.2em;
 }
 .home-sec .about-us-content h1 span b {
-  font-family: 'Ageo-Bold';
+  font-family: "Ageo-Bold";
 }
 .about-us-section .small-h1 {
   font-size: 3.2em;
   line-height: 1.63;
   letter-spacing: 2px;
   margin-bottom: 0px;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   text-transform: inherit;
 }
 .about-us-section .b-h1 {
@@ -5530,7 +5530,7 @@ header {
   letter-spacing: 6px;
   text-transform: uppercase;
   margin-bottom: 0px;
-  font-family: 'NeueHaasDisplay-me-it';
+  font-family: "NeueHaasDisplay-me-it";
 }
 .opacity-0 {
   opacity: 0;
@@ -5574,7 +5574,7 @@ header {
 }
 .about-page .container .flex .left-con h4 {
   font-size: 1.6em;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 .about-page .container .flex .right-con {
   width: 61%;
@@ -5582,7 +5582,7 @@ header {
 .about-page .container .flex .right-con h3 {
   font-size: 1.6em;
   margin-bottom: 20px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -5607,7 +5607,7 @@ header {
   color: #fff;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   overflow: visible;
 }
 .client-section .container .parh {
@@ -5616,7 +5616,7 @@ header {
   padding-right: 10%;
   line-height: 2;
   color: #fff;
-  font-family: 'Ageo-light';
+  font-family: "Ageo-light";
   margin-bottom: 2%;
 }
 .client-section .grid-logo {
@@ -5642,7 +5642,7 @@ header {
           filter: grayscale(1);
 }
 .client-section .grid-logo .bottom-border::after {
-  content: '';
+  content: "";
   position: absolute;
   background: rgba(255, 255, 255, 0.253);
   width: 100%;
@@ -5664,7 +5664,7 @@ header {
   color: #fff;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 .team-section .top-div p {
   color: #fff;
@@ -5811,7 +5811,7 @@ header {
   width: 47.88333vh;
   -webkit-transform: translate(0, -50%) rotate(0deg);
   transform: translate(0, -50%) rotate(0deg);
-  background: transparent linear-gradient(198deg, #2D4DE0 0%, #9F71F0 32%, #E76592 84%, #F7EA70 100%, #F8EF6F 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(198deg, #2d4de0 0%, #9f71f0 32%, #e76592 84%, #f7ea70 100%, #f8ef6f 100%) 0% 0% no-repeat padding-box;
   -webkit-transition: transform 0.5s ease-in-out 0s;
   -webkit-transition: -webkit-transform 0.5s ease-in-out 0s;
   transition: -webkit-transform 0.5s ease-in-out 0s;
@@ -5830,7 +5830,7 @@ header {
 }
 .text {
   position: absolute;
-  bottom: calc(7vh + -0.5*6.25vw);
+  bottom: calc(7vh + -0.5 * 6.25vw);
   left: 1.125vw;
   z-index: 4;
   -webkit-transition: opacity 0.5s ease-in-out 0s;
@@ -5843,7 +5843,7 @@ header {
 .text h3 span {
   line-height: 2.5vw;
   color: #fff;
-  font-family: 'NeueHaasDisplay-roman';
+  font-family: "NeueHaasDisplay-roman";
   font-weight: normal;
   font-size: 2.2vw;
   -webkit-font-smoothing: antialiased;
@@ -5856,7 +5856,7 @@ header {
   text-indent: 0px;
   margin-top: 1vh;
   color: #d1ed5d;
-  font-family: 'NeueHaasDisplay-thin';
+  font-family: "NeueHaasDisplay-thin";
   font-weight: normal;
   font-size: 0.6em;
   letter-spacing: 2px;
@@ -5943,7 +5943,7 @@ header {
 }
 .marquees {
   background: #000;
-  color: #EEE;
+  color: #eee;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 9em;
@@ -5969,7 +5969,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 .team-s {
   margin-top: 10%;
@@ -5985,7 +5985,7 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: left;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   overflow: hidden;
 }
 .team-s .container .he span {
@@ -6158,7 +6158,7 @@ header {
 /*############### Single Project #############*/
 .h2-h {
   font-size: 5em;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   color: #1a1a1a;
 }
 .p-r-l {
@@ -6360,8 +6360,7 @@ header {
   -webkit-transform: translate(16%, -8%);
           transform: translate(16%, -8%);
   width: auto;
-  height: 622px
-;
+  height: 622px;
 }
 .kedar .hro-img {
   display: inherit;
@@ -6830,7 +6829,7 @@ header {
 .qux .flex-con .listi {
   width: 40%;
   margin-bottom: 6%;
-  font-family: 'Ageo-SemiBold';
+  font-family: "Ageo-SemiBold";
   letter-spacing: 1px;
 }
 .qux .flex-con .listi ul li {
@@ -6866,7 +6865,7 @@ header {
   line-height: calc(77px + 230 * ((100vw - 320px) / 1920));
   text-align: center;
   width: 100%;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   color: var(--black);
 }
 #start h1.tris_titles {
@@ -7020,7 +7019,7 @@ header {
      object-fit: cover;
 }
 #cover-pr > div#project {
-  background: #1065E1;
+  background: #1065e1;
   position: relative;
   z-index: 5;
   margin-top: 200px;
@@ -7117,7 +7116,7 @@ header {
   margin-bottom: 10px !important;
   margin: 0px;
   letter-spacing: 3px;
-  font-family: 'Ageo-Semibold';
+  font-family: "Ageo-Semibold";
 }
 #project > div > div > div ul li p {
   font-size: 0.9em;
@@ -7168,7 +7167,7 @@ header {
 .points ul li .p {
   margin-right: 10px;
   font-size: 18px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   border-radius: 2px;
   text-shadow: 1px 1px 1px #00000063;
 }
@@ -7209,7 +7208,7 @@ header {
   color: var(--color-text-dark);
   font-size: 32px;
   margin-right: 0;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   margin-bottom: 12px;
 }
 .list__services__item h3 {
@@ -7217,7 +7216,7 @@ header {
 }
 .list__services__item h3 sup {
   color: var(--color-text-light);
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   font-size: calc(36px / 2);
   top: -7px;
   display: inline-block;
@@ -7315,7 +7314,7 @@ header {
      object-fit: cover;
 }
 .spline_p {
-  font-family: 'Ageo';
+  font-family: "Ageo";
   font-size: 1.2em;
   letter-spacing: 1px;
 }
@@ -7435,7 +7434,7 @@ header {
   line-height: 95px;
   text-transform: uppercase;
   margin-bottom: 0px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 .fixed-section .text-inner {
   position: relative;
@@ -7468,7 +7467,7 @@ header {
   color: var(--black);
   font-size: calc(50px + 10 * ((100vw - 320px) / 1920));
   line-height: calc(55px + 10 * ((100vw - 320px) / 1920));
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -7515,7 +7514,7 @@ header {
           transform: translateX(60vw);
   width: 250vw;
   font-size: 9em;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 #marquee figure {
   display: block;
@@ -7537,6 +7536,63 @@ header {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+#colorc .right-d h2 {
+  position: relative;
+}
+#colorc .right-d {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#colorc .color__section {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#colorc .color__section .color__under__text {
+  font-size: 26px;
+  color: #fff;
+  font-family: sans-serif;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+#colorc .right-d img {
+  width: 50%;
+}
+#poster .margin__bottom {
+  margin-bottom: 0 !important;
+}
+#colorc .text__h2 {
+  color: #000;
+  font-size: calc(50px + 10 * ((100vw - 320px) / 1920));
+  font-family: "NeueHaasDisplay-me";
+}
+.white {
+  color: #fff !important;
+}
+#colorc > .color-div .color__section {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
 /* Blocco Colori */
 #colori {
   min-height: 100vh;
@@ -7551,7 +7607,7 @@ header {
   position: absolute;
   margin: 0px;
   bottom: 0px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   mix-blend-mode: multiply;
 }
 #colori ul {
@@ -7646,7 +7702,7 @@ header {
   color: var(--black);
   font-size: calc(50px + 10 * ((100vw - 320px) / 1920));
   line-height: calc(55px + 10 * ((100vw - 320px) / 1920));
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -7719,7 +7775,7 @@ header {
   color: var(--black);
   font-size: calc(50px + 10 * ((100vw - 320px) / 1920));
   line-height: calc(55px + 10 * ((100vw - 320px) / 1920));
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -7751,7 +7807,7 @@ header {
 }
 .cer .hdn h2 {
   font-size: 5em;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 1.2;
@@ -7773,7 +7829,7 @@ header {
   margin-bottom: 10px;
   letter-spacing: 1px;
   overflow: hidden;
-  font-family: 'Ageo-SemiBold';
+  font-family: "Ageo-SemiBold";
 }
 .cer .flex-con .listi ul li p {
   font-size: 14px;
@@ -7857,7 +7913,7 @@ header {
   color: #bbb;
   width: 100%;
   text-align: left;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   position: absolute;
   margin: 0px;
   bottom: 0;
@@ -7866,7 +7922,7 @@ header {
   mix-blend-mode: multiply;
 }
 #colorc h2 .reds {
-  color: #E02826;
+  color: #e02826;
 }
 .margin-r-46 {
   margin-right: 45%;
@@ -8015,7 +8071,7 @@ header {
 }
 .title--title2 {
   position: relative;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   font-size: 3.5em;
   line-height: 0.94166667em;
   letter-spacing: 2px;
@@ -8108,7 +8164,7 @@ header {
   background-repeat: no-repeat;
 }
 .bg-about {
-  background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/0206bc130489423.618a621196380.jpg');
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/0206bc130489423.618a621196380.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -8449,7 +8505,7 @@ header {
             filter: grayscale(1);
   }
   .client-section .grid-logo .bottom-border::after {
-    content: '';
+    content: "";
     position: absolute;
     background: rgba(255, 255, 255, 0);
     width: 100%;
@@ -8525,12 +8581,12 @@ header {
   .top-row .menu span,
   .top-row .menu span::before,
   .top-row .menu span::after {
-    content: '';
+    content: "";
     width: 20px;
     height: 2px;
     border-radius: 6px;
     display: block;
-    background-color: #FFF;
+    background-color: #fff;
   }
   .top-row .menu span {
     position: relative;
@@ -8575,12 +8631,12 @@ header {
     background-color: rgba(255, 255, 255, 0.9);
   }
   .slider-element-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: #F02B67;
+    background-color: #f02b67;
   }
   .slider-element-container .swiper-slide {
     width: 100%;
     padding: 0px;
-    background-color: #FFF;
+    background-color: #fff;
     border-radius: 8px;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
@@ -8614,7 +8670,7 @@ header {
     width: 100%;
     -webkit-transform: translate(0, -50%) rotate(0deg);
     transform: translate(0, -50%) rotate(0deg);
-    background: transparent linear-gradient(198deg, #2D4DE0 0%, #9F71F0 32%, #E76592 84%, #F7EA70 100%, #F8EF6F 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(198deg, #2d4de0 0%, #9f71f0 32%, #e76592 84%, #f7ea70 100%, #f8ef6f 100%) 0% 0% no-repeat padding-box;
     -webkit-transition: transform 0.5s ease-in-out 0s;
     -webkit-transition: -webkit-transform 0.5s ease-in-out 0s;
     transition: -webkit-transform 0.5s ease-in-out 0s;
@@ -8644,7 +8700,7 @@ header {
     transform: translate(-50%, -50%);
   }
   .slider-element-container .swiper-slide .content .headline {
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     font-size: 22px;
     line-height: 26px;
     font-weight: 700;
@@ -8654,7 +8710,7 @@ header {
   .slider-element-container .swiper-slide .content .tag {
     padding: 4px 5px;
     background-color: #202637;
-    color: #FFF;
+    color: #fff;
     font-size: 10px;
     line-height: 10px;
     font-weight: 700;
@@ -8671,8 +8727,8 @@ header {
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
-    color: #FFF;
-    background-color: #F02B67;
+    color: #fff;
+    background-color: #f02b67;
     border-radius: 6px;
     border: 0 none;
     -webkit-appearance: none;
@@ -8684,8 +8740,8 @@ header {
   .slider-element-container .swiper-slide .content button.button:hover {
     -webkit-transform: translate(0, -2px);
     transform: translate(0, -2px);
-    -webkit-box-shadow: 0 10px 10px -10px #F02B67;
-    box-shadow: 0 10px 10px -10px #F02B67;
+    -webkit-box-shadow: 0 10px 10px -10px #f02b67;
+    box-shadow: 0 10px 10px -10px #f02b67;
   }
   .slider-element-container .swiper-slide .content button.button:focus {
     outline: 1px dashed #202637;
@@ -8825,7 +8881,7 @@ header {
     font-synthesis: none;
     letter-spacing: 0.1em;
     /* text-transform: uppercase; */
-    font-family: 'Ageo';
+    font-family: "Ageo";
   }
   .c-hm-us_title {
     max-width: 38vw vw;
@@ -8835,7 +8891,7 @@ header {
   .t-d3-fluid {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
     font-size: 1.6em;
     line-height: 0.9;
     letter-spacing: 0.05em;
@@ -8852,7 +8908,7 @@ header {
   }
   .mob-port .en-form-submit .en-btn_send {
     color: #fff;
-    font-family: 'NeueHaasDisplay-roman';
+    font-family: "NeueHaasDisplay-roman";
     text-transform: uppercase;
     font-size: 1.4em;
   }
@@ -8898,12 +8954,12 @@ header {
   .mob-port .top-row .menu span,
   .mob-port .top-row .menu span::before,
   .mob-port .top-row .menu span::after {
-    content: '';
+    content: "";
     width: 20px;
     height: 2px;
     border-radius: 6px;
     display: block;
-    background-color: #FFF;
+    background-color: #fff;
   }
   .mob-port .top-row .menu span {
     position: relative;
@@ -8994,7 +9050,7 @@ header {
     display: -ms-flexbox;
     display: flex;
     color: #ffffff;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     line-height: 1;
@@ -9008,7 +9064,7 @@ header {
     width: 100%;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .mob-port .slider-element-container .swiper-slide.swiper-slide-active {
     opacity: 1;
