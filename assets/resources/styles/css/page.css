@@ -6127,7 +6127,7 @@ header {
     padding: 0;
   }
   .about-us-section .small-h1 {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
   #about2 .about-p p {
     font-size: 1.3em;
@@ -6153,6 +6153,20 @@ header {
   }
   .home-sec .about-us-content h1 {
     font-size: 3.2em;
+  }
+}
+@media screen and (max-width: 776px) {
+  .about-page .container .flex .right-con p {
+    font-size: 0.8em;
+  }
+  #about2 .container .parh {
+    font-size: 1em !important;
+  }
+  .client-section .container .parh {
+    font-size: 1em !important;
+  }
+  .about-us-section .small-h1 {
+    font-size: 2em !important;
   }
 }
 /*############### Single Project #############*/
@@ -8215,6 +8229,10 @@ header {
   .home-sec .about-us-content h1 {
     font-size: 4em;
   }
+  .dharan .module--header__bg {
+    top: 24%;
+    left: 23%;
+  }
 }
 @media screen and (max-width: 1680px) {
   .c-hm-us_s2 {
@@ -8235,6 +8253,17 @@ header {
   .home-sec .about-us-content h1 {
     font-size: 3.9em;
   }
+  .dharan .module--header__bg {
+    top: 23%;
+    left: 20%;
+  }
+}
+@media screen and (max-width: 1536px) {
+  .dharan .module--header__bg {
+    top: 13%;
+    left: 22%;
+    width: 100px;
+  }
 }
 @media screen and (max-width: 1440px) {
   #about2 .big-h h1 {
@@ -8253,6 +8282,16 @@ header {
   .about-us-content {
     margin-left: 30px;
     margin-top: 40%;
+  }
+  .kedar .module--header__bg {
+    display: inherit;
+    position: absolute;
+    top: 17.5%;
+    right: 35.5%;
+    -webkit-transform: translate(16%, -8%);
+    transform: translate(16%, -8%);
+    width: auto;
+    height: 622px;
   }
   .about-us-image {
     margin-top: 5%;
@@ -8275,6 +8314,14 @@ header {
   }
   .home-sec .about-us-content h1 {
     font-size: 3.6em;
+  }
+  .dharan .module--header__bg {
+    width: 180px;
+    top: 18.5%;
+    left: 16.5%;
+  }
+  .dharan .el1 {
+    left: 9%;
   }
 }
 @media screen and (max-width: 1366px) {
@@ -8330,12 +8377,106 @@ header {
     padding-top: 7em;
     padding-bottom: 8em;
   }
+  .kedar .module--header__bg {
+    display: inherit;
+    position: absolute;
+    top: 14.5%;
+    right: 34.1%;
+    -webkit-transform: translate(16%, -8%);
+    transform: translate(16%, -8%);
+    width: auto;
+    height: 600px;
+  }
   .home-sec .about-us-content {
     margin-left: 30px;
     margin-top: 35%;
   }
   .home-sec .about-us-content h1 {
     font-size: 3.2em;
+  }
+  .dharan .module--header__bg {
+    width: 150px;
+    top: 16.8%;
+    left: 13%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .dharan .hro-img {
+    display: inherit;
+    position: block;
+    top: -360px;
+    margin: auto;
+    left: 0;
+    width: 100%;
+    right: 0px;
+    height: auto;
+  }
+  .dharan .module--header__bg {
+    width: 150px;
+    top: 25%;
+    left: 2%;
+  }
+  #colorc .right-d img {
+    width: 90%;
+  }
+  #portf {
+    padding: 200px 0 30px 0;
+  }
+  .margin-r-46 {
+    margin-right: 0px;
+  }
+  #colorc .color__section {
+    padding-left: 55px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .kedar .hro-img {
+    display: inherit;
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  .kedar .module--header__bg {
+    display: none;
+  }
+}
+@media screen and (max-width: 776px) {
+  .dharan .hro-img {
+    display: inherit;
+    position: absolute;
+    margin: auto;
+    top: -150px;
+    width: 100%;
+    right: 0px;
+    height: auto;
+  }
+  .dharan .module--header__bg {
+    display: none;
+  }
+  .port__f {
+    padding: 110px 0px !important;
+    margin-bottom: 0%;
+    padding-bottom: 0px !important;
+  }
+  #colorc .right-d {
+    padding-top: 30px;
+    width: 100%;
+  }
+  #colorc .right-d img {
+    width: 80%;
+  }
+  .next-project__content a span {
+    font-size: 33px;
+    display: block;
+    color: transparent;
+    color: #2b2b2b5e;
+  }
+  .next-project__content a svg {
+    width: 36px;
+  }
+  .next-project {
+    padding-top: 30px;
   }
 }
 .teams-slider {
@@ -9251,7 +9392,7 @@ header {
           justify-content: center;
   line-height: 11vw;
   text-transform: uppercase;
-  font-family: 'NeueHaasDisplay-bol';
+  font-family: "NeueHaasDisplay-bol";
 }
 .works__hero--inView {
   visibility: visible;
@@ -9301,13 +9442,13 @@ header {
 .accordion-title h2 {
   font-size: 70px;
   /* font-weight: 800; */
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   letter-spacing: 6px;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: #2b2b2b;
   -webkit-text-stroke: 2px;
   padding-left: 52px;
-  stroke: #2B2B2B;
+  stroke: #2b2b2b;
   color: #2b2b2b;
 }
 .accordion-title h2 span {
@@ -9346,7 +9487,7 @@ header {
   overflow: hidden;
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   font-size: 0.9em;
   padding-right: 17%;
   letter-spacing: 0.5px;
@@ -9381,7 +9522,7 @@ header {
   border: 0;
   border-radius: 0;
   outline: 0 !important;
-  font-family: 'Ageo-SemiBold';
+  font-family: "Ageo-SemiBold";
   font-size: 0.9em;
   letter-spacing: 1px;
   line-height: inherit;
@@ -9459,7 +9600,7 @@ header {
           transform-origin: left center;
 }
 .accordion-list li:before {
-  content: ' ';
+  content: " ";
   display: block;
   position: absolute;
   width: 10rem;
@@ -9498,7 +9639,7 @@ header {
   font-size: 4em;
   text-align: center;
   line-height: 1.2;
-  font-family: 'NeueHaasDisplay-bol';
+  font-family: "NeueHaasDisplay-bol";
   margin-bottom: 11%;
 }
 .services-s .services-s .flex-con {
@@ -9509,7 +9650,7 @@ header {
 .services-s .flex-con .fle {
   width: 60%;
   position: relative;
-  color: #2B2B2B;
+  color: #2b2b2b;
 }
 .services-s .p-right {
   padding-right: 10%;
@@ -9521,7 +9662,7 @@ header {
   font-size: 4em;
   text-align: left;
   line-height: 1.2;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   letter-spacing: 3px;
 }
 .services-s .flex-con .gif-area {
@@ -9580,7 +9721,7 @@ header {
 }
 .ser-hero .top-h h1 {
   font-size: 10em;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   -webkit-perspective: 600px;
           perspective: 600px;
 }
@@ -9634,7 +9775,7 @@ header {
   padding: 20px;
   font-size: 1em;
   letter-spacing: 1px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   -webkit-box-shadow: 1px 1px 41px -14px #777777f2;
           box-shadow: 1px 1px 41px -14px #777777f2;
   border-radius: 50px;
@@ -9652,20 +9793,20 @@ header {
 }
 .bol-prh .p-s {
   font-size: 2.6em;
-  font-family: 'NeueHaasDisplay-roman';
+  font-family: "NeueHaasDisplay-roman";
   letter-spacing: 3px;
   text-align: center;
   color: #1a1a1a;
 }
 .bol-prh p {
   font-size: 2.6em;
-  font-family: 'NeueHaasDisplay-roman';
+  font-family: "NeueHaasDisplay-roman";
   letter-spacing: 3px;
   text-align: center;
   color: #1a1a1a;
 }
 .bol-prh p span {
-  font-family: 'NeueHaasDisplay-xthin';
+  font-family: "NeueHaasDisplay-xthin";
   font-size: 1.2em;
   color: #fff;
   background-color: #f3ec78;
@@ -9712,7 +9853,7 @@ header {
 .ser-c .flex-con .left-d .lf {
   line-height: 1.8;
   letter-spacing: 1px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   text-transform: inherit;
   text-align: justify;
 }
@@ -9727,7 +9868,7 @@ header {
 .ser-c .flex-con .left-d p {
   line-height: 1.8;
   letter-spacing: 1px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   text-transform: inherit;
   text-align: justify;
 }
@@ -9746,7 +9887,7 @@ header {
 .ser-c .flex-con .right .ri {
   line-height: 1.6;
   letter-spacing: 1px;
-  font-family: 'Ageo';
+  font-family: "Ageo";
 }
 .ser-c .flex-con .three-prah ul {
   list-style: none;
@@ -9767,7 +9908,7 @@ header {
 }
 .ser-c .flex-con .three-prah ul li p {
   letter-spacing: 2px;
-  font-family: 'NeueHaasDisplay-light';
+  font-family: "NeueHaasDisplay-light";
 }
 .ser-c .flex-con .three-prah ul li .contact-details-block ul li p {
   margin: 0px;
@@ -9800,13 +9941,13 @@ header {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 20px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 .get-in .flex-con .left-d p {
   font-size: 0.9em;
   line-height: 1.8;
   letter-spacing: 1px;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   text-transform: inherit;
 }
 .get-in .flex-con .right {
@@ -9815,7 +9956,7 @@ header {
 }
 .get-in .flex-con .right a {
   font-size: 1.2em;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   color: #2b2b2b;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -9824,7 +9965,7 @@ header {
   width: 10px;
 }
 .get-in .flex-con .right::after {
-  content: '';
+  content: "";
   background: url(/assets/resources/img/Service-elements/phone-icon.svg);
   width: 50%;
   height: 246px;
@@ -9841,10 +9982,10 @@ header {
 }
 .last .gr-b {
   font-size: 2.6em;
-  font-family: 'Ageo-SemiBold';
+  font-family: "Ageo-SemiBold";
   letter-spacing: 3px;
   text-align: center;
-  color: #2B2B2B;
+  color: #2b2b2b;
   overflow: hidden;
   line-height: 1.5;
 }
@@ -9871,7 +10012,7 @@ header {
   letter-spacing: 2px;
   color: #fff;
   margin-bottom: 20px;
-  font-family: 'Ageo-SemiBold';
+  font-family: "Ageo-SemiBold";
 }
 .service-points .container p {
   padding-right: 0%;
@@ -9927,13 +10068,13 @@ header {
 .service-points .container .point li {
   width: 50%;
   font-size: 1em;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   color: #444;
   padding-right: 20px;
   position: relative;
 }
 .service-points .container .point li::before {
-  content: '';
+  content: "";
   background-image: url(/assets/resources/img/Service-elements/bullet-icon.svg);
   width: 15px;
   height: 14px;
@@ -10231,7 +10372,7 @@ header {
   position: absolute;
   top: -29px;
   right: inherit;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   z-index: 0;
 }
 .scroll-sec2 .back-text h1 {
@@ -10239,7 +10380,7 @@ header {
   transform: translateX(192vw);
   width: 250vw;
   font-size: 9em;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   color: #7575750a;
 }
 .scroll-sec2 .container {
@@ -10253,7 +10394,7 @@ header {
   line-height: 1.5;
   margin-bottom: 3%;
   letter-spacing: 4px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 .scroll-sec2 .container p {
   line-height: 1.8;
@@ -10305,11 +10446,11 @@ header {
   line-height: 1.7;
   margin-bottom: 3%;
   letter-spacing: 4px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 .scroll-sec .container p {
   font-size: 1.3em;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   color: #fff;
   line-height: 1.8;
   letter-spacing: 2px;
@@ -10340,7 +10481,7 @@ header {
 }
 .sec-b .container p {
   font-size: 1.3em;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   color: #fff;
   line-height: 1.8;
   letter-spacing: 2px;
@@ -10375,7 +10516,7 @@ section.horizontal .animation-wrap {
 .pin-wrap .item h4 {
   font-size: 2em;
   text-transform: uppercase;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   color: #000000;
   letter-spacing: 3.6px;
 }
@@ -10386,7 +10527,7 @@ section.horizontal .animation-wrap {
   margin-top: 9px;
 }
 .pin-wrap .item:before {
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   position: absolute;
   font-size: 10em;
   opacity: 0.05;
@@ -10429,7 +10570,7 @@ section.horizontal .animation-wrap {
 }
 .ser-three .item::before {
   content: attr(data-text);
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   position: absolute;
   font-size: 5em;
   opacity: 0.05;
@@ -10458,7 +10599,7 @@ section.horizontal .animation-wrap {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 7% ;
+  margin-bottom: 7%;
 }
 .ser-two .mar-top {
   margin-top: 20%;
@@ -10483,7 +10624,7 @@ section.horizontal .animation-wrap {
   line-height: 1.4;
   margin-bottom: 3%;
   letter-spacing: 1px;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   position: relative;
 }
 .ser-two .E-second .bo-h {
@@ -10501,7 +10642,7 @@ section.horizontal .animation-wrap {
 }
 .ser-two .item::before {
   content: attr(data-text);
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   position: absolute;
   font-size: 8em;
   opacity: 0.6;
@@ -10518,7 +10659,7 @@ section.horizontal .animation-wrap {
   font-size: 1.6em;
   line-height: 1.2;
   letter-spacing: 1.3px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   color: #fff;
   text-transform: uppercase;
 }
@@ -10551,12 +10692,12 @@ section.horizontal .animation-wrap.to-left {
 .pin-wrap .item:before {
   content: attr(data-text);
 }
-.pin-wrap .item:nth-child(2n+2) {
+.pin-wrap .item:nth-child(2n + 2) {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
-.pin-wrap .item:nth-child(4n+4) {
+.pin-wrap .item:nth-child(4n + 4) {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -10597,7 +10738,7 @@ section.horizontal .animation-wrap.to-left {
   border: 0;
   border-radius: 0;
   outline: 0 !important;
-  font-family: 'Ageo-SemiBold';
+  font-family: "Ageo-SemiBold";
   font-size: 1.4em;
   letter-spacing: 1px;
   line-height: inherit;
@@ -10681,6 +10822,9 @@ section.horizontal .animation-wrap.to-left {
   .image-div {
     margin-top: -45%;
   }
+  .ser-hero .top-h .tech__dev {
+    font-size: 9.5em;
+  }
 }
 @media screen and (max-width: 1367px) {
   .works__hero__line {
@@ -10709,6 +10853,12 @@ section.horizontal .animation-wrap.to-left {
     font-size: 11em;
     line-height: 0.9;
   }
+  .ser-c .flex-con .left-d .qou {
+    left: 10px;
+  }
+  .ser-c .flex-con .left-d .qou img {
+    width: 30px;
+  }
   .get-in .flex-con .right::after {
     height: 246px;
   }
@@ -10733,7 +10883,7 @@ section.horizontal .animation-wrap.to-left {
     border: 0;
     border-radius: 0;
     outline: 0 !important;
-    font-family: 'Ageo-SemiBold';
+    font-family: "Ageo-SemiBold";
     font-size: 1em;
     letter-spacing: 1px;
     line-height: inherit;
@@ -10772,7 +10922,7 @@ section.horizontal .animation-wrap.to-left {
   padding: 15% 0;
   position: relative;
   padding-bottom: 0;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   color: #fff;
   background-image: url(/assets/resources/img/circle.png);
   background-repeat: no-repeat;
@@ -10808,7 +10958,7 @@ section.horizontal .animation-wrap.to-left {
   padding: 20px 0%;
   font-size: 3em;
   letter-spacing: 1px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 .aproch .container .approach-lis {
   margin-top: 10%;
@@ -10830,15 +10980,15 @@ section.horizontal .animation-wrap.to-left {
   margin: 0%;
   position: relative;
   margin-bottom: 10%;
-  padding-right: calc(var(--bs-gutter-x)/2);
-  padding-left: calc(var(--bs-gutter-x)/2);
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
 }
 .aproch .container .approach-lis .flex-con .ap-no {
   position: relative;
   overflow: visible;
 }
 .aproch .container .approach-lis .flex-con .ap-no::before {
-  content: '';
+  content: "";
   position: absolute;
   background: #fff;
   opacity: 0.5;
@@ -10848,11 +10998,11 @@ section.horizontal .animation-wrap.to-left {
 }
 .aproch .container .approach-lis .flex-con .ap-no h6 .numb {
   font-size: 0.9375rem;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   letter-spacing: 1px;
   margin-bottom: 15px;
   position: relative;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
   opacity: 0.5;
@@ -10924,12 +11074,193 @@ section.horizontal .animation-wrap.to-left {
   -webkit-filter: invert(10);
           filter: invert(10);
 }
+@media screen and (max-width: 1024px) {
+  .ser-hero .top-h .tech__dev {
+    font-size: 6.5em;
+  }
+  .ser-two .item p {
+    font-size: 12px;
+  }
+  .service-points .container .point li {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .services-s .flex-con .fle {
+    width: 100%;
+  }
+  .reverse__column {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  .services-s .image {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .services-s .align-center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services-s .p-left {
+    padding-left: 0 !important;
+  }
+  .services-s .p-right {
+    padding-right: 0 !important;
+  }
+  .aproch .container .approach-lis .flex-con {
+    width: 100%;
+  }
+  .d-flex {
+    display: block;
+  }
+  .about-us-section .small-h1 {
+    font-size: 3em;
+  }
+  .about-us-section .b-h1 {
+    font-size: 4em;
+  }
+  .ser-hero .top-h h1 {
+    font-size: 6.5em;
+  }
+  .ser-c .flex-con .right {
+    width: 100%;
+  }
+  .ser-c .container {
+    width: 80%;
+  }
+  .ser-c .flex-con .left-d {
+    width: 100%;
+    padding-right: 20px;
+  }
+  .ser-c .flex-con .left-d .qou {
+    left: -45px;
+  }
+  .ser-c .flex-con .right {
+    padding-left: 0;
+    padding-top: 50px;
+  }
+  .scroll-sec2 .container h2 {
+    padding-right: 18%;
+  }
+  .details-f .cont {
+    width: 50%;
+  }
+  .ser-two .item {
+    width: 90%;
+  }
+  .service-points .container .pointrs-se {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .service-points .container .service__point__S {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .service-points .container .service__point__S li {
+    width: 100%;
+    font-size: 25px;
+  }
+  .service-points .container .point li {
+    padding-left: 20px;
+  }
+  .service-points .container .point li::before {
+    left: 0px;
+  }
+  .service-points .container .pointrs-se .left-content {
+    margin-bottom: 50px;
+  }
+  .ser-hero .top-h .tech__dev {
+    font-size: 5.5em !important;
+  }
+}
+@media screen and (max-width: 776px) {
+  .services-s .flex-con .fle h3 {
+    font-size: 2.5em;
+  }
+  .service__section .small-h1 {
+    font-size: 1.6em !important;
+  }
+  .service__container {
+    width: 100% !important;
+  }
+  .aproch .container .approach-lis .flex-con .ap-prah h6 {
+    font-size: 1.5em;
+  }
+  .services-s .content-p p {
+    font-size: 13px;
+  }
+  .services-s .content-p .en-form-submit .en-btn_send span .arro img {
+    width: 11px;
+    margin-left: 7px;
+  }
+  .ser-hero .top-h h1 {
+    font-size: 3em !important;
+  }
+  .bol-prh .p-s {
+    font-size: 1.3em !important;
+  }
+  .ser-two .bo-h {
+    font-size: 0.9em;
+  }
+  .ser-c .flex-con .left-d p {
+    font-size: 14px;
+  }
+  .text_anim p {
+    font-size: 14px;
+  }
+  .service-points .container .pointrs-se {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .service-points .container h2 {
+    font-size: 1em !important;
+    margin-bottom: 0px !important;
+  }
+  .service-points .container .pointrs-se .left-content {
+    margin-bottom: 30px;
+  }
+  .service-points .container .point li {
+    font-size: 1em !important;
+    margin-bottom: 20px !important;
+  }
+  .ser-c .flex-con .left-d .qou {
+    left: -5px;
+  }
+  .ser-c .flex-con .left-d .qou img {
+    width: 20px;
+  }
+  .ser-c .flex-con .right {
+    margin-top: 0px !important;
+  }
+  .service-points .padding__bot h2 {
+    padding-bottom: 15px;
+  }
+  .service-points .container p {
+    text-align: center;
+  }
+  .ser-hero .top-h .tech__dev {
+    font-size: 2.3em !important;
+  }
+  .bol-prh p {
+    font-size: 1.1em !important;
+  }
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
   .aproch {
     padding: 5% 0;
     position: relative;
     padding-bottom: 0;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .aproch .m-0 {
     margin-top: 0 !important;
@@ -10985,13 +11316,12 @@ section.horizontal .animation-wrap.to-left {
   .aproch .container .approach-lis .flex-con .ap-prah .cons {
     font-size: 1.4em;
     text-align: center;
-    color: #2b2b2b;
     text-transform: uppercase;
     margin-bottom: 9px;
   }
   .aproch .container .approach-lis .flex-con p {
-    color: #444;
     letter-spacing: 1px;
+    font-size: 12px;
   }
   .services-s .flex-con .fle {
     width: 100%;
@@ -11048,7 +11378,7 @@ section.horizontal .animation-wrap.to-left {
   }
   width: 100%;
   position: relative;
-  color: #2B2B2B;
+  color: #2b2b2b;
   .services-s .flex-con .fle {
     width: 100%;
   }
@@ -11071,7 +11401,7 @@ section.horizontal .animation-wrap.to-left {
     padding-left: 34px;
     line-height: 1.1;
     -webkit-text-fill-color: #2b2b2b;
-    font-family: 'NeueHaasDisplay-roman';
+    font-family: "NeueHaasDisplay-roman";
     -webkit-text-stroke-color: #ffffff;
     -webkit-text-stroke: 0.4px;
     /* stroke: #ffffff; */
@@ -11167,19 +11497,19 @@ section.horizontal .animation-wrap.to-left {
     line-height: 1.5;
     margin-bottom: 3%;
     letter-spacing: 4px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .details-f .cont {
     width: 100%;
     padding-right: 0;
   }
   .details-f .cont p spline_p {
-    font-family: 'Ageo';
+    font-family: "Ageo";
     line-height: 1.8;
     letter-spacing: 2px;
   }
   .details-f .cont .spline_p {
-    font-family: 'Ageo';
+    font-family: "Ageo";
     line-height: 1.8;
     letter-spacing: 2px;
   }
@@ -11236,7 +11566,7 @@ section.horizontal .animation-wrap.to-left {
     margin-bottom: 20%;
   }
   .serv .pin-wrap .item:before {
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
     position: absolute;
     font-size: 8em;
     opacity: 0.05;
@@ -11250,7 +11580,7 @@ section.horizontal .animation-wrap.to-left {
     padding: 0% 3.3%;
   }
   .get-in .flex-con .right::after {
-    content: '';
+    content: "";
     background: url(/assets/resources/img/Service-elements/phone-icon.svg);
     width: 20%;
     height: 96px;
@@ -11273,13 +11603,13 @@ section.horizontal .animation-wrap.to-left {
     letter-spacing: 2px;
     padding-right: 0%;
     margin-bottom: 70px;
-    font-family: 'NeueHaasDisplay-roman';
+    font-family: "NeueHaasDisplay-roman";
     text-align: center;
   }
   .service-points .container .point li {
     width: 100%;
     font-size: 1.2em;
-    font-family: 'Ageo';
+    font-family: "Ageo";
     color: #444444;
     line-height: 1.7;
     padding-left: 20px;
@@ -11287,7 +11617,7 @@ section.horizontal .animation-wrap.to-left {
     margin-bottom: 30px;
   }
   .service-points .container .point li::before {
-    content: '';
+    content: "";
     background-image: url(/assets/resources/img/Service-elements/bullet-icon.svg);
     width: 15px;
     height: 14px;
@@ -11312,7 +11642,7 @@ section.horizontal .animation-wrap.to-left {
     font-size: 1.3em;
     line-height: 1.2;
     letter-spacing: 1.3px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .ser-three .item {
     position: relative;
@@ -11334,7 +11664,7 @@ section.horizontal .animation-wrap.to-left {
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-bottom: 0px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 .portfolio {
   padding-bottom: 15%;
