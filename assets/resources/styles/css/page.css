@@ -9565,7 +9565,7 @@ header {
       grid-column-start: 3;
 }
 #colori ul li > div .pd_top {
-  padding-top: 30px;
+  padding-top: 22px;
 }
 @media screen and (max-width: 1536px) {
   .gcm .module--header__bg {
