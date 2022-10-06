@@ -9539,6 +9539,24 @@ header {
   width: 15%;
   height: auto;
 }
+.container__gcm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.container__gcm {
+  width: 100%;
+}
 .gcm__height {
   min-height: calc(var(--vh, 1vh) * 55) !important;
 }
@@ -9601,6 +9619,12 @@ header {
   }
   .pad__ing {
     padding: 100px 0 !important;
+  }
+  .container__gcm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media screen and (max-width: 768px) {

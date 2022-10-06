@@ -5704,6 +5704,17 @@
   height: auto;
 }
 
+.container__gcm {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.container__gcm {
+  width: 100%;
+}
+
 .gcm__height {
   min-height: calc(var(--vh, 1vh) * 55) !important;
 }
@@ -5771,6 +5782,10 @@
   }
   .pad__ing {
     padding: 100px 0 !important;
+  }
+
+  .container__gcm {
+    flex-direction: column;
   }
 }
 
