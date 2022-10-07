@@ -9682,14 +9682,69 @@ header {
 .wrag__color {
   min-height: calc(var(--vh, 1vh) * 35) !important;
 }
+.cont__bg__section {
+  color: #fff;
+  font-family: "NeueHaasDisplay-me";
+  letter-spacing: 1px;
+}
+.cont__bg__section .grid__text {
+  padding: 150px 0 0 80px;
+  font-size: 4rem;
+}
 .wrag__bg {
-  background-size: cover;
-  height: 99vh;
+  width: 100%;
+  height: 95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.content__section {
+  width: 60%;
+  padding-left: 90px;
+  color: #fff;
+  font-family: "NeueHaasDisplay-light";
+  letter-spacing: 1px;
+}
+.content__section .pt__top {
+  padding-top: 40px;
+}
+.content__section .grid__col__text {
+  font-size: 6rem;
+  font-family: "NeueHaasDisplay-light";
+}
+.content__section .p1 {
+  padding-top: 30px;
+  font-size: 32px;
+}
+.content__section .p2 {
+  padding-top: 30px;
+  font-size: 32px;
+}
+.image__section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .wrag__bg .wrag__line__img {
   width: 100%;
-  height: 99vh;
-  position: relative;
+  height: auto;
 }
 @media screen and (max-width: 1024px) {
   .wragby .module--header__bg {
