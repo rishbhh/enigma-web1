@@ -9729,7 +9729,7 @@ header {
   .gcm__color {
     padding: 0px;
     width: 300px;
-    margin-top: 30px;
+    margin-top: 50px;
   }
   .wragby__typo {
     width: 100% !important;
@@ -9740,6 +9740,7 @@ header {
   }
   #colorc .wrag__phn {
     margin: 0 auto;
+    padding-top: 70px;
   }
   .wrag__pt {
     padding: 0 0 75px 0 !important;
