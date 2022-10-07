@@ -9682,6 +9682,15 @@ header {
 .wrag__color {
   min-height: calc(var(--vh, 1vh) * 35) !important;
 }
+.wrag__bg {
+  background-size: cover;
+  height: 99vh;
+}
+.wrag__bg .wrag__line__img {
+  width: 100%;
+  height: 99vh;
+  position: relative;
+}
 @media screen and (max-width: 1024px) {
   .wragby .module--header__bg {
     top: 18.8%;
