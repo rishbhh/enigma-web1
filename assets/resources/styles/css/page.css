@@ -9645,6 +9645,9 @@ header {
     padding: 0 10px;
   }
 }
+.wragby .hro-img {
+  z-index: 999;
+}
 .pd__bot {
   margin-bottom: 10%;
 }
@@ -9661,14 +9664,14 @@ header {
   display: none;
 }
 .wragby__mp {
-  margin-top: 10%;
+  margin-top: 0%;
   padding: 10% 0 0 0;
 }
 #colorc .wrag__color__section {
   width: 80%;
 }
 .gcm__color {
-  width: 80%;
+  width: 100%;
   padding-left: 120px;
 }
 #colorc .wrag__phn {
@@ -9678,7 +9681,7 @@ header {
   margin-bottom: 10%;
 }
 .wrag__pt {
-  padding: 0 0 100px 0px;
+  padding: 100px 0 0 0px !important;
 }
 .wrag__color {
   min-height: calc(var(--vh, 1vh) * 35) !important;
