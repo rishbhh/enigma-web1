@@ -9678,7 +9678,7 @@ header {
   width: 40%;
 }
 .image-section .wrag__image {
-  margin-bottom: 10%;
+  margin-bottom: 0%;
 }
 .wrag__pt {
   padding: 100px 0 50px 0px !important;
@@ -9694,6 +9694,9 @@ header {
 .cont__bg__section .grid__text {
   padding: 150px 0 0 80px;
   font-size: 4rem;
+}
+.image-section .last__img {
+  margin-bottom: 0% !important;
 }
 .wrag__bg {
   width: 100%;
