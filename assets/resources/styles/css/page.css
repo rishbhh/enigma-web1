@@ -9665,7 +9665,7 @@ header {
 }
 .wragby__mp {
   margin-top: 0%;
-  padding: 10% 0 0 0;
+  padding: 10% 0 5% 0;
 }
 #colorc .wrag__color__section {
   width: 80%;
@@ -9842,7 +9842,7 @@ header {
     width: 100%;
   }
   .wrag__module {
-    padding: 35% 0 !important;
+    padding: 20% 0 !important;
   }
   .blocco div.left_block .wrag__mockup {
     -webkit-transform: scale(1.5);
