@@ -9776,6 +9776,43 @@ header {
   .content__section .p2 {
     font-size: 25px;
   }
+  .margin-r-30 {
+    margin-right: 30%;
+  }
+  .wrag__pt {
+    padding: 0 0 50px 0px !important;
+  }
+  .gcm__color {
+    width: 100%;
+    padding-left: 60px;
+  }
+  .wragby__typo-2 {
+    width: 90% !important;
+    padding-left: 65px;
+  }
+  .wragby__mp {
+    padding: 10% 0;
+  }
+  .wrag__bg {
+    padding: 100px 0 100px 0;
+  }
+  .content__section {
+    width: 80%;
+    padding-left: 60px;
+  }
+  .cont__bg__section .grid__text {
+    padding: 150px 0 0 60px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .wragby .module--header__bg {
+    top: 25.8%;
+    left: 5%;
+  }
+  .gcm__color {
+    padding-left: 0px;
+    margin-top: 50px;
+  }
 }
 @media screen and (max-width: 768px) {
   .wragby__typo {
@@ -9842,7 +9879,7 @@ header {
     padding-top: 70px;
   }
   .wrag__pt {
-    padding: 0 0 75px 0 !important;
+    padding: 0 0 55px 0 !important;
   }
   #colorc .right-d .phone__img {
     width: 100%;
@@ -9866,11 +9903,17 @@ header {
   .content__section {
     width: 100%;
     padding-left: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     text-align: left;
   }
   .content__section .pt__top {
     padding-top: 40px;
+  }
+  .blocco div.wrag__typo {
+    margin-bottom: 8%;
+  }
+  .wrag__image__section {
+    padding: 10% 10% 5% 10%;
   }
 }
 @media screen and (max-width: 375px) {
