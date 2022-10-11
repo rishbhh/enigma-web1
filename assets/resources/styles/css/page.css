@@ -9659,6 +9659,9 @@ header {
   .m__p {
     padding: 15% 0;
   }
+  .pad__ing {
+    padding: 100px 0 50px 0 !important;
+  }
 }
 .wragby .hro-img {
   z-index: 999;
