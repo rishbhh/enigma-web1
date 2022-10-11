@@ -9573,6 +9573,9 @@ header {
 #colori ul li > div .pd_top {
   padding-top: 22px;
 }
+.gcm .hro-img {
+  z-index: 999;
+}
 @media screen and (max-width: 1536px) {
   .gcm .module--header__bg {
     top: 20%;
@@ -9645,10 +9648,16 @@ header {
 }
 @media screen and (max-width: 475px) {
   .gcm .hro-img {
-    height: 300px !important;
+    height: 250px !important;
   }
   .font__pad {
     padding: 0 10px;
+  }
+  .blocco div.is-inview figure .scale__img {
+    scale: 1.05;
+  }
+  .m__p {
+    padding: 15% 0;
   }
 }
 .wragby .hro-img {
