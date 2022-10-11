@@ -10027,6 +10027,18 @@ header {
     margin-right: 10%;
   }
 }
+@media screen and (max-width: 776px) {
+  .dmtc .hro-img {
+    -webkit-transform: translate(-50%, -50%) !important;
+            transform: translate(-50%, -50%) !important;
+    left: 50% !important;
+    top: 50% !important;
+  }
+  .dmtc__mck {
+    -webkit-transform: scale(1.1) !important;
+            transform: scale(1.1) !important;
+  }
+}
 @media screen and (max-width: 475px) {
   .dmtca__color {
     min-height: calc(var(--vh, 1vh) * 27) !important;
