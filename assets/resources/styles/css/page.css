@@ -6534,6 +6534,9 @@ header {
 .flx-k .f-2 {
   width: 60%;
 }
+.dharan .hro-img {
+  z-index: 999;
+}
 .pdtl {
   -webkit-box-pack: center !important;
       -ms-flex-pack: center !important;
