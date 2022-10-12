@@ -2133,6 +2133,14 @@
   line-height: 0px;
 }
 
+#poster .ptdl__img_mobile {
+  display: none;
+}
+
+.pdtl__pb {
+  padding-bottom: 60px;
+}
+
 @media screen and (max-width: 1024px) {
   #marquee .pdtl {
     top: -95px;
@@ -2178,6 +2186,23 @@
   }
   #marquee .pdtl__mt-0 {
     margin-top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  #poster .ptdl__img_palette {
+    display: none;
+  }
+  #poster .ptdl__img_mobile {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+  .pdtl__pb {
+    padding-bottom: 0px;
+  }
+  .pdtl__pb_mobile {
+    padding-bottom: 60px;
   }
 }
 // PDEL END ======================================
