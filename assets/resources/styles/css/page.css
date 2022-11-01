@@ -16455,12 +16455,25 @@ ul.product-tags li a {
   display: block;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+  #footer.dark-footer {
+    background: #000 !important;
+    padding-top: 20%;
+  }
   #footer {
     padding-top: 2vh;
+    margin-top: 20%;
   }
   #footer .footer-flex {
-    display: block;
-    margin-top: 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 8%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 25px 0px;
+    border-top: 1px solid #000;
   }
   #footer .f-container {
     padding: 0px 1em;
@@ -16471,9 +16484,10 @@ ul.product-tags li a {
   #footer .f-container .top-f .great-cta {
     position: relative;
     font-size: 2.7em;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: 'NeueHaasDisplay-roman';
     letter-spacing: 0px;
     margin-bottom: 5%;
+    left: -15px;
   }
   #footer .f-container .top-f .arow {
     top: 3px;
@@ -16481,15 +16495,19 @@ ul.product-tags li a {
     width: 50px;
   }
   #footer .footer-right {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   #footer .footer-right .cb-outro-social-item {
     height: auto;
     line-height: 1.7;
     opacity: 1;
-    margin-right: 15px;
+    margin-right: 0;
     text-align: center;
-    width: 100%;
+    width: 29%;
   }
   #footer .botom {
     -webkit-box-pack: center;
@@ -16513,6 +16531,9 @@ ul.product-tags li a {
 }
 .dark-footer {
   background-color: #000 !important;
+}
+.dark-footer .footer-flex {
+  border-top: 1px solid #fff;
 }
 .dark-footer .top-f h3 {
   color: #fff !important;
