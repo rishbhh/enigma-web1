@@ -8873,7 +8873,7 @@ header {
     padding: 0rem 1rem !important;
   }
   .accordion-list li.open .cont {
-    max-height: 435px !important;
+    max-height: 435px ;
   }
   .dharan .hro-img {
     display: inherit;
@@ -10602,12 +10602,6 @@ header {
 .accordion-list li a {
   display: block;
 }
-.accordion-list li.open .cont {
-  max-height: 335px;
-  padding-bottom: 20px;
-  -webkit-transition: 0.4s all ease-in-out;
-  transition: 0.4s all ease-in-out;
-}
 .accordion-list li {
   position: relative;
 }
@@ -11811,6 +11805,12 @@ section.horizontal .animation-wrap.to-left {
   transition: all 0.3s ease-in-out;
 }
 @media screen and (max-width: 1920px) {
+  .accordion-list li.open .cont {
+    max-height: 335px;
+    padding-bottom: 20px;
+    -webkit-transition: 0.4s all ease-in-out;
+    transition: 0.4s all ease-in-out;
+  }
   .services-s .image {
     width: 35%;
     /* height: 940px; */
@@ -11947,6 +11947,11 @@ section.horizontal .animation-wrap.to-left {
   }
   .services-s .flex-con .fle h3 {
     font-size: 3em;
+  }
+}
+@media screen and (max-width: 991px) {
+  .accordion-list li.open .cont {
+    max-height: 435px ;
   }
 }
 .dark .marquees__part {

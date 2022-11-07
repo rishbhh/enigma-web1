@@ -253,11 +253,6 @@
   display: block;
 }
 
-.accordion-list li.open .cont {
-  max-height: 335px;
-  padding-bottom: 20px;
-  transition: 0.4s all ease-in-out;
-}
 
 .accordion-list li {
   position: relative;
@@ -1589,6 +1584,11 @@ section.horizontal .animation-wrap.to-left {
 }
 
 @media screen and (max-width: 1920px) {
+  .accordion-list li.open .cont {
+    max-height: 335px;
+    padding-bottom: 20px;
+    transition: 0.4s all ease-in-out;
+  }  
   .services-s .image {
     width: 35%;
 
@@ -1750,7 +1750,11 @@ section.horizontal .animation-wrap.to-left {
     // opacity: 0;
   }
 }
+@media screen and (max-width: 991px) {
 
+.accordion-list li.open .cont {
+  max-height: 435px ;
+}}
 .dark {
   .marquees__part {
     -webkit-text-stroke-color: #2b2b2b;
