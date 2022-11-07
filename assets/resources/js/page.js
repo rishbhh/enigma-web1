@@ -10,7 +10,6 @@ $(document).ready(function() {
 
     "use strict";
     // scr();
-    
     HeroSection();
     ChangeColor();
     About();
@@ -24,11 +23,9 @@ $(document).ready(function() {
     TitleChange();
     Plrax();
     About2();
-  
     Serv();
     worksSlider()
     initShowcases();
-    
     Scrol();
     Footer();
 });
