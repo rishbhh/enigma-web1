@@ -1126,12 +1126,12 @@ section:after {
   }
 
   .top-p {
-    font-size: 30px;
+    font-size: 30px !important;
     line-height: 41px;
     display: block;
     padding-left: 0;
-    width: 100%;
-    margin-top: 90px;
+    width: 100% !important;
+    margin-top: 90px !important;
     padding: 0px 30px;
     color: #fff;
     letter-spacing: 1px;
@@ -2647,7 +2647,56 @@ ul.product-tags li a {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .dd {
+    display: none;
+  }
+  .top-p {
+    font-size: 40px;
+    line-height: 41px;
+    display: block;
+    padding-left: 0;
+    width: 90%;
+    margin-top: 150px;
+    padding: 0px 30px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: "NeueHaasDisplay-me";
+  }
+  .c-col-9 {
+    width: 100%;
+  }
+  .wrapper-full {
+    margin-bottom: 0px;
+  }
+  section.section-container {
+    margin-bottom: 35px;
+  }
+  .c-col-8 {
+    width: 100%;
+    padding-left: 20px;
+  }
+  .c-col-4 {
+    width: 45%;
+    padding-left: 110px;
+  }
+  .flex-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .c-col-4 {
+    width: 100%;
+    padding-left: 15px;
+  }
   .wrapper-full {
     margin-bottom: 0;
   }

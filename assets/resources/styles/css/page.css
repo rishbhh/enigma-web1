@@ -598,6 +598,7 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
+  -moz-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */
 }
@@ -1403,7 +1404,7 @@ html.is-ready .c-header_title_line {
           animation: gradient 1s ease infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
 }
 @-webkit-keyframes gradient {
   0% {
@@ -1422,7 +1423,7 @@ html.is-ready .c-header_title_line {
   }
 }
 .init-load .percentage {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 100px;
   line-height: 1.1;
   font-weight: 600;
@@ -1445,7 +1446,7 @@ html.is-ready .c-header_title_line {
   -webkit-background-clip: text;
   -webkit-animation: gradient 8s ease infinite;
           animation: gradient 8s ease infinite;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   -webkit-transition: 3s all ease-in-out;
   transition: 3s all ease-in-out;
 }
@@ -1579,7 +1580,7 @@ html.is-ready .c-header_title_line {
     display: block;
     overflow: hidden;
     float: left;
-    height: 394px;
+    height: 394px !important;
     margin-left: -15px;
   }
 }
@@ -1597,6 +1598,12 @@ html.is-ready .c-header_title_line {
   .init-load .percentage {
     font-size: 50px;
     right: -32px;
+  }
+}
+@media screen and (max-width: 776px) {
+  .apl-count .apl-num {
+    height: 203px !important;
+    margin-left: 0px;
   }
 }
 header {
@@ -11971,7 +11978,7 @@ section.horizontal .animation-wrap.to-left {
 }
 @media screen and (max-width: 991px) {
   .accordion-list li.open .cont {
-    max-height: 435px ;
+    max-height: 435px;
   }
 }
 .dark .marquees__part {
@@ -12145,6 +12152,16 @@ section.horizontal .animation-wrap.to-left {
   }
 }
 @media screen and (max-width: 991px) {
+  .service-points .container .point li {
+    font-size: 1.5em;
+    margin-bottom: 20px !important;
+  }
+  .service-points .container .point li::before {
+    top: 10px;
+  }
+  .scroll-sec2 .back-text {
+    top: -63px;
+  }
   .services-s .flex-con .fle {
     width: 100%;
   }
@@ -12184,6 +12201,12 @@ section.horizontal .animation-wrap.to-left {
   }
   .ser-hero .top-h h1 {
     font-size: 6.5em;
+  }
+  .ser-hero .top-h .h1-r {
+    margin-left: 48%;
+  }
+  .ser-hero .top-h .mr__right {
+    margin-left: 31%;
   }
   .ser-c .flex-con .right {
     width: 100%;
@@ -12241,6 +12264,9 @@ section.horizontal .animation-wrap.to-left {
   }
 }
 @media screen and (max-width: 776px) {
+  .ser-hero .top-h .h1-r6 {
+    margin-left: 28%;
+  }
   .services-s .flex-con .fle h3 {
     font-size: 2.5em;
   }
@@ -12555,7 +12581,7 @@ section.horizontal .animation-wrap.to-left {
     letter-spacing: 1px;
   }
   .scroll-sec2 .back-text {
-    top: -6px;
+    top: -20px;
   }
   .scroll-sec2 .back-text h1 {
     font-size: 2.9em;
@@ -13716,12 +13742,12 @@ section:after {
     display: none;
   }
   .top-p {
-    font-size: 30px;
+    font-size: 30px !important;
     line-height: 41px;
     display: block;
     padding-left: 0;
-    width: 100%;
-    margin-top: 90px;
+    width: 100% !important;
+    margin-top: 90px !important;
     padding: 0px 30px;
     color: #fff;
     letter-spacing: 1px;
@@ -14913,7 +14939,55 @@ ul.product-tags li a {
     width: 70vw;
   }
 }
+@media screen and (max-width: 991px) {
+  .dd {
+    display: none;
+  }
+  .top-p {
+    font-size: 40px;
+    line-height: 41px;
+    display: block;
+    padding-left: 0;
+    width: 90%;
+    margin-top: 150px;
+    padding: 0px 30px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: "NeueHaasDisplay-me";
+  }
+  .c-col-9 {
+    width: 100%;
+  }
+  .wrapper-full {
+    margin-bottom: 0px;
+  }
+  section.section-container {
+    margin-bottom: 35px;
+  }
+  .c-col-8 {
+    width: 100%;
+    padding-left: 20px;
+  }
+  .c-col-4 {
+    width: 45%;
+    padding-left: 110px;
+  }
+  .flex-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
 @media screen and (max-width: 767px) {
+  .c-col-4 {
+    width: 100%;
+    padding-left: 15px;
+  }
   .wrapper-full {
     margin-bottom: 0;
   }
@@ -15547,12 +15621,11 @@ ul.product-tags li a {
   font-size: 1.4rem;
   line-height: 1;
   font-weight: 400;
-  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  -webkit-transition-property: color, background-color, border-color, fill, stroke, opacity, -webkit-text-decoration-color, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, fill, stroke, opacity, -webkit-text-decoration-color, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  -webkit-transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
           transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   -webkit-transition-duration: 0.3s;
@@ -15575,12 +15648,11 @@ ul.product-tags li a {
           box-shadow: inset 0 0 0 1px #212121;
 }
 .submit-btn:after {
-  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  -webkit-transition-property: color, background-color, border-color, fill, stroke, opacity, -webkit-text-decoration-color, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, fill, stroke, opacity, -webkit-text-decoration-color, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  -webkit-transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
           transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   -webkit-transition-duration: 0.7s;
@@ -15649,12 +15721,11 @@ ul.product-tags li a {
   height: 100%;
   border-radius: inherit;
   background-color: currentColor;
-  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  -webkit-transition-property: color, background-color, border-color, fill, stroke, opacity, -webkit-text-decoration-color, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, fill, stroke, opacity, -webkit-text-decoration-color, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  -webkit-transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
           transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   -webkit-transition-duration: 0.3s;
