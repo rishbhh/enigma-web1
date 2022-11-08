@@ -2687,6 +2687,9 @@ header {
   background-color: #000;
 }
 @media only screen and (max-device-width: 1920px) {
+  .w-hde {
+    display: none;
+  }
   .tablet_container .macbook_frame_2_evolves_mask_logo .macbook_frame_2_evolves_mask_logo_path {
     -webkit-transform: scale(8) translateX(-22vw) translateY(-37vh);
             transform: scale(8) translateX(-22vw) translateY(-37vh);
@@ -2733,21 +2736,21 @@ header {
     display: inline-block;
     opacity: 0;
     letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .container_word_change_t .make {
     padding-right: 5px;
     display: inline-block;
     opacity: 0;
     letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .container_word_change_t .digital {
     padding-right: 5px;
     display: inline-block;
     opacity: 0;
     letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .container_word_change_t .brand {
     padding-right: 5px;
@@ -2755,7 +2758,7 @@ header {
     opacity: 0;
     letter-spacing: 2px;
     position: relative;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .container_word_change_t .experince {
     padding-right: 5px;
@@ -2763,7 +2766,7 @@ header {
     opacity: 0;
     letter-spacing: 2px;
     position: relative;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .transition_to_lapi {
     opacity: 0;
@@ -2810,7 +2813,7 @@ header {
     fill: #808080;
   }
   .container_hero_content #enigma-svg .st2 {
-    fill: #8B8B8B;
+    fill: #8b8b8b;
   }
   .container_hero_content #enigma-svg .st3 {
     fill: #939393;
@@ -2819,7 +2822,7 @@ header {
     fill: #878787;
   }
   .container_hero_content #enigma-svg .st5 {
-    fill: #AAAAAA;
+    fill: #aaaaaa;
   }
   .container_hero_content #enigma-svg .st6 {
     -webkit-clip-path: url(#SVGID_2_);
@@ -2866,7 +2869,7 @@ header {
             clip-path: url(#SVGID_42_);
   }
   .container_hero_content #enigma-svg .st17 {
-    fill: #8C8C8C;
+    fill: #8c8c8c;
   }
   .container_hero_content #enigma-svg .st18 {
     -webkit-clip-path: url(#SVGID_46_);
@@ -2906,7 +2909,7 @@ header {
     line-height: 1.5;
     color: #ffffff;
     font-weight: normal;
-    font-family: 'Ageo';
+    font-family: "Ageo";
     letter-spacing: 0.2em;
   }
   .container_hero_content .chapt-icon {
@@ -2965,7 +2968,7 @@ header {
   .container_hero_content .chapt-icon .scroll-icon {
     -webkit-transition: 0.9s all ease-in;
     transition: 0.9s all ease-in;
-    fill: #EAEAEA;
+    fill: #eaeaea;
     -webkit-transition: all 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
     -webkit-animation: circleSpin 8s linear infinite;
@@ -2975,7 +2978,7 @@ header {
     overflow: hidden;
   }
   .container_hero_content .chapt-icon .scroll-arrow svg {
-    fill: #EAEAEA;
+    fill: #eaeaea;
     height: 148px;
     margin-top: 30px;
     -webkit-transform: translate(0px, -210px);
@@ -3013,7 +3016,7 @@ header {
             transform: translateY(-50%) !important;
     width: 100%;
     text-align: center;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
     font-size: 25vw;
     font-weight: 500;
   }
@@ -3042,7 +3045,7 @@ header {
             transform: translateY(-50%) !important;
     width: 100%;
     text-align: center;
-    font-family: 'NeueHaasDisplay-roman';
+    font-family: "NeueHaasDisplay-roman";
     letter-spacing: 3px;
     font-size: 6vw;
     font-weight: 600;
@@ -3071,7 +3074,7 @@ header {
     height: 80vh;
   }
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_pro {
-    content: url('/assets/resources/img/MacBook_Pro.png');
+    content: url("/assets/resources/img/MacBook_Pro.png");
     position: relative;
     top: auto;
     bottom: 0;
@@ -3127,7 +3130,7 @@ header {
   }
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading {
     position: relative;
-    font-family: 'NeueHaasDisplay-Mediu';
+    font-family: "NeueHaasDisplay-Mediu";
     color: #9d9d9d;
     letter-spacing: 2px;
     text-align: left;
@@ -3136,13 +3139,13 @@ header {
     text-transform: capitalize;
   }
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading p {
-    font-family: 'NeueHaasDisplay-Mediu';
+    font-family: "NeueHaasDisplay-Mediu";
   }
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading span {
     font-style: italic;
     color: #fff;
     margin-right: 5px;
-    font-family: 'NeueHaasDisplay-blod';
+    font-family: "NeueHaasDisplay-blod";
   }
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one {
     width: 85%;
@@ -3172,7 +3175,7 @@ header {
   }
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_heading {
     position: relative;
-    font-family: 'NeueHaasDisplay-Mediu';
+    font-family: "NeueHaasDisplay-Mediu";
     font-size: 2.5vh;
     line-height: 1.5;
     color: #fff;
@@ -3180,7 +3183,7 @@ header {
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_text {
     padding-top: 5px;
     position: relative;
-    font-family: 'NeueHaasDisplay-Mediu';
+    font-family: "NeueHaasDisplay-Mediu";
     font-size: 1.75vh;
     line-height: 1.5;
     color: #8e8e93;
@@ -3238,21 +3241,21 @@ header {
     display: inline-block;
     opacity: 0;
     letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .container_word_change_t .make {
     padding-right: 5px;
     display: inline-block;
     opacity: 0;
     letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .container_word_change_t .digital {
     padding-right: 5px;
     display: inline-block;
     opacity: 0;
     letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .container_word_change_t .brand {
     padding-right: 5px;
@@ -3260,7 +3263,7 @@ header {
     opacity: 0;
     letter-spacing: 2px;
     position: relative;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .container_word_change_t .experince {
     padding-right: 5px;
@@ -3268,7 +3271,7 @@ header {
     opacity: 0;
     letter-spacing: 2px;
     position: relative;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .transition_to_lapi {
     opacity: 0;
@@ -3315,7 +3318,7 @@ header {
     fill: #808080;
   }
   .container_hero_content #enigma-svg .st2 {
-    fill: #8B8B8B;
+    fill: #8b8b8b;
   }
   .container_hero_content #enigma-svg .st3 {
     fill: #939393;
@@ -3324,7 +3327,7 @@ header {
     fill: #878787;
   }
   .container_hero_content #enigma-svg .st5 {
-    fill: #AAAAAA;
+    fill: #aaaaaa;
   }
   .container_hero_content #enigma-svg .st6 {
     -webkit-clip-path: url(#SVGID_2_);
@@ -3371,7 +3374,7 @@ header {
             clip-path: url(#SVGID_42_);
   }
   .container_hero_content #enigma-svg .st17 {
-    fill: #8C8C8C;
+    fill: #8c8c8c;
   }
   .container_hero_content #enigma-svg .st18 {
     -webkit-clip-path: url(#SVGID_46_);
@@ -3411,7 +3414,7 @@ header {
     line-height: 1.5;
     color: #ffffff;
     font-weight: normal;
-    font-family: 'Ageo';
+    font-family: "Ageo";
     letter-spacing: 2px;
   }
   .container_hero_content .chapt-icon {
@@ -3470,7 +3473,7 @@ header {
   .container_hero_content .chapt-icon .scroll-icon {
     -webkit-transition: 0.9s all ease-in;
     transition: 0.9s all ease-in;
-    fill: #EAEAEA;
+    fill: #eaeaea;
     -webkit-transition: all 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
     -webkit-animation: circleSpin 8s linear infinite;
@@ -3480,7 +3483,7 @@ header {
     overflow: hidden;
   }
   .container_hero_content .chapt-icon .scroll-arrow svg {
-    fill: #EAEAEA;
+    fill: #eaeaea;
     height: 148px;
     margin-top: 30px;
     -webkit-transform: translate(0px, -210px);
@@ -3518,7 +3521,7 @@ header {
             transform: translateY(-50%) !important;
     width: 100%;
     text-align: center;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
     font-size: 25vw;
     font-weight: 500;
   }
@@ -3547,7 +3550,7 @@ header {
             transform: translateY(-50%) !important;
     width: 100%;
     text-align: center;
-    font-family: 'NeueHaasDisplay-roman';
+    font-family: "NeueHaasDisplay-roman";
     letter-spacing: 3px;
     font-size: 6vw;
     font-weight: 600;
@@ -3576,7 +3579,7 @@ header {
     height: 80vh;
   }
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_pro {
-    content: url('/assets/resources/img/MacBook_Pro.png');
+    content: url("/assets/resources/img/MacBook_Pro.png");
     position: relative;
     top: auto;
     bottom: 0;
@@ -3632,7 +3635,7 @@ header {
   }
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading {
     position: relative;
-    font-family: 'NeueHaasDisplay-Mediu';
+    font-family: "NeueHaasDisplay-Mediu";
     color: #9d9d9d;
     letter-spacing: 2px;
     text-align: left;
@@ -3641,13 +3644,13 @@ header {
     text-transform: capitalize;
   }
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading p {
-    font-family: 'NeueHaasDisplay-Mediu';
+    font-family: "NeueHaasDisplay-Mediu";
   }
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading span {
     font-style: italic;
     color: #fff;
     margin-right: 5px;
-    font-family: 'NeueHaasDisplay-blod';
+    font-family: "NeueHaasDisplay-blod";
   }
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one {
     width: 85%;
@@ -3677,7 +3680,7 @@ header {
   }
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_heading {
     position: relative;
-    font-family: 'NeueHaasDisplay-Mediu';
+    font-family: "NeueHaasDisplay-Mediu";
     font-size: 2.5vh;
     line-height: 1.5;
     color: #fff;
@@ -3685,7 +3688,7 @@ header {
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_text {
     padding-top: 5px;
     position: relative;
-    font-family: 'NeueHaasDisplay-Mediu';
+    font-family: "NeueHaasDisplay-Mediu";
     font-size: 1.75vh;
     line-height: 1.5;
     color: #8e8e93;
@@ -3768,7 +3771,7 @@ header {
   }
   .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading {
     position: relative;
-    font-family: 'NeueHaasDisplay-Mediu';
+    font-family: "NeueHaasDisplay-Mediu";
     font-size: 5vh;
     color: #fff;
     text-align: center;
@@ -3801,7 +3804,7 @@ header {
   }
   .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_heading {
     position: relative;
-    font-family: 'NeueHaasDisplay-Mediu';
+    font-family: "NeueHaasDisplay-Mediu";
     font-size: 2.5vh;
     line-height: 1.5;
     color: #fff;
@@ -3809,7 +3812,7 @@ header {
   .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_text {
     padding-top: 5px;
     position: relative;
-    font-family: 'NeueHaasDisplay-Mediu';
+    font-family: "NeueHaasDisplay-Mediu";
     font-size: 1.75vh;
     line-height: 1.5;
     color: #8e8e93;
@@ -3957,7 +3960,7 @@ header {
   top: auto;
   left: 0;
   right: 0;
-  font-family: 'Freight-book-it';
+  font-family: "Freight-book-it";
   font-size: 3.5vw;
   letter-spacing: 3px;
   text-align: center;
@@ -4042,9 +4045,6 @@ header {
 .mobl {
   display: none;
 }
-.w-hde {
-  display: none;
-}
 @media screen and (max-width: 820px) {
   .ht-cursor {
     display: none;
@@ -4091,21 +4091,21 @@ header {
     display: inline-block;
     opacity: 0;
     letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .container_word_change_t .make {
     padding-right: 5px;
     display: inline-block;
     opacity: 0;
     letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .container_word_change_t .digital {
     padding-right: 5px;
     display: inline-block;
     opacity: 0;
     letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .container_word_change_t .brand {
     padding-right: 5px;
@@ -4113,7 +4113,7 @@ header {
     opacity: 0;
     letter-spacing: 2px;
     position: relative;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .container_word_change_t .experince {
     padding-right: 5px;
@@ -4121,7 +4121,7 @@ header {
     opacity: 0;
     letter-spacing: 2px;
     position: relative;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .transition_to_lapi {
     opacity: 0;
@@ -4168,7 +4168,7 @@ header {
     fill: #808080;
   }
   .container_hero_content #enigma-svg .st2 {
-    fill: #8B8B8B;
+    fill: #8b8b8b;
   }
   .container_hero_content #enigma-svg .st3 {
     fill: #939393;
@@ -4177,7 +4177,7 @@ header {
     fill: #878787;
   }
   .container_hero_content #enigma-svg .st5 {
-    fill: #AAAAAA;
+    fill: #aaaaaa;
   }
   .container_hero_content #enigma-svg .st6 {
     -webkit-clip-path: url(#SVGID_2_);
@@ -4224,7 +4224,7 @@ header {
             clip-path: url(#SVGID_42_);
   }
   .container_hero_content #enigma-svg .st17 {
-    fill: #8C8C8C;
+    fill: #8c8c8c;
   }
   .container_hero_content #enigma-svg .st18 {
     -webkit-clip-path: url(#SVGID_46_);
@@ -4263,7 +4263,7 @@ header {
     font-size: 1.5em;
     line-height: 1.5;
     font-weight: normal;
-    font-family: 'Ageo';
+    font-family: "Ageo";
     color: #ffffff;
     letter-spacing: 0.2em;
     padding: 0 10px;
@@ -4302,7 +4302,7 @@ header {
     overflow: hidden;
   }
   .mobli-cont .en-cicle {
-    background-image: url('/assets/resources/img/motion-circle.png');
+    background-image: url("/assets/resources/img/motion-circle.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 60%;
@@ -4315,7 +4315,7 @@ header {
     transition: all 0.3s ease-in-out;
   }
   .mobli-cont .en-bg {
-    background-image: url('/assets/resources/img/lights.webp');
+    background-image: url("/assets/resources/img/lights.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -4344,7 +4344,7 @@ header {
     padding-right: 5px;
     display: inline-block;
     letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
     color: #fff;
   }
   .mobli-cont .mobli-cont_content .wep .word {
@@ -4364,7 +4364,7 @@ header {
     padding-right: 5px;
     display: inline-block;
     letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
     opacity: 0;
   }
   .mobli-cont .lapi-content p {
@@ -4430,21 +4430,21 @@ header {
     display: inline-block;
     opacity: 0;
     letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .container_word_change_t .make {
     padding-right: 5px;
     display: inline-block;
     opacity: 0;
     letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .container_word_change_t .digital {
     padding-right: 5px;
     display: inline-block;
     opacity: 0;
     letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .container_word_change_t .brand {
     padding-right: 5px;
@@ -4452,7 +4452,7 @@ header {
     opacity: 0;
     letter-spacing: 2px;
     position: relative;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .container_word_change_t .experince {
     padding-right: 5px;
@@ -4460,7 +4460,7 @@ header {
     opacity: 0;
     letter-spacing: 2px;
     position: relative;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .transition_to_lapi {
     opacity: 0;
@@ -4507,7 +4507,7 @@ header {
     fill: #808080;
   }
   .container_hero_content #enigma-svg .st2 {
-    fill: #8B8B8B;
+    fill: #8b8b8b;
   }
   .container_hero_content #enigma-svg .st3 {
     fill: #939393;
@@ -4516,7 +4516,7 @@ header {
     fill: #878787;
   }
   .container_hero_content #enigma-svg .st5 {
-    fill: #AAAAAA;
+    fill: #aaaaaa;
   }
   .container_hero_content #enigma-svg .st6 {
     -webkit-clip-path: url(#SVGID_2_);
@@ -4563,7 +4563,7 @@ header {
             clip-path: url(#SVGID_42_);
   }
   .container_hero_content #enigma-svg .st17 {
-    fill: #8C8C8C;
+    fill: #8c8c8c;
   }
   .container_hero_content #enigma-svg .st18 {
     -webkit-clip-path: url(#SVGID_46_);
@@ -4602,7 +4602,7 @@ header {
     font-size: 1.1em;
     line-height: 1.5;
     font-weight: normal;
-    font-family: 'Ageo';
+    font-family: "Ageo";
     color: #ffffff;
     letter-spacing: 0.2em;
     padding: 0 10px;
@@ -4663,7 +4663,7 @@ header {
   .container_hero_content .chapt-icon .scroll-icon {
     -webkit-transition: 0.9s all ease-in;
     transition: 0.9s all ease-in;
-    fill: #EAEAEA;
+    fill: #eaeaea;
     -webkit-transition: all 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 350ms cubic-bezier(0.165, 0.84, 0.44, 1);
     -webkit-animation: circleSpin 8s linear infinite;
@@ -4673,7 +4673,7 @@ header {
     overflow: hidden;
   }
   .container_hero_content .chapt-icon .scroll-arrow svg {
-    fill: #EAEAEA;
+    fill: #eaeaea;
     height: 148px;
     margin-top: 30px;
     -webkit-transform: translate(0px, -210px);
@@ -4711,7 +4711,7 @@ header {
             transform: translateY(-50%) !important;
     width: 100%;
     text-align: center;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
     font-size: 25vw;
     font-weight: 500;
   }
@@ -4740,7 +4740,7 @@ header {
             transform: translateY(-50%) !important;
     width: 100%;
     text-align: center;
-    font-family: 'NeueHaasDisplay-roman';
+    font-family: "NeueHaasDisplay-roman";
     letter-spacing: 3px;
     font-size: 6vw;
     font-weight: 600;
@@ -4769,7 +4769,7 @@ header {
     height: 38vh;
   }
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_pro {
-    content: url('/assets/resources/img/MacBook_Pro.png');
+    content: url("/assets/resources/img/MacBook_Pro.png");
     position: relative;
     top: auto;
     bottom: 0;
@@ -4825,7 +4825,7 @@ header {
   }
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading {
     position: relative;
-    font-family: 'NeueHaasDisplay-Mediu';
+    font-family: "NeueHaasDisplay-Mediu";
     color: #9d9d9d;
     letter-spacing: 2px;
     text-align: left;
@@ -4834,13 +4834,13 @@ header {
     text-transform: capitalize;
   }
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading p {
-    font-family: 'NeueHaasDisplay-Mediu';
+    font-family: "NeueHaasDisplay-Mediu";
   }
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_content_upper .macbook_frame_heading span {
     font-style: italic;
     color: #fff;
     margin-right: 5px;
-    font-family: 'NeueHaasDisplay-blod';
+    font-family: "NeueHaasDisplay-blod";
   }
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one {
     width: 85%;
@@ -4870,7 +4870,7 @@ header {
   }
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_heading {
     position: relative;
-    font-family: 'NeueHaasDisplay-Mediu';
+    font-family: "NeueHaasDisplay-Mediu";
     font-size: 2.5vh;
     line-height: 1.5;
     color: #fff;
@@ -4878,7 +4878,7 @@ header {
   .container_lapi .container_lapi_content .container_lapi_content_together .container_lapi_content_inner .lapi_div .macbook_frame .macbook_frame_one .macbook_frame_one_content .macbook_frame_one_text {
     padding-top: 5px;
     position: relative;
-    font-family: 'NeueHaasDisplay-Mediu';
+    font-family: "NeueHaasDisplay-Mediu";
     font-size: 1.75vh;
     line-height: 1.5;
     color: #8e8e93;
@@ -4894,7 +4894,7 @@ header {
     font-synthesis: none;
     letter-spacing: 0.07em;
     /* text-transform: uppercase; */
-    font-family: 'Ageo';
+    font-family: "Ageo";
   }
   .o-container {
     padding-right: 0em;
@@ -8873,7 +8873,7 @@ header {
     padding: 0rem 1rem !important;
   }
   .accordion-list li.open .cont {
-    max-height: 435px ;
+    max-height: 435px;
   }
   .dharan .hro-img {
     display: inherit;
@@ -8955,6 +8955,23 @@ header {
 }
 .teams-slider {
   display: none;
+}
+@media screen and (max-width: 991px) {
+  .about-us-image {
+    margin-top: 15%;
+  }
+  .client-section .grid-logo .logo-item {
+    width: 50%;
+    padding: 15px;
+    border-right: none;
+    position: relative;
+  }
+  .client-section .grid-logo .bottom-border::after {
+    background: none;
+  }
+  .client-section .grid-logo .logo-item img {
+    width: 75%;
+  }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
   .teams-slider {
@@ -9160,7 +9177,7 @@ header {
   .mobile-container {
     overflow: hidden;
     width: 100%;
-    max-width: 375px;
+    max-width: 375px !important;
     height: 657px;
     border-radius: 26px;
     position: relative;
@@ -9519,13 +9536,13 @@ header {
     text-align: center;
     margin-bottom: 20%;
     margin-top: 40px;
-    margin-right: 10px;
+    margin-right: 10px !important;
   }
   .mob-port .en-form-submit .en-btn_send {
     color: #fff;
     font-family: "NeueHaasDisplay-roman";
     text-transform: uppercase;
-    font-size: 1.4em;
+    font-size: 1.4em !important;
   }
   .mob-port .mobile-container {
     overflow: hidden;
@@ -9637,7 +9654,7 @@ header {
   }
   .mob-port .slider-element-container .swiper-slide .content {
     position: relative;
-    padding: 0px 30px;
+    padding: 0px 30px !important;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
     opacity: 0;
@@ -9660,7 +9677,7 @@ header {
   .mob-port .slider-element-container .swiper-slide .content .port h2 {
     position: absolute;
     bottom: 17px;
-    font-size: 46px;
+    font-size: 46px !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9669,7 +9686,7 @@ header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     line-height: 1;
-    left: -11px;
+    left: -11px !important;
     letter-spacing: 2px;
     opacity: 0;
     -webkit-transform: translateY(50px);
@@ -10154,6 +10171,9 @@ header {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  section.section-container {
+    margin-top: 60px;
   }
   .content__section {
     width: 100%;
@@ -12797,7 +12817,7 @@ section.horizontal .animation-wrap.to-left {
   z-index: 9;
   background: #1a1a1a;
   color: #fff;
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   letter-spacing: 9px;
 }
 .portfolio .item:hover a:before {
@@ -12810,7 +12830,7 @@ section.horizontal .animation-wrap.to-left {
   z-index: 9;
   background: #1a1a1a;
   color: #fff;
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   letter-spacing: 9px;
 }
 .portfolio .container-item h3 {
@@ -12820,7 +12840,7 @@ section.horizontal .animation-wrap.to-left {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #fff;
-  font-family: 'rogie';
+  font-family: "rogie";
   font-style: italic;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px;
@@ -12877,7 +12897,7 @@ section.horizontal .animation-wrap.to-left {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: #ffffff1a;
-  font-family: 'Rogie';
+  font-family: "Rogie";
 }
 .portfolio .back2 {
   position: relative;
@@ -12930,7 +12950,7 @@ section.horizontal .animation-wrap.to-left {
 }
 .portfolio .headers .en-btn_send {
   color: #ffffff;
-  font-family: 'NeueHaasDisplay-roman';
+  font-family: "NeueHaasDisplay-roman";
   font-size: 0.5em;
 }
 .portfolio .container-items :last-child a:before {
@@ -12943,11 +12963,11 @@ section.horizontal .animation-wrap.to-left {
   color: #fff;
   position: relative;
   font-size: 25px;
-  font-family: 'NeueHaasDisplay-light';
+  font-family: "NeueHaasDisplay-light";
   letter-spacing: 2px;
 }
 .portfolio .headers .header-right a:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0%;
   height: 2px;
@@ -13023,7 +13043,7 @@ section.horizontal .animation-wrap.to-left {
 }
 #work-sction .main-heading h1 {
   font-size: 20em;
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px;
   -webkit-text-stroke-color: #000000;
@@ -13061,7 +13081,7 @@ section.horizontal .animation-wrap.to-left {
 #work-sction .pr-list .pr-thum .teg img {
   width: 100%;
 }
-#work-sction .pr-list .pr-main:nth-child(3n+2) {
+#work-sction .pr-list .pr-main:nth-child(3n + 2) {
   margin: 120px 0 0;
 }
 #work-sction .p-prj-thum-shadow {
@@ -13103,7 +13123,7 @@ section.horizontal .animation-wrap.to-left {
   font-weight: 800;
   font-size: 22px;
   letter-spacing: 2.5px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   color: #fff;
   opacity: 1;
   text-shadow: 1px 2px 1px #00000069;
@@ -13142,7 +13162,7 @@ section.horizontal .animation-wrap.to-left {
   white-space: nowrap;
   opacity: 0.07;
   color: #fff;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 .cas-headline {
   position: absolute;
@@ -13158,7 +13178,7 @@ section.horizontal .animation-wrap.to-left {
   padding-left: 5%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'Ageo-light';
+  font-family: "Ageo-light";
 }
 .carousel-showcase.dark .cas-titles .cs-title a,
 body.dark .cas-titles .cs-title a,
@@ -13239,7 +13259,7 @@ body.dark .cas-headline {
   letter-spacing: 0em;
   white-space: nowrap;
   padding: 40px 0;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 .cas-titles .cs-title a {
   text-decoration: none;
@@ -13441,7 +13461,7 @@ span.apl-background {
 .apl-count {
   position: absolute;
   font-size: 30vh;
-  font-family: 'NeueHaasDisplay-bol';
+  font-family: "NeueHaasDisplay-bol";
 }
 .apl-count span {
   color: #fb0000;
@@ -13486,7 +13506,7 @@ span.apl-background {
   display: block;
 }
 .apl-num.apl-num-3 {
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 .en-page-loader.dark .apl-text {
   color: #fff;
@@ -13536,7 +13556,7 @@ span.apl-background {
   padding-bottom: 20px;
   overflow-y: hidden;
   padding-right: 5px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 .numbers-wrapper {
   -webkit-transform: translateY(28%);
@@ -13571,7 +13591,7 @@ span.ac-sign {
   font-size: 19px;
   margin-top: -21px;
   overflow: hidden;
-  font-family: 'Ageo-SemiBold';
+  font-family: "Ageo-SemiBold";
   color: rgba(25, 27, 29, 0.6);
 }
 .a-number-counter.count_inview .ac-title::before {
@@ -13630,7 +13650,7 @@ span.ac-sign {
   font-size: 1.6em;
   line-height: 40px;
   margin-left: -1px;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   letter-spacing: 0em;
   color: #444;
 }
@@ -13640,7 +13660,7 @@ span.ac-sign {
 section:after {
   display: table;
   clear: both;
-  content: '';
+  content: "";
 }
 @media only screen and (max-width: 450px) {
   .en-page-loader {
@@ -13705,7 +13725,7 @@ section:after {
     padding: 0px 30px;
     color: #fff;
     letter-spacing: 1px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
   }
   .ac-number {
     font-size: 80px;
@@ -13980,7 +14000,7 @@ section:after {
   letter-spacing: 2px;
   display: block;
   overflow: hidden;
-  font-family: 'Ageo-Semibold';
+  font-family: "Ageo-Semibold";
   padding-bottom: 0.3vw;
 }
 .site-navigation.fullscreen .menu.main-menu > li.menu-item a {
@@ -14086,7 +14106,7 @@ section:after {
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
   opacity: 0;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   letter-spacing: 0.06em;
 }
 .social-list li a:hover {
@@ -14144,7 +14164,7 @@ section:after {
   letter-spacing: 1px;
   padding: 0;
   padding-right: 18px;
-  font-family: 'Ageo';
+  font-family: "Ageo";
 }
 .site-navigation.fullscreen ul ul li a {
   -webkit-transform: translateY(100%);
@@ -14255,7 +14275,7 @@ body.loading span.toggle-line {
   line-height: 20px;
   display: block;
   position: relative;
-  font-family: 'Ageo';
+  font-family: "Ageo";
 }
 .header-cta-but a::before {
   content: "";
@@ -14306,7 +14326,7 @@ body.loading span.toggle-line {
   display: block;
   overflow: hidden;
 }
-.widget input[type=searchi] {
+.widget input[type="searchi"] {
   width: 100%;
   display: block;
   padding: 10px;
@@ -14789,7 +14809,7 @@ body.loading span.toggle-line {
   display: block;
   overflow: hidden;
 }
-.widget input[type=searchi] {
+.widget input[type="searchi"] {
   width: 100%;
   display: block;
   padding: 10px;
@@ -14901,7 +14921,7 @@ ul.product-tags li a {
     font-size: 1.3em;
     line-height: 36px;
     margin-left: 0px;
-    font-family: 'Ageo';
+    font-family: "Ageo";
     letter-spacing: 0em;
     color: #444;
   }
@@ -14955,7 +14975,7 @@ ul.product-tags li a {
   .action-icon {
     position: fixed;
     display: block;
-    width: 17%;
+    width: 17% !important;
     cursor: pointer;
     bottom: 20px;
     right: 17px;
@@ -16471,15 +16491,15 @@ ul.product-tags li a {
 }
 #footer .top-f h3 {
   font-size: 2.2em;
-  font-family: 'NeueHaasDisplay-Roman';
+  font-family: "NeueHaasDisplay-Roman";
   letter-spacing: 3px;
-  color: #1A1A1A;
+  color: #1a1a1a;
   text-align: center;
 }
 #footer .top-f .great-cta {
   position: relative;
   font-size: 5em;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   letter-spacing: 2px;
   margin-bottom: 5%;
   background-image: linear-gradient(49deg, #2d4de0 0, #9f71f0 30%, #fc6277 58%, #f8ef6f 95%);
@@ -16494,7 +16514,7 @@ ul.product-tags li a {
           animation-direction: alternate;
 }
 #footer .top-f .great-cta:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0%;
   height: 2px;
@@ -16576,7 +16596,7 @@ ul.product-tags li a {
   transition: 0.3s ease-in-out;
 }
 #footer .botom ul li .face:hover {
-  background-image: linear-gradient(120deg, #4267B2, #4267B2);
+  background-image: linear-gradient(120deg, #4267b2, #4267b2);
   background-repeat: repeat-x;
   -webkit-background-clip: text;
   background-clip: text;
@@ -16585,7 +16605,7 @@ ul.product-tags li a {
   transition: 0.3s ease-in-out;
 }
 #footer .botom ul li .face:hover svg {
-  fill: #4267B2;
+  fill: #4267b2;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -16604,7 +16624,7 @@ ul.product-tags li a {
   transition: 0.3s ease-in-out;
 }
 #footer .botom ul li .twit:hover {
-  background-image: linear-gradient(45deg, #1DA1F2, #1DA1F2, #1DA1F2, #1DA1F2, #1DA1F2);
+  background-image: linear-gradient(45deg, #1da1f2, #1da1f2, #1da1f2, #1da1f2, #1da1f2);
   background-repeat: repeat-x;
   -webkit-background-clip: text;
   background-clip: text;
@@ -16613,17 +16633,17 @@ ul.product-tags li a {
   transition: 0.3s ease-in-out;
 }
 #footer .botom ul li .twit:hover svg {
-  fill: #1DA1F2;
+  fill: #1da1f2;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 #footer .botom ul li .bhn:hover {
-  color: #0053FF;
+  color: #0053ff;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 #footer .botom ul li .bhn:hover svg {
-  fill: #1DA1F2;
+  fill: #1da1f2;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -16660,7 +16680,7 @@ ul.product-tags li a {
   font-size: 16px;
   color: #666;
   text-align: center;
-  font-family: 'NeueHaasDisplay-light';
+  font-family: "NeueHaasDisplay-light";
   letter-spacing: 2px;
 }
 #footer .footer-right {
@@ -16681,7 +16701,7 @@ ul.product-tags li a {
 #footer .footer-right a {
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  font-family: 'NeueHaasDisplay-Roman';
+  font-family: "NeueHaasDisplay-Roman";
   font-size: 20px;
   overflow: hidden;
 }
@@ -16802,7 +16822,7 @@ ul.product-tags li a {
   #footer .f-container .top-f .great-cta {
     position: relative;
     font-size: 2.7em;
-    font-family: 'NeueHaasDisplay-roman';
+    font-family: "NeueHaasDisplay-roman";
     letter-spacing: 0px;
     margin-bottom: 5%;
     left: -15px;
@@ -16826,15 +16846,24 @@ ul.product-tags li a {
     margin-right: 0;
     text-align: center;
     width: 29%;
+    padding: 0px !important;
+    font-size: 14px !important;
+  }
+  #footer .botom ul li {
+    padding: 0 !important;
   }
   #footer .botom {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-right: 0;
+    padding-right: 30px;
   }
   #footer .bottom-footer p {
     font-size: 0.8em;
+  }
+  #footer .so {
+    width: 26px !important;
+    height: 20px !important;
   }
   .form-container {
     position: fixed;
@@ -17893,7 +17922,7 @@ ul.aw-cats {
   z-index: -1;
 }
 .lets .flex-row h1 {
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   font-size: 9em;
   overflow: hidden;
   -webkit-perspective: 600px;
@@ -17915,7 +17944,7 @@ ul.aw-cats {
   text-align: right;
 }
 .lets .flex-row .sec-h1 span {
-  font-family: 'NeueHaasDisplay-roman';
+  font-family: "NeueHaasDisplay-roman";
 }
 .lets .flex-row P {
   text-align: right;
@@ -17924,7 +17953,7 @@ ul.aw-cats {
   padding-left: 34%;
   letter-spacing: 2px;
 }
-.black-strock .marquees__part {
+lack-strock .marquees__part {
   -webkit-text-stroke-color: #000;
 }
 #contact-left-sticky {
@@ -17990,7 +18019,7 @@ ul.aw-cats {
   font-size: 5em;
   line-height: 95px;
   margin-bottom: 52px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   color: #000;
 }
 @media only screen and (min-width: 1680px) {
@@ -18019,7 +18048,7 @@ ul.aw-cats {
   font-size: 17px !important;
   line-height: 20px !important;
   color: #000;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   background-color: #1b1b1b00;
 }
 @media only screen and (min-width: 1680px) {
@@ -18064,63 +18093,63 @@ ul.aw-cats {
 .contact-inner .enform_wrapper form .enform_body ul li .ginput_container input::-webkit-input-placeholder, .contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea::-webkit-input-placeholder {
   color: #8d8d8d;
   font-size: 17px;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   text-transform: capitalize;
 }
 .contact-inner .enform_wrapper form .enform_body ul li .ginput_container input::-moz-placeholder, .contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea::-moz-placeholder {
   color: #8d8d8d;
   font-size: 17px;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   text-transform: capitalize;
 }
 .contact-inner .enform_wrapper form .enform_body ul li .ginput_container input:-ms-input-placeholder, .contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea:-ms-input-placeholder {
   color: #8d8d8d;
   font-size: 17px;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   text-transform: capitalize;
 }
 .contact-inner .enform_wrapper form .enform_body ul li .ginput_container input::-ms-input-placeholder, .contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea::-ms-input-placeholder {
   color: #8d8d8d;
   font-size: 17px;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   text-transform: capitalize;
 }
 .contact-inner .enform_wrapper form .enform_body ul li .ginput_container input::placeholder,
 .contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea::placeholder {
   color: #8d8d8d;
   font-size: 17px;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   text-transform: capitalize;
 }
 .contact-inner .enform_wrapper form .enform_body ul li .ginput_container input:focus::-webkit-input-placeholder, .contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea:focus::-webkit-input-placeholder {
   color: transparent;
   font-size: 17px;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   text-transform: capitalize;
 }
 .contact-inner .enform_wrapper form .enform_body ul li .ginput_container input:focus::-moz-placeholder, .contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea:focus::-moz-placeholder {
   color: transparent;
   font-size: 17px;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   text-transform: capitalize;
 }
 .contact-inner .enform_wrapper form .enform_body ul li .ginput_container input:focus:-ms-input-placeholder, .contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea:focus:-ms-input-placeholder {
   color: transparent;
   font-size: 17px;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   text-transform: capitalize;
 }
 .contact-inner .enform_wrapper form .enform_body ul li .ginput_container input:focus::-ms-input-placeholder, .contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea:focus::-ms-input-placeholder {
   color: transparent;
   font-size: 17px;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   text-transform: capitalize;
 }
 .contact-inner .enform_wrapper form .enform_body ul li .ginput_container input:focus::placeholder,
 .contact-inner .enform_wrapper form .enform_body ul li .ginput_container textarea:focus::placeholder {
   color: transparent;
   font-size: 17px;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   text-transform: capitalize;
 }
 @media only screen and (min-width: 1680px) {
@@ -18150,7 +18179,7 @@ ul.aw-cats {
 }
 .success {
   display: none;
-  background: #E1F8ED;
+  background: #e1f8ed;
   padding: 20px;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -18171,10 +18200,10 @@ ul.aw-cats {
   margin: 0px;
   font-family: inherit;
   position: relative;
-  font-family: 'Ageo';
+  font-family: "Ageo";
 }
 .contact-inner .enform_wrapper ul.enform_fields li.gfield:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -18278,7 +18307,7 @@ ul.aw-cats {
   padding: 0px;
   max-width: 100% !important;
 }
-.enform_wrapper li.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+.enform_wrapper li.gfield_error input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]),
 .enform_wrapper li.gfield_error textarea {
   border: none !important;
   border-bottom: 2px solid #ff4646 !important;
@@ -18512,7 +18541,7 @@ ul.aw-cats {
   line-height: 20px;
   font-weight: bold;
   color: #000;
-  font-family: 'Ageo-bold';
+  font-family: "Ageo-bold";
   margin-right: 20%;
 }
 .contact-left-img ul li p {
@@ -18520,7 +18549,7 @@ ul.aw-cats {
   font-size: 1.45em;
   line-height: 30px;
   color: #1a1a1a;
-  font-family: 'Ageo-bold';
+  font-family: "Ageo-bold";
 }
 .contact-left-img ul li p a {
   color: #1a1a1a;
@@ -18532,7 +18561,7 @@ ul.aw-cats {
 }
 .contact-left-img ul li p a:before,
 .contact-left-img ul li p a:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0%;
   height: 1px;
@@ -18767,7 +18796,241 @@ ul.aw-cats {
     padding-left: 25%;
   }
 }
+@media screen and (max-width: 991px) {
+  .w-hde {
+    display: block;
+  }
+  #footer .top-f {
+    text-align: left;
+  }
+  #footer .footer-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #footer .footer-right .cb-outro-social-item {
+    margin-right: 0;
+    padding: 0 50px;
+    font-size: 20px;
+  }
+  .action-icon {
+    width: 11%;
+  }
+  #footer .footer-right {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .section-w {
+    display: none;
+  }
+  section.section-container {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .mob-port .mobile-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 495px;
+    height: 100%;
+    border-radius: 0;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+  .mob-port .slider-element-container .swiper-slide .content .port h2 span {
+    width: 100%;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    font-family: "NeueHaasDisplay-me";
+  }
+  .mob-port .slider-element-container .swiper-slide .content .port {
+    position: relative;
+    overflow: inherit;
+  }
+  .mob-port .en-form-submit .en-btn_send {
+    color: #fff;
+    font-family: "NeueHaasDisplay-roman";
+    text-transform: uppercase;
+    font-size: 2em;
+  }
+  .mob-port .en-form-submit {
+    margin: 0 0 0;
+    overflow: hidden;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 20%;
+    margin-top: 40px;
+    margin-right: 0px;
+  }
+  .mob-port .slider-element-container {
+    position: relative;
+    z-index: 2;
+    height: calc(100%);
+    padding-bottom: 25px;
+    width: 100%;
+  }
+  .mob-port .slider-element-container .swiper-slide .content .port h2 {
+    position: absolute;
+    bottom: 17px;
+    font-size: 85px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #ffffff;
+    font-family: "NeueHaasDisplay-me";
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    line-height: 1;
+    left: -22px;
+    letter-spacing: 2px;
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+  .mob-port .slider-element-container .swiper-slide.swiper-slide-active {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  .mob-port .slider-element-container .swiper-slide.swiper-slide-active .content {
+    opacity: 1;
+  }
+  .mob-port .slider-element-container .swiper-slide.swiper-slide-active .content .port h2 {
+    opacity: 1;
+    -webkit-transition: opacity 0.67s ease-in-out 0s;
+    transition: opacity 0.67s ease-in-out 0s;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  .mob-port .slider-element-container .swiper-slide .content {
+    /* position: relative; */
+    padding: 0px 51px;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    opacity: 0;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .mob-port .slider-element-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #b71414;
+  }
+  .mob-port .slider-element-container .swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 16px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 3px));
+  }
+  .so {
+    width: 50px !important;
+    height: 25px !important;
+  }
+  #footer .botom ul li {
+    overflow: hidden;
+    padding: 0 20px;
+    margin-left: 13px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .lets {
+    height: 50vh;
+    padding-top: 150px;
+  }
+  .lets img {
+    position: absolute;
+    top: 12%;
+    right: 0;
+    width: 70%;
+    opacity: 1;
+    z-index: -1;
+  }
+  .lets .flex-row h1 {
+    font-size: 6em;
+    padding-left: 0;
+    overflow: hidden;
+    -webkit-perspective: 600px;
+    perspective: 600px;
+  }
+  .lets .flex-row P {
+    font-size: 1.7em;
+  }
+  .web {
+    display: none;
+  }
+  .contact-inner .contact-left-img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .marquees__part {
+    -webkit-text-stroke-color: #000;
+  }
+  .contact-left-img {
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    margin-top: 12% !important;
+  }
+  .contact-left-img ul li p {
+    font-size: 1.7em;
+  }
+  .contact-right {
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 150px;
+  }
+  .contact-form-block {
+    padding-bottom: 100px;
+  }
+}
 @media screen and (max-width: 767px) {
+  .contact-inner .enform_wrapper {
+    padding: 0 20px;
+  }
+  .marquees__part {
+    -webkit-text-stroke-color: #000;
+  }
+  #footer .top-f {
+    text-align: center;
+  }
   .mob {
     display: none;
   }
@@ -18824,9 +19087,7 @@ ul.aw-cats {
     text-transform: uppercase;
     font-size: 50px;
     line-height: 55px;
-    margin-bottom: 52px
-    px
-    ;
+    margin-bottom: 52px px;
     color: #000;
     margin-top: 18%;
   }
@@ -18877,7 +19138,7 @@ ul.aw-cats {
     position: relative;
     padding: 1.4rem 2.3rem;
     cursor: pointer;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
     font-size: 1.2rem;
     line-height: 1;
     font-weight: 400;
@@ -18933,7 +19194,7 @@ ul.aw-cats {
   border: 0;
   border-radius: 0;
   outline: 0 !important;
-  font-family: 'Ageo-Semibold';
+  font-family: "Ageo-Semibold";
   font-size: 1.4em;
   letter-spacing: 1px;
   line-height: inherit;
@@ -18974,13 +19235,13 @@ ul.aw-cats {
   margin-bottom: 20px;
   padding-right: 10%;
   text-transform: inherit;
-  font-family: 'NeueHaasDisplay-bol';
+  font-family: "NeueHaasDisplay-bol";
 }
 .section-w .text-wrapper h5 {
   font-size: 19px;
   line-height: 35px;
   margin-left: -1px;
-  font-family: 'Sarabun';
+  font-family: "Sarabun";
   font-weight: 700;
   margin-bottom: 1em;
   color: #1a1a1a;
@@ -19041,7 +19302,7 @@ ul.aw-cats {
 }
 .section-w .ts .min-h {
   font-size: 2.4em;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   opacity: 0.5;
   letter-spacing: 1px;
 }
@@ -19051,7 +19312,7 @@ ul.aw-cats {
 .section-w .ts .right-parh {
   font-size: 1.6em;
   padding-right: 0;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   line-height: 1.8;
   color: #1a1a1a;
 }
@@ -19063,21 +19324,21 @@ ul.aw-cats {
   margin-bottom: 20px;
   margin-right: 30%;
   text-transform: inherit;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 .section-w .p-r-10 {
   margin-right: 10%;
 }
 .section-w .point h4 {
   font-size: 1.3em;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   margin-bottom: 4%;
   position: relative;
   letter-spacing: 1px;
   margin-left: 60px;
 }
 .section-w .point h4::after {
-  content: '';
+  content: "";
   display: inline-block;
   width: 40px;
   height: 2px;
@@ -19120,7 +19381,7 @@ ul.aw-cats {
           box-shadow: 0 0 11px #2f2f2f;
 }
 .section-w .point3 h1 .dot-25::after {
-  content: '';
+  content: "";
   width: 12px;
   height: 12px;
   background-color: #42b847;
@@ -19167,7 +19428,7 @@ ul.aw-cats {
   padding-right: 60px;
 }
 .ro .left-img::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -19254,7 +19515,7 @@ ul.aw-cats {
           box-shadow: 0 10px 25px #42b801;
 }
 .div-flex .six-points .p p .dot-25::after {
-  content: '';
+  content: "";
   width: 12px;
   height: 12px;
   background-color: #42b847;
@@ -19333,7 +19594,7 @@ ul.aw-cats {
           transform-origin: left center;
 }
 .developers .accordion-list li:before {
-  content: ' ';
+  content: " ";
   display: block;
   position: absolute;
   width: 10rem;
@@ -19353,7 +19614,7 @@ ul.aw-cats {
 .developers .accordion-title h2 {
   font-size: 40px;
   /* font-weight: 800; */
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   letter-spacing: 6px;
   -webkit-text-fill-color: #000;
   -webkit-text-stroke-color: #000000;
@@ -19420,7 +19681,7 @@ ul.aw-cats {
   letter-spacing: 0.05em;
   padding: 10px 0px 0 18px;
   margin-top: -50px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   position: absolute;
   text-transform: uppercase;
 }
@@ -19434,7 +19695,7 @@ body.dark .ar-work-title,
   letter-spacing: 2px;
   padding-left: 18px;
   color: rgba(25, 27, 29, 0.6);
-  font-family: 'Ageo';
+  font-family: "Ageo";
 }
 body.dark .ar-work-cat,
 .a-recent-works.dark .ar-work-cat {
@@ -19448,7 +19709,7 @@ body.dark .ar-work-cat,
   font-size: 200px;
   white-space: nowrap;
   font-weight: 700;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   color: #191b1d;
   pointer-events: none;
 }
@@ -19594,7 +19855,7 @@ body.dark .ar-work-cat,
     padding-right: 50px;
     position: absolute;
     top: 0;
-    font-family: 'Ageo-SemiBold';
+    font-family: "Ageo-SemiBold";
     z-index: -1;
     width: 100%;
   }
