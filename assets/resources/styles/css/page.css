@@ -4929,6 +4929,9 @@ header {
   padding-bottom: 0px;
   position: relative;
 }
+.about__marquee {
+  -webkit-text-stroke-color: #fff !important;
+}
 #abt > div > div > div.is-inview::before {
   width: 100%;
   -webkit-transition: width 1s ease-out;
@@ -19104,14 +19107,14 @@ lack-strock .marquees__part {
     z-index: -1;
   }
   .lets .flex-row h1 {
-    font-size: 6em;
+    font-size: 6em !important;
     padding-left: 0;
     overflow: hidden;
     -webkit-perspective: 600px;
     perspective: 600px;
   }
   .lets .flex-row P {
-    font-size: 1.7em;
+    padding-left: 28% !important;
   }
   .web {
     display: none;
@@ -19981,6 +19984,17 @@ body.dark .ar-work-cat,
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+@media screen and (max-width: 1180px) {
+  .lets .flex-row h1 {
+    font-size: 8em;
+    padding-left: 0;
+  }
+  .lets .flex-row P {
+    font-size: 1.6em;
+    padding-left: 35%;
+    letter-spacing: 2px;
+  }
 }
 @media screen and (min-width: 992px) {
   .oli-fullpage .oli-section {
