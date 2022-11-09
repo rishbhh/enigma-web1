@@ -15016,7 +15016,7 @@ ul.product-tags li a {
     margin-bottom: 0px;
   }
   section.section-container {
-    margin-bottom: 35px;
+    margin-bottom: 10%;
   }
   .c-col-8 {
     width: 100%;
@@ -19070,6 +19070,7 @@ lack-strock .marquees__part {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+    margin-bottom: 30px;
   }
   .mob-port .slider-element-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: #b71414;
