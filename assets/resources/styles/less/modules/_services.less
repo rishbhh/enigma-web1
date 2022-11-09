@@ -1586,6 +1586,9 @@ section.horizontal .animation-wrap.to-left {
 }
 
 @media screen and (max-width: 1920px) {
+  .ipad-ser {
+    display: none;
+  }
   .accordion-list li.open .cont {
     max-height: 335px;
     padding-bottom: 20px;
@@ -1753,8 +1756,52 @@ section.horizontal .animation-wrap.to-left {
   }
 }
 @media screen and (max-width: 991px) {
+  .ser-two {
+    display: none;
+  }
+  .ipad-ser {
+    display: block;
+  }
+
+  .ser-two .item {
+    padding: 0 0 100px 0px;
+    transform: none !important;
+  }
+  .ser-two .strategy__item {
+    width: 90% !important;
+    padding: 0 0 100px 15px;
+    transform: none !important;
+  }
+  .ser-two .mar-top {
+    margin-top: 0%;
+  }
+  .ser-two .item p {
+    text-align: left;
+    font-size: 20px !important;
+  }
+  .service-points {
+    padding: 15% 0 10% 0;
+  }
   .accordion-list li.open .cont {
     max-height: 435px;
+  }
+  .ser-two {
+    padding: 50px 10vw 0 10vw;
+    margin-bottom: 0;
+  }
+  .ser-two .item::before {
+    font-size: 3em;
+    top: 25px;
+    left: 50px;
+  }
+  .ser-two .item h2 {
+    font-size: 1.5em;
+  }
+  .ser-two .horizontal-sec {
+    margin-top: 20%;
+  }
+  .flex-cen {
+    justify-content: center;
   }
 }
 .dark {
@@ -2015,7 +2062,7 @@ section.horizontal .animation-wrap.to-left {
     width: 50%;
   }
   .ser-two .item {
-    width: 90%;
+    width: 40%;
   }
   .service-points .container .pointrs-se {
     flex-direction: column;
