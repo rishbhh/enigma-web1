@@ -15086,7 +15086,7 @@ ul.product-tags li a {
     height: 100%;
   }
   .apl-count {
-    font-size: 133px;
+    font-size: 133px !important;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
