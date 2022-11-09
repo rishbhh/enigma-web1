@@ -15018,7 +15018,7 @@ ul.product-tags li a {
   .wrapper-full {
     margin-bottom: 0px;
   }
-  section.section-container {
+  section.margin__b_works {
     margin-bottom: 10%;
   }
   .c-col-8 {
@@ -17141,7 +17141,7 @@ ul.product-tags li a {
 #blogs-sction .pr-list .pr-thum a img {
   width: 100%;
 }
-#blogs-sction .pr-list .bl-main:nth-child(2n+2) {
+#blogs-sction .pr-list .bl-main:nth-child(2n + 2) {
   margin: 70px 0 0;
 }
 #blogs-sction .p-prj-thum-shadow {
@@ -17175,7 +17175,7 @@ ul.product-tags li a {
 #blogs-sction .p-prj-caption-name {
   font-size: 28px;
   letter-spacing: 2.5px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   color: #000;
   line-height: 1.3;
   margin-bottom: 1%;
@@ -17191,7 +17191,7 @@ ul.product-tags li a {
   line-height: 19px;
   color: #737373;
   margin-top: 0;
-  font-family: 'Ageo-SemiBold';
+  font-family: "Ageo-SemiBold";
 }
 /* blog-deatails */
 .page-section--hero-article {
@@ -17277,7 +17277,7 @@ ul.product-tags li a {
   display: flex;
 }
 .headline-edito {
-  font-family: 'ogg-roman';
+  font-family: "ogg-roman";
   font-weight: 300;
   font-size: 3.5rem;
   line-height: 3.5rem;
@@ -17291,7 +17291,7 @@ ul.product-tags li a {
 }
 .blog-conent p {
   letter-spacing: 2px;
-  font-family: 'Ageo';
+  font-family: "Ageo";
   margin-bottom: 11px;
   font-size: 16px;
   line-height: 1.6;
@@ -17301,10 +17301,10 @@ ul.product-tags li a {
 .blog-conent h2 {
   text-align: center;
   letter-spacing: 4.8px;
-  color: #2B2B2B;
+  color: #2b2b2b;
   font-size: 1.8em;
   line-height: 1.6;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   margin-top: 12%;
   margin-bottom: 5%;
 }
@@ -17355,7 +17355,7 @@ ul.product-tags li a {
 }
 .blog-left h2 {
   font-size: 3rem;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   letter-spacing: 5px;
   padding-left: 5%;
 }
@@ -17372,14 +17372,14 @@ ul.product-tags li a {
 }
 .blog-right p {
   letter-spacing: 2px;
-  font-family: 'NeueHaasDisplay-roman';
+  font-family: "NeueHaasDisplay-roman";
   margin-bottom: 11px;
   font-size: 18px;
   line-height: 1.6;
 }
 .qts {
   padding: 4rem 15rem;
-  font-family: 'ogg-medium';
+  font-family: "ogg-medium";
   letter-spacing: 2px;
   text-align: center;
   font-style: italic;
@@ -17387,7 +17387,7 @@ ul.product-tags li a {
 .qts h1 {
   line-height: 1.7;
   font-size: 3em;
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
 }
 .blog-details {
   margin-top: 15%;
@@ -17400,7 +17400,7 @@ ul.product-tags li a {
   text-align: center;
   font-size: 24px;
   color: #3d3d3d;
-  font-family: 'NeueHaasDisplay-roman';
+  font-family: "NeueHaasDisplay-roman";
   letter-spacing: 1px;
   margin-top: 6%;
   margin-bottom: 4%;
@@ -17411,14 +17411,14 @@ ul.product-tags li a {
   font-size: 14px;
   letter-spacing: 1px;
   color: #3d3d3d;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 .blog-details .container .content h1 {
   font-size: 3.5em;
   padding: 0px 5%;
   text-align: center;
   line-height: 1.4;
-  font-family: 'NeueHaasDisplay-roman';
+  font-family: "NeueHaasDisplay-roman";
   color: #000;
   -webkit-perspective: 600px;
   perspective: 600px px;
@@ -17474,7 +17474,7 @@ ul.product-tags li a {
   width: 100%;
   position: relative;
   padding-top: 20%;
-  background: #EBEBEB;
+  background: #ebebeb;
   margin-bottom: 150px;
   z-index: 2;
 }
@@ -17496,7 +17496,7 @@ ul.product-tags li a {
   line-height: 100px;
   margin-left: -7px;
   margin-top: 20px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   margin-bottom: 69px;
   padding-right: 10px;
 }
@@ -17525,7 +17525,7 @@ ul.product-tags li a {
   font-weight: 700;
   letter-spacing: 1px;
   cursor: pointer;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 .aw-categories ul.aw-cats li.active::after {
   color: #dbdbdb;
@@ -17588,7 +17588,7 @@ ul.aw-cats {
   max-width: 50%;
   outline: 0;
   padding: 2rem 1rem;
-  font-family: 'Ageo';
+  font-family: "Ageo";
 }
 .close-btn {
   display: none;
@@ -17597,7 +17597,7 @@ ul.aw-cats {
   position: absolute;
   top: 0.5rem;
   right: 2rem;
-  font-family: 'Ageo';
+  font-family: "Ageo";
 }
 .author {
   margin-top: 10px !important;
@@ -17619,7 +17619,7 @@ ul.aw-cats {
       -ms-user-select: auto;
           user-select: auto;
   font-size: 7em;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   margin-top: -45px;
   color: #fff;
   width: 250vw;
@@ -17636,7 +17636,7 @@ ul.aw-cats {
   text-align: center;
   font: italic normal bold 18px/28px Ageo;
   letter-spacing: 2.1px;
-  color: #2B2B2B;
+  color: #2b2b2b;
 }
 .blog-d .container p {
   margin-bottom: 5%;
@@ -17647,12 +17647,12 @@ ul.aw-cats {
   text-align: center;
   font: italic normal bold 24px/29px Ageo;
   letter-spacing: 3.6px;
-  font-family: 'Ageo-Bold';
-  color: #2B2B2B;
+  font-family: "Ageo-Bold";
+  color: #2b2b2b;
   position: relative;
 }
 .blog-d .container blockquote::after {
-  content: '';
+  content: "";
   background-image: url(/assets/resources/img/blog-element/quote-icon.svg);
   position: absolute;
   left: 10px;
@@ -17668,14 +17668,14 @@ ul.aw-cats {
   font-size: 14px;
   letter-spacing: 1px;
   color: #3d3d3d;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 .blog-d .container .content h1 {
   font-size: 3.5em;
   padding: 0px 5%;
   text-align: center;
   line-height: 1.4;
-  font-family: 'NeueHaasDisplay-roman';
+  font-family: "NeueHaasDisplay-roman";
   color: #000;
   text-shadow: 1px 1px 10px #0006;
 }
@@ -17747,7 +17747,7 @@ ul.aw-cats {
 .recent-post .p-prj-caption-name {
   font-size: 35px;
   letter-spacing: 2.5px;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
   color: #000;
   line-height: 1.2;
   margin-bottom: 1%;
@@ -17758,7 +17758,7 @@ ul.aw-cats {
   line-height: 19px;
   color: #737373;
   margin-top: 0;
-  font-family: 'NeueHaasDisplay-me';
+  font-family: "NeueHaasDisplay-me";
 }
 @media screen and (max-width: 1280px) {
   #blogs-sction {
@@ -17769,7 +17769,7 @@ ul.aw-cats {
     padding: 0px 5%;
     text-align: center;
     line-height: 1.4;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
     color: #000;
     text-shadow: 1px 1px 12px rgba(0, 0, 0, 0.219);
   }
@@ -17797,7 +17797,7 @@ ul.aw-cats {
     width: 100%;
     position: relative;
     padding-top: 40%;
-    background: #EBEBEB;
+    background: #ebebeb;
     margin-bottom: 150px;
     z-index: 2;
   }
@@ -17820,7 +17820,7 @@ ul.aw-cats {
   #blogs-sction .p-prj-caption-name {
     font-size: 18px;
   }
-  #blogs-sction .pr-list .bl-main:nth-child(2n+2) {
+  #blogs-sction .pr-list .bl-main:nth-child(2n + 2) {
     margin: 20px 0 0;
   }
   .blog-details {
@@ -17832,7 +17832,7 @@ ul.aw-cats {
     padding: 0px 5%;
     text-align: center;
     line-height: 1.4;
-    font-family: 'NeueHaasDisplay-roman';
+    font-family: "NeueHaasDisplay-roman";
     /* color: #000; */
     text-shadow: none;
     margin-bottom: 10%;
@@ -17849,7 +17849,7 @@ ul.aw-cats {
     -ms-user-select: auto;
     user-select: auto;
     font-size: 3em;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
     margin-top: -45px;
     color: #fff;
     /* text-shadow: 1px 1px 11px #0000002e; */
@@ -17883,7 +17883,7 @@ ul.aw-cats {
     text-align: center;
     font-size: 30px;
     color: #3d3d3d;
-    font-family: 'NeueHaasDisplay-roman';
+    font-family: "NeueHaasDisplay-roman";
     letter-spacing: 1px;
     margin-top: 12%;
     margin-bottom: 4%;
@@ -17909,7 +17909,7 @@ ul.aw-cats {
   }
   .blog-left h2 {
     font-size: 2.5rem;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
     letter-spacing: 5px;
     padding-left: 0;
     text-align: center;
@@ -17922,14 +17922,14 @@ ul.aw-cats {
   }
   .blog-right p {
     letter-spacing: 2px;
-    font-family: 'NeueHaasDisplay-roman';
+    font-family: "NeueHaasDisplay-roman";
     margin-bottom: 11px;
     font-size: 18px;
     line-height: 1.6;
   }
   .qts {
     padding: 4rem 2rem;
-    font-family: 'ogg-medium';
+    font-family: "ogg-medium";
     letter-spacing: 2px;
     text-align: center;
     font-style: italic;
@@ -17987,7 +17987,7 @@ ul.aw-cats {
   .recent-post .p-prj-caption-name {
     font-size: 1.8em;
     letter-spacing: 2.5px;
-    font-family: 'NeueHaasDisplay-me';
+    font-family: "NeueHaasDisplay-me";
     color: #000;
     line-height: 1.4;
     margin-bottom: 1%;
@@ -17998,7 +17998,7 @@ ul.aw-cats {
     line-height: 19px;
     color: #737373;
     margin-top: 0;
-    font-family: 'Ageo-Semibold';
+    font-family: "Ageo-Semibold";
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -18021,7 +18021,7 @@ ul.aw-cats {
     line-height: 19px;
     color: #737373;
     margin-top: 0;
-    font-family: 'Ageo-Semibold';
+    font-family: "Ageo-Semibold";
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
