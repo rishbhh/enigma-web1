@@ -11986,7 +11986,29 @@ section.horizontal .animation-wrap.to-left {
     font-size: 3em;
   }
 }
+@media screen and (max-width: 1180px) {
+  .ser-hero .top-h .h1-r {
+    margin-left: 55%;
+  }
+  .flex-cen {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ser-two .item p {
+    text-align: left;
+  }
+  .ser-hero .top-h .strategy__head {
+    margin-left: 40%;
+  }
+  .ser-hero .top-h .tech__head {
+    margin-left: 2%;
+  }
+}
 @media screen and (max-width: 991px) {
+  .ser-hero .top-h .tech__head {
+    margin-left: 16%;
+  }
   .ser-two {
     display: none;
   }
@@ -12467,9 +12489,6 @@ section.horizontal .animation-wrap.to-left {
   }
   .ser-hero .top-h .h1-r {
     text-align: end;
-  }
-  .dark-footer .footer-flex {
-    border-top: 1px solid #fff !important;
   }
   .ser-hero .top-h {
     padding: 0px 9px;
@@ -17021,9 +17040,6 @@ ul.product-tags li a {
 .dark-footer {
   background-color: #000 !important;
 }
-.dark-footer .footer-flex {
-  border-top: 1px solid #fff !important;
-}
 .dark-footer .top-f h3 {
   color: #fff !important;
 }
@@ -18914,9 +18930,6 @@ lack-strock .marquees__part {
 }
 .mob {
   display: none;
-}
-.dark-footer .footer-flex {
-  border-top: 1px solid #fff !important;
 }
 @media screen and (max-width: 1920px) {
   .lets .flex-row h1 {
