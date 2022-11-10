@@ -1579,7 +1579,7 @@ html.is-ready .c-header_title_line {
     font-size: 20vh !important;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .init-load .inner {
     left: 1vw;
     bottom: 22vw;
@@ -4474,7 +4474,7 @@ header {
     height: 100%;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .ht-cursor {
     display: none;
   }
@@ -9066,7 +9066,7 @@ header {
     width: 75%;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .teams-slider {
     display: block;
   }
@@ -9925,13 +9925,13 @@ header {
     width: 100%;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and screen and (max-height: 670px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and screen and (max-height: 670px) {
   .mobile-container {
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and screen and (max-height: 670px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and screen and (max-height: 670px) {
   .mob-port .mobile-container {
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
@@ -12501,7 +12501,7 @@ section.horizontal .animation-wrap.to-left {
     font-size: 1.1em !important;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .aproch {
     padding: 5% 0;
     position: relative;
@@ -17039,7 +17039,7 @@ ul.product-tags li a {
     padding-top: 5vh;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 812px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   #footer.dark-footer {
     background: #000 !important;
     padding-top: 20%;
