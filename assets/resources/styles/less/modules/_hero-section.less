@@ -1743,6 +1743,109 @@
       font-size: 7.1em;
     }
   }
+  .mobli-cont {
+    // width: 100vw;
+    // height: 100vh;
+    // z-index: 12 !important;
+    // overflow: hidden;
+    // position: relative;
+    display: none;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 12 !important;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+
+    .en-cicle {
+      background-image: url("/assets/resources/img/motion-circle.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 60%;
+      position: absolute;
+      height: 100vh;
+      inset: 0px;
+      will-change: transform, opacity;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .en-bg {
+      background-image: url("/assets/resources/img/lights.webp");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      position: absolute;
+      height: 100vh;
+      width: 468px;
+      inset: 0px;
+      will-change: transform, opacity;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .mobli-cont_content {
+      opacity: 1;
+      z-index: 13;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 2.3em;
+
+      .wep {
+        padding-right: 5px;
+        display: inline-block;
+        letter-spacing: 2px;
+        font-family: "NeueHaasDisplay-me";
+        // transform: translateY(100px);
+        color: #fff;
+      }
+
+      .wep .word {
+        opacity: 0;
+        // transform: translateY(100px);
+      }
+    }
+
+    .lapi-content {
+      opacity: 1;
+      z-index: 13;
+      position: absolute;
+      top: 43%;
+      // -webkit-transform: translateY(-50%);
+      // transform: translateY(-50%);
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 2.3em;
+
+      .wor {
+        padding-right: 5px;
+        display: inline-block;
+        letter-spacing: 2px;
+        font-family: "NeueHaasDisplay-me";
+        opacity: 0;
+      }
+
+      p {
+        // text-align: center;
+        // letter-spacing: 3px;
+        // font-size: 1.3em;
+        // font-weight: 600;
+        color: #fff;
+      }
+    }
+  }
+
 }
 @media screen and (max-width: 767px) {
   .mobl {
